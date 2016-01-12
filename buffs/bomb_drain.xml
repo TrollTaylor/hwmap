@@ -1,0 +1,21 @@
+<buff>
+	<behavior>
+		<dictionary>
+			<int name="duration">2000</int>			
+			<dictionary name="mana-drain">
+				<int name="freq">100</int>
+				<int name="dmg">5</int>
+			</dictionary>
+			<array name="effects">			
+				<dictionary>
+					<string name="type">light</string>
+					<vec2 name="offset">0 0</vec2><!-- funkar inte -->		
+					<float name="add-range">3</float>
+					<string name="add-color1">75 0 75</string>
+					<string name="add-color2">10 0 10</string>
+					<string name="add-color3">2 0 2</string>
+				</dictionary>
+			</array>				
+		</dictionary>
+	</behavior>
+</buff>

@@ -1,0 +1,31 @@
+<doodad defaultlayer="-30">
+	<sprite scale="16" name="activate">
+		<texture>doodads/theme_d/d_special_doomspawn.png</texture>
+		<origin>20 20</origin>
+		<frame time="150">0 0 40 41</frame>				
+		<frame time="150">40 0 40 41</frame>	
+		<frame time="150">80 0 40 41</frame>	
+		<frame time="150">120 0 40 41</frame>							
+	</sprite>
+	
+	<sprite scale="16" name="active">
+		<texture>doodads/theme_d/d_special_doomspawn.png</texture>
+		<origin>20 20</origin>
+		<frame>120 0 40 41</frame>													
+	</sprite>			
+	
+	<sprite scale="16" name="deactivate">
+		<texture>doodads/theme_d/d_special_doomspawn.png</texture>
+		<origin>20 20</origin>
+		<frame>0 0 40 41</frame>													
+	</sprite>			
+	
+	<states default="deactivate">		
+		<transition from="activate" to="active" />		
+	</states>		
+	
+	<collision static="true" shoot-through="true">
+		<circle offset="0 0" radius="18" />
+	</collision>	
+	
+</doodad>

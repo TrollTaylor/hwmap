@@ -1,0 +1,34 @@
+<doodad defaultlayer="30" aobias="0.4" minimap="menus/minimap.xml:round_crn_l_dn">
+	<sprite scale="16">
+		<texture>doodads/theme_d/d.png</texture>
+		<origin>-8 32</origin>
+		<frame>264 0 40 40</frame>
+	</sprite>		
+	
+	<polygon collision="false" shadow="true">
+		<point>16 0</point>
+		<point>24 16</point>
+		<point>16 32</point>
+	</polygon>	
+	
+	<polygon collision="false" shadow="true">
+		<point>24 16</point>
+		<point>48 32</point>
+		<point>16 32</point>
+	</polygon>		
+	
+	<polygon collision="true" shadow="false">
+		<point>8 48</point>
+		<point>8 -32</point>		
+		<point>28 0</point>					
+		<point>28 48</point>			
+	</polygon>	
+	
+	<polygon collision="true" shadow="false">
+		<point>28 48</point>
+		<point>28 0</point>		
+		<point>48 8</point>					
+		<point>48 48</point>			
+	</polygon>		
+
+</doodad>

@@ -1,0 +1,7 @@
+<doodad defaultlayer="1" ao="false">
+	<sprite scale="16">
+		<texture>actors/spawners/tick_1.png</texture>
+		<origin>20 16</origin>					
+		<frame>40 0 40 32</frame>
+	</sprite>
+</doodad>

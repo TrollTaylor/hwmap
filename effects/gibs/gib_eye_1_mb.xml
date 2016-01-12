@@ -1,0 +1,53 @@
+<gib speed="2" power="12" life="0.6" no-rotation="false" spread="1" particle="effects/particles.xml:bone-particle" particle-color="100 0 0">
+	<sprite scale="16">
+		<origin>2 2</origin>
+		<texture>effects/gibs/gib.png</texture>
+		<frame>0 0 3 3</frame>
+	</sprite>	
+	
+	<sprite scale="16">
+		<origin>2 2</origin>
+		<texture>effects/gibs/gib.png</texture>
+		<frame>9 7 3 3</frame>
+	</sprite>		
+	
+	<sprite scale="16">
+		<origin>2 2</origin>
+		<texture>effects/gibs/gib.png</texture>
+		<frame>34 4 3 3</frame>
+	</sprite>		
+	
+
+		
+	<sprite scale="16">
+		<origin>2 2</origin>
+		<texture>effects/gibs/gib.png</texture>
+		<frame>4 45 4 4</frame>
+	</sprite>
+	
+	<sprite scale="16">
+		<origin>2 2</origin>
+		<texture>effects/gibs/gib.png</texture>
+		<frame>8 45 4 4</frame>
+	</sprite>	
+	
+	
+	<sprite scale="16">
+		<origin>2 2</origin>
+		<texture>effects/gibs/gib.png</texture>
+		<frame>0 11 4 5</frame>
+	</sprite>
+	
+	<sprite scale="16">
+		<origin>3 2</origin>
+		<texture>effects/gibs/gib.png</texture>
+		<frame>4 11 5 5</frame>
+	</sprite>
+	
+	<sprite scale="16">
+		<origin>3 4</origin>
+		<texture>effects/gibs/gib.png</texture>
+		<frame>9 11 6 7</frame>
+	</sprite>		
+	
+</gib>

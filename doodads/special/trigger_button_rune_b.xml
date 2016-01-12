@@ -1,0 +1,21 @@
+<doodad defaultlayer="0">
+	<sprite scale="16" name="activate">
+		<texture>doodads/special/trigger_button.png</texture>
+		<origin>0 0</origin>	
+		<frame>80 0 16 16</frame>		
+		<glow scale="16">
+			<texture>doodads/special/trigger_button.png</texture>
+			<frame>32 16 16 16</frame>		
+		</glow>					
+	</sprite>			
+	<sprite scale="16" name="deactivate">
+		<texture>doodads/special/trigger_button.png</texture>
+		<origin>0 0</origin>	
+		<frame>64 0 16 16</frame>			
+	</sprite>				
+	<states default="deactivate">
+	</states>			
+</doodad>
+
+
+

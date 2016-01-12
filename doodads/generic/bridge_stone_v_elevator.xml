@@ -1,0 +1,44 @@
+<doodad defaultlayer="-4" minimap="menus/minimap.xml:bridge_v_elevator">
+	
+	<sprite scale="16" name="inactive">
+		<texture>doodads/generic/bridge_stone.png</texture>
+		<origin>28 0</origin>
+		<frame time="50">64 128 56 32</frame>
+	</sprite>
+	
+	<sprite scale="16" name="activate">
+		<texture>doodads/generic/bridge_stone.png</texture>
+		<origin>28 0</origin>
+		<frame time="75">56 160 56 32</frame>
+		<frame time="100">56 192 56 32</frame>		
+	</sprite>	
+	
+	<sprite scale="16" name="active">
+		<texture>doodads/generic/bridge_stone.png</texture>
+		<origin>28 0</origin>
+		<frame time="100">56 224 56 32</frame>
+	</sprite>
+	
+		
+	<states default="inactive">		
+		<transition from="activate" to="active" />		
+	</states>			
+	
+	<collision shoot-through="true">
+		<polygon>
+			<point>24 32</point>
+			<point>24 0</point>
+			<point>28 0</point>
+			<point>28 32</point>
+		</polygon>
+		
+		<polygon>
+			<point>-28 32</point>
+			<point>-28 0</point>
+			<point>-24 0</point>
+			<point>-24 32</point>
+		</polygon>		
+		
+		
+	</collision>
+</doodad>

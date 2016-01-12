@@ -1,0 +1,23 @@
+<projectile directions="1" collision="3" damage="14" speed="0.6">
+	<sprite scale="16" name="0">
+		<texture>projectiles/magicball_purple.png</texture>
+		<origin>4 8</origin>
+		<frame time="50">0 0 8 8</frame>		
+		<frame time="50">8 0 8 8</frame>		
+		<frame time="50">16 0 8 8</frame>		
+		<frame time="50">24 0 8 8</frame>		
+		<frame time="50">16 0 8 8</frame>		
+		<frame time="50">8 0 8 8</frame>		
+		<frame time="50">16 0 8 8</frame>		
+		<frame time="50">8 0 8 8</frame>		
+	</sprite>
+	
+	<sprite scale="16" name="d0">
+		<texture>effects/hit_magic_purple.png</texture>
+		<origin>8 12</origin>
+		<frame time="50">0 0 16 16</frame>
+		<frame time="50">16 0 16 16</frame>
+		<frame time="75">0 16 16 16</frame>
+		<frame time="75">16 16 16 16</frame>
+	</sprite>	
+</projectile>

@@ -1,0 +1,96 @@
+﻿<prefab>
+<dictionary>
+	<dictionary name="tilemap">
+		<array name="tiledata"></array>
+	</dictionary>
+	<dictionary name="doodads">
+		<array name="doodads">
+			<dictionary>
+				<int name="id">111243</int>
+				<string name="type">doodads/generic/machine_pump.xml</string>
+				<vec2 name="pos">0 0</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+		</array>
+	</dictionary>
+	<dictionary name="actors">
+	</dictionary>
+	<dictionary name="items">
+	</dictionary>
+	<dictionary name="scripting">
+		<array name="nodes">
+			<dictionary>
+				<int name="id">111244</int>
+				<string name="type">ChangeDoodadState</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">1</int>
+				<vec2 name="pos">0 -4.5</vec2>
+				<dictionary name="parameters">
+					<string name="state">activate</string>
+					<dictionary name="object">
+						<int-arr name="static">111243</int-arr>
+					</dictionary>
+				</dictionary>
+				<int-arr name="connections">111395</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">111395</int>
+				<string name="type">PlaySound</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">0 0</vec2>
+				<dictionary name="parameters">
+					<string name="sound">sound/misc.xml:temp1</string>
+					<bool name="loop">True</bool>
+					<bool name="play3d">True</bool>
+					<float name="range3d">5</float>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">111396</int>
+				<string name="type">GlobalEventTrigger</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">3 -3.5</vec2>
+				<string name="parameters">machine_pump_start</string>
+				<int-arr name="connections">111398</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">111398</int>
+				<string name="type">CheckGlobalFlag</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">3 0</vec2>
+				<dictionary name="parameters">
+					<string name="flag">machine_pump_start</string>
+					<dictionary name="on-true">
+						<int-arr name="static">111244</int-arr>
+					</dictionary>
+					<dictionary name="on-false">
+					</dictionary>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">111400</int>
+				<string name="type">GlobalEventTrigger</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">5 -2</vec2>
+				<string name="parameters">LevelLoaded</string>
+				<int-arr name="connections">111398</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+		</array>
+	</dictionary>
+	<dictionary name="lighting">
+		<array name="lights"></array>
+		<int-arr name="shadow-color">135 128 128 255</int-arr>
+		<int-arr name="ambient-color">50 50 50 255</int-arr>
+		<int-arr name="add-color">0 0 0 255</int-arr>
+	</dictionary>
+	<dictionary name="prefabs">
+	</dictionary>
+</dictionary>
+</prefab>

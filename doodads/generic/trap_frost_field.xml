@@ -1,0 +1,40 @@
+<doodad defaultlayer="0" minimap="menus/minimap.xml:trap_frost_floor">
+	<sprite scale="16" name="inactive">
+		<texture>doodads/generic/trap_frost.png</texture>
+		<origin>16 16</origin>	
+		<frame>224 32 32 32</frame>			
+	</sprite>					
+	
+	<sprite random-start="true" scale="16" name="active">
+		<texture>doodads/generic/trap_frost.png</texture>
+		<origin>16 16</origin>	
+		<frame time="150">128 32 32 32</frame>											
+	</sprite>	
+
+	<sprite scale="16" name="activate">
+		<texture>doodads/generic/trap_frost.png</texture>
+		<origin>16 16</origin>	
+		<frame time="75">0 32 32 32</frame>		
+		<frame time="75">32 32 32 32</frame>															
+		<frame time="75">64 32 32 32</frame>															
+		<frame time="75">96 32 32 32</frame>																													
+	</sprite>
+	
+	<sprite scale="16" name="deactivate">
+		<texture>doodads/generic/trap_frost.png</texture>
+		<origin>16 16</origin>													
+			<frame time="75">96 32 32 32</frame>
+			<frame time="75">64 32 32 32</frame>
+			<frame time="75">32 32 32 32</frame>
+			<frame time="75">0 32 32 32</frame>
+	</sprite>
+	
+	<states default="active">
+		<transition from="deactivate" to="inactive" />
+		<transition from="activate" to="active" />		
+	</states>			
+	
+</doodad>
+
+
+

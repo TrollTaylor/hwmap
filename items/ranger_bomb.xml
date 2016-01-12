@@ -1,0 +1,51 @@
+<item behavior="bomb">
+	<behavior>
+		<dictionary>
+			<entry name="dmg-all"><bool>false</bool></entry>
+			
+			<entry name="explode-delay"><int>1000</int></entry>
+			<entry name="explode-snd"><string>sound/players.xml:ranger_bomb</string></entry>
+			<entry name="explode-particle"><string>effects/particles.xml:fire-particle</string></entry>
+			<entry name="gib"><string>effects/gibs/gib_bomb.xml</string></entry>	
+		</dictionary>
+	</behavior>
+
+	<sprite scale="16">
+		<texture>items/bomb_1.png</texture>
+		<origin>16 19</origin>
+		<frame time="100">0 0 32 32</frame>
+		<frame time="100">32 0 32 32</frame>
+		<frame time="100">64 0 32 32</frame>
+		<frame time="100">96 0 32 32</frame>
+		<frame time="100">128 0 32 32</frame>
+		<frame time="100">160 0 32 32</frame>
+		<frame time="100">0 32 32 32</frame>
+		<frame time="100">32 32 32 32</frame>
+		<frame time="100">64 32 32 32</frame>
+		<frame time="100">96 32 32 32</frame>
+		<frame time="50">128 32 32 32</frame>
+		<frame time="50">160 32 32 32</frame>
+		<frame time="33">160 32 32 32</frame>
+		<frame time="33">192 32 32 32</frame>
+		<frame time="33">224 32 32 32</frame>
+	</sprite>
+	
+	<light>
+		<origin>0 -4</origin>
+		<mul>
+			<range>100</range>
+			<color1>100 100 100</color1>
+			<color2>0 0 0</color2>
+			<color3>0 0 0</color3>
+		</mul>
+		<add>
+			<range>64</range>
+			<color1>0 25 0</color1>
+			<color2>0 0 0</color2>
+			<color3>0 0 0</color3>
+		</add>
+	</light>		
+	
+	<collision shoot-through="true">
+	</collision>
+</item>

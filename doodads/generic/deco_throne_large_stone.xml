@@ -1,0 +1,13 @@
+<doodad ao="false">
+	<sprite scale="16">
+		<texture>doodads/generic/deco_throne.png</texture>
+		<origin>8 26</origin>
+		<frame>0 0 18 32</frame>
+	</sprite>
+	<polygon collision="true" shadow="false">
+		<point>-9 6</point>
+		<point>-9 -10</point>		
+		<point>9 -10</point>		
+		<point>9 6</point>
+	</polygon>				
+</doodad>

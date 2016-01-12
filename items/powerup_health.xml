@@ -1,0 +1,34 @@
+<item behavior="food">
+	<behavior>
+		<dictionary>
+			<entry name="hp"><int>250</int></entry>
+			<entry name="pickup-snd"><string>sound/apple.wav</string></entry>
+			<entry name="pickup-particle"><string>effects/particles.xml:health</string></entry>
+		</dictionary>
+	</behavior>
+
+	<sprite scale="16">
+		<texture>items/items.png</texture>
+		<origin>8 12</origin>
+		<frame time="200">0 224 16 16</frame>
+		<frame time="200">16 224 16 16</frame>
+		<frame time="200">32 224 16 16</frame>
+		<frame time="200">16 224 16 16</frame>		
+		<glow scale="16">
+			<texture>items/items.png</texture>
+				<frame time="200">48 224 16 16</frame>
+				<frame time="200">64 224 16 16</frame>
+				<frame time="200">80 224 16 16</frame>
+				<frame time="200">64 224 16 16</frame>		
+		</glow>	
+	</sprite>
+	
+	<collision shoot-through="true">
+		<polygon>
+			<point>-7 0</point>
+			<point>-7 -13</point>
+			<point>7 -13</point>
+			<point>7 0</point>
+		</polygon>
+	</collision>
+</item>

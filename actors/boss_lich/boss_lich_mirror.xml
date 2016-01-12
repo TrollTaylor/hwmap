@@ -1,0 +1,275 @@
+<actor behavior="caster">
+	<behavior>
+		<dictionary>
+			<entry name="hp"><int>50</int></entry>
+			<entry name="multiplayer-scale-hp"><bool>true</bool></entry>
+			<entry name="ignore-hit-effects"><bool>true</bool></entry>
+			<entry name="ignore-trap-damage"><bool>false</bool></entry>
+			
+			<entry name="speed"><float>0.55</float></entry>
+			<entry name="aggro-range"><float>45</float></entry>
+			<entry name="range"><float>7</float></entry>
+			<entry name="death-snd"><string>sound/monsters.xml:boss_lich_mirror_death</string></entry>
+			<entry name="hit-effect"><string>effects/particles.xml:hit_boss_lich</string></entry>
+			<entry name="hit-particle"><string>effects/particles.xml:particle_boss_lich</string></entry>
+
+			<dictionary name="summon">
+				<entry name="actor"><string>actors/eye_1_small.xml</string></entry>
+				<entry name="timer"><int>2000</int></entry>
+				<entry name="parts"><int>3</int></entry>
+				<entry name="effect"><string>effects/particles.xml:flash_summon</string></entry>
+				<entry name="sound"><string>sound/monsters.xml:lich_summon</string></entry>
+			</dictionary>
+			
+			<dictionary name="seeker">
+				<entry name="timer"><int>1500</int></entry>
+				<entry name="projectile"><string>projectiles/enemy_lich_1_elite.xml</string></entry>
+				<entry name="parts"><int>2</int></entry>
+				<entry name="span"><int>180</int></entry>
+				<entry name="ttl"><int>1500</int></entry>
+				<entry name="ang-speed"><float>0.1</float></entry>
+				<entry name="sound"><string>sound/monsters.xml:lich_seeker</string></entry>
+			</dictionary>
+			
+			<dictionary name="loot">
+				<string name="origin">0 0</string>
+				<float name="spread">0.33</float>
+					<array name="loot">		
+						<array><int>1000</int><string>actors/bat_3.xml</string></array>
+						<array><int>1000</int><string>actors/bat_3.xml</string></array>
+						<array><int>1000</int><string>actors/bat_3.xml</string></array>
+						<array><int>1000</int><string>actors/bat_3.xml</string></array>
+						<array><int>1000</int><string>actors/bat_3.xml</string></array>
+						<array><int>1000</int><string>actors/bat_3.xml</string></array>
+						<array><int>1000</int><string>actors/bat_3.xml</string></array>
+						
+					</array>
+			</dictionary>				
+			
+		</dictionary>
+	</behavior>
+
+	
+	<!-- Idle -->
+	<sprite scale="16" name="east">
+		<texture>actors/boss_lich/lich.png</texture>
+		<origin>32 40</origin>
+		<frame>0 0 64 64</frame>
+	</sprite>
+
+	<sprite scale="16" name="northeast">
+		<texture>actors/boss_lich/lich.png</texture>
+		<origin>32 40</origin>
+		<frame>64 0 64 64</frame>
+	</sprite>
+
+	<sprite scale="16" name="north">
+		<texture>actors/boss_lich/lich.png</texture>
+		<origin>32 40</origin>
+		<frame>128 0 64 64</frame>
+	</sprite>
+	
+	<sprite scale="16" name="northwest">
+		<texture>actors/boss_lich/lich.png</texture>
+		<origin>32 40</origin>
+		<frame>192 0 64 64</frame>
+	</sprite>
+	
+	<sprite scale="16" name="west">
+		<texture>actors/boss_lich/lich.png</texture>
+		<origin>32 40</origin>
+		<frame>256 0 64 64</frame>
+	</sprite>
+	
+	<sprite scale="16" name="southwest">
+		<texture>actors/boss_lich/lich.png</texture>
+		<origin>32 40</origin>
+		<frame>320 0 64 64</frame>
+	</sprite>
+	
+	<sprite scale="16" name="south">
+		<texture>actors/boss_lich/lich.png</texture>
+		<origin>32 40</origin>
+		<frame>384 0 64 64</frame>
+	</sprite>
+	
+	<sprite scale="16" name="southeast">
+		<texture>actors/boss_lich/lich.png</texture>
+		<origin>32 40</origin>
+		<frame>448 0 64 64</frame>
+	</sprite>
+
+	
+	
+	
+	<!-- Walk -->
+	<sprite scale="16" name="east-walk">
+		<texture>actors/boss_lich/lich.png</texture>
+		<origin>32 40</origin>
+		<frame time="80">0 0 64 64</frame>
+		<frame time="80">0 64 64 64</frame>
+		<frame time="80">0 128 64 64</frame>
+		<frame time="80">0 192 64 64</frame>
+		<frame time="80">0 256 64 64</frame>
+	</sprite>
+
+	<sprite scale="16" name="northeast-walk">
+		<texture>actors/boss_lich/lich.png</texture>
+		<origin>32 40</origin>
+		<frame time="80">64 0 64 64</frame>
+		<frame time="80">64 64 64 64</frame>
+		<frame time="80">64 128 64 64</frame>
+		<frame time="80">64 192 64 64</frame>
+		<frame time="80">64 256 64 64</frame>
+	</sprite>
+
+	<sprite scale="16" name="north-walk">
+		<texture>actors/boss_lich/lich.png</texture>
+		<origin>32 40</origin>
+		<frame time="80">128 0 64 64</frame>
+		<frame time="80">128 64 64 64</frame>
+		<frame time="80">128 128 64 64</frame>
+		<frame time="80">128 192 64 64</frame>
+		<frame time="80">128 256 64 64</frame>
+	</sprite>
+	
+	<sprite scale="16" name="northwest-walk">
+		<texture>actors/boss_lich/lich.png</texture>
+		<origin>32 40</origin>
+		<frame time="80">192 0 64 64</frame>
+		<frame time="80">192 64 64 64</frame>
+		<frame time="80">192 128 64 64</frame>
+		<frame time="80">192 192 64 64</frame>
+		<frame time="80">192 256 64 64</frame>
+	</sprite>
+	
+	<sprite scale="16" name="west-walk">
+		<texture>actors/boss_lich/lich.png</texture>
+		<origin>32 40</origin>
+		<frame time="80">256 0 64 64</frame>
+		<frame time="80">256 64 64 64</frame>
+		<frame time="80">256 128 64 64</frame>
+		<frame time="80">256 192 64 64</frame>
+		<frame time="80">256 256 64 64</frame>
+	</sprite>
+	
+	<sprite scale="16" name="southwest-walk">
+		<texture>actors/boss_lich/lich.png</texture>
+		<origin>32 40</origin>
+		<frame time="80">320 0 64 64</frame>
+		<frame time="80">320 64 64 64</frame>
+		<frame time="80">320 128 64 64</frame>
+		<frame time="80">320 192 64 64</frame>
+		<frame time="80">320 256 64 64</frame>
+	</sprite>
+	
+	<sprite scale="16" name="south-walk">
+		<texture>actors/boss_lich/lich.png</texture>
+		<origin>32 40</origin>
+		<frame time="80">384 0 64 64</frame>
+		<frame time="80">384 64 64 64</frame>
+		<frame time="80">384 128 64 64</frame>
+		<frame time="80">384 192 64 64</frame>
+		<frame time="80">384 256 64 64</frame>
+	</sprite>
+	
+	<sprite scale="16" name="southeast-walk">
+		<texture>actors/boss_lich/lich.png</texture>
+		<origin>32 40</origin>
+		<frame time="80">448 0 64 64</frame>
+		<frame time="80">448 64 64 64</frame>
+		<frame time="80">448 128 64 64</frame>
+		<frame time="80">448 192 64 64</frame>
+		<frame time="80">448 256 64 64</frame>
+	</sprite>
+	
+	
+	
+	<!-- Attack -->
+	<sprite scale="16" name="east-attack">
+		<texture>actors/boss_lich/lich.png</texture>
+		<origin>32 40</origin>
+		<frame time="150">0 320 64 64</frame>
+		<frame time="150">0 384 64 64</frame>
+		<frame time="150">0 448 64 64</frame>
+		<frame time="150">0 512 64 64</frame>
+	</sprite>
+
+	<sprite scale="16" name="northeast-attack">
+		<texture>actors/boss_lich/lich.png</texture>
+		<origin>32 40</origin>
+		<frame time="150">64 320 64 64</frame>
+		<frame time="150">64 384 64 64</frame>
+		<frame time="150">64 448 64 64</frame>
+		<frame time="150">64 512 64 64</frame>
+	</sprite>
+
+	<sprite scale="16" name="north-attack">
+		<texture>actors/boss_lich/lich.png</texture>
+		<origin>32 40</origin>
+		<frame time="150">128 320 64 64</frame>
+		<frame time="150">128 384 64 64</frame>
+		<frame time="150">128 448 64 64</frame>
+		<frame time="150">128 512 64 64</frame>
+	</sprite>
+	
+	<sprite scale="16" name="northwest-attack">
+		<texture>actors/boss_lich/lich.png</texture>
+		<origin>32 40</origin>
+		<frame time="150">192 320 64 64</frame>
+		<frame time="150">192 384 64 64</frame>
+		<frame time="150">192 448 64 64</frame>
+		<frame time="150">192 512 64 64</frame>
+	</sprite>
+	
+	<sprite scale="16" name="west-attack">
+		<texture>actors/boss_lich/lich.png</texture>
+		<origin>32 40</origin>
+		<frame time="150">256 320 64 64</frame>
+		<frame time="150">256 384 64 64</frame>
+		<frame time="150">256 448 64 64</frame>
+		<frame time="150">256 512 64 64</frame>
+	</sprite>
+	
+	<sprite scale="16" name="southwest-attack">
+		<texture>actors/boss_lich/lich.png</texture>
+		<origin>32 40</origin>
+		<frame time="150">320 320 64 64</frame>
+		<frame time="150">320 384 64 64</frame>
+		<frame time="150">320 448 64 64</frame>
+		<frame time="150">320 512 64 64</frame>
+	</sprite>
+	
+	<sprite scale="16" name="south-attack">
+		<texture>actors/boss_lich/lich.png</texture>
+		<origin>32 40</origin>
+		<frame time="150">384 320 64 64</frame>
+		<frame time="150">384 384 64 64</frame>
+		<frame time="150">384 448 64 64</frame>
+		<frame time="150">384 512 64 64</frame>
+	</sprite>
+	
+	<sprite scale="16" name="southeast-attack">
+		<texture>actors/boss_lich/lich.png</texture>
+		<origin>32 40</origin>
+		<frame time="150">448 320 64 64</frame>
+		<frame time="150">448 384 64 64</frame>
+		<frame time="150">448 448 64 64</frame>
+		<frame time="150">448 512 64 64</frame>
+	</sprite>
+	
+	
+	<sprite scale="16" name="death">
+		<texture>actors/boss_lich/lich.png</texture>
+		<origin>32 40</origin>
+		<frame time="100">64 640 64 64</frame>
+		<frame time="100">128 640 64 64</frame>
+		<frame time="100">192 640 64 64</frame>
+		<frame time="100">256 640 64 64</frame>
+		<frame time="100">320 640 64 64</frame>
+	</sprite>
+	
+	<collision static="false">
+		<circle offset="0 3" radius="8" />
+	</collision>
+</actor>

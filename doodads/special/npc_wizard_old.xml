@@ -1,0 +1,11 @@
+<doodad ao="false">
+	<sprite scale="16">
+		<texture>doodads/special/npc.png</texture>
+		<origin>5 10</origin>					
+		<frame>13 24 11 15</frame>
+	</sprite>		
+	<collision static="true">
+		<circle offset="0 0" radius="4" />
+	</collision>
+	
+</doodad>

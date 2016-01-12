@@ -1,0 +1,7 @@
+<doodad defaultlayer="-30">
+	<sprite scale="16">
+		<texture>doodads/theme_d/d_special_crossing.png</texture>
+		<origin>128 128</origin>
+		<frame>0 0 256 256</frame>				
+	</sprite>
+</doodad>

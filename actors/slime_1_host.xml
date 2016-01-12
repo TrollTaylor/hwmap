@@ -1,0 +1,80 @@
+<actor behavior="bomb" minimap="menus/minimap.xml:enemy">
+	<behavior>
+		<dictionary>
+			<entry name="hp"><int>1</int></entry>
+			<entry name="dmg"><int>10</int></entry>
+			<entry name="buff"><string>buffs/slime_poison.xml</string></entry>
+			<entry name="explode-delay"><int>100</int></entry>
+			<entry name="min-range"><float>2</float></entry>
+			<entry name="max-range"><float>5</float></entry>
+			<entry name="dmg-range"><float>1.25</float></entry>
+			<entry name="pulse-states"><int>4</int></entry>
+			<entry name="hit-effect"><string>effects/particles.xml:hit_slime_1</string></entry>		
+			<entry name="hit-particle"><string>effects/particles.xml:particle_slime_1</string></entry>		
+			<entry name="death-snd"><string>sound/monsters.xml:death_slime_host</string></entry>			
+			<entry name="spawn-on-death"><string>actors/slime_1_spawn.xml</string></entry>
+			<entry name="spawn-on-death-count"><int>3</int></entry>
+			<entry name="corpse"><string>actors/slime_1_host_razed.xml</string></entry>								
+		</dictionary>
+	</behavior>
+
+	
+	<sprite scale="16" random-start="true" name="default">
+		<texture>actors/slime_1_host.png</texture>
+		<origin>17 20</origin>
+		<frame time="500">0 0 32 32</frame>
+		<frame time="500">32 0 32 32</frame>		
+		<frame time="500">0 32 32 32</frame>		
+		<frame time="500">32 0 32 32</frame>				
+	</sprite>
+	
+	<sprite scale="16" name="pulse-3">
+		<texture>actors/slime_1_host.png</texture>
+		<origin>17 20</origin>
+		<frame time="500">0 0 32 32</frame>
+		<frame time="500">32 0 32 32</frame>		
+		<frame time="500">0 32 32 32</frame>		
+		<frame time="500">32 0 32 32</frame>			
+	</sprite>	
+
+	<sprite scale="16" name="pulse-2">
+		<texture>actors/slime_1_host.png</texture>
+		<origin>17 20</origin>
+		<frame time="250">0 0 32 32</frame>
+		<frame time="250">32 0 32 32</frame>		
+		<frame time="250">0 32 32 32</frame>		
+		<frame time="250">32 0 32 32</frame>		
+	</sprite>
+	
+	<sprite scale="16" name="pulse-1">
+		<texture>actors/slime_1_host.png</texture>
+		<origin>17 20</origin>
+		<frame time="100">0 0 32 32</frame>
+		<frame time="100">32 0 32 32</frame>		
+		<frame time="100">0 32 32 32</frame>		
+		<frame time="100">32 0 32 32</frame>		
+	</sprite>
+	
+	<sprite scale="16" name="pulse-0">
+		<texture>actors/slime_1_host.png</texture>
+		<origin>17 20</origin>
+		<frame time="25">0 0 32 32</frame>
+		<frame time="25">32 0 32 32</frame>		
+		<frame time="25">0 32 32 32</frame>		
+		<frame time="25">32 0 32 32</frame>			
+	</sprite>
+
+	<sprite scale="16" name="explode">
+		<texture>actors/slime_1_host.png</texture>
+		<origin>17 20</origin>
+		<frame time="100">32 32 32 32</frame>
+		<frame time="100">0 64 32 32</frame>			
+		<frame time="100">32 64 32 32</frame>					
+	</sprite>
+	
+	
+	
+	<collision static="true">
+		<circle offset="0 0" radius="5" />
+	</collision>
+</actor>

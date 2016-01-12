@@ -1,0 +1,10 @@
+<spritebank>
+
+    <sprite scale="16" name="parallax_rain2">
+        <texture>parallax/parallax_rain2.png</texture>
+			<frame>	0 0 256 256</frame>
+    </sprite>
+	
+</spritebank>
+
+

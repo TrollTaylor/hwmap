@@ -1,0 +1,231 @@
+<actor collision="10" behavior="composite" minimap="menus/minimap.xml:enemy_mb">
+	<behavior>
+		<dictionary>
+			<entry name="hp"><int>750</int></entry>
+			<entry name="multiplayer-scale-hp"><bool>true</bool></entry>
+			<float name="aggro-range">10</float>
+			<float name="max-range">20</float>
+			<entry name="ignore-hit-effects"><bool>true</bool></entry>
+			<entry name="gib"><string>effects/gibs/gib_maggot_1_mb.xml</string></entry>
+			<vec2 name="hp-bar">0 -1.0</vec2>
+			<dictionary name="movement">
+				<string name="type">ranged</string>
+				<float name="speed">0.45</float>
+				<float name="range">7</float>
+			</dictionary>
+			<array name="skills">
+				<dictionary>
+					<string name="type">nova</string>
+					<string name="anim">attack</string>
+					<int name="cooldown">2500</int>
+					<float name="range">10</float>
+					<string name="sound">sound/monsters.xml:lich_seeker</string>
+					<string name="proj">projectiles/enemy_maggot_1_mb.xml</string>
+					<int name="num">16</int>
+				</dictionary>
+				<dictionary>
+					<string name="type">buff</string>
+					<int name="cooldown">1000</int>
+					<float name="range">13</float>
+					<float name="cast-range">13</float>
+					<string name="category">Enemy</string>
+					<string name="buff">buffs/bloodlust.xml</string>
+				</dictionary>
+				<dictionary>
+					<string name="type">summon</string>
+					<int name="cooldown">2100</int>
+					<float name="range">15</float>
+					<int name="num">5</int>
+					<string name="actor">actors/maggot_1_small.xml</string>
+					<string name="sound">sound/monsters.xml:lich_summon</string>
+					<string name="effect">effects/particles.xml:flash_summon</string>
+				</dictionary>
+			</array>
+			
+			<dictionary name="loot">
+				<string name="origin">0 0</string>
+				<float name="spread">0.33</float>
+					<array name="loot">
+						<array><int>1000</int><string>actors/maggot_1_small.xml</string></array>
+						<array><int>1000</int><string>actors/maggot_1_small.xml</string></array>
+						<array><int>1000</int><string>actors/maggot_1_small.xml</string></array>
+						<array><int>1000</int><string>actors/maggot_1_small.xml</string></array>
+						<array><int>1000</int><string>actors/maggot_1_small.xml</string></array>
+						<array><int>1000</int><string>actors/maggot_1_small.xml</string></array>
+						<array><int>1000</int><string>actors/maggot_1_small.xml</string></array>
+						<array><int>1000</int><string>actors/maggot_1_small.xml</string></array>
+						<array><int>1000</int><string>actors/maggot_1_elite.xml</string></array>
+						<array><int>1000</int><string>actors/maggot_1_elite.xml</string></array>
+						<array><int>1000</int><string>actors/maggot_1.xml</string></array>
+						<array><int>1000</int><string>actors/maggot_1.xml</string></array>
+						<array>	
+							<int>1000</int><string>items/collectable_1.xml</string>																									
+						</array>							
+						<array>
+							<int>300</int><string>items/upgrade_health.xml</string>	
+							<int>300</int><string>items/upgrade_mana.xml</string>	
+							<int>300</int><string>items/upgrade_damage.xml</string>
+							<int>100</int><string>items/upgrade_defense.xml</string>
+						</array>					
+					</array>
+			</dictionary>		
+			
+			<entry name="death-snd"><string>sound/monsters.xml:death_maggot</string></entry>
+			<entry name="hit-effect"><string>effects/particles.xml:hit_tick_2</string></entry>		
+			<entry name="hit-particle"><string>effects/particles.xml:particle_tick_2</string></entry>	
+		</dictionary>
+	</behavior>	
+
+
+	<!-- Idle -->
+	<sprite scale="16" random-start="true" name="east">
+		<texture>actors/maggot_1_mb.png</texture>
+		<origin>16 16</origin>
+		<frame time="200">64 32 32 32</frame>
+	</sprite>
+
+	<sprite scale="16" random-start="true" name="northeast">
+		<texture>actors/maggot_1_mb.png</texture>
+		<origin>16 16</origin>
+		<frame time="200">64 0 32 32</frame>
+	</sprite>
+
+	<sprite scale="16" random-start="true" name="north">
+		<texture>actors/maggot_1_mb.png</texture>
+		<origin>16 16</origin>
+		<frame time="200">32 0 32 32</frame>
+	</sprite>
+	
+	<sprite scale="16" random-start="true" name="northwest">
+		<texture>actors/maggot_1_mb.png</texture>
+		<origin>16 16</origin>
+		<frame time="200">0 0 32 32</frame>
+	</sprite>
+	
+	<sprite scale="16" random-start="true" name="west">
+		<texture>actors/maggot_1_mb.png</texture>
+		<origin>16 16</origin>
+		<frame time="200">0 32 32 32</frame>
+	</sprite>
+	
+	<sprite scale="16" random-start="true" name="southwest">
+		<texture>actors/maggot_1_mb.png</texture>
+		<origin>16 16</origin>
+		<frame time="200">0 64 32 32</frame>
+	</sprite>
+	
+	<sprite scale="16" random-start="true" name="south">
+		<texture>actors/maggot_1_mb.png</texture>
+		<origin>16 16</origin>
+		<frame time="200">32 64 32 32</frame>
+	</sprite>
+	
+	<sprite scale="16" random-start="true" name="southeast">
+		<texture>actors/maggot_1_mb.png</texture>
+		<origin>16 16</origin>
+		<frame time="200">64 64 32 32</frame>
+	</sprite>
+
+	
+	<!-- Walk -->
+	<sprite scale="16" name="east-walk">
+		<texture>actors/maggot_1_mb.png</texture>
+		<origin>16 16</origin>
+		<frame time="200">64 32 32 32</frame>		
+		<frame time="200">64 128 32 32</frame>
+		<frame time="200">160 128 32 32</frame>
+	</sprite>
+
+	<sprite scale="16" name="northeast-walk">
+		<texture>actors/maggot_1_mb.png</texture>
+		<origin>16 16</origin>
+		<frame time="200">64 0 32 32</frame>		
+		<frame time="200">64 96 32 32</frame>
+		<frame time="200">160 96 32 32</frame>
+	</sprite>
+
+	<sprite scale="16" name="north-walk">
+		<texture>actors/maggot_1_mb.png</texture>
+		<origin>16 16</origin>
+		<frame time="200">32 0 32 32</frame>		
+		<frame time="200">32 96 32 32</frame>
+		<frame time="200">128 96 32 32</frame>
+	</sprite>
+	
+	<sprite scale="16" name="northwest-walk">
+		<texture>actors/maggot_1_mb.png</texture>
+		<origin>16 16</origin>
+		<frame time="200">0 0 32 32</frame>		
+		<frame time="200">0 96 32 32</frame>
+		<frame time="200">96 96 32 32</frame>		
+	</sprite>
+	
+	<sprite scale="16" name="west-walk">
+		<texture>actors/maggot_1_mb.png</texture>
+		<origin>16 16</origin>
+		<frame time="200">0 32 32 32</frame>		
+		<frame time="200">0 128 32 32</frame>
+		<frame time="200">96 128 32 32</frame>
+	</sprite>
+	
+	<sprite scale="16" name="southwest-walk">
+		<texture>actors/maggot_1_mb.png</texture>
+		<origin>16 16</origin>
+		<frame time="200">0 64 32 32</frame>		
+		<frame time="200">0 160 32 32</frame>
+		<frame time="200">96 160 32 32</frame>
+	</sprite>
+	
+	<sprite scale="16" name="south-walk">
+		<texture>actors/maggot_1_mb.png</texture>
+		<origin>16 16</origin>
+		<frame time="200">32 64 32 32</frame>		
+		<frame time="200">32 160 32 32</frame>
+		<frame time="200">128 160 32 32</frame>
+	</sprite>
+	
+	<sprite scale="16" name="southeast-walk">
+		<texture>actors/maggot_1_mb.png</texture>
+		<origin>16 16</origin>
+		<frame time="200">64 64 32 32</frame>		
+		<frame time="200">64 160 32 32</frame>
+		<frame time="200">160 160 32 32</frame>			
+	</sprite>
+	
+
+	<!-- Attack -->
+	<sprite scale="16" name="attack">
+		<texture>actors/maggot_1_mb.png</texture>
+		<origin>16 16</origin>
+		<frame time="100">0 192 32 32</frame>
+		<frame time="100">32 192 32 32</frame>
+		<frame time="100">0 192 32 32</frame>
+		<frame time="100">32 192 32 32</frame>
+		<frame time="100">64 192 32 32</frame>
+		<frame time="100">32 192 32 32</frame>
+		<frame time="100">96 192 32 32</frame>
+		<frame time="100">64 192 32 32</frame>
+		<frame time="100">96 192 32 32</frame>
+		<frame time="100">128 192 32 32</frame>
+		<frame time="100">96 192 32 32</frame>
+		<frame time="100">128 192 32 32</frame>
+		<frame time="100">160 192 32 32</frame>
+		<glow scale="16">
+			<texture>actors/maggot_1_mb.png</texture>
+			<frame time="100">0 224 32 32</frame>
+		<frame time="100">32 224 32 32</frame>
+		<frame time="100">0 224 32 32</frame>
+		<frame time="100">32 224 32 32</frame>
+		<frame time="100">64 224 32 32</frame>
+		<frame time="100">32 224 32 32</frame>
+		<frame time="100">96 224 32 32</frame>
+		<frame time="100">64 224 32 32</frame>
+		<frame time="100">96 224 32 32</frame>
+		<frame time="100">128 224 32 32</frame>
+		<frame time="100">96 224 32 32</frame>
+		<frame time="100">128 224 32 32</frame>
+		<frame time="100">160 224 32 32</frame>
+		</glow>		
+	</sprite>
+
+</actor>

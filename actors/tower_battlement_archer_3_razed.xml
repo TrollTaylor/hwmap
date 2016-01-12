@@ -1,0 +1,7 @@
+<doodad defaultlayer="-1">
+	<sprite scale="16">
+		<texture>actors/tower_battlement_archer_3.png</texture>
+		<origin>16 16</origin>					
+		<frame time="100">0 64 32 32</frame>
+	</sprite>
+</doodad>

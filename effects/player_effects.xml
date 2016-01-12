@@ -1,0 +1,139 @@
+<spritebank>
+	<sprite scale="16" name="lowhp_1">
+		<texture>effects/player_effects.png</texture>
+		<origin>8 28</origin>
+		<frame time="100">0 0 16 16</frame>
+		<frame time="100">16 0 16 16</frame>
+		<frame time="100">32 0 16 16</frame>
+		<frame time="100">48 0 16 16</frame>
+		<frame time="100">32 0 16 16</frame>
+		<frame time="100">16 0 16 16</frame>
+	</sprite>
+	<sprite scale="16" name="lowhp_2">
+		<texture>effects/player_effects.png</texture>
+		<origin>8 28</origin>
+		<frame time="80">0 0 16 16</frame>
+		<frame time="80">16 0 16 16</frame>
+		<frame time="80">32 0 16 16</frame>
+		<frame time="80">48 0 16 16</frame>
+		<frame time="80">32 0 16 16</frame>
+		<frame time="80">16 0 16 16</frame>
+	</sprite>
+	<sprite scale="16" name="lowhp_3">
+		<texture>effects/player_effects.png</texture>
+		<origin>8 28</origin>
+		<frame time="60">0 16 16 16</frame>
+		<frame time="60">16 16 16 16</frame>
+		<frame time="60">32 16 16 16</frame>
+		<frame time="60">48 16 16 16</frame>
+		<frame time="60">32 16 16 16</frame>
+		<frame time="60">16 16 16 16</frame>
+	</sprite>
+	<sprite scale="16" name="lowhp_4">
+		<texture>effects/player_effects.png</texture>
+		<origin>8 28</origin>
+		<frame time="30">0 16 16 16</frame>
+		<frame time="30">16 16 16 16</frame>
+		<frame time="30">32 16 16 16</frame>
+		<frame time="30">48 16 16 16</frame>
+		<frame time="30">32 16 16 16</frame>
+		<frame time="30">16 16 16 16</frame>
+		<glow scale="16">
+			<texture>effects/player_effects.png</texture>
+			<frame time="30">64 16 16 16</frame>
+		</glow>		
+	</sprite>
+	
+	<sprite scale="16" name="combo_overlay">
+		<texture>effects/player_effects.png</texture>
+		<origin>10 14</origin>
+		<frame time="100">0 32 19 19</frame>		
+		<frame time="100">19 32 19 19</frame>
+		<frame time="100">38 32 19 19</frame>
+		<frame time="100">0 51 19 19</frame>	
+		<frame time="100">38 32 19 19</frame>		
+		<frame time="100">19 32 19 19</frame>					
+		<glow scale="16">
+			<texture>effects/player_effects.png</texture>
+			<frame time="100">0 32 19 19</frame>
+			<frame time="100">19 32 19 19</frame>
+			<frame time="100">38 32 19 19</frame>
+			<frame time="100">0 51 19 19</frame>
+			<frame time="100">38 32 19 19</frame>
+			<frame time="100">19 32 19 19</frame>
+		</glow>				
+	</sprite>
+	
+	<sprite scale="16" name="meteor_marker">
+		<texture>effects/player_meteor_strike.png</texture>
+		<origin>28 28</origin>
+		<frame time="100">0 0 56 56</frame>
+		<frame time="100">56 0 56 56</frame>
+		<frame time="100">112 0 56 56</frame>
+		<frame time="100">168 0 56 56</frame>
+		<frame time="100">0 56 56 56</frame>
+	</sprite>
+	
+	<sprite scale="16" name="priest_drain_area">
+		<texture>effects/player_effects.png</texture>
+		<origin>40 40</origin>
+		<frame time="100">0 352 80 80</frame>
+		<frame time="100">80 352 80 80</frame>
+		<frame time="100">160 352 80 80</frame>
+		<frame time="100">240 352 80 80</frame>
+		<frame time="100">320 352 80 80</frame>
+		<frame time="100">400 352 80 80</frame>
+		<frame time="100">0 432 80 80</frame>
+		<frame time="100">80 432 80 80</frame>
+		<frame time="100">160 432 80 80</frame>
+		<glow scale="80">
+			<texture>effects/player_effects.png</texture>
+			<frame time="100">0 512 80 80</frame>
+			<frame time="100">80 512 80 80</frame>
+			<frame time="100">160 512 80 80</frame>
+			<frame time="100">240 512 80 80</frame>
+			<frame time="100">320 512 80 80</frame>
+			<frame time="100">400 512 80 80</frame>
+			<frame time="100">0 592 80 80</frame>
+			<frame time="100">80 592 80 80</frame>
+			<frame time="100">160 592 80 80</frame>
+		</glow>	
+	</sprite>
+	
+	<sprite scale="16" name="priest_cripple_aura">
+		<texture>effects/player_effects.png</texture>
+		<origin>32 30</origin>
+		<frame time="100">74 0 64 64</frame>
+		<frame time="100">138 0 64 64</frame>
+		<frame time="100">202 0 64 64</frame>
+		<frame time="100">266 0 64 64</frame>
+		<frame time="100">330 0 64 64</frame>
+		<frame time="100">394 0 64 64</frame>
+		<frame time="100">458 0 64 64</frame>
+		<frame time="100">522 0 64 64</frame>
+			<glow scale="80">
+			<texture>effects/player_effects.png</texture>
+				<frame time="100">138 64 64 64</frame>
+				<frame time="100">202 64 64 64</frame>
+				<frame time="100">266 64 64 64</frame>
+				<frame time="100">330 64 64 64</frame>
+				<frame time="100">394 64 64 64</frame>
+				<frame time="100">458 64 64 64</frame>
+				<frame time="100">522 64 64 64</frame>
+				<frame time="100">586 64 64 64</frame>
+		</glow>		
+	</sprite>
+	
+	<sprite scale="16" name="knight_heal_range">
+		<texture>effects/player_effects.png</texture>
+		<origin>56 56</origin>
+		<frame time="75">0 128 112 112</frame>
+		<frame time="75">112 128 112 112</frame>
+		<frame time="75">224 128 112 112</frame>
+		<frame time="75">336 128 112 112</frame>
+		<frame time="75">0 240 112 112</frame>
+		<frame time="75">112 240 112 112</frame>
+		<frame time="75">224 240 112 112</frame>
+		<frame time="75">336 240 112 112</frame>		
+	</sprite>
+</spritebank>

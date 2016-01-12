@@ -1,0 +1,643 @@
+<actor behavior="composite" minimap="menus/minimap.xml:enemy_static">
+	<behavior>
+		<dictionary>
+			<entry name="hp"><int>500</int></entry>
+			<entry name="multiplayer-scale-hp"><bool>true</bool></entry>
+			<float name="aggro-range">15</float>
+			<float name="max-range">15</float>
+			<entry name="ignore-hit-effects"><bool>true</bool></entry>			
+			
+			<entry name="death-snd"><string>sound/monsters.xml:death_tower</string></entry>	
+			<entry name="hit-effect"><string>effects/particles.xml:hit_tick_2</string></entry>	
+			<entry name="hit-particle"><string>effects/particles.xml:fire-particle</string></entry>
+			
+			<entry name="corpse"><string>actors/tower_tracking_1_razed.xml</string></entry>			
+			
+			<float name="editor-range-marker">15</float>	
+			
+			<dictionary name="loot">
+				<string name="origin">0 1</string>
+				<float name="spread">0</float>
+					<array name="loot">
+						<array>	
+							<int>50</int><string>items/collectable_1.xml</string>
+							<int>50</int><string>items/upgrade_health.xml</string>	
+							<int>50</int><string>items/upgrade_mana.xml</string>	
+							<int>50</int><string>items/upgrade_damage.xml</string>
+							<int>50</int><string>items/upgrade_defense.xml</string>																								
+						</array>					
+					</array>
+			</dictionary>						
+			
+			<dictionary name="movement">
+				<string name="type">passive</string>
+				<bool name="set-dir">true</bool>
+			</dictionary>
+			
+			<array name="skills">
+				<dictionary>
+					<bool name="check-shootable">true</bool>
+					<string name="sound">sound/monsters.xml:tower_shoot_beam</string>					
+					<string name="type">spew</string>
+					<int name="cooldown">1200</int>
+					<float name="range">17</float>
+					<string name="chnl-anim-set">attackstatic</string>				
+					<string name="anim-set">attack</string>							
+					<bool name="static-dir">true</bool>
+					<string name="proj">projectiles/enemy_tower_firebeam.xml</string>
+					<float name="spread">0</float>
+					<int name="rate">10</int>
+					<int name="duration">600</int>
+				</dictionary>
+				
+				<dictionary>
+					<bool name="check-shootable">true</bool>
+					<string name="sound">sound/monsters.xml:tower_overload</string>						
+					<string name="type">spew</string>
+					<int name="cooldown">10000</int>
+					<float name="range">20</float>			
+					<string name="chnl-anim-set">overloadstatic</string>				
+					<string name="anim-set">overload</string>							
+					<bool name="static-dir">true</bool>
+					<string name="proj">projectiles/enemy_tower_firebeam_overload.xml</string>
+					<float name="spread">50</float>
+					<int name="rate">5</int>
+					<int name="duration">600</int>
+				</dictionary>				
+				
+			</array>
+			
+
+		</dictionary>
+	</behavior>
+	
+	
+	<sprite scale="16" name="west">
+		<texture>actors/tower_tracking_1.png</texture>
+		<origin>9 27</origin>		
+		<frame>0 0 22 35</frame>
+		<glow scale="16">
+			<texture>actors/tower_tracking_1.png</texture>
+			<frame time="50">176 0 22 35</frame>									
+		</glow>		
+	</sprite>
+	<sprite scale="16" name="northwest">
+		<texture>actors/tower_tracking_1.png</texture>
+		<origin>9 27</origin>
+		<frame>22 0 22 35</frame>
+		<glow scale="16">
+			<texture>actors/tower_tracking_1.png</texture>
+			<frame time="50">176 0 22 35</frame>									
+		</glow>			
+	</sprite>
+	<sprite scale="16" name="north">
+		<texture>actors/tower_tracking_1.png</texture>
+		<origin>9 27</origin>
+		<frame>44 0 22 35</frame>
+		<glow scale="16">
+			<texture>actors/tower_tracking_1.png</texture>
+			<frame time="50">176 0 22 35</frame>									
+		</glow>			
+	</sprite>
+	<sprite scale="16" name="northeast">
+		<texture>actors/tower_tracking_1.png</texture>
+		<origin>9 27</origin>
+		<frame>66 0 22 35</frame>
+		<glow scale="16">
+			<texture>actors/tower_tracking_1.png</texture>
+			<frame time="50">176 0 22 35</frame>									
+		</glow>			
+	</sprite>
+	<sprite scale="16" name="east">
+		<texture>actors/tower_tracking_1.png</texture>
+		<origin>9 27</origin>
+		<frame>88 0 22 35</frame>
+		<glow scale="16">
+			<texture>actors/tower_tracking_1.png</texture>
+			<frame time="50">176 0 22 35</frame>									
+		</glow>			
+	</sprite>
+	<sprite scale="16" name="southeast">
+		<texture>actors/tower_tracking_1.png</texture>
+		<origin>9 27</origin>
+		<frame>110 0 22 35</frame>
+		<glow scale="16">
+			<texture>actors/tower_tracking_1.png</texture>
+			<frame time="50">176 0 22 35</frame>									
+		</glow>			
+	</sprite>
+	<sprite scale="16" name="south">
+		<texture>actors/tower_tracking_1.png</texture>
+		<origin>9 27</origin>
+		<frame>132 0 22 35</frame>
+		<glow scale="16">
+			<texture>actors/tower_tracking_1.png</texture>
+			<frame time="50">176 0 22 35</frame>									
+		</glow>			
+	</sprite>
+	<sprite scale="16" name="southwest">
+		<texture>actors/tower_tracking_1.png</texture>
+		<origin>9 27</origin>
+		<frame>154 0 22 35</frame>
+		<glow scale="16">
+			<texture>actors/tower_tracking_1.png</texture>
+			<frame time="50">176 0 22 35</frame>									
+		</glow>			
+	</sprite>
+	
+	
+	
+	
+	<sprite scale="16" name="west-attack">
+		<texture>actors/tower_tracking_1.png</texture>
+		<origin>9 27</origin>										
+		<frame time="100">0 35 22 35</frame>
+		<frame time="100">0 70 22 35</frame>
+		<frame time="250">0 105 22 35</frame>				
+		<glow scale="16">
+			<texture>actors/tower_tracking_1.png</texture>
+					<frame time="100">175 35 22 35</frame>
+					<frame time="100">175 70 22 35</frame>
+					<frame time="250">175 105 22 35</frame>								
+		</glow>		
+	</sprite>
+	<sprite scale="16" name="northwest-attack">
+		<texture>actors/tower_tracking_1.png</texture>
+		<origin>9 27</origin>
+		<frame time="100">22 35 22 35</frame>
+		<frame time="100">22 70 22 35</frame>
+		<frame time="250">22 105 22 35</frame>
+		<glow scale="16">
+			<texture>actors/tower_tracking_1.png</texture>
+					<frame time="100">175 35 22 35</frame>
+					<frame time="100">175 70 22 35</frame>
+					<frame time="250">175 105 22 35</frame>								
+		</glow>				
+	</sprite>
+	<sprite scale="16" name="north-attack">
+		<texture>actors/tower_tracking_1.png</texture>
+		<origin>9 27</origin>
+		<frame time="100">44 35 22 35</frame>
+		<frame time="100">44 70 22 35</frame>
+		<frame time="250">44 105 22 35</frame>	
+		<glow scale="16">
+			<texture>actors/tower_tracking_1.png</texture>
+					<frame time="100">175 35 22 35</frame>
+					<frame time="100">175 70 22 35</frame>
+					<frame time="250">175 105 22 35</frame>								
+		</glow>			
+	</sprite>
+	<sprite scale="16" name="northeast-attack">
+		<texture>actors/tower_tracking_1.png</texture>
+		<origin>9 27</origin>
+		<frame time="100">66 35 22 35</frame>
+		<frame time="100">66 70 22 35</frame>
+		<frame time="250">66 105 22 35</frame>	
+		<glow scale="16">
+			<texture>actors/tower_tracking_1.png</texture>
+					<frame time="100">175 35 22 35</frame>
+					<frame time="100">175 70 22 35</frame>
+					<frame time="250">175 105 22 35</frame>								
+		</glow>			
+	</sprite>
+	<sprite scale="16" name="east-attack">
+		<texture>actors/tower_tracking_1.png</texture>
+		<origin>9 27</origin>
+		<frame time="100">88 35 22 35</frame>
+		<frame time="100">88 70 22 35</frame>
+		<frame time="250">88 105 22 35</frame>	
+		<glow scale="16">
+			<texture>actors/tower_tracking_1.png</texture>
+					<frame time="100">175 35 22 35</frame>
+					<frame time="100">175 70 22 35</frame>
+					<frame time="250">175 105 22 35</frame>								
+		</glow>			
+	</sprite>
+	<sprite scale="16" name="southeast-attack">
+		<texture>actors/tower_tracking_1.png</texture>
+		<origin>9 27</origin>
+		<frame time="100">110 35 22 35</frame>
+		<frame time="100">110 70 22 35</frame>
+		<frame time="250">110 105 22 35</frame>	
+		<glow scale="16">
+			<texture>actors/tower_tracking_1.png</texture>
+					<frame time="100">175 35 22 35</frame>
+					<frame time="100">175 70 22 35</frame>
+					<frame time="250">175 105 22 35</frame>								
+		</glow>			
+	</sprite>
+	<sprite scale="16" name="south-attack">
+		<texture>actors/tower_tracking_1.png</texture>
+		<origin>9 27</origin>
+		<frame time="100">132 35 22 35</frame>
+		<frame time="100">132 70 22 35</frame>
+		<frame time="250">132 105 22 35</frame>	
+		<glow scale="16">
+			<texture>actors/tower_tracking_1.png</texture>
+					<frame time="100">175 35 22 35</frame>
+					<frame time="100">175 70 22 35</frame>
+					<frame time="250">175 105 22 35</frame>								
+		</glow>				
+	</sprite>
+	<sprite scale="16" name="southwest-attack">
+		<texture>actors/tower_tracking_1.png</texture>
+		<origin>9 27</origin>
+		<frame time="100">154 35 22 35</frame>
+		<frame time="100">154 70 22 35</frame>
+		<frame time="250">154 105 22 35</frame>	
+		<glow scale="16">
+			<texture>actors/tower_tracking_1.png</texture>
+					<frame time="100">175 35 22 35</frame>
+					<frame time="100">175 70 22 35</frame>
+					<frame time="250">175 105 22 35</frame>								
+		</glow>				
+	</sprite>	
+	
+
+
+	<sprite scale="16" name="west-attackstatic">
+		<texture>actors/tower_tracking_1.png</texture>
+		<origin>9 27</origin>										
+		<frame time="250">0 105 22 35</frame>				
+		<glow scale="16">
+			<texture>actors/tower_tracking_1.png</texture>
+					<frame time="250">175 105 22 35</frame>								
+		</glow>		
+	</sprite>
+	<sprite scale="16" name="northwest-attackstatic">
+		<texture>actors/tower_tracking_1.png</texture>
+		<origin>9 27</origin>										
+		<frame time="250">22 105 22 35</frame>				
+		<glow scale="16">
+			<texture>actors/tower_tracking_1.png</texture>
+					<frame time="250">175 105 22 35</frame>								
+		</glow>		
+	</sprite>
+	<sprite scale="16" name="north-attackstatic">
+		<texture>actors/tower_tracking_1.png</texture>
+		<origin>9 27</origin>										
+		<frame time="250">44 105 22 35</frame>				
+		<glow scale="16">
+			<texture>actors/tower_tracking_1.png</texture>
+					<frame time="250">175 105 22 35</frame>								
+		</glow>		
+	</sprite>
+	<sprite scale="16" name="northeast-attackstatic">
+		<texture>actors/tower_tracking_1.png</texture>
+		<origin>9 27</origin>										
+		<frame time="250">66 105 22 35</frame>				
+		<glow scale="16">
+			<texture>actors/tower_tracking_1.png</texture>
+					<frame time="250">175 105 22 35</frame>								
+		</glow>		
+	</sprite>
+	<sprite scale="16" name="east-attackstatic">
+		<texture>actors/tower_tracking_1.png</texture>
+		<origin>9 27</origin>										
+		<frame time="250">88 105 22 35</frame>				
+		<glow scale="16">
+			<texture>actors/tower_tracking_1.png</texture>
+					<frame time="250">175 105 22 35</frame>								
+		</glow>		
+	</sprite>
+	<sprite scale="16" name="southeast-attackstatic">
+		<texture>actors/tower_tracking_1.png</texture>
+		<origin>9 27</origin>										
+		<frame time="250">110 105 22 35</frame>				
+		<glow scale="16">
+			<texture>actors/tower_tracking_1.png</texture>
+					<frame time="250">175 105 22 35</frame>								
+		</glow>		
+	</sprite>
+	<sprite scale="16" name="south-attackstatic">
+		<texture>actors/tower_tracking_1.png</texture>
+		<origin>9 27</origin>										
+		<frame time="250">132 105 22 35</frame>				
+		<glow scale="16">
+			<texture>actors/tower_tracking_1.png</texture>
+					<frame time="250">175 105 22 35</frame>								
+		</glow>		
+	</sprite>
+	<sprite scale="16" name="southwest-attackstatic">
+		<texture>actors/tower_tracking_1.png</texture>
+		<origin>9 27</origin>										
+		<frame time="250">154 105 22 35</frame>				
+		<glow scale="16">
+			<texture>actors/tower_tracking_1.png</texture>
+					<frame time="250">175 105 22 35</frame>								
+		</glow>		
+	</sprite>	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<sprite scale="16" name="west-overload">
+		<texture>actors/tower_tracking_1.png</texture>
+		<origin>9 27</origin>										
+		<frame time="200">0 140 22 35</frame>
+		<frame time="200">0 175 22 35</frame>
+		<frame time="200">0 210 22 35</frame>				
+		<frame time="200">0 245 22 35</frame>				
+		<frame time="200">0 280 22 35</frame>
+		<frame time="200">0 315 22 35</frame>
+		<glow scale="16">
+			<texture>actors/tower_tracking_1.png</texture>
+					<frame time="200">175 35 22 35</frame>
+					<frame time="200">175 70 22 35</frame>
+					<frame time="200">175 105 22 35</frame>								
+					<frame time="200">175 105 22 35</frame>								
+					<frame time="200">175 105 22 35</frame>								
+					<frame time="200">175 105 22 35</frame>															
+		</glow>			
+	</sprite>	
+	<sprite scale="16" name="northwest-overload">
+		<texture>actors/tower_tracking_1.png</texture>
+		<origin>9 27</origin>										
+		<frame time="200">22 140 22 35</frame>
+		<frame time="200">22 175 22 35</frame>
+		<frame time="200">22 210 22 35</frame>				
+		<frame time="200">22 245 22 35</frame>				
+		<frame time="200">22 280 22 35</frame>
+		<frame time="200">22 315 22 35</frame>
+		<glow scale="16">
+			<texture>actors/tower_tracking_1.png</texture>
+					<frame time="200">175 35 22 35</frame>
+					<frame time="200">175 70 22 35</frame>
+					<frame time="200">175 105 22 35</frame>								
+					<frame time="200">175 105 22 35</frame>								
+					<frame time="200">175 105 22 35</frame>								
+					<frame time="200">175 105 22 35</frame>															
+		</glow>									
+	</sprite>	
+	<sprite scale="16" name="north-overload">
+		<texture>actors/tower_tracking_1.png</texture>
+		<origin>9 27</origin>										
+		<frame time="200">44 140 22 35</frame>
+		<frame time="200">44 175 22 35</frame>
+		<frame time="200">44 210 22 35</frame>				
+		<frame time="200">44 245 22 35</frame>				
+		<frame time="200">44 280 22 35</frame>
+		<frame time="200">44 315 22 35</frame>			
+		<glow scale="16">
+			<texture>actors/tower_tracking_1.png</texture>
+					<frame time="200">175 35 22 35</frame>
+					<frame time="200">175 70 22 35</frame>
+					<frame time="200">175 105 22 35</frame>								
+					<frame time="200">175 105 22 35</frame>								
+					<frame time="200">175 105 22 35</frame>								
+					<frame time="200">175 105 22 35</frame>															
+		</glow>						
+	</sprite>	
+	<sprite scale="16" name="northeast-overload">
+		<texture>actors/tower_tracking_1.png</texture>
+		<origin>9 27</origin>										
+		<frame time="200">66 140 22 35</frame>
+		<frame time="200">66 175 22 35</frame>
+		<frame time="200">66 210 22 35</frame>				
+		<frame time="200">66 245 22 35</frame>				
+		<frame time="200">66 280 22 35</frame>
+		<frame time="200">66 315 22 35</frame>
+		<glow scale="16">
+			<texture>actors/tower_tracking_1.png</texture>
+					<frame time="200">175 35 22 35</frame>
+					<frame time="200">175 70 22 35</frame>
+					<frame time="200">175 105 22 35</frame>								
+					<frame time="200">175 105 22 35</frame>								
+					<frame time="200">175 105 22 35</frame>								
+					<frame time="200">175 105 22 35</frame>															
+		</glow>									
+	</sprite>	
+	<sprite scale="16" name="east-overload">
+		<texture>actors/tower_tracking_1.png</texture>
+		<origin>9 27</origin>										
+		<frame time="200">88 140 22 35</frame>
+		<frame time="200">88 175 22 35</frame>
+		<frame time="200">88 210 22 35</frame>				
+		<frame time="200">88 245 22 35</frame>				
+		<frame time="200">88 280 22 35</frame>
+		<frame time="200">88 315 22 35</frame>
+		<glow scale="16">
+			<texture>actors/tower_tracking_1.png</texture>
+					<frame time="200">175 35 22 35</frame>
+					<frame time="200">175 70 22 35</frame>
+					<frame time="200">175 105 22 35</frame>								
+					<frame time="200">175 105 22 35</frame>								
+					<frame time="200">175 105 22 35</frame>								
+					<frame time="200">175 105 22 35</frame>															
+		</glow>									
+	</sprite>	
+	<sprite scale="16" name="southeast-overload">
+		<texture>actors/tower_tracking_1.png</texture>
+		<origin>9 27</origin>										
+		<frame time="200">110 140 22 35</frame>
+		<frame time="200">110 175 22 35</frame>
+		<frame time="200">110 210 22 35</frame>				
+		<frame time="200">110 245 22 35</frame>				
+		<frame time="200">110 280 22 35</frame>
+		<frame time="200">110 315 22 35</frame>
+		<glow scale="16">
+			<texture>actors/tower_tracking_1.png</texture>
+					<frame time="200">175 35 22 35</frame>
+					<frame time="200">175 70 22 35</frame>
+					<frame time="200">175 105 22 35</frame>								
+					<frame time="200">175 105 22 35</frame>								
+					<frame time="200">175 105 22 35</frame>								
+					<frame time="200">175 105 22 35</frame>															
+		</glow>									
+	</sprite>	
+	<sprite scale="16" name="south-overload">
+		<texture>actors/tower_tracking_1.png</texture>
+		<origin>9 27</origin>										
+		<frame time="200">132 140 22 35</frame>
+		<frame time="200">132 175 22 35</frame>
+		<frame time="200">132 210 22 35</frame>				
+		<frame time="200">132 245 22 35</frame>				
+		<frame time="200">132 280 22 35</frame>
+		<frame time="200">132 315 22 35</frame>		
+		<glow scale="16">
+			<texture>actors/tower_tracking_1.png</texture>
+					<frame time="200">175 35 22 35</frame>
+					<frame time="200">175 70 22 35</frame>
+					<frame time="200">175 105 22 35</frame>								
+					<frame time="200">175 105 22 35</frame>								
+					<frame time="200">175 105 22 35</frame>								
+					<frame time="200">175 105 22 35</frame>															
+		</glow>								
+	</sprite>	
+	<sprite scale="16" name="southwest-overload">
+		<texture>actors/tower_tracking_1.png</texture>
+		<origin>9 27</origin>										
+		<frame time="200">154 140 22 35</frame>
+		<frame time="200">154 175 22 35</frame>
+		<frame time="200">154 210 22 35</frame>				
+		<frame time="200">154 245 22 35</frame>				
+		<frame time="200">154 280 22 35</frame>
+		<frame time="200">154 315 22 35</frame>
+		<glow scale="16">
+			<texture>actors/tower_tracking_1.png</texture>
+					<frame time="200">175 35 22 35</frame>
+					<frame time="200">175 70 22 35</frame>
+					<frame time="200">175 105 22 35</frame>								
+					<frame time="200">175 105 22 35</frame>								
+					<frame time="200">175 105 22 35</frame>								
+					<frame time="200">175 105 22 35</frame>															
+		</glow>									
+	</sprite>	
+	
+	
+	
+	
+	<sprite scale="16" name="west-overloadstatic">
+		<texture>actors/tower_tracking_1.png</texture>
+		<origin>9 27</origin>										
+		<frame time="100">0 315 22 35</frame>
+		<glow scale="16">
+			<texture>actors/tower_tracking_1.png</texture>						
+					<frame time="100">175 105 22 35</frame>															
+		</glow>				
+	</sprite>	
+	<sprite scale="16" name="northwest-overloadstatic">
+		<texture>actors/tower_tracking_1.png</texture>
+		<origin>9 27</origin>										
+		<frame time="100">22 315 22 35</frame>
+		<glow scale="16">
+			<texture>actors/tower_tracking_1.png</texture>						
+					<frame time="100">175 105 22 35</frame>															
+		</glow>				
+	</sprite>	
+	<sprite scale="16" name="north-overloadstatic">
+		<texture>actors/tower_tracking_1.png</texture>
+		<origin>9 27</origin>										
+		<frame time="100">44 315 22 35</frame>
+		<glow scale="16">
+			<texture>actors/tower_tracking_1.png</texture>						
+					<frame time="100">175 105 22 35</frame>															
+		</glow>				
+	</sprite>	
+	<sprite scale="16" name="northeast-overloadstatic">
+		<texture>actors/tower_tracking_1.png</texture>
+		<origin>9 27</origin>										
+		<frame time="100">66 315 22 35</frame>
+		<glow scale="16">
+			<texture>actors/tower_tracking_1.png</texture>						
+					<frame time="100">175 105 22 35</frame>															
+		</glow>				
+	</sprite>	
+	<sprite scale="16" name="east-overloadstatic">
+		<texture>actors/tower_tracking_1.png</texture>
+		<origin>9 27</origin>										
+		<frame time="100">88 315 22 35</frame>
+		<glow scale="16">
+			<texture>actors/tower_tracking_1.png</texture>						
+					<frame time="100">175 105 22 35</frame>															
+		</glow>				
+	</sprite>	
+	<sprite scale="16" name="southeast-overloadstatic">
+		<texture>actors/tower_tracking_1.png</texture>
+		<origin>9 27</origin>										
+		<frame time="100">110 315 22 35</frame>
+		<glow scale="16">
+			<texture>actors/tower_tracking_1.png</texture>						
+					<frame time="100">175 105 22 35</frame>															
+		</glow>				
+	</sprite>	
+	<sprite scale="16" name="south-overloadstatic">
+		<texture>actors/tower_tracking_1.png</texture>
+		<origin>9 27</origin>										
+		<frame time="100">132 315 22 35</frame>
+		<glow scale="16">
+			<texture>actors/tower_tracking_1.png</texture>						
+					<frame time="100">175 105 22 35</frame>															
+		</glow>				
+	</sprite>	
+	<sprite scale="16" name="southwest-overloadstatic">
+		<texture>actors/tower_tracking_1.png</texture>
+		<origin>9 27</origin>										
+		<frame time="100">154 315 22 35</frame>
+		<glow scale="16">
+			<texture>actors/tower_tracking_1.png</texture>						
+					<frame time="100">175 105 22 35</frame>															
+		</glow>				
+	</sprite>		
+	
+	
+	
+	
+	<sprite scale="16" name="west-walk">
+		<texture>actors/tower_tracking_2.png</texture>
+		<origin>9 27</origin>		
+		<frame>0 0 22 35</frame>
+	</sprite>
+	<sprite scale="16" name="northwest-walk">
+		<texture>actors/tower_tracking_2.png</texture>
+		<origin>9 27</origin>
+		<frame>22 0 22 35</frame>
+	</sprite>
+	<sprite scale="16" name="north-walk">
+		<texture>actors/tower_tracking_2.png</texture>
+		<origin>9 27</origin>
+		<frame>44 0 22 35</frame>
+	</sprite>
+	<sprite scale="16" name="northeast-walk">
+		<texture>actors/tower_tracking_2.png</texture>
+		<origin>9 27</origin>
+		<frame>66 0 22 35</frame>
+	</sprite>
+	<sprite scale="16" name="east-walk">
+		<texture>actors/tower_tracking_2.png</texture>
+		<origin>9 27</origin>
+		<frame>88 0 22 35</frame>
+	</sprite>
+	<sprite scale="16" name="southeast-walk">
+		<texture>actors/tower_tracking_2.png</texture>
+		<origin>9 27</origin>
+		<frame>110 0 22 35</frame>
+	</sprite>
+	<sprite scale="16" name="south-walk">
+		<texture>actors/tower_tracking_2.png</texture>
+		<origin>9 27</origin>
+		<frame>132 0 22 35</frame>
+	</sprite>
+	<sprite scale="16" name="southwest-walk">
+		<texture>actors/tower_tracking_2.png</texture>
+		<origin>9 27</origin>
+		<frame>154 0 22 35</frame>
+	</sprite>
+	
+	<light>
+		<origin>0 -15</origin>
+		<mul>
+			<range>150</range>
+			<color1>220 150 50</color1>
+			<color2>180 90 30</color2>
+			<color3>160 70 10</color3>
+		</mul>
+		<add>
+			<range>64</range>
+			<color1>65 50 0</color1>
+			<color2>40 10 0</color2>
+			<color3>20 0 0</color3>
+		</add>
+	</light>	
+	
+	<collision static="true">
+		<circle offset="0 0" radius="8" />
+	</collision>	
+</actor>

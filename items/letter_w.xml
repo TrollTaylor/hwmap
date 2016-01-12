@@ -1,0 +1,29 @@
+<item behavior="money">
+	<behavior>
+		<dictionary>
+			<entry name="amount"><int>0</int></entry>
+			<entry name="pickup-snd"><string>sound/misc.xml:take_letter</string></entry>
+			<entry name="pickup-particle"><string>effects/particles.xml:none</string></entry>
+		</dictionary>
+	</behavior>
+
+	<sprite scale="16">
+		<texture>items/letters_hammerwatch.png</texture>
+		<origin>9 26</origin>
+		<frame time="100">90 0 18 32</frame>			
+		<frame time="100">90 32 18 32</frame>				
+		<frame time="100">90 64 18 32</frame>				
+		<frame time="100">90 96 18 32</frame>		
+		<frame time="100">90 64 18 32</frame>			
+		<frame time="100">90 32 18 32</frame>			
+	</sprite>
+	
+	<collision shoot-through="true">
+		<polygon>
+			<point>-7 3</point>
+			<point>-7 -10</point>
+			<point>7 -10</point>
+			<point>7 3</point>
+		</polygon>
+	</collision>
+</item>

@@ -1,0 +1,32 @@
+<doodad>
+	<sprite scale="16">
+		<texture>doodads/theme_a/a_bridge_special_party.png</texture>
+		<origin>6 12</origin>
+		<frame time="100">64 0 12 17</frame>			
+		<frame time="100">76 0 12 17</frame>				
+		<frame time="100">88 0 12 17</frame>				
+		<frame time="100">100 0 12 17</frame>		
+		<glow scale="16">
+			<texture>doodads/theme_a/a_bridge_special_party.png</texture>
+				<frame time="100">64 17 12 17</frame>			
+				<frame time="100">76 17 12 17</frame>				
+				<frame time="100">88 17 12 17</frame>				
+				<frame time="100">100 17 12 17</frame>	
+		</glow>		
+	</sprite>
+	<light>
+		<origin>0 -2</origin>
+		<mul>
+			<range>150</range>
+			<color1>220 150 50</color1>
+			<color2>180 90 30</color2>
+			<color3>160 70 10</color3>
+		</mul>
+		<add>
+			<range>64</range>
+			<color1>80 40 0</color1>
+			<color2>64 24 0</color2>
+			<color3>64 0 0</color3>
+		</add>
+	</light>	
+</doodad>

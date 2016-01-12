@@ -1,0 +1,7 @@
+<doodad defaultlayer="-10" ao="false">
+	<sprite scale="16">
+		<texture>doodads/generic/exit_teleport.png</texture>
+		<origin>16 16</origin>
+		<frame>29 42 16 16</frame>
+	</sprite>
+</doodad>

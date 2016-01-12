@@ -1,0 +1,7 @@
+<doodad defaultlayer="0">
+	<sprite scale="16">
+		<texture>actors/tower_banner.png</texture>
+		<origin>1 8</origin>					
+		<frame time="100">10 36 12 10</frame>
+	</sprite>
+</doodad>

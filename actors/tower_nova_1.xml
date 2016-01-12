@@ -1,0 +1,115 @@
+<actor behavior="tower-nova" minimap="menus/minimap.xml:enemy_static">
+	<behavior>
+		<dictionary>
+			<entry name="hp"><int>300</int></entry>
+			<entry name="multiplayer-scale-hp"><bool>true</bool></entry>
+			<entry name="projectile"><string>projectiles/enemy_tower_iceball.xml</string></entry>
+			<entry name="nova-parts"><int>50</int></entry>
+			<entry name="frequency"><int>5000</int></entry>
+			<entry name="aggro-range"><float>22</float></entry>
+			<entry name="attack-snd"><string>sound/monsters.xml:tower_shoot</string></entry>					
+			<entry name="death-snd"><string>sound/monsters.xml:death_tower</string></entry>			
+			<entry name="hit-effect"><string>effects/particles.xml:tower-blue-hit</string></entry>
+			<entry name="hit-particle"><string>effects/particles.xml:tower-blue-particle</string></entry>
+			<entry name="corpse"><string>actors/tower_nova_1_razed.xml</string></entry>
+			
+			<float name="editor-range-marker">25</float>
+			
+			<dictionary name="loot">
+				<string name="origin">0 1</string>
+				<float name="spread">0</float>
+					<array name="loot">
+						<array>	
+							<int>50</int><string>items/collectable_1.xml</string>
+							<int>50</int><string>items/upgrade_health.xml</string>	
+							<int>50</int><string>items/upgrade_mana.xml</string>	
+							<int>50</int><string>items/upgrade_damage.xml</string>
+							<int>50</int><string>items/upgrade_defense.xml</string>																								
+						</array>					
+					</array>
+			</dictionary>				
+			
+		</dictionary>
+		
+		<dictionary name="easy">
+			<entry name="nova-parts"><int>32</int></entry>
+		</dictionary>
+			
+		
+	</behavior>
+
+
+	<sprite scale="16" name="default">
+		<texture>actors/tower_nova_1.png</texture>
+		<origin>13 24</origin>					
+		<frame time="100">0 0 32 32</frame>
+		<frame time="100">32 0 32 32</frame>
+		<glow scale="16">
+			<texture>actors/tower_nova_1.png</texture>
+				<frame time="100">0 32 32 32</frame>
+				<frame time="100">32 32 32 32</frame>
+		</glow>									
+	</sprite>
+	
+	<sprite scale="16" name="attack">
+		<texture>actors/tower_nova_1.png</texture>
+		<origin>13 24</origin>					
+		<frame time="50">0 64 32 32</frame>
+		<frame time="50">32 64 32 32</frame>
+		<frame time="50">64 64 32 32</frame>
+		<frame time="50">96 64 32 32</frame>
+		<frame time="50">64 64 32 32</frame>		
+		<frame time="50">32 64 32 32</frame>		
+		<frame time="50">0 64 32 32</frame>	
+		<frame time="50">32 64 32 32</frame>
+		<frame time="50">64 64 32 32</frame>
+		<frame time="50">96 64 32 32</frame>
+		<frame time="50">64 64 32 32</frame>		
+		<frame time="50">32 64 32 32</frame>		
+		<frame time="50">0 64 32 32</frame>			
+		
+			
+		<frame time="100">64 0 32 32</frame>
+		<frame time="100">96 0 32 32</frame>								
+		<glow scale="16">
+			<texture>actors/tower_nova_1.png</texture>
+				<frame time="50">0 96 32 32</frame>
+				<frame time="50">32 96 32 32</frame>
+				<frame time="50">64 96 32 32</frame>
+				<frame time="50">96 96 32 32</frame>
+				<frame time="50">64 96 32 32</frame>		
+				<frame time="50">32 96 32 32</frame>		
+				<frame time="50">0 96 32 32</frame>
+				<frame time="50">32 96 32 32</frame>
+				<frame time="50">64 96 32 32</frame>
+				<frame time="50">96 96 32 32</frame>
+				<frame time="50">64 96 32 32</frame>		
+				<frame time="50">32 96 32 32</frame>		
+				<frame time="50">0 96 32 32</frame>				
+				
+				
+				<frame time="100">64 32 32 32</frame>
+				<frame time="100">96 32 32 32</frame>				
+		</glow>							
+	</sprite>
+
+	<light>
+		<origin>0 0</origin>
+		<mul>
+			<range>64</range>
+			<color1>0 50 64</color1>
+			<color2>0 25 50</color2>
+			<color3>0 0 25</color3>
+		</mul>
+		<add>
+			<range>32</range>
+			<color1>0 50 75</color1>
+			<color2>0 24 50</color2>
+			<color3>0 0 15</color3>
+		</add>
+	</light>
+
+	<collision static="true">
+		<circle offset="0 0" radius="8" />
+	</collision>	
+</actor>

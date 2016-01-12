@@ -1,0 +1,7 @@
+<doodad defaultlayer="-30">
+	<sprite scale="16">
+		<texture>doodads/theme_d/d_carpets.png</texture>
+		<origin>16 32</origin>
+		<frame>0 0 32 64</frame>				
+	</sprite>
+</doodad>

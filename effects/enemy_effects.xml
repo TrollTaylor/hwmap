@@ -1,0 +1,40 @@
+<spritebank>
+	<sprite scale="16" name="enemy_meteor_marker">
+		<texture>effects/enemy_meteor_strike.png</texture>
+		<origin>28 28</origin>
+		<frame time="100">0 0 56 56</frame>
+		<frame time="100">56 0 56 56</frame>
+		<frame time="100">112 0 56 56</frame>
+		<frame time="100">168 0 56 56</frame>
+		<frame time="100">0 56 56 56</frame>
+			<glow scale="16">
+				<texture>effects/enemy_meteor_strike.png</texture>
+				<frame time="100">0 0 56 56</frame>
+				<frame time="100">56 0 56 56</frame>
+				<frame time="100">112 0 56 56</frame>
+				<frame time="100">168 0 56 56</frame>
+				<frame time="100">0 56 56 56</frame>
+			</glow>			
+	</sprite>	
+	
+	<sprite scale="16" name="aura_frost_ext">
+		<texture>effects/modifier-effects.png</texture>
+		<origin>16 16</origin>
+		<frame time="100">0 86 32 32</frame>
+			<glow scale="16">
+				<texture>effects/modifier-effects.png</texture>
+				<frame time="100">0 86 32 32</frame>
+			</glow>			
+	</sprite>		
+	
+	<sprite scale="16" name="aura_frost">
+		<texture>effects/modifier-effects.png</texture>
+		<origin>16 16</origin>
+		<frame time="100">32 86 32 32</frame>
+			<glow scale="16">
+				<texture>effects/modifier-effects.png</texture>
+				<frame time="100">32 86 32 32</frame>
+			</glow>			
+	</sprite>		
+	
+</spritebank>

@@ -1,0 +1,17 @@
+<doodad defaultlayer="1">
+	<sprite scale="16">
+		<texture>actors/boss_knight/knight.png</texture>
+		<origin>32 40</origin>					
+		<frame>0 576 64 64</frame>
+	</sprite>
+	
+	<collision shoot-through="true">
+		<polygon>
+			<point>-16 -6</point>
+			<point>-2 -13</point>
+			<point>16 -9</point>
+			<point>18 3</point>
+			<point>-17 12</point>
+		</polygon>
+	</collision>
+</doodad>

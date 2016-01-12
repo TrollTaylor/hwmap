@@ -1,0 +1,22 @@
+<doodad ao="false">
+	<sprite scale="16" name="death">
+		<texture>actors/boss_krilith/boss_krilith.png</texture>
+		<origin>12 14</origin>
+		<frame time="125">192 0 24 24</frame>
+		<frame time="125">216 0 24 24</frame>
+		<frame time="125">192 24 24 24</frame>
+		<frame time="125">216 24 24 24</frame>
+		<frame time="125">192 48 24 24</frame>
+		<frame time="125">216 48 24 24</frame>
+		<frame time="175">192 72 24 24</frame>
+		<frame time="2000">216 72 24 24</frame>
+	</sprite>		
+	<sprite scale="16" name="dead">
+		<texture>actors/boss_krilith/boss_krilith.png</texture>
+		<origin>12 14</origin>
+		<frame>216 96 24 24</frame>
+	</sprite>
+	<states default="death">
+		<transition from="death" to="dead" />	
+	</states>				
+</doodad>

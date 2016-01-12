@@ -1,0 +1,17 @@
+<doodad ao="false">
+	<sprite random-start="true" scale="16">
+		<texture>doodads/rare_big.png</texture>
+		<origin>12 38</origin>
+		<frame time="2500">0 0 1 1</frame>		
+		<frame time="50">0 0 25 44</frame>
+		<frame time="50">25 0 25 44</frame>
+		<frame time="50">50 0 25 44</frame>
+		<frame time="50">75 0 25 44</frame>
+		<frame time="50">100 0 25 44</frame>
+		<frame time="50">0 44 25 44</frame>
+		<frame time="50">25 44 25 44</frame>
+		<frame time="50">50 44 25 44</frame>
+		<frame time="50">75 44 25 44</frame>
+		<frame time="50">100 44 25 44</frame>					
+	</sprite>
+</doodad>

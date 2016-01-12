@@ -1,0 +1,17 @@
+<doodad ao="false">
+	<sprite scale="16">
+		<texture>doodads/generic/deco_vendor_props.png</texture>
+		<origin>6 13</origin>
+		<frame>0 0 15 13</frame>				
+	</sprite>
+	
+	<collision static="true">
+		<polygon>
+			<point>-6 -10</point>
+			<point>-6 0</point>		
+			<point>6 -10</point>		
+			<point>6 0</point>
+		</polygon>
+	</collision>	
+	
+</doodad>

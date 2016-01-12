@@ -1,0 +1,10 @@
+<doodad>
+	<sprite scale="16">
+		<texture>doodads/theme_a/a_bridge_special_falling.png</texture>
+		<origin>8 -1</origin>
+		<frame time="150">0 0 64 64</frame>	
+		<frame time="150">64 0 64 64</frame>												
+		<frame time="150">128 0 64 64</frame>	
+		<frame time="150">192 0 64 64</frame>		
+	</sprite>
+</doodad>

@@ -1,0 +1,32 @@
+<doodad ao="false" defaultlayer="-5">
+	<sprite scale="16" name="activate">
+		<texture>doodads/special/trigger_button.png</texture>
+		<origin>8 9</origin>
+		<frame time="50">0 132 17 18</frame>
+	</sprite>
+	
+	<sprite scale="16" name="deactivate">
+		<texture>doodads/special/trigger_button.png</texture>
+		<origin>8 9</origin>
+		<frame time="50">17 132 17 18</frame>
+	</sprite>	
+	
+	<sprite scale="16" name="destroy">
+		<texture>doodads/special/trigger_button.png</texture>
+		<origin>8 9</origin>
+		<frame time="50">34 132 17 18</frame>
+	</sprite>	
+		
+	<states default="activate">
+	</states>				
+	
+	<collision shoot-through="true">
+		<polygon>
+			<point>-6 4</point>
+			<point>-6 -7</point>
+			<point>6 -7</point>
+			<point>6 4</point>
+		</polygon>
+	</collision>	
+	
+</doodad>

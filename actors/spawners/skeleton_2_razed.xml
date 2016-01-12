@@ -1,0 +1,7 @@
+<doodad defaultlayer="-1" ao="false">
+	<sprite scale="16">
+		<texture>actors/spawners/skeleton_2.png</texture>
+		<origin>16 16</origin>					
+		<frame>32 0 32 32</frame>
+	</sprite>
+</doodad>

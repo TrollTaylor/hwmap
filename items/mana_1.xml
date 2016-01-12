@@ -1,0 +1,28 @@
+<item behavior="mana" minimap="menus/minimap.xml:mana">
+	<behavior>
+		<dictionary>
+			<entry name="mana"><int>15</int></entry>
+			<entry name="pickup-snd"><string>sound/misc.xml:take_mana</string></entry>
+			<entry name="pickup-particle"><string>effects/particles.xml:item_mana</string></entry>
+		</dictionary>
+	</behavior>
+
+	<sprite scale="16">
+		<texture>items/items.png</texture>
+		<origin>8 14</origin>
+		<frame time="200">0 176 16 16</frame>
+		<glow scale="16">
+			<texture>items/items.png</texture>
+				<frame time="200">48 176 16 16</frame>
+		</glow>			
+	</sprite>
+	
+	<collision shoot-through="true">
+		<polygon>
+			<point>-3 2</point>
+			<point>-3 -7</point>
+			<point>4 -7</point>
+			<point>4 2</point>
+		</polygon>
+	</collision>
+</item>

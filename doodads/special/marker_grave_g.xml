@@ -1,0 +1,8 @@
+<doodad defaultlayer="-2">
+	<sprite scale="16">
+		<texture>doodads/special/marker_grave.png</texture>
+		<origin>32 32</origin>
+		<frame>64 0 64 64</frame>
+	</sprite>		
+
+</doodad>

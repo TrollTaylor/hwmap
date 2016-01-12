@@ -1,0 +1,30 @@
+<buff>
+	<behavior>
+		<dictionary>
+			<string name="color">255 200 135</string>
+			
+			<int name="duration">5000</int>
+			
+			<dictionary name="damage">
+				<int name="freq">500</int>
+				<int name="dmg">5</int>
+			</dictionary>
+			
+			<array name="effects">
+				<dictionary>
+					<string name="type">particles</string>
+					
+					<string name="sprite">effects/particles.xml:trap_flies</string>
+
+					<int name="freq">150</int>
+					<int name="rate">25</int>
+					
+					<vec2 name="dir">0 0</vec2>
+					<float name="dir-spread">3</float>
+				
+					<float name="speed">0.1</float>
+				</dictionary>
+			</array>	
+		</dictionary>
+	</behavior>
+</buff>

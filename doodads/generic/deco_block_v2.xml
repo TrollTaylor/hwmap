@@ -1,0 +1,22 @@
+<doodad aobias="0.4" minimap="menus/minimap.xml:deco_block">
+	<sprite scale="16">
+		<texture>doodads/generic/deco_block.png</texture>
+		<origin>0 32</origin>
+		<frame>24 0 24 48</frame>
+	</sprite>
+		
+	<polygon collision="false" shadow="true">
+		<point>0 4</point>
+		<point>24 4</point>
+		<point>24 16</point>
+		<point>0 16</point>
+	</polygon>			
+
+	<polygon collision="true" shadow="false">
+		<point>0 16</point>
+		<point>0 -24</point>		
+		<point>24 -24</point>		
+		<point>24 16</point>
+	</polygon>				
+
+</doodad>

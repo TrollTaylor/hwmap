@@ -1,0 +1,8 @@
+<doodad defaultlayer="0">
+	<sprite scale="16">
+		<texture>actors/boss_queen/queen.png</texture>
+		<origin>50 45</origin>
+		<frame time="500">400 100 100 100</frame>
+	</sprite>		
+
+</doodad>

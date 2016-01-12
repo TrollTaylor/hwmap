@@ -1,0 +1,17 @@
+<doodad defaultlayer="-10" minimap="menus/minimap.xml:ledge_l_v2">
+	<sprite scale="16">
+		<texture>doodads/theme_f/f.png</texture>
+		<origin>0 16</origin>					
+		<frame>64 96 16 16</frame>
+	</sprite>
+
+
+	<collision shoot-through="true">
+		<polygon>
+			<point>0 0</point>
+			<point>0 -16</point>		
+			<point>8 -16</point>		
+			<point>8 0</point>
+		</polygon>
+	</collision>	
+</doodad>

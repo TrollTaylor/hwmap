@@ -1,0 +1,26 @@
+<doodad ao="false">
+	<sprite random-start="true" scale="16" name="default">
+		<texture>doodads/generic/deco_books.png</texture>
+		<origin>7 13</origin>
+		<frame time="2500">0 55 14 19</frame>
+	</sprite>
+	
+	<sprite random-start="true" scale="16" name="activate">
+		<texture>doodads/generic/deco_books.png</texture>
+		<origin>7 13</origin>
+		<frame time="2500">14 55 14 19</frame>
+	</sprite>	
+
+		
+	<states default="default">
+	</states>		
+
+	
+	<polygon collision="true" shadow="false">
+		<point>-7 6</point>
+		<point>-7 -6</point>		
+		<point>7 -6</point>		
+		<point>7 6</point>
+	</polygon>	
+	
+</doodad>

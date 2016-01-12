@@ -1,0 +1,50 @@
+<item behavior="potion">
+	<behavior>
+		<dictionary>
+			<entry name="type"><string>immortality</string></entry>
+			<entry name="pickup-snd"><string>sound/misc.xml:take_potion</string></entry>
+			<entry name="pickup-particle"><string>effects/particles.xml:potion_immortality</string></entry>
+		</dictionary>
+	</behavior>
+
+	<sprite scale="16">
+		<texture>items/items.png</texture>
+		<origin>8 13</origin>
+		<frame time="200">0 256 16 16</frame>
+		<frame time="200">16 256 16 16</frame>
+		<frame time="200">32 256 16 16</frame>
+		<frame time="200">16 256 16 16</frame>		
+		<glow scale="16">
+			<texture>items/items.png</texture>
+				<frame time="200">48 256 16 16</frame>
+				<frame time="200">64 256 16 16</frame>
+				<frame time="200">80 256 16 16</frame>
+				<frame time="200">64 256 16 16</frame>		
+		</glow>	
+	</sprite>	
+	
+	<light>
+		<origin>0 -5</origin>
+		<mul>
+			<range>64</range>
+			<color1>100 100 75</color1>
+			<color2>0 0 0</color2>
+			<color3>0 0 0</color3>
+		</mul>
+		<add>
+			<range>64</range>
+			<color1>50 0 30</color1>
+			<color2>0 0 0</color2>
+			<color3>0 0 0</color3>
+		</add>
+	</light>		
+	
+	<collision shoot-through="true">
+		<polygon>
+			<point>-4 3</point>
+			<point>-4 -7</point>
+			<point>4 -7</point>
+			<point>4 3</point>
+		</polygon>
+	</collision>
+</item>

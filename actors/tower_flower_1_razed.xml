@@ -1,0 +1,11 @@
+<doodad defaultlayer="-1">
+	<sprite scale="16">
+		<texture>actors/tower_flower_1.png</texture>
+		<origin>20 20</origin>					
+		<frame time="100">160 0 40 40</frame>
+	</sprite>
+	
+<!--	<collision shoot-through="true">
+		<circle offset="0 0" radius="13" />
+	</collision>	-->
+</doodad>

@@ -1,0 +1,29 @@
+<doodad defaultlayer="1">
+	<sprite scale="16">
+		<texture>doodads/theme_d/d_special_bridge.png</texture>
+		<origin>0 20</origin>
+		<frame>0 119 152 78</frame>
+	</sprite>		
+
+	<polygon collision="true" shadow="false">
+		<point>-20 28</point>
+		<point>-20 -16</point>		
+		<point>120 -16</point>		
+		<point>120 28</point>
+	</polygon>
+	
+	<polygon collision="true" shadow="false">
+		<point>138 60</point>
+		<point>138 -16</point>		
+		<point>150 -16</point>		
+		<point>150 60</point>
+	</polygon>	
+	
+	<polygon collision="true" shadow="false">
+		<point>150 60</point>
+		<point>150 45</point>		
+		<point>-20 45</point>		
+		<point>-20 60</point>
+	</polygon>
+
+</doodad>

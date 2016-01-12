@@ -1,0 +1,21 @@
+<doodad defaultlayer="-5">
+	<sprite scale="16" name="activate">
+		<texture>doodads/special/boss_lock.png</texture>
+		<origin>0 0</origin>	
+		<frame>32 96 16 16</frame>		
+		<glow scale="16">
+			<texture>doodads/special/boss_lock.png</texture>
+			<frame>32 112 16 16</frame>		
+		</glow>					
+	</sprite>			
+	<sprite scale="16" name="deactivate">
+		<texture>doodads/special/boss_lock.png</texture>
+		<origin>0 0</origin>	
+		<frame>32 80 16 16</frame>			
+	</sprite>				
+	<states default="deactivate">
+	</states>			
+</doodad>
+
+
+

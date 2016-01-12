@@ -1,0 +1,8 @@
+<doodad ao="false">
+	<sprite scale="16">
+		<texture>doodads/special/editor_prefab_trap_stalactite_e.png</texture>
+		<origin>16 16</origin>
+		<frame>0 0 32 32</frame>				
+	</sprite>	
+	
+</doodad>

@@ -1,0 +1,9 @@
+<doodad defaultlayer="10">
+	<sprite scale="16">
+		<texture>doodads/special/bonus_entrance.png</texture>
+		<origin>0 0</origin>
+		<frame time="200">48 0 16 16</frame>
+		<frame time="200">64 0 16 16</frame>
+		<frame time="200">80 0 16 16</frame>		
+	</sprite>
+</doodad>

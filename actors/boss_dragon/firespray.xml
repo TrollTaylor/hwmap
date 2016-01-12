@@ -1,0 +1,38 @@
+<projectile directions="1" collision="1.25" damage="15" speed="3" behavior="spray">
+	<behavior>
+		<dictionary>
+			<entry name="particle"><string>effects/particles.xml:dragon-spray-particle</string></entry>
+			<entry name="spawn-time-limit"><int>200</int></entry>
+			<entry name="speed"><float>1.5</float></entry>
+			<entry name="range"><float>9</float></entry>
+			<entry name="clear-on-destroy"><bool>true</bool></entry>
+		</dictionary>
+	</behavior>
+
+
+	<sprite scale="16" name="0">
+		<texture>effects/spray.png</texture>
+		<origin>8 12</origin>
+		<frame time="75">0 0 16 16</frame>
+		<frame time="75">0 0 16 16</frame>		
+		<frame time="75">16 0 16 16</frame>	
+		<frame time="75">16 0 16 16</frame>			
+		<frame time="75">32 0 16 16</frame>			
+		<frame time="75">64 0 16 16</frame>			
+		<frame time="75">80 0 16 16</frame>		
+		<frame time="100">96 0 16 16</frame>	
+		<frame time="100">112 0 16 16</frame>										
+	<glow scale="16">
+		<texture>effects/spray.png</texture>
+			<frame time="75">0 16 16 16</frame>
+			<frame time="75">0 16 16 16</frame>		
+			<frame time="75">16 16 16 16</frame>	
+			<frame time="75">16 16 16 16</frame>			
+			<frame time="75">32 16 16 16</frame>			
+			<frame time="75">64 16 16 16</frame>			
+			<frame time="75">80 16 16 16</frame>		
+			<frame time="100">96 16 16 16</frame>	
+			<frame time="100">112 16 16 16</frame>		
+		</glow>		
+	</sprite>	
+</projectile>

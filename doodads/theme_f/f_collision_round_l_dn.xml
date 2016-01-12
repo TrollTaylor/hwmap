@@ -1,0 +1,18 @@
+<doodad defaultlayer="100">
+	<sprite scale="16">
+		<texture>doodads/theme_f/f_collision.png</texture>
+		<origin>0 32</origin>
+		<frame>0 32 32 32</frame>
+	</sprite>
+	
+	<collision shoot-through="true">		
+		<polygon collision="true" shadow="false">
+			<point>0 0</point>
+			<point>0 -28</point>				
+			<point>2 -28</point>		
+			<point>28 -2</point>					
+			<point>28 0</point>			
+		</polygon>	
+	</collision>	
+
+</doodad>

@@ -1,0 +1,23 @@
+<item behavior="money">
+	<behavior>
+		<dictionary>
+			<entry name="amount"><int>20</int></entry>
+			<entry name="pickup-snd"><string>sound/bonus.xml:bonus_treasure</string></entry>
+			<entry name="pickup-particle"><string>effects/particles.xml:none</string></entry>
+		</dictionary>
+	</behavior>
+	<sprite scale="16">
+		<texture>items/chests.png</texture>
+		<origin>6 13</origin>
+		<frame>0 32 16 16</frame>
+	</sprite>
+	<collision shoot-through="true">
+		<polygon>
+			<point>-6 -10</point>
+			<point>-6 3</point>
+			<point>6 -10</point>
+			<point>6 3</point>
+		</polygon>
+	</collision>	
+
+</item>

@@ -1,0 +1,15 @@
+<doodad aobias="0.4" minimap="menus/minimap.xml:exit_h_dn">
+	<sprite scale="16">
+		<texture>doodads/theme_f/f_exit_v2.png</texture>
+		<origin>0 32</origin>
+		<frame>32 0 32 64</frame>
+	</sprite>	
+
+	<polygon collision="true" shadow="false">
+		<point>0 32</point>
+		<point>0 -24</point>		
+		<point>32 -24</point>		
+		<point>32 32</point>
+	</polygon>		
+
+</doodad>

@@ -1,0 +1,10 @@
+<spritebank>
+
+    <sprite scale="16" name="parallax_fog">
+        <texture>parallax/parallax_fog.png</texture>
+			<frame>	0 0 256 256</frame>
+    </sprite>
+	
+</spritebank>
+
+

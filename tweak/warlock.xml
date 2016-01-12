@@ -1,0 +1,375 @@
+<tweak>
+	<params>
+		<dictionary>
+			<int   name="max-health">125</int>
+			<int   name="max-mana">125</int>
+			<int   name="dmg-reduction">0</int>
+			<int   name="mana-regen">600</int>
+			
+			
+			
+			<int   name="dagger-dmg">16</int>
+			<int   name="poison-dur">3000</int>
+			<int   name="poison-dmg">12</int>
+			
+			
+			<int   name="lightning-dmg">18</int>
+			<int   name="lightning-bounces">5</int>
+			<int   name="lightning-mana-cost">25</int>
+			
+			
+			<bool  name="lifesteal">false</bool>
+			<int   name="lifesteal-dur">-1</int>
+			<int   name="lifesteal-dmg">-1</int>
+			<int   name="lifesteal-heal">-1</int>
+			<int   name="lifesteal-mana-cost">30</int>
+			
+			
+			
+			<bool  name="storm">false</bool>
+			<int   name="storm-dur">-1</int>
+			<int   name="storm-dmg">-1</int>
+			<int   name="storm-mana-cost">175</int>
+			
+			
+			
+			<int   name="kill-heal">0</int>
+			<int   name="kill-mana">0</int>
+		</dictionary>
+	</params>
+
+	<upgrades>
+		<!-- Misc -->
+		<dictionary id="health-1" cost="500" cat="misc1"
+			name="hp-uname" desc="hp-udesc">
+			<int name="lvl">1</int>
+			<int name="max-health">150</int>
+		</dictionary>
+		<dictionary id="health-2" cost="1000" req="health-1" cat="misc2"
+			name="hp-uname" desc="hp-udesc">
+			<int name="lvl">2</int>
+			<int name="max-health">165</int>
+		</dictionary>
+		<dictionary id="health-3" cost="1500" req="health-2" cat="misc3"
+			name="hp-uname" desc="hp-udesc">
+			<int name="lvl">3</int>
+			<int name="max-health">180</int>
+		</dictionary>
+		<dictionary id="health-4" cost="2000" req="health-3" cat="misc4"
+			name="hp-uname" desc="hp-udesc">
+			<int name="lvl">4</int>
+			<int name="max-health">200</int>
+		</dictionary>
+		<dictionary id="health-5" cost="2500" req="health-4" cat="misc5"
+			name="hp-uname" desc="hp-udesc">
+			<int name="lvl">5</int>
+			<int name="max-health">220</int>
+		</dictionary>
+		
+		
+		<dictionary id="mana-1" cost="800" cat="misc1"
+			name="mana-uname" desc="mana-udesc">
+			<int name="lvl">1</int>
+			<int name="max-mana">150</int>	
+		</dictionary>
+		<dictionary id="mana-2" cost="1400" req="mana-1" cat="misc2"
+			name="mana-uname" desc="mana-udesc">
+			<int name="lvl">2</int>
+			<int name="max-mana">225</int>		
+		</dictionary>
+		<dictionary id="mana-3" cost="2200" req="mana-2" cat="misc3"
+			name="mana-uname" desc="mana-udesc">
+			<int name="lvl">3</int>
+			<int name="max-mana">300</int>				
+		</dictionary>
+		<dictionary id="mana-4" cost="3000" req="mana-3" cat="misc4"
+			name="mana-uname" desc="mana-udesc">
+			<int name="lvl">4</int>
+			<int name="max-mana">375</int>				
+		</dictionary>
+		<dictionary id="mana-5" cost="3800" req="mana-4" cat="misc5"
+			name="mana-uname" desc="mana-udesc">
+			<int name="lvl">5</int>
+			<int name="max-mana">450</int>			
+		</dictionary>
+		
+		
+		
+		<!-- Offsensive -->
+		<dictionary id="dmg1" cost="800" cat="off1"
+			name="wardmg-uname" desc="wardmg-udesc">
+			<int name="lvl">1</int>
+			<int name="dagger-dmg">20</int>
+		</dictionary>
+		<dictionary id="dmg2" cost="1600" req="dmg1" cat="off2"
+			name="wardmg-uname" desc="wardmg-udesc">
+			<int name="lvl">2</int>
+			<int name="dagger-dmg">28</int>
+		</dictionary>
+		<dictionary id="dmg3" cost="2700" req="dmg2" cat="off3"
+			name="wardmg-uname" desc="wardmg-udesc">
+			<int name="lvl">3</int>
+			<int name="dagger-dmg">36</int>
+		</dictionary>
+		<dictionary id="dmg4" cost="3800" req="dmg3" cat="off4"
+			name="wardmg-uname" desc="wardmg-udesc">
+			<int name="lvl">4</int>
+			<int name="dagger-dmg">42</int>
+		</dictionary>
+		<dictionary id="dmg5" cost="4800" req="dmg4" cat="off5"
+			name="wardmg-uname" desc="wardmg-udesc">
+			<int name="lvl">5</int>
+			<int name="dagger-dmg">50</int>
+		</dictionary>
+		
+		
+		<dictionary id="poison1" cost="250" cat="off1"
+			name="warpoi-uname" desc="warpoi-udesc">
+			<int name="lvl">1</int>
+			<int name="poison-dmg">14</int>
+		</dictionary>
+		<dictionary id="poison2" cost="700" req="poison1" cat="off2"
+			name="warpoi-uname" desc="warpoi-udesc">
+			<int name="lvl">2</int>
+			<int name="poison-dmg">18</int>
+		</dictionary>
+		<dictionary id="poison3" cost="1500" req="poison2" cat="off3"
+			name="warpoi-uname" desc="warpoi-udesc">
+			<int name="lvl">3</int>
+			<int name="poison-dmg">22</int>
+		</dictionary>
+		<dictionary id="poison4" cost="2800" req="poison3" cat="off4"
+			name="warpoi-uname" desc="warpoi-udesc">
+			<int name="lvl">4</int>
+			<int name="poison-dmg">26</int>
+		</dictionary>
+		<dictionary id="poison5" cost="3800" req="poison4" cat="off5"
+			name="warpoi-uname" desc="warpoi-udesc">
+			<int name="lvl">5</int>
+			<int name="poison-dmg">30</int>
+		</dictionary>
+		
+		
+		<dictionary id="lightningdmg1" cost="1400" cat="off2"
+			name="lightningdmg-uname" desc="lightningdmg-udesc">
+			<int name="lvl">1</int>
+			<int name="lightning-dmg">22</int>
+		</dictionary>
+		<dictionary id="lightningdmg2" cost="2400" req="lightningdmg1" cat="off3"
+			name="lightningdmg-uname" desc="lightningdmg-udesc">
+			<int name="lvl">2</int>
+			<int name="lightning-dmg">26</int>
+		</dictionary>
+		<dictionary id="lightningdmg3" cost="3200" req="lightningdmg2" cat="off4"
+			name="lightningdmg-uname" desc="lightningdmg-udesc">
+			<int name="lvl">3</int>
+			<int name="lightning-dmg">30</int>
+		</dictionary>
+		<dictionary id="lightningdmg4" cost="4500" req="lightningdmg3" cat="off5"
+			name="lightningdmg-uname" desc="lightningdmg-udesc">
+			<int name="lvl">4</int>
+			<int name="lightning-dmg">35</int>
+		</dictionary>
+		
+		
+		<dictionary id="lightningtrg1" cost="800" cat="off2"
+			name="lightningtrg-uname" desc="lightningtrg-udesc">
+			<int name="lvl">1</int>
+			<int name="lightning-bounces">6</int>
+		</dictionary>
+		<dictionary id="lightningtrg2" cost="1400" req="lightningtrg1" cat="off3"
+			name="lightningtrg-uname" desc="lightningtrg-udesc">
+			<int name="lvl">2</int>
+			<int name="lightning-bounces">7</int>
+		</dictionary>
+		<dictionary id="lightningtrg3" cost="2600" req="lightningtrg2" cat="off4"
+			name="lightningtrg-uname" desc="lightningtrg-udesc">
+			<int name="lvl">3</int>
+			<int name="lightning-bounces">8</int>
+		</dictionary>
+		<dictionary id="lightningtrg4" cost="3600" req="lightningtrg3" cat="off5"
+			name="lightningtrg-uname" desc="lightningtrg-udesc">
+			<int name="lvl">4</int>
+			<int name="lightning-bounces">9</int>
+		</dictionary>
+		
+		
+		
+		
+		
+		<dictionary id="storm" cost="2200" cat="off3"
+			name="storm-uname" desc="storm-udesc">
+			<bool  name="storm">true</bool>
+			<int   name="storm-dur">7</int>
+			<int   name="storm-dmg">16</int>
+		</dictionary>
+		
+		<dictionary id="stormdmg-1" cost="3500" req="storm" cat="off4"
+			name="stormdmg-uname" desc="stormdmg-udesc">
+			<int name="lvl">1</int>
+			<int name="storm-dmg">28</int>
+		</dictionary>
+		<dictionary id="stormdmg-2" cost="4500" req="stormdmg-1" cat="off5"
+			name="stormdmg-uname" desc="stormdmg-udesc">
+			<int name="lvl">2</int>
+			<int name="storm-dmg">40</int>
+		</dictionary>
+		
+		<dictionary id="stormdur-1" cost="3500" req="storm" cat="off4"
+			name="stormdur-uname" desc="stormdur-udesc">
+			<int name="lvl">1</int>
+			<int name="storm-dur">9</int>
+		</dictionary>
+		<dictionary id="stormdur-2" cost="4500" req="stormdur-1" cat="off5"
+			name="stormdur-uname" desc="stormdur-udesc">
+			<int name="lvl">2</int>
+			<int name="storm-dur">11</int>
+		</dictionary>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<dictionary id="kmana1" cost="3000" cat="off2"
+			name="kmana-uname" desc="kmana-udesc-1">
+			<int name="lvl">1</int>
+			<int name="kill-mana">1</int>
+		</dictionary>
+		<dictionary id="kmana2" cost="4000" req="kmana1" cat="off3"
+			name="kmana-uname" desc="kmana-udesc-2">
+			<int name="lvl">2</int>
+			<int name="kill-mana">2</int>
+		</dictionary>
+		<dictionary id="kmana3" cost="5000" req="kmana2" cat="off4"
+			name="kmana-uname" desc="kmana-udesc-2">
+			<int name="lvl">3</int>
+			<int name="kill-mana">3</int>
+		</dictionary>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+		<!-- Defensive -->
+		<dictionary id="armor-1" cost="1200" cat="def1"
+			name="armor-uname" desc="armor-udesc">
+			<int name="lvl">1</int>
+			<int name="dmg-reduction">1</int>
+		</dictionary>
+		<dictionary id="armor-2" cost="2400" req="armor-1" cat="def2"
+			name="armor-uname" desc="armor-udesc">
+			<int name="lvl">2</int>
+			<int name="dmg-reduction">2</int>
+		</dictionary>
+		<dictionary id="armor-3" cost="3600" req="armor-2" cat="def3"
+			name="armor-uname" desc="armor-udesc">
+			<int name="lvl">3</int>
+			<int name="dmg-reduction">3</int>
+		</dictionary>
+		<dictionary id="armor-4" cost="4800" req="armor-3" cat="def4"
+			name="armor-uname" desc="armor-udesc">
+			<int name="lvl">4</int>
+			<int name="dmg-reduction">4</int>
+		</dictionary>
+		<dictionary id="armor-5" cost="6000" req="armor-4" cat="def5"
+			name="armor-uname" desc="armor-udesc">
+			<int name="lvl">5</int>
+			<int name="dmg-reduction">5</int>
+		</dictionary>
+		
+		
+		
+
+		
+		
+		
+		<dictionary id="steal" cost="900" cat="def2"
+			name="steal-uname" desc="steal-udesc">
+			<bool name="lifesteal">true</bool>
+			<int  name="lifesteal-dur">1</int>
+			<int  name="lifesteal-dmg">8</int>
+			<int  name="lifesteal-heal">1</int>
+		</dictionary>
+		
+		<dictionary id="stealdmg-1" cost="2000" req="steal" cat="def3"
+			name="stealdmg-uname" desc="stealdmg-udesc">
+			<int name="lvl">1</int>
+			<int name="lifesteal-dmg">12</int>
+			<int name="lifesteal-heal">2</int>
+		</dictionary>
+		<dictionary id="stealdmg-2" cost="5000" req="stealdmg-1" cat="def5"
+			name="stealdmg-uname" desc="stealdmg-udesc">
+			<int name="lvl">2</int>
+			<int name="lifesteal-dmg">16</int>
+			<int name="lifesteal-heal">3</int>
+		</dictionary>
+		
+		<dictionary id="stealdur-1" cost="2000" req="steal" cat="def3"
+			name="stealdur-uname" desc="stealdur-udesc">
+			<int name="lvl">1</int>
+			<int name="lifesteal-dur">2</int>
+		</dictionary>
+		<dictionary id="stealdur-2" cost="3500" req="stealdur-1" cat="def4"
+			name="stealdur-uname" desc="stealdur-udesc">
+			<int name="lvl">2</int>
+			<int name="lifesteal-dur">3</int>
+		</dictionary>
+		<dictionary id="stealdur-3" cost="5000" req="stealdur-2" cat="def5"
+			name="stealdur-uname" desc="stealdur-udesc">
+			<int name="lvl">3</int>
+			<int name="lifesteal-dur">4</int>
+		</dictionary>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<dictionary id="kheal1" cost="1000" cat="def1"
+			name="kheal-uname" desc="kheal-udesc-1">
+			<int name="lvl">1</int>
+			<int name="kill-heal">20</int>
+		</dictionary>
+		<dictionary id="kheal2" cost="2000" req="kheal1" cat="def2"
+			name="kheal-uname" desc="kheal-udesc-2">
+			<int name="lvl">2</int>
+			<int name="kill-heal">40</int>
+		</dictionary>
+		<dictionary id="kheal3" cost="3000" req="kheal2" cat="def3"
+			name="kheal-uname" desc="kheal-udesc-2">
+			<int name="lvl">3</int>
+			<int name="kill-heal">60</int>
+		</dictionary>
+		<dictionary id="kheal4" cost="4000" req="kheal3" cat="def4"
+			name="kheal-uname" desc="kheal-udesc-2">
+			<int name="lvl">4</int>
+			<int name="kill-heal">80</int>
+		</dictionary>
+		<dictionary id="kheal5" cost="5000" req="kheal4" cat="def5"
+			name="kheal-uname" desc="kheal-udesc-2">
+			<int name="lvl">5</int>
+			<int name="kill-heal">100</int>
+		</dictionary>
+	</upgrades>
+</tweak>

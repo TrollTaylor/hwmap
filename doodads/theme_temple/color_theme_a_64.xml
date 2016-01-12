@@ -1,0 +1,8 @@
+<doodad defaultlayer="90" minimap="menus/minimap.xml:color_64">
+	<sprite scale="16">
+		<texture>doodads/theme_temple/color_theme_tp.png</texture>
+		<origin>0 0</origin>
+		<frame>0 0 64 64</frame>
+	</sprite>		
+
+</doodad>

@@ -1,0 +1,13 @@
+<spritebank>
+	
+	<sprite scale="16" name="meteor">
+		<texture>effects/meteor.png</texture>
+		<origin>12 40</origin>
+		<frame>0 48 24 48</frame>
+		<glow scale="16">
+			<texture>effects/meteor.png</texture>
+			<frame>24 48 24 48</frame>		
+			<frame>48 48 24 48</frame>					
+		</glow>
+	</sprite>
+</spritebank>

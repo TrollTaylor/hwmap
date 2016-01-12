@@ -1,0 +1,14 @@
+<spritebank>
+    <sprite scale="16" name="ping">
+        <texture>effects/enemy_boss_anubis_charge.png</texture>
+		<origin>128 128</origin>
+		<frame time="50">0 0 256 256</frame>
+		<frame time="50">256 0 256 256</frame>
+		<frame time="50">512 0 256 256</frame>
+		<frame time="50">768 0 256 256</frame>
+		<frame time="50">0 256 256 256</frame>
+		<frame time="50">256 256 256 256</frame>
+		<frame time="50">512 256 256 256</frame>
+		<frame time="50">768 256 256 256</frame>		
+    </sprite>
+</spritebank>

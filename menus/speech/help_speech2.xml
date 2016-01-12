@@ -1,0 +1,56 @@
+<speech font="menus/px-10.xml" text-color="255 255 255">
+	<sprite scale="1" name="top-left">
+		<texture>menus/speech/speech2.png</texture>
+		<frame>0 9 3 3</frame>
+	</sprite>
+
+	<sprite scale="1" name="top">
+		<texture>menus/speech/speech2.png</texture>
+		<frame>3 9 3 3</frame>
+	</sprite>
+	
+	<sprite scale="1" name="top-right">
+		<texture>menus/speech/speech2.png</texture>
+		<frame>6 9 3 3</frame>
+	</sprite>
+	
+	<sprite scale="1" name="left">
+		<texture>menus/speech/speech2.png</texture>
+		<frame>0 12 3 3</frame>
+	</sprite>
+	
+	<sprite scale="1" name="middle">
+		<texture>menus/speech/speech2.png</texture>
+		<frame>3 12 3 3</frame>
+	</sprite>
+
+	<sprite scale="1" name="right">
+		<texture>menus/speech/speech2.png</texture>
+		<frame>6 12 3 3</frame>
+	</sprite>
+	
+	<sprite scale="1" name="bottom-left">
+		<texture>menus/speech/speech2.png</texture>
+		<frame>0 15 3 3</frame>
+	</sprite>
+	
+	<sprite scale="1" name="bottom">
+		<texture>menus/speech/speech2.png</texture>
+		<frame>3 15 3 3</frame>
+	</sprite>
+
+	<sprite scale="1" name="bottom-right">
+		<texture>menus/speech/speech2.png</texture>
+		<frame>6 15 3 3</frame>
+	</sprite>
+	
+	<sprite scale="1" name="tail-bot">
+		<texture>menus/speech/speech2.png</texture>
+		<frame>13 0 1 1</frame>
+	</sprite>
+	
+	<sprite scale="1" name="tail-top">
+		<texture>menus/speech/speech2.png</texture>
+		<frame>13 0 1 1</frame>
+	</sprite>
+</speech>

@@ -1,0 +1,31 @@
+<item behavior="breakable">
+	<behavior>
+		<dictionary>
+			<entry name="ignore-trap-damage"><bool>true</bool></entry>
+			<entry name="destroy-snd"><string>sound/misc.xml:chest_wood_break</string></entry>
+			<entry name="destroy-particle"><string>effects/particles.xml:breakable_wood</string></entry>
+			<array name="loot">
+				<int>910</int><string>items/valuable_diamond.xml</string>	
+				<int>50</int><string>items/powerup_1up.xml</string>	
+				<int>10</int><string>items/upgrade_health.xml</string>	
+				<int>10</int><string>items/upgrade_mana.xml</string>	
+				<int>10</int><string>items/upgrade_damage.xml</string>
+				<int>10</int><string>items/upgrade_defense.xml</string>												
+			</array>
+		</dictionary>
+	</behavior>
+	
+	<sprite scale="16">
+		<texture>items/chests.png</texture>
+		<origin>6 13</origin>
+		<frame>16 0 16 16</frame>
+	</sprite>
+	<collision static="true">
+		<polygon>
+			<point>-9 -10</point>
+			<point>-9 4</point>
+			<point>9 -10</point>
+			<point>9 4</point>
+		</polygon>
+	</collision>	
+</item>

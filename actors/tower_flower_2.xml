@@ -1,0 +1,77 @@
+<actor behavior="tower-flower" minimap="menus/minimap.xml:enemy_static">
+	<behavior>
+		<dictionary>
+			<entry name="hp"><int>400</int></entry>
+			<entry name="multiplayer-scale-hp"><bool>true</bool></entry>			
+			<entry name="dmg"><int>30</int></entry>
+			<entry name="aggro-range"><float>12</float></entry>
+			<entry name="attack-delay"><int>750</int></entry>
+			<entry name="dmg-delay"><int>400</int></entry>
+			<entry name="dmg-range"><float>0.125</float></entry>
+			<entry name="attack-snd"><string>sound/monsters.xml:hit_flower_1</string></entry>		
+			<entry name="death-snd"><string>sound/monsters.xml:death_flower_1</string></entry>			
+			<entry name="hit-effect"><string>effects/particles.xml:hit_flower_1</string></entry>
+			<entry name="hit-particle"><string>effects/particles.xml:particle_flower_1</string></entry>
+			<entry name="corpse"><string>actors/tower_flower_2_razed.xml</string></entry>
+			<entry name="gib"><string>effects/gibs/gib_tower_flower_1.xml</string></entry>		
+			<float name="editor-range-marker">12</float>
+			
+			<dictionary name="loot">
+				<string name="origin">0 0</string>
+				<float name="spread">0</float>
+					<array name="loot">
+						<array>	
+							<int>50</int><string>items/collectable_1.xml</string>
+							<int>50</int><string>items/upgrade_health.xml</string>	
+							<int>50</int><string>items/upgrade_mana.xml</string>	
+							<int>50</int><string>items/upgrade_damage.xml</string>
+							<int>50</int><string>items/upgrade_defense.xml</string>																								
+						</array>					
+					</array>
+			</dictionary>				
+			
+		</dictionary>
+	</behavior>
+
+
+	<sprite scale="16" name="default">
+		<texture>actors/tower_flower_2.png</texture>
+		<origin>20 20</origin>
+		<frame time="100">120 0 40 40</frame>
+	</sprite>
+	
+	<sprite scale="16" name="attack">
+		<texture>actors/tower_flower_2.png</texture>
+		<origin>20 20</origin>
+		<frame time="100">80 0 40 40</frame>
+		<frame time="100">40 0 40 40</frame>
+		<frame time="250">0 0 40 40</frame>
+		<frame time="100">40 0 40 40</frame>	
+		<frame time="100">80 0 40 40</frame>			
+	</sprite>
+
+	<sprite scale="16" name="attack-effect">
+		<texture>actors/tower_flower_2.png</texture>
+		<origin>20 16</origin>
+		<frame time="75">0 40 40 40</frame>
+		<frame time="75">40 40 40 40</frame>
+		<frame time="75">80 40 40 40</frame>
+		<frame time="75">120 40 40 40</frame>
+		<frame time="75">160 40 40 40</frame>
+		<frame time="150">200 40 40 40</frame>
+		<frame time="75">160 40 40 40</frame>		
+		<frame time="75">120 40 40 40</frame>		
+		<frame time="75">80 40 40 40</frame>		
+		<frame time="75">40 40 40 40</frame>	
+		<frame time="75">0 40 40 40</frame>	
+		<frame time="75">0 80 40 40</frame>	
+		<frame time="75">40 80 40 40</frame>	
+	</sprite>
+	
+	
+	
+	
+	<collision static="true">
+		<circle offset="0 0" radius="15" />
+	</collision>	
+</actor>

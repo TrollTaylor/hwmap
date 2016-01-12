@@ -1,0 +1,57 @@
+<spritebank>
+	<sprite scale="16" name="east">
+		<texture>effects/knight_slash.png</texture>
+		<origin>12 17</origin>
+		<frame time="25">0 288 24 24</frame>
+		<frame time="25">0 312 24 24</frame>
+	</sprite>
+
+	<sprite scale="16" name="northeast">
+		<texture>effects/knight_slash.png</texture>
+		<origin>12 17</origin>
+		<frame time="25">24 288 24 24</frame>
+		<frame time="25">24 312 24 24</frame>
+	</sprite>
+
+	<sprite scale="16" name="north">
+		<texture>effects/knight_slash.png</texture>
+		<origin>12 17</origin>
+		<frame time="25">48 288 24 24</frame>
+		<frame time="25">48 312 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="northwest">
+		<texture>effects/knight_slash.png</texture>
+		<origin>12 17</origin>
+		<frame time="25">72 288 24 24</frame>
+		<frame time="25">72 312 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="west">
+		<texture>effects/knight_slash.png</texture>
+		<origin>12 17</origin>
+		<frame time="25">96 288 24 24</frame>
+		<frame time="25">96 312 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="southwest">
+		<texture>effects/knight_slash.png</texture>
+		<origin>12 17</origin>
+		<frame time="25">120 288 24 24</frame>
+		<frame time="25">120 312 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="south">
+		<texture>effects/knight_slash.png</texture>
+		<origin>12 17</origin>
+		<frame time="25">144 288 24 24</frame>
+		<frame time="25">144 312 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="southeast">
+		<texture>effects/knight_slash.png</texture>
+		<origin>12 17</origin>
+		<frame time="25">168 288 24 24</frame>
+		<frame time="25">168 312 24 24</frame>
+	</sprite>
+</spritebank>

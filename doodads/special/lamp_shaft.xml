@@ -1,0 +1,29 @@
+<doodad defaultlayer="1000" ao="false">
+	<sprite random-start="true" scale="16">
+		<texture>doodads/special/lamp_shaft.png</texture>
+		<origin>25 125</origin>
+		<frame>0 0 49 145</frame>
+		<glow scale="16">
+			<texture>doodads/special/lamp_shaft.png</texture>
+			<frame>0 0 49 145</frame>
+		</glow>			
+	</sprite>
+	<light>
+		<texture>shaders/light_cone.png</texture>
+		<origin>3 -115</origin>
+		<mul>
+			<range>0</range>
+			<color1>255 255 0</color1>
+			<color2>0 0 0</color2>
+			<color3>0 0 0</color3>
+		</mul>
+		
+		<add>
+			<range>400</range>
+			<color1>100 100 0</color1>
+			<color2>0 0 0</color2>
+			<color3>0 0 0</color3>
+		</add>
+		
+	</light>
+</doodad>

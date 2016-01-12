@@ -1,0 +1,17 @@
+<doodad defaultlayer="-10" minimap="menus/minimap.xml:ledge_up_nowater">
+	<sprite scale="16">
+		<texture>doodads/theme_e/e.png</texture>
+		<origin>0 0</origin>					
+		<frame>64 48 32 48</frame>
+	</sprite>
+
+
+	<collision shoot-through="true">
+		<polygon>
+			<point>0 0</point>
+			<point>0 16</point>		
+			<point>32 16</point>		
+			<point>32 0</point>
+		</polygon>
+	</collision>	
+</doodad>

@@ -1,0 +1,8 @@
+<doodad defaultlayer="-20">
+	<sprite scale="16">
+		<texture>doodads/theme_f/f_special_cliff.png</texture>
+		<origin>30 30</origin>
+		<frame>0 0 60 100</frame>				
+	</sprite>
+</doodad>
+

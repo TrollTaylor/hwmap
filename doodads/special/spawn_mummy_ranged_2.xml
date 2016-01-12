@@ -1,0 +1,12 @@
+<doodad ao="false">
+	<sprite scale="16">
+		<texture>doodads/special/spawn_mummy_ranged_2.png</texture>
+		<origin>7 12</origin>
+		<frame time="200">0 0 15 16</frame>
+		<frame time="200">15 0 15 16</frame>
+		<frame time="200">30 0 15 16</frame>
+		<frame time="200">45 0 15 16</frame>
+		<frame time="200">60 0 15 16</frame>	
+	</sprite>		
+
+</doodad>

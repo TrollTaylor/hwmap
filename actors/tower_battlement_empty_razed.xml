@@ -1,0 +1,7 @@
+<doodad defaultlayer="-1">
+	<sprite scale="16">
+		<texture>actors/tower_battlement_empty.png</texture>
+		<origin>16 16</origin>					
+		<frame time="100">32 0 32 32</frame>
+	</sprite>
+</doodad>

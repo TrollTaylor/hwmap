@@ -1,0 +1,184 @@
+﻿<prefab>
+<dictionary>
+	<dictionary name="tilemap">
+		<array name="tiledata"></array>
+	</dictionary>
+	<dictionary name="doodads">
+		<array name="doodads">
+			<dictionary>
+				<int name="id">86309</int>
+				<string name="type">doodads/theme_bonus5/bonus5_deteriorate.xml</string>
+				<vec2 name="pos">0 0</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+		</array>
+	</dictionary>
+	<dictionary name="actors">
+	</dictionary>
+	<dictionary name="items">
+	</dictionary>
+	<dictionary name="scripting">
+		<array name="nodes">
+			<dictionary>
+				<int name="id">86302</int>
+				<string name="type">ObjectEventTrigger</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">4</int>
+				<vec2 name="pos">-3.5 -6</vec2>
+				<dictionary name="parameters">
+					<string name="event">Hit</string>
+					<dictionary name="object">
+						<int-arr name="static">86309</int-arr>
+					</dictionary>
+				</dictionary>
+				<int-arr name="connections">86303 86304 86305 86306</int-arr>
+				<int-arr name="connection-delays">0 0 0 0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">86298</int>
+				<string name="type">ChangeDoodadState</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">1</int>
+				<vec2 name="pos">-3.5 -2</vec2>
+				<dictionary name="parameters">
+					<string name="state">2</string>
+					<dictionary name="object">
+						<int-arr name="static">86309</int-arr>
+					</dictionary>
+				</dictionary>
+				<int-arr name="connections">86307</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">86303</int>
+				<string name="type">Counter</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">-3.5 -4</vec2>
+				<dictionary name="parameters">
+					<int name="count">1</int>
+					<dictionary name="execute">
+						<int-arr name="static">86298</int-arr>
+					</dictionary>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">86299</int>
+				<string name="type">ChangeDoodadState</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">1</int>
+				<vec2 name="pos">-1.5 -2</vec2>
+				<dictionary name="parameters">
+					<string name="state">3</string>
+					<dictionary name="object">
+						<int-arr name="static">86309</int-arr>
+					</dictionary>
+				</dictionary>
+				<int-arr name="connections">86307</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">86304</int>
+				<string name="type">Counter</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">2</int>
+				<vec2 name="pos">-1.5 -4</vec2>
+				<dictionary name="parameters">
+					<int name="count">2</int>
+					<dictionary name="execute">
+						<int-arr name="static">86299</int-arr>
+					</dictionary>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">86307</int>
+				<string name="type">PlaySound</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">0.5 0.5</vec2>
+				<dictionary name="parameters">
+					<string name="sound">sound/misc.xml:wall_hit</string>
+					<bool name="loop">False</bool>
+					<bool name="play3d">True</bool>
+					<float name="range3d">7</float>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">86308</int>
+				<string name="type">PlaySound</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">0.5 0.5</vec2>
+				<dictionary name="parameters">
+					<string name="sound">sound/bonus.xml:bonus_wall_dst</string>
+					<bool name="loop">False</bool>
+					<bool name="play3d">False</bool>
+					<float name="range3d">5</float>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">86301</int>
+				<string name="type">DestroyObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">2.5 -2</vec2>
+				<dictionary name="parameters">
+					<int-arr name="static">86309</int-arr>
+				</dictionary>
+				<int-arr name="connections">86308</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">86306</int>
+				<string name="type">Counter</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">4</int>
+				<vec2 name="pos">2.5 -4</vec2>
+				<dictionary name="parameters">
+					<int name="count">4</int>
+					<dictionary name="execute">
+						<int-arr name="static">86301</int-arr>
+					</dictionary>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">86300</int>
+				<string name="type">ChangeDoodadState</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">1</int>
+				<vec2 name="pos">0.5 -2</vec2>
+				<dictionary name="parameters">
+					<string name="state">4</string>
+					<dictionary name="object">
+						<int-arr name="static">86309</int-arr>
+					</dictionary>
+				</dictionary>
+				<int-arr name="connections">86307</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">86305</int>
+				<string name="type">Counter</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">3</int>
+				<vec2 name="pos">0.5 -4</vec2>
+				<dictionary name="parameters">
+					<int name="count">3</int>
+					<dictionary name="execute">
+						<int-arr name="static">86300</int-arr>
+					</dictionary>
+				</dictionary>
+			</dictionary>
+		</array>
+	</dictionary>
+	<dictionary name="lighting">
+		<array name="lights"></array>
+		<int-arr name="shadow-color">135 128 128 255</int-arr>
+		<int-arr name="ambient-color">50 50 50 255</int-arr>
+		<int-arr name="add-color">0 0 0 255</int-arr>
+		<float name="shadow-length">1</float>
+	</dictionary>
+	<dictionary name="prefabs">
+	</dictionary>
+</dictionary>
+</prefab>

@@ -1,0 +1,11 @@
+<doodad>
+	<sprite scale="16">
+		<texture>actors/tower_tracking_1_razed.png</texture>
+		<origin>16 10</origin>					
+		<frame time="100">0 0 32 18</frame>
+	</sprite>
+	
+	<collision shoot-through="true">
+		<circle offset="0 0" radius="8" />
+	</collision>	
+</doodad>

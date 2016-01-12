@@ -1,0 +1,85 @@
+<item behavior="bomb">
+	<behavior>
+		<dictionary>
+			<entry name="dmg"><int>20</int></entry>
+			<entry name="splash"><float>1.25</float></entry>
+			<entry name="explode-delay"><int>600</int></entry>
+			<entry name="explode-snd"><string>sound/monsters.xml:death_wisp_explosion</string></entry>
+			<entry name="explode-particle"><string>effects/particles.xml:bomb_wisp_2</string></entry>
+			<entry name="dmg-all"><bool>false</bool></entry>
+			<entry name="no-lamp"><bool>true</bool></entry>
+			<entry name="gib"><string>effects/gibs/gib_wisp_2.xml</string></entry>	
+			<array name="loot">
+				<int>50</int><string>items/valuable_2.xml</string>
+				<int>25</int><string>items/valuable_3.xml</string>				
+				<int>15</int><string>items/mana_1.xml</string>
+			</array>			
+		</dictionary>
+	</behavior>
+
+	<sprite scale="16">
+		<texture>items/bomb_wisp_2.png</texture>
+		<origin>12 14</origin>
+		<frame time="50">0 0 24 24</frame>
+				<frame time="50">24 0 24 24</frame>
+				<frame time="50">48 0 24 24</frame>
+				<frame time="50">72 0 24 24</frame>
+				<frame time="50">96 0 24 24</frame>
+				<frame time="50">120 0 24 24</frame>
+				<frame time="50">144 0 24 24</frame>
+				<frame time="50">168 0 24 24</frame>
+				<frame time="50">192 0 24 24</frame>
+				<frame time="50">216 0 24 24</frame>
+				<frame time="50">192 0 24 24</frame>
+				<frame time="100">0 24 24 24</frame>
+				<frame time="100">24 24 24 24</frame>
+				<frame time="100">192 24 24 24</frame>
+				<frame time="100">48 24 24 24</frame>
+				<frame time="100">192 24 24 24</frame>
+				<frame time="100">72 24 24 24</frame>
+				<frame time="100">96 24 24 24</frame>
+				<frame time="50">120 24 24 24</frame>
+		
+		<glow scale="16">
+			<texture>items/bomb_wisp_1.png</texture>
+				<frame time="50">0 48 24 24</frame>
+				<frame time="50">24 48 24 24</frame>
+				<frame time="50">48 48 24 24</frame>
+				<frame time="50">72 48 24 24</frame>
+				<frame time="50">96 48 24 24</frame>
+				<frame time="50">120 48 24 24</frame>
+				<frame time="50">144 48 24 24</frame>
+				<frame time="50">168 48 24 24</frame>
+				<frame time="50">192 48 24 24</frame>
+				<frame time="50">216 48 24 24</frame>
+				<frame time="50">192 48 24 24</frame>
+				<frame time="100">0 72 24 24</frame>
+				<frame time="100">24 72 24 24</frame>
+				<frame time="100">24 72 24 24</frame>
+				<frame time="100">48 72 24 24</frame>
+				<frame time="100">48 72 24 24</frame>
+				<frame time="100">72 72 24 24</frame>
+				<frame time="100">96 72 24 24</frame>
+				<frame time="50">120 72 24 24</frame>
+		</glow>	
+	</sprite>
+	
+	<light>
+		<origin>0 -2</origin>
+		<mul>
+			<range>60</range>
+			<color1>255 255 255</color1>
+			<color2>200 200 200</color2>
+			<color3>128 128 128</color3>
+		</mul>
+		<add>
+			<range>75</range>
+			<color1>75 10 10</color1>
+			<color2>0 0 0</color2>
+			<color3>0 0 0</color3>
+		</add>
+	</light>	
+	
+	<collision shoot-through="true">
+	</collision>
+</item>

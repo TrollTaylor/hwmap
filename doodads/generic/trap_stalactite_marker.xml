@@ -1,0 +1,11 @@
+<doodad>
+	<sprite scale="16">
+		<texture>doodads/generic/trap_stalactite_marker.png</texture>
+		<origin>100 100</origin>
+		<frame time="0">100 100 16 16</frame>		
+		<frame time="50">0 0 200 200</frame>
+		<frame time="50">200 0 200 200</frame>	
+		<frame time="50">0 200 200 200</frame>	
+		<frame time="2200">200 200 200 200</frame>										
+	</sprite>
+</doodad>

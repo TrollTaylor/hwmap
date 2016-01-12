@@ -1,0 +1,17 @@
+<doodad  ao="false" defaultlayer="-5">
+	<sprite random-start="true" scale="16">
+		<texture>doodads/generic/exit_teleport_boss_desert_activated.png</texture>
+		<origin>10 11</origin>
+		<frame time="500">0 0 20 20</frame>
+		<frame time="150">20 0 20 20</frame>
+		<frame time="150">0 20 20 20</frame>
+		<frame time="150">20 20 20 20</frame>
+		<glow scale="16">
+			<texture>doodads/generic/exit_teleport_boss_desert_activated.png</texture>
+				<frame time="500">0 0 20 20</frame>
+				<frame time="150">20 0 20 20</frame>
+				<frame time="150">0 20 20 20</frame>
+				<frame time="150">20 20 20 20</frame>
+		</glow>														
+	</sprite>
+</doodad>

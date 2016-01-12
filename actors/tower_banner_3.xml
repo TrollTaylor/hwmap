@@ -1,0 +1,134 @@
+<actor behavior="composite">
+	<behavior>
+		<dictionary>
+			<entry name="hp"><int>200</int></entry>
+			<entry name="multiplayer-scale-hp"><bool>true</bool></entry>
+			<float name="aggro-range">50</float>
+			<float name="max-range">50</float>
+			<entry name="ignore-hit-effects"><bool>true</bool></entry>		
+			<vec2 name="hp-bar">0 -1.25</vec2>
+			<entry name="death-snd"><string>sound/monsters.xml:death_tower_banner</string></entry>			
+			<entry name="hit-effect"><string>effects/particles.xml:robe-green-hit</string></entry>		
+			<entry name="hit-particle"><string>effects/particles.xml:robe-green-particle</string></entry>	
+			<entry name="corpse"><string>actors/tower_banner_3_razed.xml</string></entry>			
+			<float name="editor-range-marker">5</float>		
+			
+			<dictionary name="movement">
+				<string name="type">passive</string>
+				<bool name="set-dir">false</bool>
+			</dictionary>
+			
+			<array name="skills">
+				<dictionary>
+					<string name="type">heal</string>
+					<int name="cooldown">250</int>
+					<float name="range">50</float>
+					<string name="sound">sound/monsters.xml:lich_heal</string>
+					<int name="heal">40</int>
+					<float name="cast-range">5</float>
+					<string name="particle">effects/particles.xml:player_heal</string>
+				</dictionary>					
+			</array>
+			
+		</dictionary>
+	</behavior>
+	
+	<sprite scale="16" name="range">
+		<texture>actors/tower_banner.png</texture>
+		<origin>64 64</origin>
+		<frame time="50">64 128 128 128</frame>		
+		<frame time="50">320 0 128 128</frame>		
+		<frame time="50">192 0 128 128</frame>		
+		<frame time="1000">64 0 128 128</frame>		
+	</sprite>	
+	
+	<!-- Idle -->
+	<sprite scale="16" name="east">
+		<texture>actors/tower_banner.png</texture>
+		<origin>5 16</origin>
+		<frame time="150">0 36 10 18</frame>
+	</sprite>
+	<sprite scale="16" name="northeast">
+		<texture>actors/tower_banner.png</texture>
+		<origin>5 16</origin>
+		<frame time="150">0 36 10 18</frame>
+	</sprite>
+	<sprite scale="16" name="north">
+		<texture>actors/tower_banner.png</texture>
+		<origin>5 16</origin>
+		<frame time="150">0 36 10 18</frame>
+	</sprite>
+	<sprite scale="16" name="northwest">
+		<texture>actors/tower_banner.png</texture>
+		<origin>5 16</origin>
+		<frame time="150">0 36 10 18</frame>
+	</sprite>
+	<sprite scale="16" name="west">
+		<texture>actors/tower_banner.png</texture>
+		<origin>5 16</origin>
+		<frame time="150">0 36 10 18</frame>
+	</sprite>
+	<sprite scale="16" name="southwest">
+		<texture>actors/tower_banner.png</texture>
+		<origin>5 16</origin>
+		<frame time="150">0 36 10 18</frame>
+	</sprite>
+	<sprite scale="16" name="south">
+		<texture>actors/tower_banner.png</texture>
+		<origin>5 16</origin>
+		<frame time="150">0 36 10 18</frame>	
+	</sprite>
+	<sprite scale="16" name="southeast">
+		<texture>actors/tower_banner.png</texture>
+		<origin>5 16</origin>
+		<frame time="150">0 36 10 18</frame>
+	</sprite>
+	
+		
+	<sprite scale="16" name="west-walk">
+		<texture>actors/tower_banner.png</texture>
+		<origin>5 16</origin>
+		<frame time="150">0 36 10 18</frame>
+	</sprite>
+	<sprite scale="16" name="northwest-walk">
+		<texture>actors/tower_banner.png</texture>
+		<origin>5 16</origin>
+		<frame time="150">0 36 10 18</frame>
+	</sprite>
+	<sprite scale="16" name="north-walk">
+		<texture>actors/tower_banner.png</texture>
+		<origin>5 16</origin>
+		<frame time="150">0 36 10 18</frame>
+	</sprite>
+	<sprite scale="16" name="northeast-walk">
+		<texture>actors/tower_banner.png</texture>
+		<origin>5 16</origin>
+		<frame time="150">0 36 10 18</frame>
+	</sprite>
+	<sprite scale="16" name="east-walk">
+		<texture>actors/tower_banner.png</texture>
+		<origin>5 16</origin>
+		<frame time="150">0 36 10 18</frame>
+	</sprite>
+	<sprite scale="16" name="southeast-walk">
+		<texture>actors/tower_banner.png</texture>
+		<origin>5 16</origin>
+		<frame time="150">0 36 10 18</frame>
+	</sprite>
+	<sprite scale="16" name="south-walk">
+		<texture>actors/tower_banner.png</texture>
+		<origin>5 16</origin>
+		<frame time="150">0 36 10 18</frame>
+	</sprite>
+	<sprite scale="16" name="southwest-walk">
+		<texture>actors/tower_banner.png</texture>
+		<origin>5 16</origin>
+		<frame time="150">0 36 10 18</frame>
+	</sprite>
+	
+
+	
+	<collision static="true" collision-response="false">
+		<circle offset="0 0" radius="4" />
+	</collision>	
+</actor>

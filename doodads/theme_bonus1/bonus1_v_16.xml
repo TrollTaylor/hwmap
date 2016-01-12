@@ -1,0 +1,22 @@
+<doodad minimap="menus/minimap.xml:bonus_vertical">
+	<sprite scale="16">
+		<texture>doodads/theme_bonus1/bonus1.png</texture>
+		<origin>0 0</origin>
+		<frame>32 32 16 32</frame>
+	</sprite>
+
+	<polygon collision="false" shadow="true">
+		<point>0 32</point>
+		<point>0 0</point>
+		<point>24 0</point>
+		<point>24 32</point>		
+	</polygon>			
+
+	<polygon collision="true" shadow="false">
+		<point>0 32</point>
+		<point>0 0</point>		
+		<point>16 0</point>		
+		<point>16 32</point>
+	</polygon>		
+
+</doodad>

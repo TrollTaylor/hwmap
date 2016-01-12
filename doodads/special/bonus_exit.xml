@@ -1,0 +1,46 @@
+<doodad defaultlayer="0">
+	<sprite scale="16" name="inactive">
+		<texture>doodads/special/bonus_entrance.png</texture>
+		<origin>0 0</origin>
+		<frame>104 40 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="deactivate">
+		<texture>doodads/special/bonus_entrance.png</texture>
+		<origin>0 0</origin>
+		<frame time="50">0 24 24 24</frame>
+		<frame time="50">24 24 24 24</frame>
+		<frame time="50">48 24 24 24</frame>
+		<frame time="50">72 24 24 24</frame>
+		<frame time="50">96 24 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="activate">
+		<texture>doodads/special/bonus_entrance.png</texture>
+		<origin>0 0</origin>
+		<frame time="50">96 24 24 24</frame>
+		<frame time="50">72 24 24 24</frame>
+		<frame time="50">48 24 24 24</frame>
+		<frame time="50">24 24 24 24</frame>
+		<frame time="50">0 24 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="active">
+		<texture>doodads/special/bonus_entrance.png</texture>
+		<origin>0 0</origin>
+		<frame>24 0 24 24</frame>
+	</sprite>
+	
+
+		
+	<states default="active">		
+		<transition from="activate" to="active" />
+		<transition from="deactivate" to="inactive" />		
+	</states>		
+	
+	
+	
+</doodad>
+
+
+

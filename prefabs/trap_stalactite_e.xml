@@ -1,0 +1,122 @@
+﻿<prefab>
+<dictionary>
+	<dictionary name="tilemap">
+		<array name="tiledata"></array>
+	</dictionary>
+	<dictionary name="doodads">
+		<array name="doodads">
+			<dictionary>
+				<int name="id">109362</int>
+				<string name="type">doodads/special/editor_prefab_trap_stalactite_e.xml</string>
+				<vec2 name="pos">0 0</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">109365</int>
+				<string name="type">doodads/generic/trap_stalactite_marker.xml</string>
+				<vec2 name="pos">0 0</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+		</array>
+	</dictionary>
+	<dictionary name="actors">
+	</dictionary>
+	<dictionary name="items">
+	</dictionary>
+	<dictionary name="scripting">
+		<array name="nodes">
+			<dictionary>
+				<int name="id">109355</int>
+				<string name="type">PlayEffect</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">0 0</vec2>
+				<dictionary name="parameters">
+					<string name="effect">doodads/generic/trap_stalactite_e.xml:activate</string>
+					<int name="layer">20</int>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">109356</int>
+				<string name="type">PlayEffect</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">0 0</vec2>
+				<dictionary name="parameters">
+					<string name="effect">doodads/generic/trap_stalactite_marker.xml:</string>
+					<int name="layer">0</int>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">109357</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">0 0</vec2>
+				<string name="parameters">items/bomb_stalactite_e.xml</string>
+			</dictionary>
+			<dictionary>
+				<int name="id">109358</int>
+				<string name="type">PlaySound</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">0 0</vec2>
+				<dictionary name="parameters">
+					<string name="sound">sound/misc.xml:wall_break</string>
+					<bool name="loop">False</bool>
+					<bool name="play3d">True</bool>
+					<float name="range3d">5</float>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">109354</int>
+				<string name="type">ScriptLink</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">3 0</vec2>
+				<int-arr name="connections">109355 109356 109357 109358</int-arr>
+				<int-arr name="connection-delays">1500 0 1500 1850</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">109360</int>
+				<string name="type">TimerTrigger</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">3 -3</vec2>
+				<int name="parameters">5000</int>
+				<int-arr name="connections">109354</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">109364</int>
+				<string name="type">DestroyObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">0 -3</vec2>
+				<dictionary name="parameters">
+					<int-arr name="static">109362 109365</int-arr>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">109366</int>
+				<string name="type">TimerTrigger</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">1</int>
+				<vec2 name="pos">-3 -3</vec2>
+				<int name="parameters">1</int>
+				<int-arr name="connections">109364</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+		</array>
+	</dictionary>
+	<dictionary name="lighting">
+		<array name="lights"></array>
+		<int-arr name="shadow-color">135 128 128 255</int-arr>
+		<int-arr name="ambient-color">50 50 50 255</int-arr>
+		<int-arr name="add-color">0 0 0 255</int-arr>
+		<float name="shadow-length">1</float>
+	</dictionary>
+	<dictionary name="prefabs">
+	</dictionary>
+</dictionary>
+</prefab>

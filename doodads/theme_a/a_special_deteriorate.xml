@@ -1,0 +1,43 @@
+<doodad aobias="0.4" minimap="menus/minimap.xml:h_8">
+	<sprite scale="16" name="1">
+		<texture>doodads/theme_a/a.png</texture>
+		<origin>0 32</origin>
+		<frame>48 128 16 48</frame>	
+	</sprite>			
+	
+	<sprite scale="16" name="2">
+		<texture>doodads/theme_a/a.png</texture>
+		<origin>0 32</origin>
+		<frame>64 128 16 48</frame>			
+	</sprite>		
+	
+	<sprite scale="16" name="3">
+		<texture>doodads/theme_a/a.png</texture>
+		<origin>0 32</origin>
+		<frame>80 128 16 48</frame>			
+	</sprite>		
+	
+	<sprite scale="16" name="4">
+		<texture>doodads/theme_a/a.png</texture>
+		<origin>0 32</origin>
+		<frame>96 128 16 48</frame>		
+	</sprite>					
+	
+	<states default="1">
+	</states>				
+		
+	<polygon collision="false" shadow="true">
+		<point>0 0</point>
+		<point>16 0</point>
+		<point>16 16</point>
+		<point>0 16</point>
+	</polygon>			
+
+	<polygon collision="true" shadow="false">
+		<point>0 16</point>
+		<point>0 -24</point>		
+		<point>16 -24</point>		
+		<point>16 16</point>
+	</polygon>			
+
+</doodad>

@@ -1,0 +1,16 @@
+<doodad defaultlayer="1" ao="false">
+	<sprite scale="16">
+		<texture>actors/spawners/archer_2.png</texture>
+		<origin>16 16</origin>					
+		<frame>32 0 32 32</frame>
+	</sprite>
+	<!--
+	<collision shoot-through="true">
+		<polygon>
+			<point>-13 10</point>
+			<point>-13 -8</point>
+			<point>12 -8</point>
+			<point>12 10</point>
+		</polygon>
+	</collision>	-->
+</doodad>

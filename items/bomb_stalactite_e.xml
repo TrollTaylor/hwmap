@@ -1,0 +1,40 @@
+<item behavior="bomb">
+	<behavior>
+		<dictionary>
+			<entry name="dmg"><int>400</int></entry>
+			<entry name="splash"><float>6</float></entry>
+		
+			<entry name="explode-delay"><int>600</int></entry>
+			<entry name="explode-snd"><string>sound/monsters.xml:death_wisp_explosion</string></entry>
+			<entry name="explode-particle"><string>effects/particles.xml:trap_stalactite_e</string></entry>
+			<entry name="no-lamp"><bool>true</bool></entry>			
+		</dictionary>
+	</behavior>
+
+	<sprite scale="16">
+		<texture>items/bomb_stalactite_e.png</texture>
+		<origin>64 64</origin>
+		<frame time="600">0 0 1 1</frame>		
+		<frame time="100">0 0 128 128</frame>
+		<frame time="100">128 0 128 128</frame>		
+	</sprite>
+	
+	<light>
+		<origin>0 -3</origin>
+		<mul>
+			<range>0</range>
+			<color1>255 100 0</color1>
+			<color2>0 0 0</color2>
+			<color3>0 0 0</color3>
+		</mul>
+		<add>
+			<range>0</range>
+			<color1>75 0 0</color1>
+			<color2>0 0 0</color2>
+			<color3>0 0 0</color3>
+		</add>
+	</light>		
+	
+	<collision shoot-through="true">
+	</collision>
+</item>

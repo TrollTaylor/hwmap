@@ -1,0 +1,35 @@
+<doodad>
+	
+	<sprite scale="16" name="editor">
+		<texture>doodads/generic/trap_bomb_falling.png</texture>
+		<origin>8 60</origin>	
+		<frame>0 64 16 64</frame>			
+	</sprite>			
+	
+	<sprite scale="16" name="invisible">
+		<texture>doodads/generic/trap_bomb_falling.png</texture>
+		<origin>8 60</origin>	
+		<frame>0 0 1 1</frame>			
+	</sprite>				
+	
+	<sprite scale="16" name="activate">
+		<texture>doodads/generic/trap_bomb_falling.png</texture>
+		<origin>8 60</origin>	
+		<frame time="50">0 0 16 64</frame>				
+		<frame time="50">16 0 16 64</frame>		
+		<frame time="50">32 0 16 64</frame>
+		<frame time="50">48 0 16 64</frame>		
+		<frame time="50">64 0 16 64</frame>
+		<frame time="50">80 0 16 64</frame>	
+		<frame time="50">96 0 16 64</frame>	
+		<frame time="50">112 0 16 64</frame>															
+	</sprite>	
+	
+	<states default="editor">
+		<transition from="activate" to="invisible" />		
+	</states>			
+	
+</doodad>
+
+
+

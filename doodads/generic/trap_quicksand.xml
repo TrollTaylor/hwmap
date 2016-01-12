@@ -1,0 +1,76 @@
+<doodad defaultlayer="-10">
+
+	<sprite scale="16" name="editor">
+		<texture>doodads/generic/trap_quicksand.png</texture>
+		<origin>64 64</origin>	
+		<frame time="75">0 640 128 128</frame>																
+	</sprite>
+
+	<sprite scale="16" name="invisible">
+		<texture>doodads/generic/trap_quicksand.png</texture>
+		<origin>64 64</origin>	
+		<frame time="75">128 640 128 128</frame>																
+	</sprite>
+
+	<sprite scale="16" name="activate">
+		<texture>doodads/generic/trap_quicksand.png</texture>
+		<origin>64 64</origin>
+		<frame time="75">0 0 128 128</frame>
+		<frame time="75">128 0 128 128</frame>
+		<frame time="75">256 0 128 128</frame>
+		<frame time="75">384 0 128 128</frame>
+		<frame time="75">512 0 128 128</frame>
+		<frame time="75">640 0 128 128</frame>
+		<frame time="75">768 0 128 128</frame>
+		<frame time="75">896 0 128 128</frame>
+		<frame time="75">0 128 128 128</frame>
+		<frame time="75">128 128 128 128</frame>
+		<frame time="75">256 128 128 128</frame>
+		<frame time="75">384 128 128 128</frame>
+		<frame time="75">512 128 128 128</frame>	
+		<frame time="75">640 128 128 128</frame>
+		<frame time="75">768 128 128 128</frame>
+		<frame time="75">896 128 128 128</frame>		
+	</sprite>
+
+	<sprite scale="16" name="loop">
+		<texture>doodads/generic/trap_quicksand.png</texture>
+		<origin>64 64</origin>	
+		<frame time="75">0 256 128 128</frame>
+		<frame time="75">128 256 128 128</frame>
+		<frame time="75">256 256 128 128</frame>
+		<frame time="75">384 256 128 128</frame>
+		<frame time="75">512 256 128 128</frame>
+		<frame time="75">640 256 128 128</frame>
+		<frame time="75">768 256 128 128</frame>
+		<frame time="75">896 256 128 128</frame>
+	</sprite>
+
+	<sprite scale="16" name="deactivate">
+		<texture>doodads/generic/trap_quicksand.png</texture>
+		<origin>64 64</origin>		
+		<frame time="75">0 384 128 128</frame>
+		<frame time="75">128 384 128 128</frame>
+		<frame time="75">256 384 128 128</frame>
+		<frame time="75">384 384 128 128</frame>
+		<frame time="75">512 384 128 128</frame>
+		<frame time="75">640 384 128 128</frame>
+		<frame time="75">768 384 128 128</frame>
+		<frame time="75">896 384 128 128</frame>
+		<frame time="75">0 512 128 128</frame>
+		<frame time="75">128 512 128 128</frame>
+		<frame time="75">256 512 128 128</frame>
+		<frame time="75">384 512 128 128</frame>
+		<frame time="75">512 512 128 128</frame>																
+		<frame time="75">640 512 128 128</frame>
+		<frame time="75">640 512 128 128</frame>
+		<frame time="75">768 512 128 128</frame>
+		<frame time="75">896 512 128 128</frame>			
+	</sprite>
+
+	<states default="editor">
+		<transition from="activate" to="loop" />		
+		<transition from="deactivate" to="invisible" />
+	</states>
+
+</doodad>

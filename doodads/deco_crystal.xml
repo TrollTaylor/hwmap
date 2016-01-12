@@ -1,0 +1,86 @@
+<doodad ao="false">
+	<sprite random-start="true" scale="16" name="1">
+		<texture>doodads/rare_big.png</texture>
+		<origin>12 30</origin>
+		<frame time="2500">0 88 25 44</frame>
+	</sprite>
+	
+	<sprite random-start="true" scale="16" name="2">
+		<texture>doodads/rare_big.png</texture>
+		<origin>12 30</origin>
+		<frame time="2500">25 88 25 44</frame>
+	</sprite>				
+
+	<sprite random-start="true" scale="16" name="3">
+		<texture>doodads/rare_big.png</texture>
+		<origin>12 30</origin>
+		<frame time="2500">50 88 25 44</frame>
+	</sprite>	
+	
+	<sprite random-start="true" scale="16" name="4">
+		<texture>doodads/rare_big.png</texture>
+		<origin>12 30</origin>
+		<frame time="2500">75 88 25 44</frame>
+	</sprite>		
+	
+	<sprite random-start="true" scale="16" name="5">
+		<texture>doodads/rare_big.png</texture>
+		<origin>12 30</origin>
+		<frame time="2500">100 88 25 44</frame>
+	</sprite>	
+	
+	<sprite random-start="true" scale="16" name="6">
+		<texture>doodads/rare_big.png</texture>
+		<origin>12 30</origin>
+		<frame time="2500">0 132 25 44</frame>
+	</sprite>	
+	
+	<sprite random-start="true" scale="16" name="7">
+		<texture>doodads/rare_big.png</texture>
+		<origin>12 30</origin>
+		<frame time="2500">25 132 25 44</frame>
+	</sprite>	
+	
+	<sprite random-start="true" scale="16" name="8">
+		<texture>doodads/rare_big.png</texture>
+		<origin>12 30</origin>
+		<frame time="2500">50 132 25 44</frame>
+	</sprite>	
+	
+	<sprite random-start="true" scale="16" name="9">
+		<texture>doodads/rare_big.png</texture>
+		<origin>12 30</origin>
+		<frame time="2500">75 132 25 44</frame>
+	</sprite>	
+	
+	<sprite random-start="true" scale="16" name="10">
+		<texture>doodads/rare_big.png</texture>
+		<origin>12 30</origin>
+		<frame time="2500">100 132 25 44</frame>
+	</sprite>	
+		
+	<states default="1">
+	</states>		
+	
+
+	<light>
+		<origin>0 0</origin>
+		<mul>
+			<range>250</range>
+			<color1>200 200 200</color1>
+			<color2>75 75 50</color2>
+			<color3>25 50 25</color3>
+		</mul>
+		<add>
+			<range>0</range>
+			<color1>0 0 25</color1>
+			<color2>5 50 50</color2>
+			<color3>0 25 0</color3>
+		</add>
+	</light>	
+	
+	<collision static="true">
+		<circle offset="1 0" radius="13" />
+	</collision>	
+	
+</doodad>

@@ -1,0 +1,8 @@
+<spritebank>
+	<sprite scale="32"  name="parallax_blend">
+		<texture>parallax/parallax_blend.png</texture>
+		<origin>512 512</origin>
+		<frame>0 0 1024 1024</frame>
+	</sprite>		
+
+</spritebank>

@@ -1,0 +1,14 @@
+<gib speed="0.75" power="2" life="0.4" spread="1" particle="effects/particles.xml:bone-particle" particle-color="100 0 0">
+	
+	<sprite scale="16">
+		<origin>2 2</origin>
+		<texture>effects/gibs/gib.png</texture>
+		<frame>53 44 5 5</frame>
+	</sprite>		
+	
+	<sprite scale="16">
+		<origin>2 2</origin>
+		<texture>effects/gibs/gib.png</texture>
+		<frame>53 49 5 5</frame>
+	</sprite>			
+</gib>

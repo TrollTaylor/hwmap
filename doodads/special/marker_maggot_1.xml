@@ -1,0 +1,8 @@
+<doodad defaultlayer="-2">
+	<sprite scale="16">
+		<texture>doodads/special/marker_maggot_1.png</texture>
+		<origin>32 32</origin>
+		<frame>0 0 64 64</frame>
+	</sprite>		
+
+</doodad>

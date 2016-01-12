@@ -1,0 +1,17 @@
+<doodad ao="false" minimap="menus/minimap.xml:pillar">
+	<sprite scale="16">
+		<texture>doodads/theme_forest/main/forest_trees.png</texture>
+		<origin>22 110</origin>
+		<frame>120 298 128 128</frame>
+	</sprite>
+				
+	<collision static="true" shoot-through="true">
+	<polygon collision="true" shadow="false">
+		<point>-22 -110</point>
+		<point>-22 18</point>		
+		<point>106 18</point>		
+		<point>106 -110</point>
+	</polygon>	
+	</collision>		
+
+</doodad>

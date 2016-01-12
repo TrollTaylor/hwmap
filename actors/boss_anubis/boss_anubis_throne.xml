@@ -1,0 +1,7 @@
+<doodad>
+	<sprite scale="16">
+		<texture>actors/boss_anubis/boss_anubis_throne.png</texture>
+		<origin>19 32</origin>
+		<frame time="125">0 0 38 32</frame>
+	</sprite>		
+</doodad>

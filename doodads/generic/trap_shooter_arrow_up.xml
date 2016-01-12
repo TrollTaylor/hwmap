@@ -1,0 +1,7 @@
+<doodad ao="false">
+	<sprite scale="16">
+		<texture>doodads/generic/trap_shooters.png</texture>
+		<origin>3 7</origin>
+		<frame>0 14 7 7</frame>				
+	</sprite>
+</doodad>

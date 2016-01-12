@@ -1,0 +1,53 @@
+<spritebank>
+	<sprite scale="16" name="snare">
+		<texture>effects/modifier-effects.png</texture>
+		<origin>8 12</origin>
+		<frame time="100">0 0 16 16</frame>
+		<frame time="100">16 0 16 16</frame>
+		<frame time="100">32 0 16 16</frame>
+		<frame time="100">48 0 16 16</frame>
+		<frame time="100">64 0 16 16</frame>
+		<frame time="10000">80 0 16 16</frame>
+	</sprite>
+	<sprite scale="16" name="confuse">
+		<texture>effects/modifier-effects.png</texture>
+		<origin>8 12</origin>
+		<frame time="100">0 32 16 16</frame>
+		<frame time="100">16 32 16 16</frame>
+		<frame time="100">32 32 16 16</frame>
+		<frame time="100">48 32 16 16</frame>
+	</sprite>	
+	<sprite scale="16" name="magicshield">
+		<texture>effects/modifier-effects.png</texture>
+		<origin>10 14</origin>
+		<frame time="75">0 48 19 19</frame>		
+		<frame time="75">19 48 19 19</frame>
+		<frame time="75">38 48 19 19</frame>
+		<frame time="75">0 67 19 19</frame>						
+		<glow scale="16">
+			<texture>effects/modifier-effects.png</texture>
+				<frame time="75">0 48 19 19</frame>		
+				<frame time="75">19 48 19 19</frame>
+				<frame time="75">38 48 19 19</frame>
+				<frame time="75">0 67 19 19</frame>
+		</glow>				
+	</sprite>	
+	<sprite scale="16" name="stun">
+		<texture>effects/modifier-effects.png</texture>
+		<origin>8 12</origin>
+		<frame time="100">0 16 16 16</frame>
+		<frame time="100">16 16 16 16</frame>
+		<frame time="100">32 16 16 16</frame>
+		<frame time="100">48 16 16 16</frame>
+	</sprite>
+	<sprite scale="16" name="inactive">
+		<texture>items/items.png</texture>
+		<origin>8 13</origin>
+		<frame time="200">96 80 16 16</frame>
+	</sprite>
+	<sprite scale="16" name="chain-link">
+		<texture>effects/player_effects.png</texture>
+		<origin>1 5</origin>
+		<frame time="10000">0 80 3 3</frame>
+	</sprite>
+</spritebank>

@@ -1,0 +1,7 @@
+<doodad ao="false">
+	<sprite scale="16">
+		<texture>doodads/generic/deco_chains.png</texture>
+		<origin>0 24</origin>
+		<frame>0 0 7 24</frame>				
+	</sprite>
+</doodad>

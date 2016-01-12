@@ -1,0 +1,8 @@
+<doodad  defaultlayer="-50" ao="false">
+	<sprite scale="16">
+		<texture>doodads/special/editor_puzzle_placeholder.png</texture>
+		<origin>64 64</origin>
+		<frame>0 0 128 128</frame>				
+	</sprite>	
+	
+</doodad>

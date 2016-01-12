@@ -1,0 +1,32 @@
+<spritebank>
+	<sprite scale="16" name="beam">
+		<texture>effects/priest_beam.png</texture>
+		<origin>0 8</origin>
+		<frame time="33">0 0 32 16</frame>
+		<frame time="33">0 16 32 16</frame>
+		<frame time="33">0 32 32 16</frame>
+		<frame time="33">0 48 32 16</frame>
+		<glow scale="16">
+			<texture>effects/priest_beam.png</texture>
+			<origin>0 8</origin>
+			<frame time="33">0 0 32 16</frame>
+			<frame time="33">0 16 32 16</frame>
+			<frame time="33">0 32 32 16</frame>
+			<frame time="33">0 48 32 16</frame>
+		</glow>
+	</sprite>
+	
+	<sprite scale="16" name="start">
+		<texture>effects/priest_beam.png</texture>
+		<origin>16 16</origin>
+		<frame time="50">0 64 32 32</frame>
+		<frame time="50">0 96 32 32</frame>
+	</sprite>
+	
+	<sprite scale="16" name="end">
+		<texture>effects/priest_beam.png</texture>
+		<origin>16 16</origin>
+		<frame time="50">0 64 32 32</frame>
+		<frame time="50">0 96 32 32</frame>
+	</sprite>
+</spritebank>

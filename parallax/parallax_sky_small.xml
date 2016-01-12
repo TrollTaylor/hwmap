@@ -1,0 +1,8 @@
+<spritebank>
+	<sprite scale="16" name="parallax_sky_small">
+		<texture>parallax/parallax_sky_small.png</texture>
+		<origin>96 96</origin>
+		<frame>0 0 128 128</frame>
+	</sprite>		
+
+</spritebank>

@@ -1,0 +1,25 @@
+<doodad defaultlayer="-5" minimap="menus/minimap.xml:wood_bridge_v">
+	<sprite scale="16">
+		<texture>doodads/theme_a/a_bridge.png</texture>
+		<origin>0 0</origin>
+		<frame>0 16 64 96</frame>
+	</sprite>
+		
+		
+	<collision shoot-through="true">
+		<polygon>
+			<point>0 96</point>
+			<point>0 0</point>		
+			<point>8 0</point>		
+			<point>8 96</point>
+		</polygon>		
+		
+		<polygon>
+			<point>56 96</point>
+			<point>56 0</point>		
+			<point>64 0</point>		
+			<point>64 96</point>
+		</polygon>
+	</collision>
+
+</doodad>

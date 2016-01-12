@@ -1,0 +1,8 @@
+<doodad ao="false">
+	<sprite scale="64">
+		<texture>doodads/special/editor_placeholders.png</texture>
+		<origin>64 64</origin>
+		<frame>128 0 128 128</frame>				
+	</sprite>	
+	
+</doodad>

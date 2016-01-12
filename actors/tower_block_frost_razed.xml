@@ -1,0 +1,7 @@
+<doodad defaultlayer="-1">
+	<sprite scale="16">
+		<texture>actors/tower_block_frost.png</texture>
+		<origin>12 12</origin>
+		<frame>24 24 24 24</frame>
+	</sprite>
+</doodad>

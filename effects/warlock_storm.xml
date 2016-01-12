@@ -1,0 +1,29 @@
+<spritebank>
+	<sprite scale="16" random-start="true" name="cloud_1">
+		<texture>effects/warlock_storm.png</texture>
+		<origin>8 8</origin>
+		<frame time="75">0 0 16 16</frame>
+		<frame time="75">16 0 16 16</frame>
+		<frame time="75">32 0 16 16</frame>
+		<frame time="75">48 0 16 16</frame>
+		<frame time="75">0 16 16 16</frame>
+	</sprite>
+	
+	<sprite scale="16" random-start="true" name="cloud_2">
+		<texture>effects/warlock_storm.png</texture>
+		<origin>8 8</origin>
+		<frame time="100">0 32 16 16</frame>
+		<frame time="100">16 32 16 16</frame>
+		<frame time="100">32 32 16 16</frame>
+		<frame time="100">48 32 16 16</frame>
+	</sprite>
+	
+	<sprite scale="16" name="cloud_3">
+		<texture>effects/warlock_storm.png</texture>
+		<origin>8 8</origin>
+		<frame time="75">0 48 16 16</frame>
+		<frame time="75">16 48 16 16</frame>
+		<frame time="50">32 48 16 16</frame>
+		<frame time="25">48 48 16 16</frame>
+	</sprite>
+</spritebank>

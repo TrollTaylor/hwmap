@@ -1,0 +1,7 @@
+<doodad ao="false">
+	<sprite random-start="true" scale="16">
+		<texture>doodads/generic/lamp_torch.png</texture>
+		<origin>4 32</origin>
+		<frame time="100">0 40 8 24</frame>					
+	</sprite>
+</doodad>

@@ -1,0 +1,66 @@
+<tileset level="951">
+	<sprite scale="16">
+		<texture>tilemaps/super_slime.png</texture>
+		<frame time="200">16 16 16 16</frame>
+		<frame time="200">0 48 16 16</frame>		
+		<frame time="200">16 48 16 16</frame>				
+	</sprite>
+
+	
+	
+	<borders>
+		<sprite name="north" scale="16">
+			<texture>tilemaps/super_slime.png</texture>
+			<frame>16 0 32 16</frame>
+		</sprite>
+		<sprite name="east" scale="16">
+			<texture>tilemaps/super_slime.png</texture>
+			<frame>32 16 16 32</frame>
+		</sprite>
+		<sprite name="west" scale="16">
+			<texture>tilemaps/super_slime.png</texture>
+			<frame>0 16 16 32</frame>
+		</sprite>
+		<sprite name="south" scale="16">
+			<texture>tilemaps/super_slime.png</texture>
+			<frame>16 32 32 16</frame>
+		</sprite>
+
+		
+		<sprite name="southwest" scale="16">
+			<texture>tilemaps/super_slime.png</texture>
+			<frame>0 32 16 16</frame>
+		</sprite>
+		<sprite name="southeast" scale="16">
+			<texture>tilemaps/super_slime.png</texture>
+			<frame>32 32 16 16</frame>
+		</sprite>
+		<sprite name="northwest" scale="16">
+			<texture>tilemaps/super_slime.png</texture>
+			<frame>0 0 16 16</frame>
+		</sprite>
+		<sprite name="northeast" scale="16">
+			<texture>tilemaps/super_slime.png</texture>
+			<frame>32 0 16 16</frame>
+		</sprite>
+
+		
+		
+		<sprite name="northwestpit" scale="16">
+			<texture>tilemaps/super_slime.png</texture>
+			<frame>48 32 16 16</frame>
+		</sprite>
+		<sprite name="northeastpit" scale="16">
+			<texture>tilemaps/super_slime.png</texture>
+			<frame>48 0 16 16</frame>
+		</sprite>
+		<sprite name="southwestpit" scale="16">
+			<texture>tilemaps/super_slime.png</texture>
+			<frame>48 16 16 16</frame>
+		</sprite>
+		<sprite name="southeastpit" scale="16">
+			<texture>tilemaps/super_slime.png</texture>
+			<frame>48 48 16 16</frame>
+		</sprite>
+	</borders>	
+</tileset>

@@ -1,0 +1,8 @@
+<doodad defaultlayer="-5">
+	<sprite scale="16">
+		<texture>doodads/special/boss_lock.png</texture>
+		<origin>40 40</origin>
+		<frame>0 0 80 80</frame>
+	</sprite>		
+
+</doodad>

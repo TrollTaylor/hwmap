@@ -1,0 +1,7 @@
+<doodad ao="false">
+	<sprite scale="16">
+		<texture>doodads/theme_d/d_floorsigns.png</texture>
+		<origin>7 28</origin>
+		<frame>15 32 15 8</frame>				
+	</sprite>
+</doodad>

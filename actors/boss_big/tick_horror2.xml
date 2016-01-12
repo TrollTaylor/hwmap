@@ -1,0 +1,195 @@
+<actor collision="6" behavior="melee" minimap="menus/minimap.xml:enemy">
+	<behavior>
+		<dictionary>
+			<entry name="hp"><int>2000</int></entry>
+			<entry name="dmg"><int>2000</int></entry>
+			<entry name="speed"><float>1.1</float></entry>
+			<entry name="aggro-range"><float>100</float></entry>
+			<entry name="max-range"><float>100</float></entry>
+			<entry name="boss-hp"><bool>true</bool></entry>
+			<entry name="death-snd"><string>sound/monsters.xml:death_tick</string></entry>
+			<entry name="hit-effect"><string>effects/particles.xml:hit_tick_horror1</string></entry>		
+			<entry name="hit-particle"><string>effects/particles.xml:particle_tick_horror1</string></entry>		
+			
+			<array name="loot">
+				<int>25</int><string>items/valuable_1.xml</string>
+				<int>10</int><string>items/health_1.xml</string>
+				<int>5</int><string>items/mana_1.xml</string>
+			</array>
+		</dictionary>
+	</behavior>
+
+
+	<!-- Idle -->
+	<sprite scale="4" random-start="true" name="east">
+		<texture>actors/tick_horror1.png</texture>
+		<origin>10 12</origin>
+		<frame time="150">40 20 20 20</frame>
+		<frame time="1500">100 20 20 20</frame>
+	</sprite>
+
+	<sprite scale="4" random-start="true" name="northeast">
+		<texture>actors/tick_horror1.png</texture>
+		<origin>10 12</origin>
+		<frame time="150">40 0 20 20</frame>
+		<frame time="1500">100 0 20 20</frame>
+	</sprite>
+
+	<sprite scale="4" random-start="true" name="north">
+		<texture>actors/tick_horror1.png</texture>
+		<origin>10 12</origin>
+		<frame time="150">20 0 20 20</frame>
+		<frame time="1500">80 0 20 20</frame>
+	</sprite>
+	
+	<sprite scale="4" random-start="true" name="northwest">
+		<texture>actors/tick_horror1.png</texture>
+		<origin>10 12</origin>
+		<frame time="150">0 0 20 20</frame>
+		<frame time="1500">60 0 20 20</frame>
+	</sprite>
+	
+	<sprite scale="4" random-start="true" name="west">
+		<texture>actors/tick_horror1.png</texture>
+		<origin>10 12</origin>
+		<frame time="150">0 20 20 20</frame>
+		<frame time="1500">60 20 20 20</frame>
+	</sprite>
+	
+	<sprite scale="4" random-start="true" name="southwest">
+		<texture>actors/tick_horror1.png</texture>
+		<origin>10 12</origin>
+		<frame time="150">0 40 20 20</frame>
+		<frame time="1500">60 40 20 20</frame>	
+	</sprite>
+	
+	<sprite scale="4" random-start="true" name="south">
+		<texture>actors/tick_horror1.png</texture>
+		<origin>10 12</origin>
+		<frame time="150">20 40 20 20</frame>
+		<frame time="1500">80 40 20 20</frame>
+	</sprite>
+	
+	<sprite scale="4" random-start="true" name="southeast">
+		<texture>actors/tick_horror1.png</texture>
+		<origin>10 12</origin>
+		<frame time="150">40 40 20 20</frame>
+		<frame time="1500">100 40 20 20</frame>
+	</sprite>
+	
+	
+	<!-- Walk -->
+	<sprite scale="4" name="east-walk">
+		<texture>actors/tick_horror1.png</texture>
+		<origin>10 12</origin>
+		<frame time="150">160 20 20 20</frame>
+		<frame time="150">220 20 20 20</frame>
+	</sprite>
+
+	<sprite scale="4" name="northeast-walk">
+		<texture>actors/tick_horror1.png</texture>
+		<origin>10 12</origin>
+		<frame time="150">160 0 20 20</frame>
+		<frame time="150">220 0 20 20</frame>
+	</sprite>
+
+	<sprite scale="4" name="north-walk">
+		<texture>actors/tick_horror1.png</texture>
+		<origin>10 12</origin>
+		<frame time="150">140 0 20 20</frame>
+		<frame time="150">200 0 20 20</frame>
+	</sprite>
+	
+	<sprite scale="4" name="northwest-walk">
+		<texture>actors/tick_horror1.png</texture>
+		<origin>10 12</origin>
+		<frame time="150">120 0 20 20</frame>
+		<frame time="150">180 0 20 20</frame>	
+	</sprite>
+	
+	<sprite scale="4" name="west-walk">
+		<texture>actors/tick_horror1.png</texture>
+		<origin>10 12</origin>
+		<frame time="150">120 20 20 20</frame>
+		<frame time="150">180 20 20 20</frame>
+	</sprite>
+	
+	<sprite scale="4" name="southwest-walk">
+		<texture>actors/tick_horror1.png</texture>
+		<origin>10 12</origin>
+		<frame time="150">120 40 20 20</frame>
+		<frame time="150">180 40 20 20</frame>
+	</sprite>
+	
+	<sprite scale="4" name="south-walk">
+		<texture>actors/tick_horror1.png</texture>
+		<origin>10 12</origin>
+		<frame time="150">140 40 20 20</frame>
+		<frame time="150">200 40 20 20</frame>
+	</sprite>
+	
+	<sprite scale="4" name="southeast-walk">
+		<texture>actors/tick_horror1.png</texture>
+		<origin>10 12</origin>
+		<frame time="150">160 40 20 20</frame>
+		<frame time="150">220 40 20 20</frame>		
+	</sprite>
+	
+
+	<!-- Attack -->
+	<sprite scale="4" name="east-attack">
+		<texture>actors/tick_horror1.png</texture>
+		<origin>10 12</origin>
+		<frame time="200">40 80 20 20</frame>
+		<frame time="200">100 80 20 20</frame>	
+	</sprite>
+
+	<sprite scale="4" name="northeast-attack">
+		<texture>actors/tick_horror1.png</texture>
+		<origin>10 12</origin>
+		<frame time="200">160 0 20 20</frame>
+		<frame time="200">220 0 20 20</frame>	
+	</sprite>
+
+	<sprite scale="4" name="north-attack">
+		<texture>actors/tick_horror1.png</texture>
+		<origin>10 12</origin>
+		<frame time="200">20 60 20 20</frame>
+		<frame time="200">80 60 20 20</frame>	
+	</sprite>
+	
+	<sprite scale="4" name="northwest-attack">
+		<texture>actors/tick_horror1.png</texture>
+		<origin>10 12</origin>
+		<frame time="200">120 0 20 20</frame>
+		<frame time="200">180 0 20 20</frame>	
+	</sprite>
+	
+	<sprite scale="4" name="west-attack">
+		<texture>actors/tick_horror1.png</texture>
+		<origin>10 12</origin>
+		<frame time="200">0 80 20 20</frame>
+		<frame time="200">60 80 20 20</frame>		
+	</sprite>
+	
+	<sprite scale="4" name="southwest-attack">
+		<texture>actors/tick_horror1.png</texture>
+		<origin>10 12</origin>
+		<frame time="200">120 40 20 20</frame>
+		<frame time="200">180 40 20 20</frame>	
+	</sprite>
+	
+	<sprite scale="4" name="south-attack">
+		<texture>actors/tick_horror1.png</texture>
+		<origin>10 12</origin>
+		<frame time="200">20 100 20 20</frame>
+		<frame time="200">80 100 20 20</frame>	
+	</sprite>
+	
+	<sprite scale="4" name="southeast-attack">
+		<texture>actors/tick_horror1.png</texture>
+		<origin>10 12</origin>
+		<frame time="200">160 40 20 20</frame>
+		<frame time="200">220 40 20 20</frame>	
+	</sprite>
+</actor>

@@ -1,0 +1,320 @@
+<tweak>
+	<params>
+		<dictionary>
+			<int    name="max-health">70</int>
+			<int    name="max-mana">50</int>
+			<int    name="dmg-reduction">0</int>
+			<int    name="mana-regen">1000</int>
+			
+			
+			<int    name="bow-dmg">10</int>
+			<int    name="bow-penetration">2</int>
+			<string name="bow-projectile">projectiles/player_arrow_1.xml</string>
+			
+			<string name="bomb-item">items/ranger_bomb.xml</string>
+			<float  name="bomb-splash">3.75</float>
+			<int    name="bomb-dmg">25</int>
+			<int    name="bomb-mana-cost">20</int>
+			
+			<bool   name="growth">false</bool>
+			<float  name="growth-range">-1</float>
+			<float  name="growth-duration">-1</float>
+			<int    name="growth-mana-cost">30</int>
+			
+			<bool   name="spread">false</bool>
+			<int    name="spread-arrows">-1</int>
+			<int    name="spread-waves">-1</int>
+			<int    name="spread-mana-cost">50</int>
+			
+			<int 	name="crit-chance">0</int>
+			<int 	name="dodge-chance">0</int>
+		</dictionary>
+	</params>
+
+
+	<upgrades>
+		<!-- Misc -->
+		<dictionary id="health-1" cost="700" cat="misc1"
+			name="hp-uname" desc="hp-udesc">
+			<int name="lvl">1</int>
+			<int name="max-health">90</int>
+		</dictionary>
+		<dictionary id="health-2" cost="1400" req="health-1" cat="misc2"
+			name="hp-uname" desc="hp-udesc">
+			<int name="lvl">2</int>
+			<int name="max-health">115</int>
+		</dictionary>
+		<dictionary id="health-3" cost="2200" req="health-2" cat="misc3"
+			name="hp-uname" desc="hp-udesc">
+			<int name="lvl">3</int>
+			<int name="max-health">135</int>
+		</dictionary>
+		<dictionary id="health-4" cost="2900" req="health-3" cat="misc4"
+			name="hp-uname" desc="hp-udesc">
+			<int name="lvl">4</int>
+			<int name="max-health">170</int>
+		</dictionary>
+		<dictionary id="health-5" cost="3500" req="health-4" cat="misc5"
+			name="hp-uname" desc="hp-udesc">
+			<int name="lvl">5</int>
+			<int name="max-health">200</int>
+		</dictionary>
+		
+		
+		<dictionary id="mana-1" cost="700" cat="misc1"
+			name="mana-uname" desc="mana-udesc">
+			<int name="lvl">1</int>
+			<int name="max-mana">80</int>			
+		</dictionary>
+		<dictionary id="mana-2" cost="1400" req="mana-1" cat="misc2"
+			name="mana-uname" desc="mana-udesc">
+			<int name="lvl">2</int>
+			<int name="max-mana">110</int>				
+		</dictionary>
+		<dictionary id="mana-3" cost="2200" req="mana-2" cat="misc3"
+			name="mana-uname" desc="mana-udesc">
+			<int name="lvl">3</int>
+			<int name="max-mana">140</int>			
+		</dictionary>
+		<dictionary id="mana-4" cost="2900" req="mana-3" cat="misc4"
+			name="mana-uname" desc="mana-udesc">
+			<int name="lvl">4</int>
+			<int name="max-mana">170</int>				
+		</dictionary>
+		<dictionary id="mana-5" cost="3500" req="mana-4" cat="misc5"
+			name="mana-uname" desc="mana-udesc">
+			<int name="lvl">5</int>
+			<int name="max-mana">200</int>				
+		</dictionary>
+			
+		
+		
+		
+		
+		
+		
+		<!-- Offsensive -->
+		<dictionary id="dmg1" cost="800" cat="off1"
+			name="rngdmg-uname" desc="rngdmg-udesc">
+			<int name="lvl">1</int>
+			<int name="bow-dmg">17</int>
+		</dictionary>
+		<dictionary id="dmg2" cost="1600" req="dmg1" cat="off2"
+			name="rngdmg-uname" desc="rngdmg-udesc">
+			<int name="lvl">2</int>
+			<int name="bow-dmg">24</int>
+			<string name="bow-projectile">projectiles/player_arrow_2.xml</string>
+		</dictionary>
+		<dictionary id="dmg3" cost="2700" req="dmg2" cat="off3"
+			name="rngdmg-uname" desc="rngdmg-udesc">
+			<int name="lvl">3</int>
+			<int name="bow-dmg">31</int>
+		</dictionary>
+		<dictionary id="dmg4" cost="4000" req="dmg3" cat="off4"
+			name="rngdmg-uname" desc="rngdmg-udesc">
+			<int name="lvl">4</int>
+			<int name="bow-dmg">38</int>
+			<string name="bow-projectile">projectiles/player_arrow_3.xml</string>
+		</dictionary>
+		<dictionary id="dmg5" cost="6000" req="dmg4" cat="off5"
+			name="rngdmg-uname" desc="rngdmg-udesc">
+			<int name="lvl">5</int>
+			<int name="bow-dmg">44</int>
+		</dictionary>
+		
+		
+		<dictionary id="pen1" cost="700" cat="off1"
+			name="rngpen-uname" desc="rngpen-udesc">
+			<int name="lvl">1</int>
+			<int name="bow-penetration">3</int>
+		</dictionary>
+		<dictionary id="pen2" cost="1400" req="pen1" cat="off2"
+			name="rngpen-uname" desc="rngpen-udesc">
+			<int name="lvl">2</int>
+			<int name="bow-penetration">4</int>
+		</dictionary>
+		<dictionary id="pen3" cost="2300" req="pen2" cat="off3"
+			name="rngpen-uname" desc="rngpen-udesc">
+			<int name="lvl">3</int>
+			<int name="bow-penetration">5</int>
+		</dictionary>
+		<dictionary id="pen4" cost="3200" req="pen3" cat="off4"
+			name="rngpen-uname" desc="rngpen-udesc">
+			<int name="lvl">4</int>
+			<int name="bow-penetration">6</int>
+		</dictionary>
+		<dictionary id="pen5" cost="4000" req="pen4" cat="off5"
+			name="rngpen-uname" desc="rngpen-udesc">
+			<int name="lvl">5</int>
+			<int name="bow-penetration">7</int>
+		</dictionary>
+		
+		
+		
+		
+		<dictionary id="bombdmg-1" cost="900" cat="off2"
+			name="bombdmg-uname" desc="bombdmg-udesc">
+			<int name="lvl">1</int>
+			<int name="bomb-dmg">35</int>
+		</dictionary>
+		<dictionary id="bombdmg-2" cost="2000" req="bombdmg-1" cat="off3"
+			name="bombdmg-uname" desc="bombdmg-udesc">
+			<int name="lvl">2</int>
+			<int name="bomb-dmg">45</int>
+		</dictionary>
+		<dictionary id="bombdmg-3" cost="3200" req="bombdmg-2" cat="off4"
+			name="bombdmg-uname" desc="bombdmg-udesc">
+			<int name="lvl">3</int>
+			<int name="bomb-dmg">55</int>
+		</dictionary>
+		
+		
+		
+		<dictionary id="spread" cost="1800" cat="off3"
+			name="spread-uname" desc="spread-udesc">
+			<bool name="spread">true</bool>
+			<int name="spread-arrows">12</int>
+			<int name="spread-waves">2</int>
+		</dictionary>
+		
+		<dictionary id="spreadshts-1" cost="3500" req="spread" cat="off4"
+			name="spreadshts-uname" desc="spreadshts-udesc">
+			<int name="lvl">1</int>
+			<int name="spread-arrows">16</int>
+		</dictionary>
+		<dictionary id="spreadshts-2" cost="4000" req="spreadshts-1" cat="off5"
+			name="spreadshts-uname" desc="spreadshts-udesc">
+			<int name="lvl">2</int>
+			<int name="spread-arrows">20</int>
+		</dictionary>
+		
+		<dictionary id="spreadwvs-1" cost="3800" req="spread" cat="off4"
+			name="spreadwvs-uname" desc="spreadwvs-udesc">
+			<int name="lvl">1</int>
+			<int name="spread-waves">3</int>
+		</dictionary>
+		<dictionary id="spreadwvs-2" cost="4500" req="spreadwvs-1" cat="off5"
+			name="spreadwvs-uname" desc="spreadwvs-udesc">
+			<int name="lvl">2</int>
+			<int name="spread-waves">4</int>
+		</dictionary>
+		
+		
+		<dictionary id="crit1" cost="1200" cat="off2"
+			name="crit-uname" desc="crit-udesc-1">
+			<int name="lvl">1</int>
+			<int name="crit-chance">10</int>
+		</dictionary>
+		<dictionary id="crit2" cost="2500" req="crit1" cat="off3"
+			name="crit-uname" desc="crit-udesc-2">
+			<int name="lvl">2</int>
+			<int name="crit-chance">15</int>
+		</dictionary>
+		<dictionary id="crit3" cost="4000" req="crit2" cat="off4"
+			name="crit-uname" desc="crit-udesc-2">
+			<int name="lvl">3</int>
+			<int name="crit-chance">20</int>
+		</dictionary>
+		<dictionary id="crit4" cost="5500" req="crit3" cat="off5"
+			name="crit-uname" desc="crit-udesc-2">
+			<int name="lvl">4</int>
+			<int name="crit-chance">25</int>
+		</dictionary>
+		
+		
+		
+		
+		
+	
+	
+	
+		<!-- Defensive -->
+		<dictionary id="armor-1" cost="600" cat="def1"
+			name="armor-uname" desc="armor-udesc">
+			<int name="lvl">1</int>
+			<int name="dmg-reduction">1</int>
+		</dictionary>
+		<dictionary id="armor-2" cost="1200" req="armor-1" cat="def2"
+			name="armor-uname" desc="armor-udesc">
+			<int name="lvl">2</int>
+			<int name="dmg-reduction">2</int>
+		</dictionary>
+		<dictionary id="armor-3" cost="2000" req="armor-2" cat="def3"
+			name="armor-uname" desc="armor-udesc">
+			<int name="lvl">3</int>
+			<int name="dmg-reduction">3</int>
+		</dictionary>
+		<dictionary id="armor-4" cost="2700" req="armor-3" cat="def4"
+			name="armor-uname" desc="armor-udesc">
+			<int name="lvl">4</int>
+			<int name="dmg-reduction">4</int>
+		</dictionary>
+		<dictionary id="armor-5" cost="3500" req="armor-4" cat="def5"
+			name="armor-uname" desc="armor-udesc">
+			<int name="lvl">5</int>
+			<int name="dmg-reduction">5</int>
+		</dictionary>
+		
+		
+		
+		<dictionary id="dodge1" cost="1000" cat="def1"
+			name="dodge-uname" desc="dodge-udesc-1">
+			<int name="lvl">1</int>
+			<int name="dodge-chance">10</int>
+		</dictionary>
+		<dictionary id="dodge2" cost="2000" req="dodge1" cat="def2"
+			name="dodge-uname" desc="dodge-udesc-2">
+			<int name="lvl">2</int>
+			<int name="dodge-chance">20</int>
+		</dictionary>
+		<dictionary id="dodge3" cost="3000" req="dodge2" cat="def3"
+			name="dodge-uname" desc="dodge-udesc-2">
+			<int name="lvl">3</int>
+			<int name="dodge-chance">30</int>
+		</dictionary>
+		<dictionary id="dodge4" cost="4000" req="dodge3" cat="def4"
+			name="dodge-uname" desc="dodge-udesc-2">
+			<int name="lvl">4</int>
+			<int name="dodge-chance">40</int>
+		</dictionary>
+		<dictionary id="dodge5" cost="5000" req="dodge4" cat="def5"
+			name="dodge-uname" desc="dodge-udesc-2">
+			<int name="lvl">5</int>
+			<int name="dodge-chance">50</int>
+		</dictionary>
+		
+		
+		
+		<dictionary id="growth" cost="900" cat="def2"
+			name="growth-uname" desc="growth-udesc">
+			<bool name="growth">true</bool>
+			<float name="growth-range">4</float>
+			<float name="growth-duration">4.5</float>
+		</dictionary>
+		
+		<dictionary id="growthdur-1" cost="1500" req="growth" cat="def3"
+			name="growthdur-uname" desc="growthdur-udesc">
+			<int name="lvl">1</int>
+			<float name="growth-duration">6</float>
+		</dictionary>
+		<dictionary id="growthdur-2" cost="2100" req="growthdur-1" cat="def4"
+			name="growthdur-uname" desc="growthdur-udesc">
+			<int name="lvl">2</int>
+			<float name="growth-duration">8</float>
+		</dictionary>
+		
+		
+		<dictionary id="growthrng-1" cost="1500" req="growth" cat="def4"
+			name="growthrng-uname" desc="growthrng-udesc">
+			<int name="lvl">1</int>
+			<float name="growth-range">6</float>
+		</dictionary>
+		<dictionary id="growthrng-2" cost="2500" req="growthrng-1" cat="def5"
+			name="growthrng-uname" desc="growthrng-udesc">
+			<int name="lvl">2</int>
+			<float name="growth-range">8</float>
+		</dictionary>
+		
+		
+	</upgrades>
+</tweak>

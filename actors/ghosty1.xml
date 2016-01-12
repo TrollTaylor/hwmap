@@ -1,0 +1,189 @@
+<actor collision="3.5" behavior="ranged" minimap="menus/minimap.xml:enemy">
+	<behavior>
+		<dictionary>
+			<entry name="hp"><int>50</int></entry>
+			<entry name="projectile"><string>projectiles/fire1.png</string></entry>
+			<entry name="speed"><float>0.5</float></entry>
+			<entry name="range"><float>9</float></entry>
+			<entry name="aggro-range"><float>12</float></entry>
+			<entry name="max-range"><float>20</float></entry>
+			<entry name="death-snd"><string>sound/monsters.xml:death_skeleton</string></entry>
+			<entry name="hit-effect"><string>effects/particles.xml:bone</string></entry>		
+			<entry name="hit-particle"><string>effects/particles.xml:bone-particle</string></entry>	
+			<entry name="blockable"><bool>true</bool></entry>
+			<array name="loot">
+				<int>50</int><string>items/valuable_2.xml</string>
+				<int>25</int><string>items/valuable_3.xml</string>				
+				<int>10</int><string>items/health_1.xml</string>
+				<int>5</int><string>items/mana_1.xml</string>
+			</array>			
+		</dictionary>
+	</behavior>
+
+
+	<!-- Idle -->
+	<sprite scale="16" random-start="true" name="east">
+		<texture>actors/ghosty1.png</texture>
+		<origin>12 14</origin>
+		<frame>0 0 24 24</frame>
+	</sprite>
+
+	<sprite scale="16" random-start="true" name="northeast">
+		<texture>actors/ghosty1.png</texture>
+		<origin>12 14</origin>
+		<frame>24 0 24 24</frame>
+	</sprite>
+
+	<sprite scale="16" random-start="true" name="north">
+		<texture>actors/ghosty1.png</texture>
+		<origin>12 14</origin>
+		<frame>48 0 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" random-start="true" name="northwest">
+		<texture>actors/ghosty1.png</texture>
+		<origin>12 14</origin>
+		<frame>72 0 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" random-start="true" name="west">
+		<texture>actors/ghosty1.png</texture>
+		<origin>12 14</origin>
+		<frame>96 0 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" random-start="true" name="southwest">
+		<texture>actors/ghosty1.png</texture>
+		<origin>12 14</origin>
+		<frame>120 0 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" random-start="true" name="south">
+		<texture>actors/ghosty1.png</texture>
+		<origin>12 14</origin>
+		<frame>144 0 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" random-start="true" name="southeast">
+		<texture>actors/ghosty1.png</texture>
+		<origin>12 14</origin>
+		<frame>168 0 24 24</frame>
+	</sprite>
+	
+	
+	<!-- Walk -->
+	<sprite scale="16" name="east-walk">
+		<texture>actors/ghosty1.png</texture>
+		<origin>12 14</origin>
+		<frame time="125">0 24 24 24</frame>
+		<frame time="125">0 48 24 24</frame>
+	</sprite>
+
+	<sprite scale="16" name="northeast-walk">
+		<texture>actors/ghosty1.png</texture>
+		<origin>12 14</origin>
+		<frame time="125">24 24 24 24</frame>
+		<frame time="125">24 48 24 24</frame>
+	</sprite>
+
+	<sprite scale="16" name="north-walk">
+		<texture>actors/ghosty1.png</texture>
+		<origin>12 14</origin>
+		<frame time="125">48 24 24 24</frame>
+		<frame time="125">48 48 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="northwest-walk">
+		<texture>actors/ghosty1.png</texture>
+		<origin>12 14</origin>
+		<frame time="125">72 24 24 24</frame>
+		<frame time="125">72 48 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="west-walk">
+		<texture>actors/ghosty1.png</texture>
+		<origin>12 14</origin>
+		<frame time="125">96 24 24 24</frame>
+		<frame time="125">96 48 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="southwest-walk">
+		<texture>actors/ghosty1.png</texture>
+		<origin>12 14</origin>
+		<frame time="125">120 24 24 24</frame>
+		<frame time="125">120 48 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="south-walk">
+		<texture>actors/ghosty1.png</texture>
+		<origin>12 14</origin>
+		<frame time="125">144 24 24 24</frame>
+		<frame time="125">144 48 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="southeast-walk">
+		<texture>actors/ghosty1.png</texture>
+		<origin>12 14</origin>
+		<frame time="125">168 24 24 24</frame>
+		<frame time="125">168 48 24 24</frame>
+	</sprite>
+	
+
+	<!-- Attack -->
+	<sprite scale="16" name="east-attack">
+		<texture>actors/ghosty1.png</texture>
+		<origin>12 14</origin>
+		<frame time="500">0 96 24 24</frame>
+		<frame time="500">0 72 24 24</frame>
+	</sprite>
+
+	<sprite scale="16" name="northeast-attack">
+		<texture>actors/ghosty1.png</texture>
+		<origin>12 14</origin>
+		<frame time="500">24 96 24 24</frame>
+		<frame time="500">24 72 24 24</frame>
+	</sprite>
+
+	<sprite scale="16" name="north-attack">
+		<texture>actors/ghosty1.png</texture>
+		<origin>12 14</origin>
+		<frame time="500">48 96 24 24</frame>
+		<frame time="500">48 72 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="northwest-attack">
+		<texture>actors/ghosty1.png</texture>
+		<origin>12 14</origin>
+		<frame time="500">72 96 24 24</frame>
+		<frame time="500">72 72 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="west-attack">
+		<texture>actors/ghosty1.png</texture>
+		<origin>12 14</origin>
+		<frame time="500">96 96 24 24</frame>
+		<frame time="500">96 72 24 24</frame>		
+	</sprite>
+	
+	<sprite scale="16" name="southwest-attack">
+		<texture>actors/ghosty1.png</texture>
+		<origin>12 14</origin>
+		<frame time="500">120 96 24 24</frame>
+		<frame time="500">120 72 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="south-attack">
+		<texture>actors/ghosty1.png</texture>
+		<origin>12 14</origin>
+		<frame time="500">144 96 24 24</frame>
+		<frame time="500">144 72 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="southeast-attack">
+		<texture>actors/ghosty1.png</texture>
+		<origin>12 14</origin>
+		<frame time="500">168 96 24 24</frame>
+		<frame time="500">168 72 24 24</frame>
+	</sprite>
+
+</actor>

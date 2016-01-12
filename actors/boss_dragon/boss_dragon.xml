@@ -1,0 +1,155 @@
+<actor behavior="boss-dragon">
+	<behavior>
+		<dictionary>
+			<entry name="hp"><int>15000</int></entry>
+			<entry name="boss-hp"><bool>true</bool></entry>
+			<entry name="multiplayer-scale-hp"><bool>true</bool></entry>
+			<entry name="ignore-hit-effects"><bool>true</bool></entry>
+			<entry name="ignore-trap-damage"><bool>true</bool></entry>
+			
+			<entry name="dmg"><int>28</int></entry>
+			<entry name="aggro-range"><float>45</float></entry>
+			<entry name="max-range"><float>45</float></entry>
+			<entry name="speed"><float>5.55</float></entry>
+			
+			<entry name="death-snd"><string>sound/monsters.xml:boss_dragon_death</string></entry>
+			<entry name="hit-effect"><string>effects/particles.xml:hit_eye_1_small</string></entry>
+			<entry name="hit-particle"><string>effects/particles.xml:none</string></entry>
+			<entry name="corpse"><string>actors/boss_dragon/boss_dragon_razed.xml</string></entry>
+			
+			
+			<dictionary name="breath">
+				<entry name="projectile"><string>actors/boss_dragon/firespray.xml</string></entry>
+				<entry name="timer"><int>7500</int></entry>
+				<entry name="duration"><int>3000</int></entry>
+				<entry name="spawn-rate"><int>5</int></entry>
+				<entry name="spread"><float>0.33</float></entry>
+				<entry name="sound"><string>sound/players.xml:wizard_spray</string></entry>
+			</dictionary>
+			
+			<dictionary name="fireball">
+				<entry name="projectile"><string>projectiles/enemy_boss_dragon_fireball.xml</string></entry>
+				<entry name="timer"><int>500</int></entry>
+				<entry name="sound"><string>sound/players.xml:wizard_shoot</string></entry>
+			</dictionary>
+			
+			<dictionary name="meteor">
+				<entry name="image"><string>effects/meteor.xml:meteor</string></entry>
+				<entry name="particle"><string>effects/particles.xml:spray-particle</string></entry>
+				<entry name="num"><int>20</int></entry>
+				<entry name="dmg"><int>200</int></entry>
+				<entry name="splash"><float>2</float></entry>
+				<entry name="timer"><int>3000</int></entry>
+				<entry name="cast-sound"><string>sound/monsters.xml:boss_dragon_meteor</string></entry>
+				<entry name="hit-sound"><string>sound/players.xml:wizard_meteor_hit</string></entry>
+				<entry name="marker"><string>effects/enemy_effects.xml:enemy_meteor_marker</string></entry>
+				
+				<dictionary name="explode-light">
+					<float name="mul-range">20</float>
+					<string name="mul-color1">0 0 255</string>
+					<string name="mul-color2">255 127 0</string>
+					<string name="mul-color3">255 0 0</string>
+					
+					<float name="add-range">4</float>
+					<string name="add-color1">80 80 80</string>
+					<string name="add-color2">80 60 0</string>
+					<string name="add-color3">80 0 0</string>
+				</dictionary>
+			</dictionary>
+			
+			<dictionary name="stomp">
+				<entry name="timer"><int>4000</int></entry>
+				<entry name="sound"><string>sound/monsters.xml:boss_dragon_quake</string></entry>
+				<entry name="dmg"><int>150</int></entry>
+				<entry name="effect"><string>effects/boss_knight_strike.xml:crack</string></entry>
+			</dictionary>
+		</dictionary>
+	</behavior>
+
+	<!-- Sleeping -->
+	<sprite scale="16" name="default">
+		<texture>actors/boss_dragon/dragon.png</texture>
+		<origin>64 64</origin>
+		<frame time="150">128 256 128 128</frame>
+		<frame time="150">256 256 128 128</frame>
+		<frame time="150">384 256 128 128</frame>
+		<frame time="150">0 384 128 128</frame>
+		<frame time="150">128 384 128 128</frame>
+	</sprite>
+	
+	<sprite scale="16" name="stomp-left">
+		<texture>actors/boss_dragon/dragon.png</texture>
+		<origin>64 64</origin>
+		<frame time="150">256 384 128 128</frame>
+		<frame time="150">384 384 128 128</frame>
+		<frame time="150">0 512 128 128</frame>
+		<frame time="150">128 512 128 128</frame>
+		<frame time="150">256 512 128 128</frame>
+	</sprite>
+	
+	<sprite scale="16" name="stomp-right">
+		<texture>actors/boss_dragon/dragon.png</texture>
+		<origin>64 64</origin>
+		<frame time="150">384 512 128 128</frame>
+		<frame time="150">0 640 128 128</frame>
+		<frame time="150">128 640 128 128</frame>
+		<frame time="150">256 640 128 128</frame>
+		<frame time="150">384 640 128 128</frame>
+	</sprite>
+	
+	
+	
+	
+	<sprite scale="16" name="4">
+		<texture>actors/boss_dragon/dragon.png</texture>
+		<origin>64 64</origin>
+		<frame>0 0 128 128</frame>
+	</sprite>
+	<sprite scale="16" name="3">
+		<texture>actors/boss_dragon/dragon.png</texture>
+		<origin>64 64</origin>
+		<frame>128 0 128 128</frame>
+	</sprite>
+	<sprite scale="16" name="2">
+		<texture>actors/boss_dragon/dragon.png</texture>
+		<origin>64 64</origin>
+		<frame>256 0 128 128</frame>
+	</sprite>
+	<sprite scale="16" name="1">
+		<texture>actors/boss_dragon/dragon.png</texture>
+		<origin>64 64</origin>
+		<frame>384 0 128 128</frame>
+	</sprite>
+	<sprite scale="16" name="0">
+		<texture>actors/boss_dragon/dragon.png</texture>
+		<origin>64 64</origin>
+		<frame>0 128 128 128</frame>
+	</sprite>
+	<sprite scale="16" name="-1">
+		<texture>actors/boss_dragon/dragon.png</texture>
+		<origin>64 64</origin>
+		<frame>128 128 128 128</frame>
+	</sprite>
+	<sprite scale="16" name="-2">
+		<texture>actors/boss_dragon/dragon.png</texture>
+		<origin>64 64</origin>
+		<frame>256 128 128 128</frame>
+	</sprite>
+	<sprite scale="16" name="-3">
+		<texture>actors/boss_dragon/dragon.png</texture>
+		<origin>64 64</origin>
+		<frame>384 128 128 128</frame>
+	</sprite>
+	<sprite scale="16" name="-4">
+		<texture>actors/boss_dragon/dragon.png</texture>
+		<origin>64 64</origin>
+		<frame>0 256 128 128</frame>
+	</sprite>
+	
+	
+	
+	
+	<collision static="true">
+		<circle offset="0 -8" radius="34" />
+	</collision>
+</actor>

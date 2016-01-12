@@ -1,0 +1,12 @@
+<doodad>
+	<sprite scale="16">
+		<texture>doodads/special/special_eeg.png</texture>
+		<origin>11 9</origin>
+		<frame time="500">0 20 23 20</frame>
+	</sprite>		
+	
+	<collision static="true" shoot-through="true">
+		<circle offset="0 0" radius="5" />
+	</collision>		
+	
+</doodad>

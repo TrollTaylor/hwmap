@@ -1,0 +1,7 @@
+<doodad defaultlayer="-6" ao="false">
+	<sprite scale="16">
+		<texture>doodads/generic/marker_blood.png</texture>
+		<origin>0 0</origin>
+		<frame>32 16 32 32</frame>				
+	</sprite>
+</doodad>

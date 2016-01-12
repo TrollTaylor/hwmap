@@ -1,0 +1,22 @@
+<doodad>
+	<sprite scale="16">
+		<texture>doodads/theme_a/a_bridge_special.png</texture>
+		<origin>1 0</origin>
+		<frame>0 46 256 45</frame>
+	</sprite>
+	
+	<polygon collision="true" shadow="false">
+		<point>0 56</point>
+		<point>0 40</point>		
+		<point>256 40</point>		
+		<point>256 56</point>
+	</polygon>		
+	
+	<polygon collision="true" shadow="false">
+		<point>248 56</point>
+		<point>248 0</point>		
+		<point>256 0</point>		
+		<point>256 56</point>
+	</polygon>			
+	
+</doodad>

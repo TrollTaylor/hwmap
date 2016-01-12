@@ -1,0 +1,389 @@
+<tweak>
+	<params>
+		<dictionary>
+			<int   name="max-health">50</int>
+			<int   name="max-mana">100</int>
+			<int   name="dmg-reduction">0</int>
+			<int   name="mana-regen">570</int>
+			
+			
+			
+			<int    name="smite-dmg">10</int>
+			<float  name="smite-range">2.75</float>
+			<float  name="smite-area">1.15</float>
+			<string name="smite-effect">effects/explodes.xml:priest_smite</string>
+			<int    name="smite-speed-pen">70</int>
+			
+			
+			<int    name="beam-dmg">18</int>
+			<int    name="beam-heal">3</int>
+			<float  name="beam-range">7</float>
+			<int    name="beam-mana-cost">2</int>
+			
+			
+			
+			<bool   name="area">false</bool>
+			<float  name="area-range">0</float>
+			<int    name="area-duration">0</int>
+			<string name="area-effect">effects/player_effects.xml:priest_drain_area</string>
+			<int    name="area-dmg">0</int>
+			<float  name="area-heal-mul">0</float>
+			<int    name="area-limit">0</int>
+			<int    name="area-mana-cost">35</int>
+			
+			
+			
+			<bool   name="aura">false</bool>
+			<float  name="aura-range">0</float>
+			<string name="aura-effect">effects/player_effects.xml:priest_cripple_aura</string>
+			<string name="aura-buff"></string>
+			<int    name="aura-mana-cost">50</int>
+			<int    name="aura-mana-drain">0</int>
+			
+			
+			<int    name="shield-distr">50</int>
+			<float  name="shield-dmg-per-mana">0.25</float>
+			<string name="shield-effect">effects/misc.xml:magicshield</string>
+			<float  name="hp-regen">0</float>
+		</dictionary>
+	</params>
+
+	<upgrades>
+		<!-- Misc -->
+		<dictionary id="health-1" cost="800" cat="misc1"
+			name="hp-uname" desc="hp-udesc">
+			<int name="lvl">1</int>
+			<int name="max-health">60</int>
+		</dictionary>
+		<dictionary id="health-2" cost="1500" req="health-1" cat="misc2"
+			name="hp-uname" desc="hp-udesc">
+			<int name="lvl">2</int>
+			<int name="max-health">70</int>
+		</dictionary>
+		<dictionary id="health-3" cost="2200" req="health-2" cat="misc3"
+			name="hp-uname" desc="hp-udesc">
+			<int name="lvl">3</int>
+			<int name="max-health">80</int>
+		</dictionary>
+		<dictionary id="health-4" cost="2900" req="health-3" cat="misc4"
+			name="hp-uname" desc="hp-udesc">
+			<int name="lvl">4</int>
+			<int name="max-health">90</int>
+		</dictionary>
+		<dictionary id="health-5" cost="3600" req="health-4" cat="misc5"
+			name="hp-uname" desc="hp-udesc">
+			<int name="lvl">5</int>
+			<int name="max-health">100</int>
+		</dictionary>
+		
+		
+		<dictionary id="mana-1" cost="800" cat="misc1"
+			name="mana-uname" desc="mana-udesc">
+			<int name="lvl">1</int>
+			<int name="max-mana">130</int>		
+		</dictionary>
+		<dictionary id="mana-2" cost="1400" req="mana-1" cat="misc2"
+			name="mana-uname" desc="mana-udesc">
+			<int name="lvl">2</int>
+			<int name="max-mana">190</int>					
+		</dictionary>
+		<dictionary id="mana-3" cost="2200" req="mana-2" cat="misc3"
+			name="mana-uname" desc="mana-udesc">
+			<int name="lvl">3</int>
+			<int name="max-mana">250</int>				
+		</dictionary>
+		<dictionary id="mana-4" cost="3000" req="mana-3" cat="misc4"
+			name="mana-uname" desc="mana-udesc">
+			<int name="lvl">4</int>
+			<int name="max-mana">310</int>					
+		</dictionary>
+		<dictionary id="mana-5" cost="3800" req="mana-4" cat="misc5"
+			name="mana-uname" desc="mana-udesc">
+			<int name="lvl">5</int>
+			<int name="max-mana">370</int>					
+		</dictionary>
+		
+		
+		
+		<!-- Offsensive -->
+		<dictionary id="dmg1" cost="600" cat="off1"
+			name="pridmg-uname" desc="pridmg-udesc">
+			<int name="lvl">1</int>
+			<int name="smite-dmg">15</int>
+			<float name="smite-area">1.2</float>
+		</dictionary>
+		<dictionary id="dmg2" cost="1200" req="dmg1" cat="off2"
+			name="pridmg-uname" desc="pridmg-udesc">
+			<int name="lvl">2</int>
+			<int name="smite-dmg">20</int>
+			<float name="smite-area">1.25</float>
+		</dictionary>
+		<dictionary id="dmg3" cost="1800" req="dmg2" cat="off3"
+			name="pridmg-uname" desc="pridmg-udesc">
+			<int name="lvl">3</int>
+			<int name="smite-dmg">25</int>
+			<float name="smite-area">1.3</float>
+		</dictionary>
+		<dictionary id="dmg4" cost="2500" req="dmg3" cat="off4"
+			name="pridmg-uname" desc="pridmg-udesc">
+			<int name="lvl">4</int>
+			<int name="smite-dmg">30</int>
+			<float  name="smite-area">1.35</float>
+		</dictionary>
+		<dictionary id="dmg5" cost="3200" req="dmg4" cat="off5"
+			name="pridmg-uname" desc="pridmg-udesc">
+			<int name="lvl">5</int>
+			<int name="smite-dmg">35</int>
+			<float name="smite-area">1.4</float>
+		</dictionary>
+		
+		
+		<dictionary id="sspeed1" cost="250" cat="off1"
+			name="prispe-uname" desc="prispe-udesc">
+			<int name="lvl">1</int>
+			<int name="smite-speed-pen">60</int>
+		</dictionary>
+		<dictionary id="sspeed2" cost="550" req="sspeed1" cat="off2"
+			name="prispe-uname" desc="prispe-udesc">
+			<int name="lvl">2</int>
+			<int name="smite-speed-pen">50</int>
+		</dictionary>
+		<dictionary id="sspeed3" cost="1200" req="sspeed2" cat="off3"
+			name="prispe-uname" desc="prispe-udesc">
+			<int name="lvl">3</int>
+			<int name="smite-speed-pen">40</int>
+		</dictionary>
+		<dictionary id="sspeed4" cost="2500" req="sspeed3" cat="off4"
+			name="prispe-uname" desc="prispe-udesc">
+			<int name="lvl">4</int>
+			<int name="smite-speed-pen">30</int>
+		</dictionary>
+		<dictionary id="sspeed5" cost="3300" req="sspeed4" cat="off5"
+			name="prispe-uname" desc="prispe-udesc">
+			<int name="lvl">5</int>
+			<int name="smite-speed-pen">20</int>
+		</dictionary>
+		
+		
+		<dictionary id="beamdmg1" cost="1200" cat="off2"
+			name="beamdmg-uname" desc="beamdmg-udesc">
+			<int name="lvl">1</int>
+			<int name="beam-dmg">25</int>
+			<int name="beam-heal">5</int>
+		</dictionary>
+		<dictionary id="beamdmg2" cost="2000" req="beamdmg1" cat="off3"
+			name="beamdmg-uname" desc="beamdmg-udesc">
+			<int name="lvl">2</int>
+			<int name="beam-dmg">37</int>
+			<int name="beam-heal">6</int>
+		</dictionary>
+		<dictionary id="beamdmg3" cost="3000" req="beamdmg2" cat="off4"
+			name="beamdmg-uname" desc="beamdmg-udesc">
+			<int name="lvl">3</int>
+			<int name="beam-dmg">48</int>
+			<int name="beam-heal">7</int>
+		</dictionary>
+		<dictionary id="beamdmg4" cost="4300" req="beamdmg3" cat="off5"
+			name="beamdmg-uname" desc="beamdmg-udesc">
+			<int name="lvl">4</int>
+			<int name="beam-dmg">60</int>
+			<int name="beam-heal">8</int>
+		</dictionary>
+		
+		
+		<dictionary id="beamrng1" cost="600" cat="off2"
+			name="beamrng-uname" desc="beamrng-udesc">
+			<int name="lvl">1</int>
+			<float name="beam-range">8</float>
+		</dictionary>
+		<dictionary id="beamrng2" cost="1200" req="beamrng1" cat="off3"
+			name="beamrng-uname" desc="beamrng-udesc">
+			<int name="lvl">2</int>
+			<float name="beam-range">9</float>
+		</dictionary>
+		<dictionary id="beamrng3" cost="2000" req="beamrng2" cat="off4"
+			name="beamrng-uname" desc="beamrng-udesc">
+			<int name="lvl">3</int>
+			<float name="beam-range">10</float>
+		</dictionary>
+		<dictionary id="beamrng4" cost="2800" req="beamrng3" cat="off5"
+			name="beamrng-uname" desc="beamrng-udesc">
+			<int name="lvl">4</int>
+			<float name="beam-range">11</float>
+		</dictionary>
+		
+		
+		
+		
+		<dictionary id="area" cost="2000" cat="off2"
+			name="area-uname" desc="area-udesc">
+			<bool  name="area">true</bool>
+			<float name="area-range">2.25</float>
+			<int   name="area-duration">7000</int>
+			<int   name="area-dmg">16</int>
+			<float name="area-heal-mul">0.1</float>
+			<int   name="area-limit">1</int>
+		</dictionary>
+		
+		<dictionary id="areadmg-1" cost="2000" req="area" cat="off3"
+			name="areadmg-uname" desc="areadmg-udesc">
+			<int name="lvl">1</int>
+			<int name="area-dmg">24</int>
+		</dictionary>
+		<dictionary id="areadmg-2" cost="3500" req="areadmg-1" cat="off4"
+			name="areadmg-uname" desc="areadmg-udesc">
+			<int name="lvl">2</int>
+			<int name="area-dmg">32</int>
+		</dictionary>
+		<dictionary id="areadmg-3" cost="4500" req="areadmg-2" cat="off5"
+			name="areadmg-uname" desc="areadmg-udesc">
+			<int name="lvl">3</int>
+			<int name="area-dmg">38</int>
+		</dictionary>
+		
+		<dictionary id="areanum-1" cost="3000" req="area" cat="off3"
+			name="areanum-uname" desc="areanum-udesc">
+			<int name="lvl">1</int>
+			<int name="area-limit">2</int>
+		</dictionary>
+		<dictionary id="areanum-2" cost="4000" req="areanum-1" cat="off4"
+			name="areanum-uname" desc="areanum-udesc">
+			<int name="lvl">2</int>
+			<int name="area-limit">3</int>
+		</dictionary>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+		<!-- Defensive -->
+		
+		<dictionary id="armor-1" cost="1200" cat="def1"
+			name="armor-uname" desc="armor-udesc">
+			<int name="lvl">1</int>
+			<int name="dmg-reduction">1</int>
+		</dictionary>
+		<dictionary id="armor-2" cost="2400" req="armor-1" cat="def2"
+			name="armor-uname" desc="armor-udesc">
+			<int name="lvl">2</int>
+			<int name="dmg-reduction">2</int>
+		</dictionary>
+		<dictionary id="armor-3" cost="3600" req="armor-2" cat="def3"
+			name="armor-uname" desc="armor-udesc">
+			<int name="lvl">3</int>
+			<int name="dmg-reduction">3</int>
+		</dictionary>
+		<dictionary id="armor-4" cost="4800" req="armor-3" cat="def4"
+			name="armor-uname" desc="armor-udesc">
+			<int name="lvl">4</int>
+			<int name="dmg-reduction">4</int>
+		</dictionary>
+		<dictionary id="armor-5" cost="6000" req="armor-4" cat="def5"
+			name="armor-uname" desc="armor-udesc">
+			<int name="lvl">5</int>
+			<int name="dmg-reduction">5</int>
+		</dictionary>
+		
+		
+		
+		
+		
+		<dictionary id="aura" cost="3500" cat="def3"
+			name="aura-uname" desc="aura-udesc">
+			<bool   name="aura">true</bool>
+			<float  name="aura-range">5</float>
+			<string name="aura-buff">buffs/priest_cripple_1.xml</string>
+			<int    name="aura-mana-drain">1</int>
+			<int 	name="slow">30</int>
+		</dictionary>
+		
+		<dictionary id="auraslow-1" cost="3500" req="aura" cat="def4"
+			name="auraslow-uname" desc="auraslow-udesc">
+			<int name="lvl">1</int>
+			<string name="aura-buff">buffs/priest_cripple_2.xml</string>
+			<int 	name="slow">50</int>
+		</dictionary>
+		<dictionary id="auraslow-2" cost="4500" req="auraslow-1" cat="def5"
+			name="auraslow-uname" desc="auraslow-udesc">
+			<int name="lvl">2</int>
+			<string name="aura-buff">buffs/priest_cripple_3.xml</string>
+			<int 	name="slow">70</int>
+		</dictionary>
+		
+		<dictionary id="auradrain" cost="5000" req="aura" cat="def3"
+			name="auradrain-uname" desc="auradrain-udesc">
+			<int name="aura-mana-drain">0</int>
+		</dictionary>
+		
+		
+		
+		
+		
+		<dictionary id="hpregen1" cost="500" cat="def1"
+			name="hpregen-uname" desc="hpregen-udesc-1">
+			<int name="lvl">1</int>
+			<float name="hp-regen">5</float>
+		</dictionary>
+		<dictionary id="hpregen2" cost="1000" req="hpregen1" cat="def2"
+			name="hpregen-uname" desc="hpregen-udesc-2">
+			<int name="lvl">2</int>
+			<float name="hp-regen">2.5</float>
+		</dictionary>
+		<dictionary id="hpregen3" cost="1500" req="hpregen2" cat="def3"
+			name="hpregen-uname" desc="hpregen-udesc-2">
+			<int name="lvl">3</int>
+			<float name="hp-regen">1.67</float>
+		</dictionary>
+		<dictionary id="hpregen4" cost="2000" req="hpregen3" cat="def4"
+			name="hpregen-uname" desc="hpregen-udesc-2">
+			<int name="lvl">4</int>
+			<float name="hp-regen">1.25</float>
+		</dictionary>
+		<dictionary id="hpregen5" cost="2500" req="hpregen4" cat="def5"
+			name="hpregen-uname" desc="hpregen-udesc-2">
+			<int name="lvl">5</int>
+			<float name="hp-regen">1</float>
+		</dictionary>
+		
+		
+		
+		
+		<dictionary id="mshield1" cost="500" cat="def1"
+			name="mshield-uname" desc="mshield-udesc">
+			<int name="lvl">1</int>
+			<float name="shield-dmg-per-mana">0.5</float>
+		</dictionary>
+		<dictionary id="mshield2" cost="1200" req="mshield1" cat="def2"
+			name="mshield-uname" desc="mshield-udesc">
+			<int name="lvl">2</int>
+			<float name="shield-dmg-per-mana">0.75</float>
+		</dictionary>
+		<dictionary id="mshield3" cost="1800" req="mshield2" cat="def3"
+			name="mshield-uname" desc="mshield-udesc">
+			<int name="lvl">3</int>
+			<float name="shield-dmg-per-mana">1.0</float>
+		</dictionary>
+		<dictionary id="mshield4" cost="2600" req="mshield3" cat="def4"
+			name="mshield-uname" desc="mshield-udesc">
+			<int name="lvl">4</int>
+			<float name="shield-dmg-per-mana">1.25</float>
+		</dictionary>
+		<dictionary id="mshield5" cost="3200" req="mshield4" cat="def5"
+			name="mshield-uname" desc="mshield-udesc">
+			<int name="lvl">5</int>
+			<float name="shield-dmg-per-mana">1.5</float>
+		</dictionary>
+	</upgrades>
+</tweak>

@@ -1,0 +1,12 @@
+<tileset level="15">
+	<sprite scale="16">
+		<texture>tilemaps/tp_sand.png</texture>
+		<frame>0 0 32 32</frame>
+	</sprite>
+	
+	<sprite scale="16">
+		<texture>tilemaps/tp_sand.png</texture>
+		<frame>32 0 32 32</frame>
+	</sprite>	
+	
+</tileset>

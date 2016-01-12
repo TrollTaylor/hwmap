@@ -1,0 +1,96 @@
+<doodad ao="false">
+	<sprite random-start="true" scale="16">
+		<texture>doodads/special/water_bubble.png</texture>
+		<origin>8 8</origin>
+		<frame time="10000">240 0 16 32</frame>	
+		<frame time="150">0 0 16 32</frame>												
+		<frame time="150">16 0 16 32</frame>	
+		<frame time="150">32 0 16 32</frame>	
+		<frame time="150">48 0 16 32</frame>	
+		<frame time="150">64 0 16 32</frame>	
+		<frame time="150">80 0 16 32</frame>	
+		<frame time="150">96 0 16 32</frame>	
+		<frame time="100">112 0 16 32</frame>	
+		<frame time="100">128 0 16 32</frame>	
+		<frame time="100">144 0 16 32</frame>	
+		<frame time="100">160 0 16 32</frame>	
+		<frame time="100">176 0 16 32</frame>	
+		<frame time="100">192 0 16 32</frame>	
+		<frame time="100">208 0 16 32</frame>	
+		<frame time="150">224 0 16 32</frame>	
+		<frame time="150">240 0 16 32</frame>		
+
+		<frame time="10000">240 0 16 32</frame>	
+		<frame time="150">0 0 16 32</frame>												
+		<frame time="150">16 0 16 32</frame>	
+		<frame time="150">32 0 16 32</frame>	
+		<frame time="150">48 0 16 32</frame>	
+		<frame time="150">64 0 16 32</frame>	
+		<frame time="150">80 0 16 32</frame>	
+		<frame time="150">96 0 16 32</frame>	
+		<frame time="100">112 0 16 32</frame>	
+		<frame time="100">128 0 16 32</frame>	
+		<frame time="100">144 0 16 32</frame>	
+		<frame time="100">160 0 16 32</frame>	
+		<frame time="100">176 0 16 32</frame>	
+		<frame time="100">192 0 16 32</frame>	
+		<frame time="100">208 0 16 32</frame>	
+		<frame time="150">224 0 16 32</frame>	
+		<frame time="150">240 0 16 32</frame>	
+		
+		<frame time="10000">240 0 16 32</frame>	
+		<frame time="150">0 0 16 32</frame>												
+		<frame time="150">16 0 16 32</frame>	
+		<frame time="150">32 0 16 32</frame>	
+		<frame time="150">48 0 16 32</frame>	
+		<frame time="150">64 0 16 32</frame>	
+		<frame time="150">80 0 16 32</frame>	
+		<frame time="150">96 0 16 32</frame>	
+		<frame time="100">112 0 16 32</frame>	
+		<frame time="100">128 0 16 32</frame>	
+		<frame time="100">144 0 16 32</frame>	
+		<frame time="100">160 0 16 32</frame>	
+		<frame time="100">176 0 16 32</frame>	
+		<frame time="100">192 0 16 32</frame>	
+		<frame time="100">208 0 16 32</frame>	
+		<frame time="150">224 0 16 32</frame>	
+		<frame time="150">240 0 16 32</frame>	
+		
+		<frame time="10000">240 0 16 32</frame>	
+		<frame time="150">0 0 16 32</frame>												
+		<frame time="150">16 0 16 32</frame>	
+		<frame time="150">32 0 16 32</frame>	
+		<frame time="150">48 0 16 32</frame>	
+		<frame time="150">64 0 16 32</frame>	
+		<frame time="150">80 0 16 32</frame>	
+		<frame time="150">96 0 16 32</frame>	
+		<frame time="100">112 0 16 32</frame>	
+		<frame time="100">128 0 16 32</frame>	
+		<frame time="100">144 0 16 32</frame>	
+		<frame time="100">160 0 16 32</frame>	
+		<frame time="100">176 0 16 32</frame>	
+		<frame time="100">192 0 16 32</frame>	
+		<frame time="100">208 0 16 32</frame>	
+		<frame time="150">224 0 16 32</frame>	
+		<frame time="150">240 0 16 32</frame>	
+		
+		<frame time="10000">240 0 16 32</frame>	
+		<frame time="150">0 0 16 32</frame>												
+		<frame time="150">16 0 16 32</frame>	
+		<frame time="150">32 0 16 32</frame>	
+		<frame time="150">48 0 16 32</frame>	
+		<frame time="150">64 0 16 32</frame>	
+		<frame time="150">80 0 16 32</frame>	
+		<frame time="150">96 0 16 32</frame>	
+		<frame time="100">112 0 16 32</frame>	
+		<frame time="100">128 0 16 32</frame>	
+		<frame time="100">144 0 16 32</frame>	
+		<frame time="100">160 0 16 32</frame>	
+		<frame time="100">176 0 16 32</frame>	
+		<frame time="100">192 0 16 32</frame>	
+		<frame time="100">208 0 16 32</frame>	
+		<frame time="150">224 0 16 32</frame>	
+		<frame time="150">240 0 16 32</frame>							
+		
+	</sprite>
+</doodad>

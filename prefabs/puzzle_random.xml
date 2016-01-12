@@ -1,0 +1,1314 @@
+﻿<prefab>
+<dictionary>
+	<dictionary name="tilemap">
+		<array name="tiledata"></array>
+	</dictionary>
+	<dictionary name="doodads">
+		<array name="doodads">
+			<dictionary>
+				<int name="id">2</int>
+				<string name="type">doodads/generic/marker_spawn.xml</string>
+				<vec2 name="pos">0.5 -4</vec2>
+				<int name="layer">-50</int>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">3</int>
+				<string name="type">doodads/special/puzzle_ball_default.xml</string>
+				<vec2 name="pos">-3 -3</vec2>
+				<int name="layer">-50</int>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">4</int>
+				<string name="type">doodads/special/puzzle_ball_default.xml</string>
+				<vec2 name="pos">-1.5 -3</vec2>
+				<int name="layer">-50</int>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">5</int>
+				<string name="type">doodads/special/puzzle_ball_default.xml</string>
+				<vec2 name="pos">0 -3</vec2>
+				<int name="layer">-50</int>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">6</int>
+				<string name="type">doodads/special/puzzle_ball_default.xml</string>
+				<vec2 name="pos">1.5 -3</vec2>
+				<int name="layer">-50</int>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">7</int>
+				<string name="type">doodads/special/puzzle_ball_default.xml</string>
+				<vec2 name="pos">3 -3</vec2>
+				<int name="layer">-50</int>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">8</int>
+				<string name="type">doodads/special/puzzle_ball_default.xml</string>
+				<vec2 name="pos">-3 -1.5</vec2>
+				<int name="layer">-50</int>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">9</int>
+				<string name="type">doodads/special/puzzle_ball_default.xml</string>
+				<vec2 name="pos">-1.5 -1.5</vec2>
+				<int name="layer">-50</int>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">10</int>
+				<string name="type">doodads/special/puzzle_ball_default.xml</string>
+				<vec2 name="pos">0 -1.5</vec2>
+				<int name="layer">-50</int>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">11</int>
+				<string name="type">doodads/special/puzzle_ball_default.xml</string>
+				<vec2 name="pos">1.5 -1.5</vec2>
+				<int name="layer">-50</int>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">12</int>
+				<string name="type">doodads/special/puzzle_ball_default.xml</string>
+				<vec2 name="pos">3 -1.5</vec2>
+				<int name="layer">-50</int>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">13</int>
+				<string name="type">doodads/generic/marker_spawn.xml</string>
+				<vec2 name="pos">-4 0.5</vec2>
+				<int name="layer">-50</int>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">14</int>
+				<string name="type">doodads/special/puzzle_ball_default.xml</string>
+				<vec2 name="pos">-3 0</vec2>
+				<int name="layer">-50</int>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">15</int>
+				<string name="type">doodads/special/puzzle_ball_default.xml</string>
+				<vec2 name="pos">-1.5 0</vec2>
+				<int name="layer">-50</int>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">16</int>
+				<string name="type">doodads/special/trigger_button_floor.xml</string>
+				<vec2 name="pos">-0.5 -0.5</vec2>
+				<int name="layer">-50</int>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">17</int>
+				<string name="type">doodads/special/puzzle_ball_default.xml</string>
+				<vec2 name="pos">1.5 0</vec2>
+				<int name="layer">-50</int>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">18</int>
+				<string name="type">doodads/special/puzzle_ball_default.xml</string>
+				<vec2 name="pos">3 0</vec2>
+				<int name="layer">-50</int>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">19</int>
+				<string name="type">doodads/generic/marker_spawn.xml</string>
+				<vec2 name="pos">5 0.5</vec2>
+				<int name="layer">-50</int>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">20</int>
+				<string name="type">doodads/special/puzzle_ball_default.xml</string>
+				<vec2 name="pos">-3 1.5</vec2>
+				<int name="layer">-50</int>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">21</int>
+				<string name="type">doodads/special/puzzle_ball_default.xml</string>
+				<vec2 name="pos">-3 3</vec2>
+				<int name="layer">-50</int>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">22</int>
+				<string name="type">doodads/special/puzzle_ball_default.xml</string>
+				<vec2 name="pos">-1.5 1.5</vec2>
+				<int name="layer">-50</int>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">23</int>
+				<string name="type">doodads/special/puzzle_ball_default.xml</string>
+				<vec2 name="pos">-1.5 3</vec2>
+				<int name="layer">-50</int>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">24</int>
+				<string name="type">doodads/special/puzzle_ball_default.xml</string>
+				<vec2 name="pos">0 1.5</vec2>
+				<int name="layer">-50</int>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">25</int>
+				<string name="type">doodads/special/puzzle_ball_default.xml</string>
+				<vec2 name="pos">0 3</vec2>
+				<int name="layer">-50</int>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">26</int>
+				<string name="type">doodads/generic/marker_spawn.xml</string>
+				<vec2 name="pos">0.5 5</vec2>
+				<int name="layer">-50</int>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">27</int>
+				<string name="type">doodads/special/puzzle_ball_default.xml</string>
+				<vec2 name="pos">1.5 1.5</vec2>
+				<int name="layer">-50</int>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">28</int>
+				<string name="type">doodads/special/puzzle_ball_default.xml</string>
+				<vec2 name="pos">1.5 3</vec2>
+				<int name="layer">-50</int>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">29</int>
+				<string name="type">doodads/special/puzzle_ball_default.xml</string>
+				<vec2 name="pos">3 1.5</vec2>
+				<int name="layer">-50</int>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">30</int>
+				<string name="type">doodads/special/puzzle_ball_default.xml</string>
+				<vec2 name="pos">3 3</vec2>
+				<int name="layer">-50</int>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">129</int>
+				<string name="type">doodads/special/editor_prefab_puzzle.xml</string>
+				<vec2 name="pos">0 0</vec2>
+				<int name="layer">-50</int>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+		</array>
+	</dictionary>
+	<dictionary name="actors">
+	</dictionary>
+	<dictionary name="items">
+	</dictionary>
+	<dictionary name="scripting">
+		<array name="nodes">
+			<dictionary>
+				<int name="id">126</int>
+				<string name="type">AnnounceText</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">-11 -0.5</vec2>
+				<dictionary name="parameters">
+					<string name="text">ig.won-some</string>
+					<int name="time">2500</int>
+					<int name="type">2</int>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">1</int>
+				<string name="type">AnnounceText</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">-11 -2.5</vec2>
+				<dictionary name="parameters">
+					<string name="text">ig.won-all</string>
+					<int name="time">2500</int>
+					<int name="type">2</int>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">31</int>
+				<string name="type">ChangeDoodadState</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">0 6.5</vec2>
+				<dictionary name="parameters">
+					<string name="state">activate</string>
+					<dictionary name="object">
+						<int-arr name="static">16</int-arr>
+					</dictionary>
+				</dictionary>
+				<int-arr name="connections">68</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">32</int>
+				<string name="type">AreaTrigger</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">1</int>
+				<vec2 name="pos">-2.5 6.5</vec2>
+				<dictionary name="parameters">
+					<int name="event">0</int>
+					<int name="types">1</int>
+					<dictionary name="shape">
+						<int-arr name="static">67</int-arr>
+					</dictionary>
+				</dictionary>
+				<int-arr name="connections">31</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">33</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">0 4.5</vec2>
+				<string name="parameters">items/powerup_potion2.xml</string>
+				<int-arr name="connections">34</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">34</int>
+				<string name="type">PlayEffect</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">0 4.5</vec2>
+				<dictionary name="parameters">
+					<string name="effect">effects/particles.xml:flash</string>
+					<int name="layer">50</int>
+				</dictionary>
+				<int-arr name="connections">35</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">35</int>
+				<string name="type">PlaySound</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">0 4.5</vec2>
+				<dictionary name="parameters">
+					<string name="sound">sound/misc.xml:spawn_tele</string>
+					<bool name="loop">False</bool>
+					<bool name="play3d">True</bool>
+					<float name="range3d">5</float>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">36</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">-3 3</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_right.xml</string>
+				<int-arr name="connections">91</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">37</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">-3 3</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_wrong.xml</string>
+			</dictionary>
+			<dictionary>
+				<int name="id">38</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">-1.5 3</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_right.xml</string>
+				<int-arr name="connections">91</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">39</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">-1.5 3</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_wrong.xml</string>
+			</dictionary>
+			<dictionary>
+				<int name="id">40</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">0 3</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_right.xml</string>
+				<int-arr name="connections">91</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">41</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">0 3</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_wrong.xml</string>
+			</dictionary>
+			<dictionary>
+				<int name="id">42</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">1.5 3</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_right.xml</string>
+				<int-arr name="connections">91</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">43</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">1.5 3</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_wrong.xml</string>
+			</dictionary>
+			<dictionary>
+				<int name="id">44</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">3 3</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_right.xml</string>
+				<int-arr name="connections">91</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">45</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">3 3</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_wrong.xml</string>
+			</dictionary>
+			<dictionary>
+				<int name="id">46</int>
+				<string name="type">Random</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">7 3</vec2>
+				<dictionary name="parameters">
+					<dictionary name="nodes">
+						<int-arr name="static">37 36</int-arr>
+					</dictionary>
+					<bool name="run-one">True</bool>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">47</int>
+				<string name="type">Random</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">8.5 3</vec2>
+				<dictionary name="parameters">
+					<dictionary name="nodes">
+						<int-arr name="static">39 38</int-arr>
+					</dictionary>
+					<bool name="run-one">True</bool>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">48</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">-3 1.5</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_right.xml</string>
+				<int-arr name="connections">91</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">49</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">-3 1.5</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_wrong.xml</string>
+			</dictionary>
+			<dictionary>
+				<int name="id">50</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">-1.5 1.5</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_right.xml</string>
+				<int-arr name="connections">91</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">51</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">-1.5 1.5</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_wrong.xml</string>
+			</dictionary>
+			<dictionary>
+				<int name="id">52</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">0 1.5</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_right.xml</string>
+				<int-arr name="connections">91</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">53</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">0 1.5</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_wrong.xml</string>
+			</dictionary>
+			<dictionary>
+				<int name="id">54</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">1.5 1.5</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_right.xml</string>
+				<int-arr name="connections">91</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">55</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">1.5 1.5</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_wrong.xml</string>
+			</dictionary>
+			<dictionary>
+				<int name="id">56</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">3 1.5</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_right.xml</string>
+				<int-arr name="connections">91</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">57</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">3 1.5</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_wrong.xml</string>
+			</dictionary>
+			<dictionary>
+				<int name="id">58</int>
+				<string name="type">Random</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">7 1.5</vec2>
+				<dictionary name="parameters">
+					<dictionary name="nodes">
+						<int-arr name="static">49 48</int-arr>
+					</dictionary>
+					<bool name="run-one">True</bool>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">59</int>
+				<string name="type">Random</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">8.5 1.5</vec2>
+				<dictionary name="parameters">
+					<dictionary name="nodes">
+						<int-arr name="static">51 50</int-arr>
+					</dictionary>
+					<bool name="run-one">True</bool>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">60</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">-4.5 0</vec2>
+				<string name="parameters">items/powerup_1up.xml</string>
+				<int-arr name="connections">61</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">61</int>
+				<string name="type">PlayEffect</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">-4.5 0</vec2>
+				<dictionary name="parameters">
+					<string name="effect">effects/particles.xml:flash</string>
+					<int name="layer">50</int>
+				</dictionary>
+				<int-arr name="connections">62</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">62</int>
+				<string name="type">PlaySound</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">-4.5 0</vec2>
+				<dictionary name="parameters">
+					<string name="sound">sound/misc.xml:spawn_tele</string>
+					<bool name="loop">False</bool>
+					<bool name="play3d">True</bool>
+					<float name="range3d">5</float>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">63</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">-3 0</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_right.xml</string>
+				<int-arr name="connections">91</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">64</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">-3 0</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_wrong.xml</string>
+			</dictionary>
+			<dictionary>
+				<int name="id">65</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">-1.5 0</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_right.xml</string>
+				<int-arr name="connections">91</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">66</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">-1.5 0</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_wrong.xml</string>
+			</dictionary>
+			<dictionary>
+				<int name="id">67</int>
+				<string name="type">RectangleShape</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">0 0</vec2>
+				<dictionary name="parameters">
+					<float name="w">1</float>
+					<float name="h">1</float>
+					<int name="types">15</int>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">68</int>
+				<string name="type">PlaySound</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">0 0</vec2>
+				<dictionary name="parameters">
+					<string name="sound">sound/misc.xml:button_hatch</string>
+					<bool name="loop">False</bool>
+					<bool name="play3d">True</bool>
+					<float name="range3d">5</float>
+				</dictionary>
+				<int-arr name="connections">123</int-arr>
+				<int-arr name="connection-delays">300</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">69</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">1.5 0</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_right.xml</string>
+				<int-arr name="connections">91</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">70</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">1.5 0</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_wrong.xml</string>
+			</dictionary>
+			<dictionary>
+				<int name="id">71</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">3 0</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_right.xml</string>
+				<int-arr name="connections">91</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">72</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">3 0</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_wrong.xml</string>
+			</dictionary>
+			<dictionary>
+				<int name="id">73</int>
+				<string name="type">Random</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">7 0</vec2>
+				<dictionary name="parameters">
+					<dictionary name="nodes">
+						<int-arr name="static">64 63</int-arr>
+					</dictionary>
+					<bool name="run-one">True</bool>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">74</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">4.5 0</vec2>
+				<string name="parameters">prefabs/upgrade_random.xml</string>
+				<int-arr name="connections">75</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">75</int>
+				<string name="type">PlayEffect</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">4.5 0</vec2>
+				<dictionary name="parameters">
+					<string name="effect">effects/particles.xml:flash</string>
+					<int name="layer">50</int>
+				</dictionary>
+				<int-arr name="connections">76</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">76</int>
+				<string name="type">PlaySound</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">4.5 0</vec2>
+				<dictionary name="parameters">
+					<string name="sound">sound/misc.xml:spawn_tele</string>
+					<bool name="loop">False</bool>
+					<bool name="play3d">True</bool>
+					<float name="range3d">5</float>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">77</int>
+				<string name="type">Random</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">8.5 0</vec2>
+				<dictionary name="parameters">
+					<dictionary name="nodes">
+						<int-arr name="static">66 65</int-arr>
+					</dictionary>
+					<bool name="run-one">True</bool>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">78</int>
+				<string name="type">PlaySound</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">0.5 -0.5</vec2>
+				<dictionary name="parameters">
+					<string name="sound">sound/misc.xml:button_metal</string>
+					<bool name="loop">False</bool>
+					<bool name="play3d">True</bool>
+					<float name="range3d">10</float>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">79</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">-3 -1.5</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_right.xml</string>
+				<int-arr name="connections">91</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">80</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">-3 -1.5</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_wrong.xml</string>
+			</dictionary>
+			<dictionary>
+				<int name="id">81</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">-1.5 -1.5</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_right.xml</string>
+				<int-arr name="connections">91</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">82</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">-1.5 -1.5</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_wrong.xml</string>
+			</dictionary>
+			<dictionary>
+				<int name="id">83</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">0 -1.5</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_right.xml</string>
+				<int-arr name="connections">91</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">84</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">0 -1.5</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_wrong.xml</string>
+			</dictionary>
+			<dictionary>
+				<int name="id">85</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">1.5 -1.5</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_right.xml</string>
+				<int-arr name="connections">91</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">86</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">1.5 -1.5</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_wrong.xml</string>
+			</dictionary>
+			<dictionary>
+				<int name="id">87</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">3 -1.5</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_right.xml</string>
+				<int-arr name="connections">91</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">88</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">3 -1.5</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_wrong.xml</string>
+			</dictionary>
+			<dictionary>
+				<int name="id">89</int>
+				<string name="type">Random</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">7 -1.5</vec2>
+				<dictionary name="parameters">
+					<dictionary name="nodes">
+						<int-arr name="static">80 79</int-arr>
+					</dictionary>
+					<bool name="run-one">True</bool>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">90</int>
+				<string name="type">Random</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">8.5 -1.5</vec2>
+				<dictionary name="parameters">
+					<dictionary name="nodes">
+						<int-arr name="static">82 81</int-arr>
+					</dictionary>
+					<bool name="run-one">True</bool>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">91</int>
+				<string name="type">ScriptLink</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">-5.5 -3</vec2>
+				<int-arr name="connections">110 109 108 107</int-arr>
+				<int-arr name="connection-delays">300 300 300 300</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">92</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">-3 -3</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_right.xml</string>
+				<int-arr name="connections">91</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">93</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">-3 -3</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_wrong.xml</string>
+			</dictionary>
+			<dictionary>
+				<int name="id">94</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">-1.5 -3</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_right.xml</string>
+				<int-arr name="connections">91</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">95</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">-1.5 -3</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_wrong.xml</string>
+			</dictionary>
+			<dictionary>
+				<int name="id">96</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">0 -3</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_right.xml</string>
+				<int-arr name="connections">91</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">97</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">0 -3</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_wrong.xml</string>
+			</dictionary>
+			<dictionary>
+				<int name="id">98</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">1.5 -3</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_right.xml</string>
+				<int-arr name="connections">91</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">99</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">1.5 -3</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_wrong.xml</string>
+			</dictionary>
+			<dictionary>
+				<int name="id">100</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">3 -3</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_right.xml</string>
+				<int-arr name="connections">91</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">101</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">3 -3</vec2>
+				<string name="parameters">doodads/special/puzzle_ball_wrong.xml</string>
+			</dictionary>
+			<dictionary>
+				<int name="id">102</int>
+				<string name="type">Random</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">7 -3</vec2>
+				<dictionary name="parameters">
+					<dictionary name="nodes">
+						<int-arr name="static">93 92</int-arr>
+					</dictionary>
+					<bool name="run-one">True</bool>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">103</int>
+				<string name="type">Random</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">8.5 -3</vec2>
+				<dictionary name="parameters">
+					<dictionary name="nodes">
+						<int-arr name="static">95 94</int-arr>
+					</dictionary>
+					<bool name="run-one">True</bool>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">104</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">0 -4.5</vec2>
+				<string name="parameters">items/chest_purple.xml</string>
+				<int-arr name="connections">105</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">105</int>
+				<string name="type">PlayEffect</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">0 -4.5</vec2>
+				<dictionary name="parameters">
+					<string name="effect">effects/particles.xml:flash</string>
+					<int name="layer">50</int>
+				</dictionary>
+				<int-arr name="connections">106</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">106</int>
+				<string name="type">PlaySound</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">0 -4.5</vec2>
+				<dictionary name="parameters">
+					<string name="sound">sound/misc.xml:spawn_tele</string>
+					<bool name="loop">False</bool>
+					<bool name="play3d">True</bool>
+					<float name="range3d">5</float>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">107</int>
+				<string name="type">Counter</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">1</int>
+				<vec2 name="pos">-8.5 1.5</vec2>
+				<dictionary name="parameters">
+					<int name="count">1</int>
+					<dictionary name="execute">
+						<int-arr name="static">33 126</int-arr>
+					</dictionary>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">108</int>
+				<string name="type">Counter</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">10</int>
+				<vec2 name="pos">-8.5 -0.5</vec2>
+				<dictionary name="parameters">
+					<int name="count">10</int>
+					<dictionary name="execute">
+						<int-arr name="static">60 126</int-arr>
+					</dictionary>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">109</int>
+				<string name="type">Counter</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">14</int>
+				<vec2 name="pos">-8.5 -2.5</vec2>
+				<dictionary name="parameters">
+					<int name="count">14</int>
+					<dictionary name="execute">
+						<int-arr name="static">74 126</int-arr>
+					</dictionary>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">110</int>
+				<string name="type">Counter</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">18</int>
+				<vec2 name="pos">-8.5 -4.5</vec2>
+				<dictionary name="parameters">
+					<int name="count">18</int>
+					<dictionary name="execute">
+						<int-arr name="static">104 1</int-arr>
+					</dictionary>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">128</int>
+				<string name="type">DestroyObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">7.5 -7</vec2>
+				<dictionary name="parameters">
+					<int-arr name="static">129</int-arr>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">130</int>
+				<string name="type">TimerTrigger</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">1</int>
+				<vec2 name="pos">3 -7</vec2>
+				<int name="parameters">1</int>
+				<int-arr name="connections">128</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">111</int>
+				<string name="type">Random</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">13 3</vec2>
+				<dictionary name="parameters">
+					<dictionary name="nodes">
+						<int-arr name="static">45 44</int-arr>
+					</dictionary>
+					<bool name="run-one">True</bool>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">112</int>
+				<string name="type">Random</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">13 1.5</vec2>
+				<dictionary name="parameters">
+					<dictionary name="nodes">
+						<int-arr name="static">57 56</int-arr>
+					</dictionary>
+					<bool name="run-one">True</bool>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">113</int>
+				<string name="type">Random</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">13 0</vec2>
+				<dictionary name="parameters">
+					<dictionary name="nodes">
+						<int-arr name="static">72 71</int-arr>
+					</dictionary>
+					<bool name="run-one">True</bool>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">114</int>
+				<string name="type">Random</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">13 -1.5</vec2>
+				<dictionary name="parameters">
+					<dictionary name="nodes">
+						<int-arr name="static">88 87</int-arr>
+					</dictionary>
+					<bool name="run-one">True</bool>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">115</int>
+				<string name="type">Random</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">13 -3</vec2>
+				<dictionary name="parameters">
+					<dictionary name="nodes">
+						<int-arr name="static">101 100</int-arr>
+					</dictionary>
+					<bool name="run-one">True</bool>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">116</int>
+				<string name="type">Random</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">11.5 3</vec2>
+				<dictionary name="parameters">
+					<dictionary name="nodes">
+						<int-arr name="static">43 42</int-arr>
+					</dictionary>
+					<bool name="run-one">True</bool>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">117</int>
+				<string name="type">Random</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">11.5 1.5</vec2>
+				<dictionary name="parameters">
+					<dictionary name="nodes">
+						<int-arr name="static">55 54</int-arr>
+					</dictionary>
+					<bool name="run-one">True</bool>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">118</int>
+				<string name="type">Random</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">11.5 0</vec2>
+				<dictionary name="parameters">
+					<dictionary name="nodes">
+						<int-arr name="static">70 69</int-arr>
+					</dictionary>
+					<bool name="run-one">True</bool>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">119</int>
+				<string name="type">Random</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">11.5 -1.5</vec2>
+				<dictionary name="parameters">
+					<dictionary name="nodes">
+						<int-arr name="static">86 85</int-arr>
+					</dictionary>
+					<bool name="run-one">True</bool>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">120</int>
+				<string name="type">Random</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">11.5 -3</vec2>
+				<dictionary name="parameters">
+					<dictionary name="nodes">
+						<int-arr name="static">99 98</int-arr>
+					</dictionary>
+					<bool name="run-one">True</bool>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">121</int>
+				<string name="type">Random</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">10 3</vec2>
+				<dictionary name="parameters">
+					<dictionary name="nodes">
+						<int-arr name="static">41 40</int-arr>
+					</dictionary>
+					<bool name="run-one">True</bool>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">122</int>
+				<string name="type">Random</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">10 1.5</vec2>
+				<dictionary name="parameters">
+					<dictionary name="nodes">
+						<int-arr name="static">53 52</int-arr>
+					</dictionary>
+					<bool name="run-one">True</bool>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">123</int>
+				<string name="type">DestroyObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">10 0</vec2>
+				<dictionary name="parameters">
+					<int-arr name="static">7 6 5 4 3 8 9 10 11 12 18 17 27 29 30 28 25 24 23 22 21 20 14 15</int-arr>
+				</dictionary>
+				<int-arr name="connections">102 103 125 120 115 89 90 124 119 114 113 118 77 73 58 59 122 117 112 111 116 121 47 46 78</int-arr>
+				<int-arr name="connection-delays">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">124</int>
+				<string name="type">Random</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">10 -1.5</vec2>
+				<dictionary name="parameters">
+					<dictionary name="nodes">
+						<int-arr name="static">84 83</int-arr>
+					</dictionary>
+					<bool name="run-one">True</bool>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">125</int>
+				<string name="type">Random</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">10 -3</vec2>
+				<dictionary name="parameters">
+					<dictionary name="nodes">
+						<int-arr name="static">97 96</int-arr>
+					</dictionary>
+					<bool name="run-one">True</bool>
+				</dictionary>
+			</dictionary>
+		</array>
+	</dictionary>
+	<dictionary name="lighting">
+		<array name="lights"></array>
+		<int-arr name="shadow-color">135 128 128 255</int-arr>
+		<int-arr name="ambient-color">50 50 50 255</int-arr>
+		<int-arr name="add-color">0 0 0 255</int-arr>
+		<float name="shadow-length">1</float>
+	</dictionary>
+	<dictionary name="prefabs">
+	</dictionary>
+</dictionary>
+</prefab>

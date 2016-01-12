@@ -1,0 +1,7 @@
+<doodad defaultlayer="0">
+	<sprite scale="16">
+		<texture>doodads/rare_big.png</texture>
+		<origin>22 10</origin>
+		<frame>0 176 43 32</frame>
+	</sprite>
+</doodad>

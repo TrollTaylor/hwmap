@@ -1,0 +1,72 @@
+<actor behavior="boss-worm">
+	<behavior>
+		<dictionary>
+			<entry name="hp"><int>500</int></entry>
+			<entry name="boss-hp"><bool>true</bool></entry>
+			<!--<entry name="multiplayer-scale-hp"><bool>true</bool></entry>-->
+			<entry name="ignore-hit-effects"><bool>true</bool></entry>
+			<entry name="ignore-trap-damage"><bool>true</bool></entry>
+			
+			<float name="speed">0.4</float>
+			
+			<dictionary name="chomp">
+				<int name="dmg">25</int>
+				<int name="dmg-delay">300</int>
+				<string name="sound">sound/monsters.xml:boss_worm_bite</string>
+			</dictionary>
+			
+			<dictionary name="loot">
+				<string name="origin">0 0</string>
+				<float name="spread">0.33</float>
+					<array name="loot">
+						<array>	
+							<int>1000</int><string>items/key_gold.xml</string>																																																	
+						</array>
+						<array>
+							<int>50</int><string>items/health_3.xml</string>
+						</array>																
+					</array>
+			</dictionary>				
+			
+			<entry name="death-snd"><string>sound/monsters.xml:boss_worm_death</string></entry>
+			<entry name="hit-effect"><string>effects/particles.xml:bone</string></entry>
+			<entry name="hit-particle"><string>effects/particles.xml:bone-particle</string></entry>
+			<entry name="corpse"><string>actors/boss_worm/boss_worm_corpse.xml</string></entry>
+		</dictionary>
+	</behavior>
+	
+	
+
+	<sprite scale="16" name="default">
+		<texture>actors/boss_worm/worm.png</texture>
+		<origin>32 32</origin>
+		<frame time="50">0 128 64 64</frame>
+		<frame time="50">64 128 64 64</frame>
+		<frame time="50">128 128 64 64</frame>
+		<frame time="50">64 128 64 64</frame>
+	</sprite>	
+	
+	<sprite scale="16" name="attack">
+		<texture>actors/boss_worm/worm.png</texture>
+		<origin>32 32</origin>	
+		<frame time="230">0 128 64 64</frame>
+		
+		<frame time="50">0 0 64 64</frame>
+		<frame time="50">64 0 64 64</frame>
+		<frame time="50">128 0 64 64</frame>
+		<frame time="50">192 0 64 64</frame>
+		<frame time="50">0 64 64 64</frame>
+		<frame time="50">64 64 64 64</frame>
+		<frame time="425">128 64 64 64</frame>
+		<frame time="35">64 64 64 64</frame>
+		<frame time="35">0 64 64 64</frame>
+		<frame time="35">192 0 64 64</frame>
+		<frame time="35">128 0 64 64</frame>
+		<frame time="35">64 0 64 64</frame>
+		<frame time="35">0 0 64 64</frame>
+	</sprite>
+	
+	<collision static="true">
+		<circle offset="0 0" radius="19" />
+	</collision>
+</actor>

@@ -1,0 +1,25 @@
+<item behavior="breakable">
+	<behavior>
+		<dictionary>
+			<entry name="destroy-snd"><string>sound/misc.xml:destroy_vase</string></entry>
+			<entry name="destroy-particle"><string>effects/particles.xml:breakable_china</string></entry>
+			<array name="loot">
+				<int>200</int><string>items/valuable_1.xml</string>
+				<int>350</int><string>items/valuable_2.xml</string>
+				<int>50</int><string>items/valuable_3.xml</string>
+				<int>5</int><string>items/health_1.xml</string>
+				<int>5</int><string>items/mana_1.xml</string>
+				<int>10</int><string>items/bomb_drain.xml</string>
+			</array>
+		</dictionary>
+	</behavior>
+	
+	<sprite scale="16">
+		<texture>items/breakables.png</texture>
+		<origin>3 7</origin>
+		<frame>26 11 8 11</frame>
+	</sprite>
+	<collision static="true">
+		<circle offset="0 0" radius="4" />
+	</collision>		
+</item>

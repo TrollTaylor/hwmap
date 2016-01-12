@@ -1,0 +1,323 @@
+<actor collision="0.1" behavior="composite" minimap="menus/minimap.xml:npc">
+	<behavior>
+		<dictionary>
+			<entry name="hp"><int>200000</int></entry>
+			
+			<entry name="aggro-range"><float>50</float></entry>
+			<entry name="max-range"><float>50</float></entry>
+			
+			<dictionary name="movement">
+				<string name="type">ranged</string>
+				<float name="speed">1.5</float>
+				<float name="range">3</float>
+			</dictionary>
+			
+			<array name="skills">
+			</array>	
+			
+			<entry name="death-snd"><string>sound/monsters.xml:death_skeleton</string></entry>
+			<entry name="hit-effect"><string>effects/particles.xml:bone</string></entry>		
+			<entry name="hit-particle"><string>effects/particles.xml:bone-particle</string></entry>
+			
+			<array name="loot">
+				<int>50</int><string>items/valuable_2.xml</string>
+				<int>25</int><string>items/valuable_3.xml</string>				
+				<int>10</int><string>items/health_1.xml</string>
+				<int>5</int><string>items/mana_1.xml</string>
+			</array>
+		</dictionary>
+	</behavior>
+
+
+	<!-- Idle -->
+	<sprite scale="16" random-start="true" name="east">
+		<texture>actors/npc/torch_guy.png</texture>
+		<origin>6 5</origin>
+		<frame time="250">6 2 11 17</frame>
+		<frame time="250">6 51 11 17</frame>
+		<frame time="250">6 75 11 17</frame>
+		<frame time="250">6 122 11 17</frame>	
+		<frame time="250">6 144 12 19</frame>				
+		
+	</sprite>
+
+	<sprite scale="16" random-start="true" name="northeast">
+		<texture>actors/npc/torch_guy.png</texture>
+		<origin>6 5</origin>
+		<frame time="250">39 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>
+		<frame time="250">65 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>		
+	</sprite>
+
+	<sprite scale="16" random-start="true" name="north">
+		<texture>actors/npc/torch_guy.png</texture>
+		<origin>6 5</origin>
+		<frame time="250">39 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>
+		<frame time="250">65 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>			
+	</sprite>
+	
+	<sprite scale="16" random-start="true" name="northwest">
+		<texture>actors/npc/torch_guy.png</texture>
+		<origin>6 5</origin>
+		<frame time="250">39 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>
+		<frame time="250">65 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>		
+	</sprite>
+	
+	<sprite scale="16" random-start="true" name="west">
+		<texture>actors/npc/torch_guy.png</texture>
+		<origin>6 5</origin>
+		<frame time="250">39 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>
+		<frame time="250">65 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>			
+	</sprite>
+	
+	<sprite scale="16" random-start="true" name="southwest">
+		<texture>actors/npc/torch_guy.png</texture>
+		<origin>6 5</origin>
+		<frame time="250">39 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>
+		<frame time="250">65 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>		
+	</sprite>
+	
+	<sprite scale="16" random-start="true" name="south">
+		<texture>actors/torch_guy.png</texture>
+		<origin>6 5</origin>
+		<frame time="250">145 2 16 18</frame>
+		<frame time="250">145 50 16 18</frame>
+		<frame time="250">145 73 16 18</frame>		
+		<frame time="250">145 119 16 20</frame>				
+		<frame time="250">144 143 17 19</frame>				
+
+		
+	</sprite>
+	
+	<sprite scale="16" random-start="true" name="southeast">
+		<texture>actors/npc/torch_guy.png</texture>
+		<origin>6 5</origin>
+		<frame time="250">39 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>
+		<frame time="250">65 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>	
+	
+	</sprite>
+	
+	
+	<!-- Walk -->
+	<sprite scale="16" name="east-walk">
+		<texture>actors/npc/torch_guy.png</texture>
+		<origin>6 5</origin>
+		<frame time="150">0 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>
+		<frame time="150">26 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>	
+	</sprite>
+
+	<sprite scale="16" name="northeast-walk">
+		<texture>actors/npc/torch_guy.png</texture>
+		<origin>6 5</origin>
+		<frame time="150">0 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>
+		<frame time="150">26 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>	
+	</sprite>
+
+	<sprite scale="16" name="north-walk">
+		<texture>actors/npc/torch_guy.png</texture>
+		<origin>6 5</origin>
+		<frame time="150">0 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>
+		<frame time="150">26 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>	
+	</sprite>
+	
+	<sprite scale="16" name="northwest-walk">
+		<texture>actors/npc/torch_guy.png</texture>
+		<origin>6 5</origin>
+		<frame time="150">0 0 13 16</frame>wa
+		<frame time="150">13 0 13 16</frame>
+		<frame time="150">26 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>		
+	</sprite>
+	
+	<sprite scale="16" name="west-walk">
+		<texture>actors/npc/torch_guy.png</texture>
+		<origin>6 5</origin>
+		<frame time="150">0 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>
+		<frame time="150">26 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>			
+	</sprite>
+	
+	<sprite scale="16" name="southwest-walk">
+		<texture>actors/npc/torch_guy.png</texture>
+		<origin>6 5</origin>
+		<frame time="150">0 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>
+		<frame time="150">26 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>		
+	</sprite>
+	
+	<sprite scale="16" name="south-walk">
+		<texture>actors/npc/torch_guy.png</texture>
+		<origin>6 5</origin>
+		<frame time="150">0 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>
+		<frame time="150">26 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>			
+	</sprite>
+	
+	<sprite scale="16" name="southeast-walk">
+		<texture>actors/npc/torch_guy.png</texture>
+		<origin>6 5</origin>
+		<frame time="150">0 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>
+		<frame time="150">26 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>	
+	</sprite>
+	
+
+	<!-- Attack -->
+	<sprite scale="16" name="east-attack">
+		<texture>actors/npc/torch_guy.png</texture>
+		<origin>6 5</origin>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>				
+	</sprite>
+
+	<sprite scale="16" name="northeast-attack">
+		<texture>actors/npc/torch_guy.png</texture>
+		<origin>6 5</origin>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>Turn 
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>		
+	</sprite>
+
+	<sprite scale="16" name="north-attack">
+		<texture>actors/npc/torch_guy.png</texture>
+		<origin>6 5</origin>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>	
+	</sprite>
+	
+	<sprite scale="16" name="northwest-attack">
+		<texture>actors/npc/torch_guy.png</texture>
+		<origin>6 5</origin>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>		
+	</sprite>
+	
+	<sprite scale="16" name="west-attack">
+		<texture>actors/npc/torch_guy.png</texture>
+		<origin>6 5</origin>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>		
+	</sprite>
+	
+	<sprite scale="16" name="southwest-attack">
+		<texture>actors/npc/torch_guy.png</texture>
+		<origin>6 5</origin>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>
+	</sprite>
+	
+	<sprite scale="16" name="south-attack">
+		<texture>actors/npc/torch_guy.png</texture>
+		<origin>6 5</origin>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>		
+	</sprite>
+	
+	<sprite scale="16" name="southeast-attack">
+		<texture>actors/npc/torch_guy.png</texture>
+		<origin>6 5</origin>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>
+	</sprite>
+	
+		<light>
+		<origin>-4 -2</origin>
+		<mul>
+			<range>300</range>
+			<color1>255 255 255</color1>
+			<color2>200 200 200</color2>
+			<color3>128 128 128</color3>
+		</mul>
+		<add>
+			<range>5</range>
+			<color1>230 215 73</color1>
+			<color2>230 157 73</color2>
+			<color3>0 0 0</color3>
+		</add>
+	</light>	
+	
+</actor>

@@ -1,0 +1,23 @@
+<item behavior="breakable">
+	<behavior>
+		<dictionary>
+			<entry name="destroy-snd"><string>sound/misc.xml:wood_break</string></entry>
+			<entry name="destroy-particle"><string>effects/particles.xml:breakable_wood</string></entry>
+		</dictionary>
+	</behavior>
+	
+	<sprite scale="16">
+		<texture>items/furniture.png</texture>
+		<origin>3 11</origin>
+		<frame>25 32 7 16</frame>
+	</sprite>
+	
+	<collision static="true">
+		<polygon>
+			<point>-3 -5</point>
+			<point>-3 6</point>		
+			<point>3 -5</point>		
+			<point>3 6</point>
+		</polygon>
+	</collision>
+</item>

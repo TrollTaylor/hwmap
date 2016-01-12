@@ -1,0 +1,46 @@
+<item behavior="collectable">
+	<behavior>
+		<dictionary>
+			<entry name="pickup-text"><string>item.coin</string></entry>
+			<entry name="pickup-snd"><string>sound/misc.xml:take_collectable</string></entry>
+			<entry name="pickup-particle"><string>effects/particles.xml:none</string></entry>
+		</dictionary>
+	</behavior>
+
+	<sprite scale="16">
+		<texture>items/items.png</texture>
+		<origin>8 13</origin>	
+		<frame time="200">0 464 16 16</frame>		
+		<frame time="200">16 464 16 16</frame>		
+		<frame time="200">32 464 16 16</frame>		
+		<frame time="200">16 464 16 16</frame>							
+		<glow scale="16">
+			<texture>items/items.png</texture>
+				<frame time="200">48 464 16 16</frame>		
+				<frame time="200">64 464 16 16</frame>		
+				<frame time="200">80 464 16 16</frame>		
+				<frame time="200">64 464 16 16</frame>		
+		</glow>			
+	</sprite>
+	
+	<!--
+	<light>
+		<origin>0 -6</origin>
+		<mul>
+			<range>80</range>
+			<color1>0 50 75</color1>
+			<color2>0 0 0</color2>
+			<color3>0 0 0</color3>
+		</mul>
+		<add>
+			<range>64</range>
+			<color1>0 10 25</color1>
+			<color2>0 0 0</color2>
+			<color3>0 0 0</color3>
+		</add>
+	</light>			
+	-->
+	<collision shoot-through="true">
+		<circle offset="0 -5" radius="5" />
+	</collision>	
+</item>

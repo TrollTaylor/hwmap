@@ -1,0 +1,25 @@
+<item behavior="breakable">
+	<behavior>
+		<dictionary>
+			<entry name="destroy-snd"><string>sound/misc.xml:wood_break</string></entry>
+			<entry name="destroy-particle"><string>effects/particles.xml:breakable_wood</string></entry>
+			<array name="loot">
+				<int>200</int><string>items/valuable_4.xml</string>
+				<int>350</int><string>items/valuable_5.xml</string>
+				<int>50</int><string>items/valuable_6.xml</string>			
+				<int>5</int><string>items/health_1.xml</string>
+				<int>5</int><string>items/mana_1.xml</string>
+				<int>10</int><string>items/barrel_bomb.xml</string>
+			</array>
+		</dictionary>
+	</behavior>
+	
+	<sprite scale="16">
+		<texture>items/breakables.png</texture>
+		<origin>3 7</origin>
+		<frame>13 12 11 12</frame>
+	</sprite>
+	<collision static="true">
+		<circle offset="0 0" radius="4" />
+	</collision>		
+</item>

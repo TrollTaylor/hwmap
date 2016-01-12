@@ -1,0 +1,7 @@
+<doodad ao="false" defaultlayer="-2">
+	<sprite random-start="true" scale="16">
+		<texture>doodads/generic/deco_books.png</texture>
+		<origin>5 5</origin>
+		<frame time="2500">53 0 11 9</frame>
+	</sprite>
+</doodad>

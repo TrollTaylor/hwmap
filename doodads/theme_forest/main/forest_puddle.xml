@@ -1,0 +1,14 @@
+<doodad defaultlayer="-10" minimap="menus/minimap.xml:pillar">
+	<sprite scale="32">
+		<texture>doodads/theme_forest/main/forest_puddle.png</texture>
+		<origin>22 110</origin>
+		<frame time="250">11 4 34 17</frame>
+		<frame time="250">49 4 34 17</frame>
+		<frame time="250">87 4 34 17</frame>
+	</sprite>
+				
+	<collision static="false" shoot-through="true">
+		<circle offset="23 0" radius="15" />
+	</collision>		
+
+</doodad>

@@ -1,0 +1,8 @@
+<doodad defaultlayer="0">
+	<sprite scale="16">
+		<texture>doodads/special/special_eeg.png</texture>
+		<origin>0 0</origin>
+		<frame time="500">45 45 19 19</frame>
+	</sprite>		
+
+</doodad>

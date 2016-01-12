@@ -1,0 +1,11 @@
+<doodad defaultlayer="-15" minimap="menus/minimap.xml:impassable_64">
+	<sprite scale="16">
+		<texture>doodads/special/water.png</texture>
+		<origin>0 0</origin>
+			<frame time="350">0 0 64 64</frame>
+			<frame time="350">256 0 64 64</frame>		
+			<frame time="350">0 256 64 64</frame>		
+			<frame time="350">256 256 64 64</frame>	
+	</sprite>		
+
+</doodad>

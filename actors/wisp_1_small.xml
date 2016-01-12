@@ -1,0 +1,251 @@
+<actor collision="5" behavior="ranged" minimap="menus/minimap.xml:enemy">
+	<behavior>
+		<dictionary>
+			<entry name="hp"><int>45</int></entry>
+			<entry name="projectile"><string>projectiles/enemy_wisp_1_small.xml</string></entry>
+			<entry name="speed"><float>0.5</float></entry>
+			<entry name="range"><float>12</float></entry>
+			<entry name="aggro-range"><float>13</float></entry>
+			<entry name="max-range"><float>20</float></entry>
+			<entry name="death-snd"><string>sound/monsters.xml:death_wisp</string></entry>
+			<entry name="hit-effect"><string>effects/particles.xml:hit_wisp_1_small</string></entry>		
+			<entry name="hit-particle"><string>effects/particles.xml:particle_wisp_1_small</string></entry>	
+			<entry name="blockable"><bool>true</bool></entry>
+			<array name="loot">
+				<int>1000</int><string>items/bomb_wisp_1_small.xml</string>
+			</array>			
+		</dictionary>
+	</behavior>
+
+
+	<!-- Idle -->
+	<sprite scale="16" random-start="true" name="east">
+		<texture>actors/wisp_1_small.png</texture>
+		<origin>10 12</origin>
+		<frame time="125">0 0 20 20</frame>
+		<frame time="125">20 0 20 20</frame>
+		<frame time="125">40 0 20 20</frame>
+		<frame time="125">60 0 20 20</frame>		
+	</sprite>
+
+	<sprite scale="16" random-start="true" name="northeast">
+		<texture>actors/wisp_1_small.png</texture>
+		<origin>10 12</origin>
+		<frame time="125">0 0 20 20</frame>
+		<frame time="125">20 0 20 20</frame>
+		<frame time="125">40 0 20 20</frame>
+		<frame time="125">60 0 20 20</frame>
+	</sprite>
+
+	<sprite scale="16" random-start="true" name="north">
+		<texture>actors/wisp_1_small.png</texture>
+		<origin>10 12</origin>
+		<frame time="125">0 0 20 20</frame>
+		<frame time="125">20 0 20 20</frame>
+		<frame time="125">40 0 20 20</frame>
+		<frame time="125">60 0 20 20</frame>
+	</sprite>
+	
+	<sprite scale="16" random-start="true" name="northwest">
+		<texture>actors/wisp_1_small.png</texture>
+		<origin>10 12</origin>
+		<frame time="125">0 0 20 20</frame>
+		<frame time="125">20 0 20 20</frame>
+		<frame time="125">40 0 20 20</frame>
+		<frame time="125">60 0 20 20</frame>
+	</sprite>
+	
+	<sprite scale="16" random-start="true" name="west">
+		<texture>actors/wisp_1_small.png</texture>
+		<origin>10 12</origin>
+		<frame time="125">0 0 20 20</frame>
+		<frame time="125">20 0 20 20</frame>
+		<frame time="125">40 0 20 20</frame>
+		<frame time="125">60 0 20 20</frame>
+	</sprite>
+	
+	<sprite scale="16" random-start="true" name="southwest">
+		<texture>actors/wisp_1_small.png</texture>
+		<origin>10 12</origin>
+		<frame time="125">0 0 20 20</frame>
+		<frame time="125">20 0 20 20</frame>
+		<frame time="125">40 0 20 20</frame>
+		<frame time="125">60 0 20 20</frame>
+	</sprite>
+	
+	<sprite scale="16" random-start="true" name="south">
+		<texture>actors/wisp_1_small.png</texture>
+		<origin>10 12</origin>
+		<frame time="125">0 0 20 20</frame>
+		<frame time="125">20 0 20 20</frame>
+		<frame time="125">40 0 20 20</frame>
+		<frame time="125">60 0 20 20</frame>
+	</sprite>
+	
+	<sprite scale="16" random-start="true" name="southeast">
+		<texture>actors/wisp_1_small.png</texture>
+		<origin>10 12</origin>
+		<frame time="125">0 0 20 20</frame>
+		<frame time="125">20 0 20 20</frame>
+		<frame time="125">40 0 20 20</frame>
+		<frame time="125">60 0 20 20</frame>
+	</sprite>
+	
+	
+	<!-- Walk -->
+	<sprite scale="16" name="east-walk">
+		<texture>actors/wisp_1_small.png</texture>
+		<origin>10 12</origin>
+		<frame time="125">0 0 20 20</frame>
+		<frame time="125">20 0 20 20</frame>
+		<frame time="125">40 0 20 20</frame>
+		<frame time="125">60 0 20 20</frame>
+	</sprite>
+
+	<sprite scale="16" name="northeast-walk">
+		<texture>actors/wisp_1_small.png</texture>
+		<origin>10 12</origin>
+		<frame time="125">0 0 20 20</frame>
+		<frame time="125">20 0 20 20</frame>
+		<frame time="125">40 0 20 20</frame>
+		<frame time="125">60 0 20 20</frame>
+	</sprite>
+
+	<sprite scale="16" name="north-walk">
+		<texture>actors/wisp_1_small.png</texture>
+		<origin>10 12</origin>
+		<frame time="125">0 0 20 20</frame>
+		<frame time="125">20 0 20 20</frame>
+		<frame time="125">40 0 20 20</frame>
+		<frame time="125">60 0 20 20</frame>
+	</sprite>
+	
+	<sprite scale="16" name="northwest-walk">
+		<texture>actors/wisp_1_small.png</texture>
+		<origin>10 12</origin>
+		<frame time="125">0 0 20 20</frame>
+		<frame time="125">20 0 20 20</frame>
+		<frame time="125">40 0 20 20</frame>
+		<frame time="125">60 0 20 20</frame>
+	</sprite>
+	
+	<sprite scale="16" name="west-walk">
+		<texture>actors/wisp_1_small.png</texture>
+		<origin>10 12</origin>
+		<frame time="125">0 0 20 20</frame>
+		<frame time="125">20 0 20 20</frame>
+		<frame time="125">40 0 20 20</frame>
+		<frame time="125">60 0 20 20</frame>
+	</sprite>
+	
+	<sprite scale="16" name="southwest-walk">
+		<texture>actors/wisp_1_small.png</texture>
+		<origin>10 12</origin>
+		<frame time="125">0 0 20 20</frame>
+		<frame time="125">20 0 20 20</frame>
+		<frame time="125">40 0 20 20</frame>
+		<frame time="125">60 0 20 20</frame>
+	</sprite>
+	
+	<sprite scale="16" name="south-walk">
+		<texture>actors/wisp_1_small.png</texture>
+		<origin>10 12</origin>
+		<frame time="125">0 0 20 20</frame>
+		<frame time="125">20 0 20 20</frame>
+		<frame time="125">40 0 20 20</frame>
+		<frame time="125">60 0 20 20</frame>
+	</sprite>
+	
+	<sprite scale="16" name="southeast-walk">
+		<texture>actors/wisp_1_small.png</texture>
+		<origin>10 12</origin>
+		<frame time="125">0 0 20 20</frame>
+		<frame time="125">20 0 20 20</frame>
+		<frame time="125">40 0 20 20</frame>
+		<frame time="125">60 0 20 20</frame>
+	</sprite>
+	
+
+	<!-- Attack -->
+	<sprite scale="16" name="east-attack">
+		<texture>actors/wisp_1_small.png</texture>
+		<origin>20 12</origin>
+		<frame time="500">0 20 40 20</frame>
+		<frame time="500">40 20 40 20</frame>
+		<frame time="500">80 20 40 20</frame>	
+	</sprite>
+
+	<sprite scale="16" name="northeast-attack">
+		<texture>actors/wisp_1_small.png</texture>
+		<origin>20 12</origin>
+		<frame time="500">0 20 40 20</frame>
+		<frame time="500">40 20 40 20</frame>
+		<frame time="500">80 20 40 20</frame>	
+	</sprite>
+
+	<sprite scale="16" name="north-attack">
+		<texture>actors/wisp_1_small.png</texture>
+		<origin>20 12</origin>
+		<frame time="500">0 20 40 20</frame>
+		<frame time="500">40 20 40 20</frame>
+		<frame time="500">80 20 40 20</frame>	
+	</sprite>
+	
+	<sprite scale="16" name="northwest-attack">
+		<texture>actors/wisp_1_small.png</texture>
+		<origin>20 12</origin>
+		<frame time="500">0 20 40 20</frame>
+		<frame time="500">40 20 40 20</frame>
+		<frame time="500">80 20 40 20</frame>	
+	</sprite>
+	
+	<sprite scale="16" name="west-attack">
+		<texture>actors/wisp_1_small.png</texture>
+		<origin>20 12</origin>
+		<frame time="500">0 20 40 20</frame>
+		<frame time="500">40 20 40 20</frame>
+		<frame time="500">80 20 40 20</frame>	
+	</sprite>
+	
+	<sprite scale="16" name="southwest-attack">
+		<texture>actors/wisp_1_small.png</texture>
+		<origin>20 12</origin>
+		<frame time="500">0 20 40 20</frame>
+		<frame time="500">40 20 40 20</frame>
+		<frame time="500">80 20 40 20</frame>	
+	</sprite>
+	
+	<sprite scale="16" name="south-attack">
+		<texture>actors/wisp_1_small.png</texture>
+		<origin>20 12</origin>
+		<frame time="500">0 20 40 20</frame>
+		<frame time="500">40 20 40 20</frame>
+		<frame time="500">80 20 40 20</frame>	
+	</sprite>
+	
+	<sprite scale="16" name="southeast-attack">
+		<texture>actors/wisp_1_small.png</texture>
+		<origin>20 12</origin>
+		<frame time="500">0 20 40 20</frame>
+		<frame time="500">40 20 40 20</frame>
+		<frame time="500">80 20 40 20</frame>		
+	</sprite>
+	
+	
+	<light>
+		<origin>0 -2</origin>
+		<mul>
+			<range>60</range>
+			<color1>255 200 100</color1>
+			<color2>200 200 200</color2>
+			<color3>128 128 128</color3>
+		</mul>
+		<add>
+			<range>60</range>
+			<color1>0 50 10</color1>
+			<color2>0 0 0</color2>
+			<color3>0 0 0</color3>
+		</add>
+	</light>	
+	
+</actor>

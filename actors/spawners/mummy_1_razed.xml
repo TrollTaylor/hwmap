@@ -1,0 +1,7 @@
+<doodad defaultlayer="-1" ao="false">
+	<sprite scale="16">
+		<texture>actors/spawners/mummy_1.png</texture>
+		<origin>15 13</origin>					
+		<frame>31 0 31 28</frame>
+	</sprite>
+</doodad>

@@ -1,0 +1,6 @@
+<spritebank>
+    <sprite scale="16" name="fog">
+        <texture>effects/fog_grey.png</texture>
+		<frame time="750">0 0 256 256</frame>
+    </sprite>
+</spritebank>

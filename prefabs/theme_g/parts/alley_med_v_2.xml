@@ -1,0 +1,141 @@
+﻿<prefab>
+<dictionary>
+	<dictionary name="tilemap">
+		<array name="tiledata"></array>
+	</dictionary>
+	<dictionary name="doodads">
+		<array name="doodads">
+			<dictionary>
+				<int name="id">112481</int>
+				<string name="type">doodads/theme_g/g_h_16.xml</string>
+				<vec2 name="pos">-3 8</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">112482</int>
+				<string name="type">doodads/theme_g/g_h_16.xml</string>
+				<vec2 name="pos">1 8</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">112483</int>
+				<string name="type">doodads/theme_g/g_h_16.xml</string>
+				<vec2 name="pos">-1 8</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">112484</int>
+				<string name="type">doodads/theme_g/g_h_16.xml</string>
+				<vec2 name="pos">-3 -5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">112485</int>
+				<string name="type">doodads/theme_g/g_h_16.xml</string>
+				<vec2 name="pos">1 -5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">112486</int>
+				<string name="type">doodads/theme_g/g_h_16.xml</string>
+				<vec2 name="pos">-1 -5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">112487</int>
+				<string name="type">doodads/special/color_theme_g_64.xml</string>
+				<vec2 name="pos">-2.5 -6.5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">112488</int>
+				<string name="type">doodads/special/color_theme_g_64.xml</string>
+				<vec2 name="pos">-1.5 -6.5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">112489</int>
+				<string name="type">doodads/special/color_theme_g_64.xml</string>
+				<vec2 name="pos">-2.5 -2.5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">112490</int>
+				<string name="type">doodads/special/color_theme_g_64.xml</string>
+				<vec2 name="pos">-1.5 -2.5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">112491</int>
+				<string name="type">doodads/special/color_theme_g_64.xml</string>
+				<vec2 name="pos">-2.5 1.5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">112492</int>
+				<string name="type">doodads/special/color_theme_g_64.xml</string>
+				<vec2 name="pos">-1.5 1.5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">112493</int>
+				<string name="type">doodads/special/color_theme_g_64.xml</string>
+				<vec2 name="pos">-2.5 2.5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">112494</int>
+				<string name="type">doodads/special/color_theme_g_64.xml</string>
+				<vec2 name="pos">-1.5 2.5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">112495</int>
+				<string name="type">doodads/generic/lamp_torch.xml</string>
+				<vec2 name="pos">0 9</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">112496</int>
+				<string name="type">doodads/theme_g/g_deco_pillar_cut_small.xml</string>
+				<vec2 name="pos">2 9</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">112497</int>
+				<string name="type">doodads/theme_g/g_deco_pillar_cut_small.xml</string>
+				<vec2 name="pos">-2 9</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">112498</int>
+				<string name="type">doodads/theme_g/g_deco_pillar_cut_small.xml</string>
+				<vec2 name="pos">-1 9</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">112499</int>
+				<string name="type">doodads/theme_g/g_deco_pillar_cut_small.xml</string>
+				<vec2 name="pos">1 9</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+		</array>
+	</dictionary>
+	<dictionary name="actors">
+	</dictionary>
+	<dictionary name="items">
+	</dictionary>
+	<dictionary name="scripting">
+		<array name="nodes"></array>
+	</dictionary>
+	<dictionary name="lighting">
+		<array name="lights"></array>
+		<int-arr name="shadow-color">135 128 128 255</int-arr>
+		<int-arr name="ambient-color">50 50 50 255</int-arr>
+		<int-arr name="add-color">0 0 0 255</int-arr>
+		<float name="shadow-length">1</float>
+	</dictionary>
+	<dictionary name="prefabs">
+	</dictionary>
+</dictionary>
+</prefab>

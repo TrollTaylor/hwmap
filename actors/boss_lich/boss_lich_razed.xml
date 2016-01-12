@@ -1,0 +1,9 @@
+<doodad>
+	<sprite scale="16">
+		<texture>actors/boss_lich/lich.png</texture>
+		<origin>32 40</origin>					
+		<frame>0 640 64 64</frame>
+	</sprite>
+
+
+</doodad>

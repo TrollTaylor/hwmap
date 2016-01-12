@@ -1,0 +1,22 @@
+<doodad aobias="10" minimap="menus/minimap.xml:x_x">
+	<sprite scale="16">
+		<texture>doodads/theme_b/b.png</texture>
+		<origin>0 16</origin>
+		<frame>0 112 16 16</frame>
+	</sprite>
+		
+	<polygon collision="false" shadow="true">
+		<point>0 16</point>
+		<point>16 16</point>
+		<point>16 32</point>
+		<point>0 32</point>
+	</polygon>				
+
+	<polygon collision="true" shadow="false">
+		<point>0 16</point>
+		<point>0 -8</point>		
+		<point>16 -8</point>		
+		<point>16 16</point>
+	</polygon>		
+
+</doodad>

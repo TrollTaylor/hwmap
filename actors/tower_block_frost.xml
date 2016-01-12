@@ -1,0 +1,224 @@
+<actor behavior="composite" minimap="menus/minimap.xml:enemy">
+	<behavior>
+		<dictionary>
+			<entry name="hp"><int>650</int></entry>
+			<entry name="multiplayer-scale-hp"><bool>true</bool></entry>		
+			<float name="aggro-range">12</float>
+			<float name="max-range">12</float>
+			<entry name="ignore-hit-effects"><bool>true</bool></entry>
+			<entry name="ignore-trap-damage"><bool>true</bool></entry>
+			<float name="editor-range-marker">5</float>			
+			
+			<dictionary name="movement">
+				<string name="type">passive</string>
+				<bool name="set-dir">true</bool>
+			</dictionary>
+			
+			<array name="skills">
+				<dictionary>
+					<string name="type">buff</string>
+					<int name="cooldown">1000</int>
+					<float name="range">10</float>
+					<float name="cast-range">5</float>
+					<string name="category">Player</string>
+					<string name="buff">buffs/enemy_tower_block_frost.xml</string>					
+				</dictionary>					
+			</array>			
+			
+			<!--<entry name="corpse"><string>actors/tower_block_frost_razed.xml</string></entry>		-->
+			<entry name="death-snd"><string>sound/monsters.xml:death_tower</string></entry>
+			<entry name="hit-snd"><string>sound/misc.xml:info_ice_break</string></entry>
+			<entry name="hit-effect"><string>effects/particles.xml:robe-green-hit</string></entry>
+		</dictionary>
+	</behavior>
+z
+
+	<!-- Idle -->
+	<sprite scale="16" name="east">
+		<texture>actors/tower_block_frost.png</texture>
+		<origin>12 36</origin>
+		<frame>0 0 24 48</frame>
+		<glow scale="16">
+			<texture>actors/tower_block_frost.png</texture>
+				<frame time="100">48 0 24 48</frame>			
+		</glow>			
+	</sprite>
+
+	<sprite scale="16" name="northeast">
+		<texture>actors/tower_block_frost.png</texture>
+		<origin>12 36</origin>
+		<frame>0 0 24 48</frame>
+		<glow scale="16">
+			<texture>actors/tower_block_frost.png</texture>
+				<frame time="100">48 0 24 48</frame>			
+		</glow>	
+	</sprite>
+
+	<sprite scale="16" name="north">
+		<texture>actors/tower_block_frost.png</texture>
+		<origin>12 36</origin>
+		<frame>0 0 24 48</frame>
+		<glow scale="16">
+			<texture>actors/tower_block_frost.png</texture>
+				<frame time="100">48 0 24 48</frame>			
+		</glow>	
+	</sprite>
+	
+	<sprite scale="16" name="northwest">
+		<texture>actors/tower_block_frost.png</texture>
+		<origin>12 36</origin>
+		<frame>0 0 24 48</frame>
+		<glow scale="16">
+			<texture>actors/tower_block_frost.png</texture>
+				<frame time="100">48 0 24 48</frame>			
+		</glow>	
+	</sprite>
+	
+	<sprite scale="16" name="west">
+		<texture>actors/tower_block_frost.png</texture>
+		<origin>12 36</origin>
+		<frame>0 0 24 48</frame>
+		<glow scale="16">
+			<texture>actors/tower_block_frost.png</texture>
+				<frame time="100">48 0 24 48</frame>			
+		</glow>	
+	</sprite>
+	
+	<sprite scale="16" name="southwest">
+		<texture>actors/tower_block_frost.png</texture>
+		<origin>12 36</origin>
+		<frame>0 0 24 48</frame>
+		<glow scale="16">
+			<texture>actors/tower_block_frost.png</texture>
+				<frame time="100">48 0 24 48</frame>			
+		</glow>	
+	</sprite>
+	
+	<sprite scale="16" name="south">
+		<texture>actors/tower_block_frost.png</texture>
+		<origin>12 36</origin>
+		<frame>0 0 24 48</frame>
+		<glow scale="16">
+			<texture>actors/tower_block_frost.png</texture>
+				<frame time="100">48 0 24 48</frame>			
+		</glow>			
+	</sprite>
+	
+	<sprite scale="16" name="southeast">
+		<texture>actors/tower_block_frost.png</texture>
+		<origin>12 36</origin>
+		<frame>0 0 24 48</frame>
+		<glow scale="16">
+			<texture>actors/tower_block_frost.png</texture>
+				<frame time="100">48 0 24 48</frame>			
+		</glow>	
+	</sprite>
+	
+	
+	<!-- Walk -->
+	<sprite scale="16" name="east-walk">
+		<texture>actors/tower_block_frost.png</texture>
+		<origin>12 36</origin>
+		<frame>0 0 24 48</frame>
+		<glow scale="16">
+			<texture>actors/tower_block_frost.png</texture>
+				<frame time="100">48 0 24 48</frame>			
+		</glow>	
+	</sprite>
+
+	<sprite scale="16" name="northeast-walk">
+		<texture>actors/tower_block_frost.png</texture>
+		<origin>12 36</origin>
+		<frame>0 0 24 48</frame>
+		<glow scale="16">
+			<texture>actors/tower_block_frost.png</texture>
+				<frame time="100">48 0 24 48</frame>			
+		</glow>	
+	</sprite>
+
+	<sprite scale="16" name="north-walk">
+		<texture>actors/tower_block_frost.png</texture>
+		<origin>12 36</origin>
+		<frame>0 0 24 48</frame>
+		<glow scale="16">
+			<texture>actors/tower_block_frost.png</texture>
+				<frame time="100">48 0 24 48</frame>			
+		</glow>	
+	</sprite>
+	
+	<sprite scale="16" name="northwest-walk">
+		<texture>actors/tower_block_frost.png</texture>
+		<origin>12 36</origin>
+		<frame>0 0 24 48</frame>
+		<glow scale="16">
+			<texture>actors/tower_block_frost.png</texture>
+				<frame time="100">48 0 24 48</frame>			
+		</glow>	
+	</sprite>
+	
+	<sprite scale="16" name="west-walk">
+		<texture>actors/tower_block_frost.png</texture>
+		<origin>12 36</origin>
+		<frame>0 0 24 48</frame>
+		<glow scale="16">
+			<texture>actors/tower_block_frost.png</texture>
+				<frame time="100">48 0 24 48</frame>			
+		</glow>	
+	</sprite>
+	
+	<sprite scale="16" name="southwest-walk">
+		<texture>actors/tower_block_frost.png</texture>
+		<origin>12 36</origin>
+		<frame>0 0 24 48</frame>
+		<glow scale="16">
+			<texture>actors/tower_block_frost.png</texture>
+				<frame time="100">48 0 24 48</frame>			
+		</glow>	
+	</sprite>
+	
+	<sprite scale="16" name="south-walk">
+		<texture>actors/tower_block_frost.png</texture>
+		<origin>12 36</origin>
+		<frame>0 0 24 48</frame>
+		<glow scale="16">
+			<texture>actors/tower_block_frost.png</texture>
+				<frame time="100">48 0 24 48</frame>			
+		</glow>	
+	</sprite>
+	
+	<sprite scale="16" name="southeast-walk">
+		<texture>actors/tower_block_frost.png</texture>
+		<origin>12 36</origin>
+		<frame>0 0 24 48</frame>
+		<glow scale="16">
+			<texture>actors/tower_block_frost.png</texture>
+				<frame time="100">48 0 24 48</frame>			
+		</glow>	
+	</sprite>
+
+	<light>
+		<origin>0 -12</origin>
+		<mul>
+			<range>320</range>
+			<color1>0 75 150</color1>
+			<color2>0 50 130</color2>
+			<color3>0 15 50</color3>
+		</mul>
+		<add>
+			<range>0</range>
+			<color1>0 35 75</color1>
+			<color2>0 15 30</color2>
+			<color3>0 5 10</color3>
+		</add>
+	</light>
+	
+	<collision static="true">			
+	<polygon collision="true" shadow="false">
+		<point>-12 12</point>
+		<point>-12 -36</point>		
+		<point>12 -36</point>		
+		<point>12 12</point>
+	</polygon>	
+	</collision>	
+
+</actor>

@@ -1,0 +1,7 @@
+<doodad defaultlayer="-5" ao="false">
+	<sprite scale="16">
+		<texture>doodads/generic/deco_maggot_slime.png</texture>
+		<origin>32 32</origin>
+		<frame>0 64 64 64</frame>				
+	</sprite>
+</doodad>

@@ -1,0 +1,123 @@
+<spritebank>
+	<sprite scale="1" name="top">
+		<texture>menus/hud.png</texture>
+		<frame>200 493 154 19</frame>
+	</sprite>
+	
+
+	<sprite scale="1" name="bottom-left">
+		<texture>menus/hud.png</texture>
+		<frame>75 470 19 12</frame>
+	</sprite>
+	
+	<sprite scale="1" name="bottom-right">
+		<texture>menus/hud.png</texture>
+		<frame>56 470 19 12</frame>
+	</sprite>
+	
+	
+	<sprite scale="1" name="player-no-combo">
+		<texture>menus/hud.png</texture>
+		<frame>0 484 100 28</frame>
+	</sprite>
+	<sprite scale="1" name="player-combo">
+		<texture>menus/hud.png</texture>
+		<frame>100 484 100 28</frame>
+	</sprite>
+	
+	<sprite scale="1" name="player-money-skull">
+		<texture>menus/hud.png</texture>
+		<frame time="2000">176 475 9 9</frame>
+		<frame time="200">176 466 9 9</frame>
+		<frame time="200">185 466 9 9</frame>
+		<frame time="200">185 475 9 9</frame>
+		<frame time="200">185 466 9 9</frame>		
+		<frame time="200">176 466 9 9</frame>		
+	</sprite>	
+	
+	<sprite scale="1" name="player-money">
+		<texture>menus/hud.png</texture>
+		<frame>94 468 82 14</frame>
+	</sprite>
+	
+	<sprite scale="1" name="glass-cover">
+		<texture>menus/hud.png</texture>
+		<frame>0 457 56 9</frame>
+	</sprite>	
+	
+	<sprite scale="1" name="combo-bar">
+		<texture>menus/hud.png</texture>
+		<frame>56 482 96 2</frame>		
+	</sprite>
+	
+	<sprite scale="1" name="hp-bar">
+		<texture>menus/hud.png</texture>
+		<frame>0 466 56 9</frame>
+	</sprite>
+	
+	<sprite scale="1" name="mana-bar">
+		<texture>menus/hud.png</texture>
+		<frame>0 475 56 9</frame>
+	</sprite>
+	
+	<sprite scale="1" name="potion-empty">
+		<texture>menus/hud.png</texture>
+		<frame>0 68 14 15</frame>
+	</sprite>
+
+	<sprite scale="1" name="potion-immortality">
+		<texture>menus/hud.png</texture>
+		<frame>14 68 14 15</frame>
+	</sprite>
+	
+	<sprite scale="1" name="potion-rejuv">
+		<texture>menus/hud.png</texture>
+		<frame>28 68 14 15</frame>
+	</sprite>
+	
+	<sprite scale="1" name="potion-damage">
+		<texture>menus/hud.png</texture>
+		<frame>42 68 14 15</frame>
+	</sprite>
+	
+	
+	<sprite scale="1" name="boss-hp-bg">
+		<texture>menus/hud.png</texture>
+		<frame>493 284 19 228</frame>
+	</sprite>
+	<sprite scale="1" name="boss-hp-bar">
+		<texture>menus/hud.png</texture>
+		<frame>478 332 15 180</frame>
+	</sprite>
+	<sprite scale="1" name="boss-hp-scale">
+		<texture>menus/hud.png</texture>
+		<frame>466 403 12 109</frame>
+	</sprite>	
+	<sprite scale="1" name="boss-glass-cover">
+		<texture>menus/hud.png</texture>
+		<frame>451 332 15 180</frame>
+	</sprite>		
+	
+	
+	<sprite scale="1" name="info-panel">
+		<texture>menus/hud.png</texture>
+		<frame>200 466 156 27</frame>
+	</sprite>
+	
+	
+	<sprite scale="1" name="chat-bg">
+		<texture>menus/hud.png</texture>
+		<frame>0 115 182 92</frame>
+	</sprite>
+	
+	<sprite scale="1" name="chat-input">
+		<texture>menus/hud.png</texture>
+		<frame>0 207 160 11</frame>
+	</sprite>
+	
+	<sprite scale="1" name="newhud">
+		<texture>menus/hud.png</texture>
+		<frame>36 262 18 124</frame>
+	</sprite>
+	
+</spritebank>

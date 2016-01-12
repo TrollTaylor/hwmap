@@ -1,0 +1,50 @@
+<item behavior="upgrade" minimap="menus/minimap.xml:upgrade">
+	<behavior>
+		<dictionary>
+			<array name="upgrades">
+				<string>max-health</string>
+				<int>1</int>
+			</array>
+			
+			<entry name="pickup-text"><string>item.hpbonus?bonus=1</string></entry>
+			<entry name="pickup-snd"><string>sound/misc.xml:special_serious_superhealth</string></entry>
+			<entry name="pickup-particle"><string>effects/particles.xml:none</string></entry>
+		</dictionary>
+	</behavior>
+	
+	<sprite random-start="true" scale="16">
+		<texture>items/items.png</texture>
+		<origin>8 12</origin>
+		<frame time="200">0 224 16 16</frame>
+		<frame time="200">16 224 16 16</frame>
+		<frame time="200">32 224 16 16</frame>
+		<frame time="200">16 224 16 16</frame>		
+		<glow scale="16">
+			<texture>items/items.png</texture>
+				<frame time="200">48 224 16 16</frame>
+				<frame time="200">64 224 16 16</frame>
+				<frame time="200">80 224 16 16</frame>
+				<frame time="200">64 224 16 16</frame>		
+		</glow>	
+	</sprite>	
+
+	<collision static="true">
+		<circle offset="0 0" radius="6" />
+	</collision>	
+	
+	<light>
+		<origin>0 -5</origin>
+		<mul>
+			<range>96</range>
+			<color1>100 0 0</color1>
+			<color2>0 0 0</color2>
+			<color3>0 0 0</color3>
+		</mul>
+		<add>
+			<range>64</range>
+			<color1>25 0 0</color1>
+			<color2>0 0 0</color2>
+			<color3>0 0 0</color3>
+		</add>
+	</light>		
+</item>

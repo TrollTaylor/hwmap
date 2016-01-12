@@ -1,0 +1,52 @@
+<item behavior="money">
+	<behavior>
+		<dictionary>
+			<entry name="amount"><int>100</int></entry>
+			<entry name="pickup-snd"><string>sound/misc.xml:take_diamond</string></entry>
+			<entry name="pickup-particle"><string>effects/particles.xml:none</string></entry>
+		</dictionary>
+	</behavior>
+
+	<sprite random-start="true" scale="16">
+		<texture>items/items.png</texture>
+		<origin>8 14</origin>
+		<frame time="1000">96 16 16 16</frame>	
+		<frame time="100">112 16 16 16</frame>	
+		<frame time="100">128 16 16 16</frame>	
+		<frame time="100">144 16 16 16</frame>
+		<frame time="100">160 16 16 16</frame>		
+		<glow scale="16">
+			<texture>items/items.png</texture>
+				<frame time="1000">176 16 16 16</frame>	
+				<frame time="100">192 16 16 16</frame>	
+				<frame time="100">208 16 16 16</frame>	
+				<frame time="100">224 16 16 16</frame>
+				<frame time="100">240 16 16 16</frame>	
+		</glow>			
+	</sprite>
+	
+	<light>
+		<origin>0 -5</origin>
+		<mul>
+			<range>64</range>
+			<color1>200 100 100</color1>
+			<color2>0 0 0</color2>
+			<color3>0 0 0</color3>
+		</mul>
+		<add>
+			<range>0</range>
+			<color1>50 0 0</color1>
+			<color2>0 0 0</color2>
+			<color3>0 0 0</color3>
+		</add>
+	</light>		
+	
+	<collision shoot-through="true">
+		<polygon>
+			<point>-8 0</point>
+			<point>-8 -10</point>
+			<point>8 -10</point>
+			<point>8 0</point>
+		</polygon>
+	</collision>
+</item>

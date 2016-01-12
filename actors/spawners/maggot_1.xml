@@ -1,0 +1,41 @@
+<actor ao="false" behavior="spawner" minimap="menus/minimap.xml:enemy_spawn">
+	<behavior>
+		<dictionary>
+			<array name="spawns">
+				<int>500</int><string>actors/maggot_1_small.xml</string>
+				<int>500</int><string>actors/maggot_1.xml</string>
+			</array>
+			<entry name="frequency"><int>2000</int></entry>
+			<entry name="hp"><int>75</int></entry>
+			<entry name="multiplayer-scale-hp"><bool>true</bool></entry>
+			<entry name="spawn-range"><float>7</float></entry>
+			<entry name="death-snd"><string>sound/monsters.xml:death_spawn_maggot</string></entry>
+			<entry name="hit-effect"><string>effects/particles.xml:hit_maggot_1</string></entry>
+			<entry name="hit-particle"><string>effects/particles.xml:particle_maggot_1</string></entry>
+			<entry name="corpse"><string>actors/spawners/maggot_1_razed.xml</string></entry>					
+		</dictionary>
+	</behavior>
+
+
+	<sprite scale="16" name="default">
+		<texture>actors/spawners/maggot_1.png</texture>
+		<origin>16 16</origin>					
+		<frame time="1000">0 0 32 32</frame>
+		<frame time="250">32 0 32 32</frame>
+		<frame time="500">64 0 32 32</frame>	
+		<frame time="250">32 0 32 32</frame>					
+	</sprite>
+	
+	
+	<collision static="true">
+		<polygon>
+			<point>-15 7</point>
+			<point>-9 -5</point>			
+			<point>2 -14</point>						
+			<point>15 -8</point>
+			<point>13 0</point>			
+			<point>3 9</point>
+			<point>-10 14</point>			
+		</polygon>
+	</collision>	
+</actor>

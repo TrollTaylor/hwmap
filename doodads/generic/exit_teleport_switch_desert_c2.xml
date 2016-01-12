@@ -1,0 +1,23 @@
+<doodad  ao="false" defaultlayer="-19">
+	<sprite scale="16" name="deactivate">
+		<texture>doodads/generic/exit_teleport_switch_desert.png</texture>
+		<origin>16 16</origin>
+		<frame time="150">96 32 32 32</frame>											
+	</sprite>
+	
+	<sprite scale="16" name="activate">
+		<texture>doodads/generic/exit_teleport_switch_desert.png</texture>
+		<origin>16 16</origin>
+		<frame time="150">128 32 32 32</frame>
+		<glow scale="16">
+			<texture>doodads/generic/exit_teleport_switch_desert.png</texture>
+			<frame time="150">160 32 32 32</frame>	
+		</glow>														
+	</sprite>	
+	
+	
+	<states default="deactivate">		
+	</states>	
+
+
+</doodad>

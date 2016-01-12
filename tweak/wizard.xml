@@ -1,0 +1,353 @@
+<tweak>
+	<params>
+		<dictionary>
+			<int    name="max-health">55</int>
+			<int    name="max-mana">60</int>
+			<int    name="dmg-reduction">0</int>
+			<int    name="mana-regen">600</int>
+			
+			
+			<int    name="fireball-dmg">10</int>
+			<float  name="fireball-splash">1.5</float>
+			<float  name="fireball-range">3.5</float>
+			<string name="fireball-projectile">projectiles/player_fireball_3.xml</string>
+			
+			<int    name="spray-dmg">6</int>
+			<float  name="spray-dist">5</float>
+			<int    name="spray-mana-cost">4</int>
+			
+			<bool   name="nova">false</bool>
+			<int    name="nova-rng">-1</int>
+			<int    name="nova-shards">-1</int>
+			<string name="nova-projectile">projectiles/player_ice_shard.xml</string>
+			<int    name="nova-mana-cost">20</int>
+			
+			<bool   name="meteor">false</bool>
+			<int    name="meteor-dmg">-1</int>
+			<int    name="meteor-amount">-1</int>
+			<int    name="meteor-mana-cost">50</int>
+			
+			<int  	name="shield-chance">0</int>
+			<bool   name="combust">false</bool>
+			<int    name="combust-dmg">-1</int>
+			<float  name="combust-dur">-1</float>
+		</dictionary>
+	</params>
+
+	<upgrades>
+		<!-- Misc -->
+		<dictionary id="health-1" cost="800" cat="misc1"
+			name="hp-uname" desc="hp-udesc">
+			<int name="lvl">1</int>
+			<int name="max-health">75</int>
+		</dictionary>
+		<dictionary id="health-2" cost="1500" req="health-1" cat="misc2"
+			name="hp-uname" desc="hp-udesc">
+			<int name="lvl">2</int>
+			<int name="max-health">95</int>
+		</dictionary>
+		<dictionary id="health-3" cost="2200" req="health-2" cat="misc3"
+			name="hp-uname" desc="hp-udesc">
+			<int name="lvl">3</int>
+			<int name="max-health">115</int>
+		</dictionary>
+		<dictionary id="health-4" cost="2900" req="health-3" cat="misc4"
+			name="hp-uname" desc="hp-udesc">
+			<int name="lvl">4</int>
+			<int name="max-health">135</int>
+		</dictionary>
+		<dictionary id="health-5" cost="3600" req="health-4" cat="misc5"
+			name="hp-uname" desc="hp-udesc">
+			<int name="lvl">5</int>
+			<int name="max-health">150</int>
+		</dictionary>
+		
+		
+		<dictionary id="mana-1" cost="600" cat="misc1"
+			name="mana-uname" desc="mana-udesc">
+			<int name="lvl">1</int>
+			<int name="max-mana">130</int>		
+		</dictionary>
+		<dictionary id="mana-2" cost="1400" req="mana-1" cat="misc2"
+			name="mana-uname" desc="mana-udesc">
+			<int name="lvl">2</int>
+			<int name="max-mana">185</int>			
+		</dictionary>
+		<dictionary id="mana-3" cost="2200" req="mana-2" cat="misc3"
+			name="mana-uname" desc="mana-udesc">
+			<int name="lvl">3</int>
+			<int name="max-mana">240</int>				
+		</dictionary>
+		<dictionary id="mana-4" cost="3000" req="mana-3" cat="misc4"
+			name="mana-uname" desc="mana-udesc">
+			<int name="lvl">4</int>
+			<int name="max-mana">295</int>				
+		</dictionary>
+		<dictionary id="mana-5" cost="3800" req="mana-4" cat="misc5"
+			name="mana-uname" desc="mana-udesc">
+			<int name="lvl">5</int>
+			<int name="max-mana">350</int>			
+		</dictionary>
+			
+	
+	
+	
+	
+		<!-- Offsensive -->
+		<dictionary id="dmg1" cost="800" cat="off1"
+			name="wizdmg-uname" desc="wizdmg-udesc">
+			<int name="lvl">1</int>
+			<int name="fireball-dmg">16</int>
+			<float name="fireball-splash">1.75</float>
+		</dictionary>
+		<dictionary id="dmg2" cost="1600" req="dmg1" cat="off2"
+			name="wizdmg-uname" desc="wizdmg-udesc">
+			<int name="lvl">2</int>
+			<int name="fireball-dmg">24</int>
+			<float name="fireball-splash">2.25</float>
+		</dictionary>
+		<dictionary id="dmg3" cost="2700" req="dmg2" cat="off3"
+			name="wizdmg-uname" desc="wizdmg-udesc">
+			<int name="lvl">3</int>
+			<int name="fireball-dmg">30</int>
+			<float name="fireball-splash">2.25</float>
+		</dictionary>
+		<dictionary id="dmg4" cost="3800" req="dmg3" cat="off4"
+			name="wizdmg-uname" desc="wizdmg-udesc">
+			<int name="lvl">4</int>
+			<int name="fireball-dmg">36</int>
+			<float name="fireball-splash">2.5</float>
+		</dictionary>
+		<dictionary id="dmg5" cost="5500" req="dmg4" cat="off5"
+			name="wizdmg-uname" desc="wizdmg-udesc">
+			<int name="lvl">5</int>
+			<int name="fireball-dmg">42</int>
+			<float name="fireball-splash">3</float>
+		</dictionary>
+		
+		<dictionary id="rng1" cost="500" cat="off1"
+			name="wizrng-uname" desc="wizrng-udesc">
+			<int name="lvl">1</int>
+			<float name="fireball-range">4</float>
+			<string name="fireball-projectile">projectiles/player_fireball_3.xml</string>
+		</dictionary>
+		<dictionary id="rng2" cost="1000" req="rng1" cat="off2"
+			name="wizrng-uname" desc="wizrng-udesc">
+			<int name="lvl">2</int>
+			<float name="fireball-range">4.5</float>
+			<string name="fireball-projectile">projectiles/player_fireball_4.xml</string>
+		</dictionary>
+		<dictionary id="rng3" cost="1700" req="rng2" cat="off3"
+			name="wizrng-uname" desc="wizrng-udesc">
+			<int name="lvl">3</int>
+			<float name="fireball-range">5</float>
+			<string name="fireball-projectile">projectiles/player_fireball_4.xml</string>
+		</dictionary>
+		<dictionary id="rng4" cost="2500" req="rng3" cat="off4"
+			name="wizrng-uname" desc="wizrng-udesc">
+			<int name="lvl">4</int>
+			<float name="fireball-range">5.5</float>
+			<string name="fireball-projectile">projectiles/player_fireball_5.xml</string>
+		</dictionary>
+		<dictionary id="rng5" cost="3000" req="rng4" cat="off5"
+			name="wizrng-uname" desc="wizrng-udesc">
+			<int name="lvl">5</int>
+			<float name="fireball-range">7</float>
+			<string name="fireball-projectile">projectiles/player_fireball_6.xml</string>
+		</dictionary>
+		
+		
+		<dictionary id="spraydmg1" cost="1000" cat="off2"
+			name="spraydmg-uname" desc="spraydmg-udesc">
+			<int name="lvl">1</int>
+			<int name="spray-dmg">11</int>
+		</dictionary>
+		<dictionary id="spraydmg2" cost="1800" req="spraydmg1" cat="off3"
+			name="spraydmg-uname" desc="spraydmg-udesc">
+			<int name="lvl">2</int>
+			<int name="spray-dmg">14</int>
+		</dictionary>
+		<dictionary id="spraydmg3" cost="2400" req="spraydmg2" cat="off4"
+			name="spraydmg-uname" desc="spraydmg-udesc">
+			<int name="lvl">3</int>
+			<int name="spray-dmg">17</int>
+		</dictionary>
+		<dictionary id="spraydmg4" cost="3200" req="spraydmg3" cat="off5"
+			name="spraydmg-uname" desc="spraydmg-udesc">
+			<int name="lvl">4</int>
+			<int name="spray-dmg">20</int>
+		</dictionary>
+		
+		
+		
+		
+		
+		<dictionary id="meteor" cost="2200" cat="off3"
+			name="meteor-uname" desc="meteor-udesc">
+			<bool name="meteor">true</bool>
+			<int name="meteor-dmg">60</int>
+			<int name="meteor-amount">3</int>
+		</dictionary>
+		
+		<dictionary id="meteornum-1" cost="2000" req="meteor" cat="off3"
+			name="meteornum-uname" desc="meteornum-udesc">
+			<int name="lvl">1</int>
+			<int name="meteor-amount">4</int>
+		</dictionary>
+		<dictionary id="meteornum-2" cost="3000" req="meteornum-1" cat="off4"
+			name="meteornum-uname" desc="meteornum-udesc">
+			<int name="lvl">2</int>
+			<int name="meteor-amount">5</int>
+		</dictionary>
+		<dictionary id="meteornum-3" cost="4000" req="meteornum-2" cat="off5"
+			name="meteornum-uname" desc="meteornum-udesc">
+			<int name="lvl">3</int>
+			<int name="meteor-amount">6</int>
+		</dictionary>
+		
+		<dictionary id="meteordmg-1" cost="4000" req="meteor" cat="off4"
+			name="meteordmg-uname" desc="meteordmg-udesc">
+			<int name="lvl">1</int>
+			<int name="meteor-dmg">90</int>
+		</dictionary>
+		<dictionary id="meteordmg-2" cost="5000" req="meteordmg-1" cat="off5"
+			name="meteordmg-uname" desc="meteordmg-udesc">
+			<int name="lvl">2</int>
+			<int name="meteor-dmg">120</int>
+		</dictionary>
+		
+		
+		
+		<dictionary id="combust" cost="1200" cat="off2"
+			name="combust-uname" desc="combust-udesc">
+			<bool name="combust">true</bool>
+			<int name="combust-dmg">8</int>
+			<float name="combust-dur">3</float>
+		</dictionary>
+		
+		<dictionary id="combustdmg1" cost="1800" req="combust" cat="off3"
+			name="combustdmg-uname" desc="combustdmg-udesc">
+			<int name="lvl">1</int>
+			<int name="combust-dmg">12</int>
+		</dictionary>
+		<dictionary id="combustdmg2" cost="3000" req="combustdmg1" cat="off4"
+			name="combustdmg-uname" desc="combustdmg-udesc">
+			<int name="lvl">2</int>
+			<int name="combust-dmg">16</int>
+		</dictionary>
+		<dictionary id="combustdmg3" cost="4500" req="combustdmg2" cat="off5"
+			name="combustdmg-uname" desc="combustdmg-udesc">
+			<int name="lvl">3</int>
+			<int name="combust-dmg">20</int>
+		</dictionary>
+		
+		<dictionary id="combustdur1" cost="1400" req="combust" cat="off3"
+			name="combustdur-uname" desc="combustdur-udesc">
+			<int name="lvl">1</int>
+			<float name="combust-dur">4</float>
+		</dictionary>
+		<dictionary id="combustdur2" cost="2200" req="combustdur1" cat="off4"
+			name="combustdur-uname" desc="combustdur-udesc">
+			<int name="lvl">2</int>
+			<float name="combust-dur">5</float>
+		</dictionary>
+		<dictionary id="combustdur3" cost="3500" req="combustdur2" cat="off5"
+			name="combustdur-uname" desc="combustdur-udesc">
+			<int name="lvl">3</int>
+			<float name="combust-dur">6</float>
+		</dictionary>
+		
+		
+		
+		
+	
+	
+	
+	
+	
+		
+		<!-- Defensive -->
+		<dictionary id="armor-1" cost="600" cat="def1"
+			name="armor-uname" desc="armor-udesc">
+			<int name="lvl">1</int>
+			<int name="dmg-reduction">1</int>
+		</dictionary>
+		<dictionary id="armor-2" cost="1200" req="armor-1" cat="def2"
+			name="armor-uname" desc="armor-udesc">
+			<int name="lvl">2</int>
+			<int name="dmg-reduction">2</int>
+		</dictionary>
+		<dictionary id="armor-3" cost="1800" req="armor-2" cat="def3"
+			name="armor-uname" desc="armor-udesc">
+			<int name="lvl">3</int>
+			<int name="dmg-reduction">3</int>
+		</dictionary>
+		<dictionary id="armor-4" cost="2400" req="armor-3" cat="def4"
+			name="armor-uname" desc="armor-udesc">
+			<int name="lvl">4</int>
+			<int name="dmg-reduction">4</int>
+		</dictionary>
+		
+		
+		
+		
+		
+		<dictionary id="nova" cost="1300" cat="def2"
+			name="nova-uname" desc="nova-udesc">
+			<bool name="nova">true</bool>
+			<int name="nova-rng">5</int>
+			<int name="nova-shards">16</int>
+		</dictionary>
+		
+		<dictionary id="novarng-1" cost="2000" req="nova" cat="def3"
+			name="novarng-uname" desc="novarng-udesc">
+			<int name="lvl">1</int>
+			<int name="nova-rng">7</int>
+		</dictionary>
+		<dictionary id="novarng-2" cost="4000" req="novarng-1" cat="def5"
+			name="novarng-uname" desc="novarng-udesc">
+			<int name="lvl">2</int>
+			<int name="nova-rng">9</int>
+		</dictionary>
+		
+		<dictionary id="novanum-1" cost="2000" req="nova" cat="def3"
+			name="novanum-uname" desc="novanum-udesc">
+			<int name="lvl">1</int>
+			<int name="nova-shards">24</int>
+		</dictionary>
+		<dictionary id="novanum-2" cost="4000" req="novanum-1" cat="def4"
+			name="novanum-uname" desc="novanum-udesc">
+			<int name="lvl">2</int>
+			<int name="nova-shards">32</int>
+		</dictionary>
+		
+		
+		
+		<dictionary id="fshield1" cost="1000" cat="def1"
+			name="fshield-uname" desc="fshield-udesc-1">
+			<int name="lvl">1</int>
+			<int name="shield-chance">20</int>
+		</dictionary>
+		<dictionary id="fshield2" cost="2000" req="fshield1" cat="def2"
+			name="fshield-uname" desc="fshield-udesc-2">
+			<int name="lvl">2</int>
+			<int name="shield-chance">40</int>
+		</dictionary>
+		<dictionary id="fshield3" cost="3000" req="fshield2" cat="def3"
+			name="fshield-uname" desc="fshield-udesc-2">
+			<int name="lvl">3</int>
+			<int name="shield-chance">60</int>
+		</dictionary>
+		<dictionary id="fshield4" cost="4000" req="fshield3" cat="def4"
+			name="fshield-uname" desc="fshield-udesc-2">
+			<int name="lvl">4</int>
+			<int name="shield-chance">80</int>
+		</dictionary>
+		<dictionary id="fshield5" cost="5000" req="fshield4" cat="def5"
+			name="fshield-uname" desc="fshield-udesc-2">
+			<int name="lvl">5</int>
+			<int name="shield-chance">100</int>
+		</dictionary>
+	
+	</upgrades>
+</tweak>

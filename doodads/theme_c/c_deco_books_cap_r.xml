@@ -1,0 +1,7 @@
+<doodad ao="false">
+	<sprite scale="16">
+		<texture>doodads/theme_c/c.png</texture>
+		<origin>8 33</origin>
+		<frame>40 222 10 34</frame>				
+	</sprite>
+</doodad>

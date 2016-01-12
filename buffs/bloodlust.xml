@@ -1,0 +1,14 @@
+<buff>
+	<behavior>
+		<dictionary>
+			<string name="color">255 0 0</string>
+			
+			<int name="duration">2000</int>
+			
+			<float name="dmg-mul">1.5</float>
+			<float name="speed-mul">1.5</float>
+			<bool name="snare">false</bool>
+			<bool name="stun">false</bool>
+		</dictionary>
+	</behavior>
+</buff>

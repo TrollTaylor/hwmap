@@ -1,0 +1,9 @@
+<doodad defaultlayer="-10" ao="false">
+	<sprite scale="16">
+		<texture>doodads/generic/item_frozen.png</texture>
+		<origin>5 5</origin>
+		<frame time="500">11 0 11 10</frame>
+	</sprite>		
+
+	
+</doodad>

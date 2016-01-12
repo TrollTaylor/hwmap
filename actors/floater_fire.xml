@@ -1,0 +1,204 @@
+<actor behavior="composite">
+	<behavior>
+		<dictionary>
+			<entry name="hp"><int>50</int></entry>
+			<entry name="aggro-range"><float>1400</float></entry>
+			<entry name="ignore-hit-effects"><bool>true</bool></entry>				
+			<entry name="max-range"><float>2000</float></entry>
+			<entry name="death-snd"><string>sound/players.xml:wizard_ice_shard_hit</string></entry>	
+			<dictionary name="movement">
+				<string name="type">melee</string>
+				<float name="speed">0.95</float>
+			</dictionary>
+			<array name="skills">
+			    <dictionary>
+			            <string name="type">blink</string>
+			            <int name="cooldown">2000</int>
+			            <float name="range">4</float>
+			            <string name="sound">sound/misc.xml:spawn_tele</string>
+			            <float name="dist">-5</float>
+			            <string name="effect">effects/particles.xml:flash</string>
+			    </dictionary>				
+			</array>		
+			<dictionary name="loot">
+				<string name="origin">0 0</string>
+				<float name="spread">0.0</float>
+					<array name="loot">																																		
+						<array>	
+							<int>1000</int><string>items/bomb_floater_fire.xml</string>
+						</array>					
+					</array>
+			</dictionary>				
+		</dictionary>
+	</behavior>
+
+
+	<!-- Idle -->
+	<sprite scale="16" name="east">
+		<texture>actors/floater_fire.png</texture>
+		<origin>4 20</origin>
+		<frame time="100">0 0 9 25</frame>
+		<frame time="100">9 0 9 25</frame>
+		<frame time="100">18 0 9 25</frame>
+		<frame time="100">9 0 9 25</frame>						
+	</sprite>		
+
+	<sprite scale="16" name="northeast">
+		<texture>actors/floater_fire.png</texture>
+		<origin>4 20</origin>
+		<frame time="100">0 0 9 25</frame>
+		<frame time="100">9 0 9 25</frame>
+		<frame time="100">18 0 9 25</frame>
+		<frame time="100">9 0 9 25</frame>						
+	</sprite>		
+
+	<sprite scale="16" name="north">
+		<texture>actors/floater_fire.png</texture>
+		<origin>4 20</origin>
+		<frame time="100">0 0 9 25</frame>
+		<frame time="100">9 0 9 25</frame>
+		<frame time="100">18 0 9 25</frame>
+		<frame time="100">9 0 9 25</frame>						
+	</sprite>		
+	
+	<sprite scale="16" name="northwest">
+		<texture>actors/floater_fire.png</texture>
+		<origin>4 20</origin>
+		<frame time="100">0 0 9 25</frame>
+		<frame time="100">9 0 9 25</frame>
+		<frame time="100">18 0 9 25</frame>
+		<frame time="100">9 0 9 25</frame>						
+	</sprite>		
+	
+	<sprite scale="16" name="west">
+		<texture>actors/floater_fire.png</texture>
+		<origin>4 20</origin>
+		<frame time="100">0 0 9 25</frame>
+		<frame time="100">9 0 9 25</frame>
+		<frame time="100">18 0 9 25</frame>
+		<frame time="100">9 0 9 25</frame>						
+	</sprite>		
+	
+	<sprite scale="16" name="southwest">
+		<texture>actors/floater_fire.png</texture>
+		<origin>4 20</origin>
+		<frame time="100">0 0 9 25</frame>
+		<frame time="100">9 0 9 25</frame>
+		<frame time="100">18 0 9 25</frame>
+		<frame time="100">9 0 9 25</frame>						
+	</sprite>		
+	
+	<sprite scale="16" name="south">
+		<texture>actors/floater_fire.png</texture>
+		<origin>4 20</origin>
+		<frame time="100">0 0 9 25</frame>
+		<frame time="100">9 0 9 25</frame>
+		<frame time="100">18 0 9 25</frame>
+		<frame time="100">9 0 9 25</frame>						
+	</sprite>		
+	
+	<sprite scale="16" name="southeast">
+		<texture>actors/floater_fire.png</texture>
+		<origin>4 20</origin>
+		<frame time="100">0 0 9 25</frame>
+		<frame time="100">9 0 9 25</frame>
+		<frame time="100">18 0 9 25</frame>
+		<frame time="100">9 0 9 25</frame>						
+	</sprite>		
+	
+	
+	<!-- Walk -->
+	<sprite scale="16" name="east-walk">
+		<texture>actors/floater_fire.png</texture>
+		<origin>4 20</origin>
+		<frame time="100">0 0 9 25</frame>
+		<frame time="100">9 0 9 25</frame>
+		<frame time="100">18 0 9 25</frame>
+		<frame time="100">9 0 9 25</frame>						
+	</sprite>		
+
+	<sprite scale="16" name="northeast-walk">
+		<texture>actors/floater_fire.png</texture>
+		<origin>4 20</origin>
+		<frame time="100">0 0 9 25</frame>
+		<frame time="100">9 0 9 25</frame>
+		<frame time="100">18 0 9 25</frame>
+		<frame time="100">9 0 9 25</frame>						
+	</sprite>			
+
+	<sprite scale="16" name="north-walk">
+		<texture>actors/floater_fire.png</texture>
+		<origin>4 20</origin>
+		<frame time="100">0 0 9 25</frame>
+		<frame time="100">9 0 9 25</frame>
+		<frame time="100">18 0 9 25</frame>
+		<frame time="100">9 0 9 25</frame>						
+	</sprite>			
+	
+	<sprite scale="16" name="northwest-walk">
+		<texture>actors/floater_fire.png</texture>
+		<origin>4 20</origin>
+		<frame time="100">0 0 9 25</frame>
+		<frame time="100">9 0 9 25</frame>
+		<frame time="100">18 0 9 25</frame>
+		<frame time="100">9 0 9 25</frame>						
+	</sprite>			
+	
+	<sprite scale="16" name="west-walk">
+		<texture>actors/floater_fire.png</texture>
+		<origin>4 20</origin>
+		<frame time="100">0 0 9 25</frame>
+		<frame time="100">9 0 9 25</frame>
+		<frame time="100">18 0 9 25</frame>
+		<frame time="100">9 0 9 25</frame>						
+	</sprite>			
+	
+	<sprite scale="16" name="southwest-walk">
+		<texture>actors/floater_fire.png</texture>
+		<origin>4 20</origin>
+		<frame time="100">0 0 9 25</frame>
+		<frame time="100">9 0 9 25</frame>
+		<frame time="100">18 0 9 25</frame>
+		<frame time="100">9 0 9 25</frame>						
+	</sprite>			
+	
+	<sprite scale="16" name="south-walk">
+		<texture>actors/floater_fire.png</texture>
+		<origin>4 20</origin>
+		<frame time="100">0 0 9 25</frame>
+		<frame time="100">9 0 9 25</frame>
+		<frame time="100">18 0 9 25</frame>
+		<frame time="100">9 0 9 25</frame>						
+	</sprite>		
+	
+	<sprite scale="16" name="southeast-walk">
+		<texture>actors/floater_fire.png</texture>
+		<origin>4 20</origin>
+		<frame time="100">0 0 9 25</frame>
+		<frame time="100">9 0 9 25</frame>
+		<frame time="100">18 0 9 25</frame>
+		<frame time="100">9 0 9 25</frame>						
+	</sprite>		
+		
+		
+	<light>
+		<origin>0 -7</origin>
+		<mul>
+			<range>75</range>
+			<color1>100 100 0</color1>
+			<color2>75 30 0</color2>
+			<color3>50 10 0</color3>
+		</mul>
+		<add>
+			<range>0</range>
+			<color1>10 30 0</color1>
+			<color2>50 25 0</color2>
+			<color3>5 0 0</color3>
+		</add>
+	</light>			
+		
+	<collision static="false">
+		<circle offset="0 -4" radius="4" />
+	</collision>				
+		
+</actor>

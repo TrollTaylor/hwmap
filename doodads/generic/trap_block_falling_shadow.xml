@@ -1,0 +1,8 @@
+<doodad defaultlayer="-1" ao="false">
+	<sprite scale="16">
+		<texture>doodads/generic/trap_block_falling.png</texture>
+		<origin>16 8</origin>
+		<frame time="50">0 104 32 24</frame>
+	</sprite>
+
+</doodad>

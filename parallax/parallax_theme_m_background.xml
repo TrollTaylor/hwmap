@@ -1,0 +1,8 @@
+<spritebank>
+	<sprite scale="32" name="parallax_theme_m_background">
+		<texture>parallax/parallax_theme_m_background.png</texture>
+		<origin>256 256</origin>
+		<frame>0 0 512 512</frame>
+	</sprite>		
+
+</spritebank>

@@ -1,0 +1,8 @@
+<doodad defaultlayer="-1000" minimap="menus/minimap.xml:impassable_256">
+	<sprite scale="16">
+		<texture>doodads/special/color_black.png</texture>
+		<origin>0 0</origin>
+		<frame>0 0 256 256</frame>
+	</sprite>		
+
+</doodad>

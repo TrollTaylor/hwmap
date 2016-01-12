@@ -1,0 +1,10 @@
+<doodad ao="false">
+	<sprite scale="16">
+		<texture>doodads/generic/marker_bone.png</texture>
+		<origin>7 8</origin>
+		<frame>21 49 14 15</frame>				
+	</sprite>
+	<collision static="true">
+		<circle offset="0 0" radius="4" />
+	</collision>		
+</doodad>

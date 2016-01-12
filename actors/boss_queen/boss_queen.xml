@@ -1,0 +1,73 @@
+<actor behavior="boss-maggot">
+	<behavior>
+		<dictionary>
+			<entry name="hp"><int>3000</int></entry>
+			<entry name="boss-hp"><bool>true</bool></entry>
+			<entry name="multiplayer-scale-hp"><bool>true</bool></entry>
+			<entry name="ignore-hit-effects"><bool>true</bool></entry>
+			<entry name="ignore-trap-damage"><bool>true</bool></entry>
+			
+		
+			<entry name="spawn-frequency"><int>1500</int></entry>
+			<array name="spawns">
+				<int>800</int><string>actors/maggot_1_small.xml</string>
+				<int>150</int><string>actors/maggot_1.xml</string>
+				<int>50</int><string>actors/maggot_1_elite.xml</string>
+			</array>
+			<entry name="spawn-range"><float>3</float></entry>
+		
+		
+			<entry name="nova-projectile"><string>projectiles/boss_maggot_nova.xml</string></entry>
+			<entry name="nova-frequency"><int>9000</int></entry>
+			<entry name="nova-count"><int>64</int></entry>
+			<entry name="nova-waves"><int>2</int></entry>
+			
+			
+			<entry name="death-snd"><string>sound/monsters.xml:death_boss_queen</string></entry>
+			<entry name="hit-effect"><string>effects/particles.xml:hit_maggot_1</string></entry>
+			<entry name="hit-particle"><string>effects/particles.xml:particle_maggot_1</string></entry>
+			<entry name="corpse"><string>actors/boss_queen/boss_queen_razed.xml</string></entry>					
+		</dictionary>
+	</behavior>
+
+
+	<sprite scale="16" name="default">
+		<texture>actors/boss_queen/queen.png</texture>
+		<origin>50 45</origin>					
+		<frame time="500">0 0 100 100</frame>
+		<frame time="500">100 0 100 100</frame>
+		<frame time="500">200 0 100 100</frame>
+		<frame time="500">100 0 100 100</frame>		
+	</sprite>
+	
+	<sprite scale="16" name="shoot">
+		<texture>actors/boss_queen/queen.png</texture>
+		<origin>50 45</origin>					
+		<frame time="600">0 100 100 100</frame>
+		<frame time="300">100 100 100 100</frame>
+		<frame time="300">200 100 100 100</frame>
+		<frame time="300">300 100 100 100</frame>
+	</sprite>
+	
+	
+	<collision static="true">
+		<polygon>
+			<point>-43 30</point>
+			<point>-30 1</point>			
+			<point>-6 -23</point>						
+			<point>20 -33</point>
+			<point>29 -33</point>			
+			<point>38 -23</point>
+			<point>38 -10</point>		
+		</polygon>
+		<polygon>
+			<point>38 -10</point>		
+			<point>25 10</point>			
+			<point>14 23</point>			
+			<point>-5 38</point>			
+			<point>-22 50</point>			
+			<point>-34 50</point>	
+			<point>-43 30</point>																	
+		</polygon>		
+	</collision>	
+</actor>

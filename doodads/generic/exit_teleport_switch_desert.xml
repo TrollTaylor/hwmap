@@ -1,0 +1,7 @@
+<doodad  ao="false" defaultlayer="-20">
+	<sprite scale="16">
+		<texture>doodads/generic/exit_teleport_switch_desert.png</texture>
+		<origin>48 41</origin>
+		<frame time="150">0 0 96 96</frame>											
+	</sprite>
+</doodad>

@@ -1,0 +1,7 @@
+<doodad defaultlayer="-1">
+	<sprite scale="16">
+		<texture>actors/boss_worm/worm.png</texture>
+		<origin>32 32</origin>					
+		<frame>64 192 64 64</frame>
+	</sprite>
+</doodad>

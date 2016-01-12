@@ -1,0 +1,238 @@
+<actor behavior="composite">
+	<behavior>
+		<dictionary>
+			<entry name="hp"><int>100</int></entry>
+			<entry name="aggro-range"><float>1400</float></entry>
+			<entry name="ignore-hit-effects"><bool>true</bool></entry>
+			<entry name="max-range"><float>2000</float></entry>
+			<dictionary name="movement">
+				<string name="type">passive</string>
+				<float name="speed">0.0</float>
+			</dictionary>
+			<array name="skills">
+				<dictionary>
+					<string name="type">explode</string>
+					<string name="category">Player</string>
+					<string name="anim">explode</string>
+					<int name="cooldown">0</int>
+					<float name="range">5000</float>
+					<string name="sound">sound/players.xml:wizard_ice_shard_hit</string>
+					<string name="effect">effects/particles.xml:bomb_floater_fire_flash</string>
+					<string name="particle">effects/particles.xml:fire-particle</string>
+					<dictionary name="light">
+						<float name="add-range">8</float>
+						<string name="add-color1">150 0 0</string>
+						<string name="add-color2">100 0 0</string>
+						<string name="add-color3">75 0 0</string>
+					</dictionary>
+					<float name="splash">1</float>
+					<int name="dmg">50</int>
+					<bool name="suicide">true</bool>
+				</dictionary>
+			</array>			
+			<entry name="death-snd"><string>sound/players.xml:wizard_ice_shard_hit</string></entry>
+			<entry name="hit-effect"><string>effects/particles.xml:bone</string></entry>		
+			<entry name="hit-particle"><string>effects/particles.xml:bone-particle</string></entry>	
+		</dictionary>
+	</behavior>
+
+
+	<!-- Idle -->
+	<sprite scale="16" name="east">
+		<texture>items/bomb_floater_fire.png</texture>
+		<origin>6 15</origin>
+		<frame time="100">0 0 16 20</frame>
+	</sprite>
+
+	<sprite scale="16" name="northeast">
+		<texture>items/bomb_floater_fire.png</texture>
+		<origin>6 15</origin>
+		<frame time="100">0 0 16 20</frame>
+	</sprite>
+
+	<sprite scale="16" name="north">
+		<texture>items/bomb_floater_fire.png</texture>
+		<origin>6 15</origin>
+		<frame time="100">0 0 16 20</frame>
+	</sprite>
+	
+	<sprite scale="16" name="northwest">
+		<texture>items/bomb_floater_fire.png</texture>
+		<origin>6 15</origin>
+		<frame time="100">0 0 16 20</frame>
+	</sprite>
+	
+	<sprite scale="16" name="west">
+		<texture>items/bomb_floater_fire.png</texture>
+		<origin>6 15</origin>
+		<frame time="100">0 0 16 20</frame>
+	</sprite>
+	
+	<sprite scale="16" name="southwest">
+		<texture>items/bomb_floater_fire.png</texture>
+		<origin>6 15</origin>
+		<frame time="100">0 0 16 20</frame>
+	</sprite>
+	
+	<sprite scale="16" name="south">
+		<texture>items/bomb_floater_fire.png</texture>
+		<origin>6 15</origin>
+		<frame time="100">0 0 16 20</frame>
+	</sprite>
+	
+	<sprite scale="16" name="southeast">
+		<texture>items/bomb_floater_fire.png</texture>
+		<origin>6 15</origin>
+		<frame time="100">0 0 16 20</frame>
+	</sprite>
+	
+	
+	<!-- Walk -->
+	<sprite scale="16" name="east-walk">
+		<texture>items/bomb_lich_desert_1.png</texture>
+		<origin>16 16</origin>
+		<frame time="150">160 0 32 32</frame>
+		<frame time="150">192 0 32 32</frame>
+		<glow scale="16">
+			<texture>items/bomb_lich_desert_1.png</texture>
+			<origin>16 16</origin>
+			<frame time="150">160 32 32 32</frame>
+			<frame time="150">192 32 32 32</frame>					
+		</glow>	
+	</sprite>
+
+	<sprite scale="16" name="northeast-walk">
+		<texture>items/bomb_lich_desert_1.png</texture>
+		<origin>16 16</origin>
+		<frame time="150">160 0 32 32</frame>
+		<frame time="150">192 0 32 32</frame>
+		<glow scale="16">
+			<texture>items/bomb_lich_desert_1.png</texture>
+			<origin>16 16</origin>
+			<frame time="150">160 32 32 32</frame>
+			<frame time="150">192 32 32 32</frame>					
+		</glow>	
+	</sprite>
+
+	<sprite scale="16" name="north-walk">
+		<texture>items/bomb_lich_desert_1.png</texture>
+		<origin>16 16</origin>
+		<frame time="150">160 0 32 32</frame>
+		<frame time="150">192 0 32 32</frame>
+		<glow scale="16">
+			<texture>items/bomb_lich_desert_1.png</texture>
+			<origin>16 16</origin>
+			<frame time="150">160 32 32 32</frame>
+			<frame time="150">192 32 32 32</frame>					
+		</glow>	
+	</sprite>
+	
+	<sprite scale="16" name="northwest-walk">
+		<texture>items/bomb_lich_desert_1.png</texture>
+		<origin>16 16</origin>
+		<frame time="150">160 0 32 32</frame>
+		<frame time="150">192 0 32 32</frame>
+		<glow scale="16">
+			<texture>items/bomb_lich_desert_1.png</texture>
+			<origin>16 16</origin>
+			<frame time="150">160 32 32 32</frame>
+			<frame time="150">192 32 32 32</frame>					
+		</glow>	
+	</sprite>
+	
+	<sprite scale="16" name="west-walk">
+		<texture>items/bomb_lich_desert_1.png</texture>
+		<origin>16 16</origin>
+		<frame time="150">160 0 32 32</frame>
+		<frame time="150">192 0 32 32</frame>
+		<glow scale="16">
+			<texture>items/bomb_lich_desert_1.png</texture>
+			<origin>16 16</origin>
+			<frame time="150">160 32 32 32</frame>
+			<frame time="150">192 32 32 32</frame>					
+		</glow>	
+	</sprite>
+	
+	<sprite scale="16" name="southwest-walk">
+		<texture>items/bomb_lich_desert_1.png</texture>
+		<origin>16 16</origin>
+		<frame time="150">160 0 32 32</frame>
+		<frame time="150">192 0 32 32</frame>
+		<glow scale="16">
+			<texture>items/bomb_lich_desert_1.png</texture>
+			<origin>16 16</origin>
+			<frame time="150">160 32 32 32</frame>
+			<frame time="150">192 32 32 32</frame>					
+		</glow>	
+	</sprite>
+	
+	<sprite scale="16" name="south-walk">
+		<texture>items/bomb_lich_desert_1.png</texture>
+		<origin>16 16</origin>
+		<frame time="150">160 0 32 32</frame>
+		<frame time="150">192 0 32 32</frame>
+		<glow scale="16">
+			<texture>items/bomb_lich_desert_1.png</texture>
+			<origin>16 16</origin>
+			<frame time="150">160 32 32 32</frame>
+			<frame time="150">192 32 32 32</frame>					
+		</glow>	
+	</sprite>
+	
+	<sprite scale="16" name="southeast-walk">
+		<texture>items/bomb_lich_desert_1.png</texture>
+		<origin>16 16</origin>
+		<frame time="150">160 0 32 32</frame>
+		<frame time="150">192 0 32 32</frame>
+		<glow scale="16">
+			<texture>items/bomb_lich_desert_1.png</texture>
+			<origin>16 16</origin>
+			<frame time="150">160 32 32 32</frame>
+			<frame time="150">192 32 32 32</frame>					
+		</glow>
+	</sprite>
+	
+
+	<!-- Attack -->
+	<sprite scale="16" name="explode">
+		<texture>items/bomb_floater_fire.png</texture>
+		<origin>6 15</origin>
+		<frame time="75">0 0 16 20</frame>
+		<frame time="75">16 0 16 20</frame>
+		<frame time="1000">32 0 16 20</frame>
+		<frame time="25">48 0 16 20</frame>
+		<frame time="25">64 0 16 20</frame>
+		<frame time="25">80 0 16 20</frame>
+		<frame time="25">96 0 16 20</frame>
+		<frame time="25">112 0 16 20</frame>
+		<glow scale="16">
+			<texture>items/bomb_floater_fire.png</texture>
+			<frame time="75">0 20 16 20</frame>
+			<frame time="75">16 20 16 20</frame>
+			<frame time="1000">32 20 16 20</frame>
+			<frame time="25">48 20 16 20</frame>
+			<frame time="25">64 20 16 20</frame>
+			<frame time="25">80 20 16 20</frame>
+			<frame time="25">96 20 16 20</frame>
+			<frame time="25">112 20 16 20</frame>
+		</glow>			
+	</sprite>
+
+	
+	<light>
+		<origin>0 -2</origin>
+		<mul>
+			<range>75</range>
+			<color1>100 100 0</color1>
+			<color2>75 30 0</color2>
+			<color3>50 10 0</color3>
+		</mul>
+		<add>
+			<range>20</range>
+			<color1>10 30 0</color1>
+			<color2>50 25 0</color2>
+			<color3>5 0 0</color3>
+		</add>
+	</light>				
+		
+</actor>

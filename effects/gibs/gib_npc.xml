@@ -1,0 +1,9 @@
+<gib speed="1" power="1" life="0.7" particle="effects/particles.xml:bone-particle" particle-color="100 0 0">
+
+	<sprite scale="16">
+		<origin>3 3</origin>
+		<texture>effects/gibs/gib.png</texture>
+		<frame>48 24 5 5</frame>
+	</sprite>		
+	
+</gib>	

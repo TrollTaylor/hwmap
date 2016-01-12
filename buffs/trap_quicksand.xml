@@ -1,0 +1,23 @@
+<buff>
+	<behavior>
+		<dictionary>
+			<int name="duration">400</int>
+			<float name="speed-mul">0.1</float>			
+			<array name="effects">
+				<dictionary>
+					<string name="type">particles</string>
+					
+					<string name="sprite">effects/particles.xml:trap_quicksand</string>
+
+					<int name="freq">10</int>
+					<int name="rate">5</int>
+					
+					<vec2 name="dir">0 0</vec2>
+					<float name="dir-spread">1.5</float>
+				
+					<float name="speed">0.5</float>
+				</dictionary>
+			</array>	
+		</dictionary>
+	</behavior>
+</buff>

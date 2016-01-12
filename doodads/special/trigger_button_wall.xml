@@ -1,0 +1,21 @@
+<doodad>
+	
+	<sprite scale="16" name="activate">
+		<texture>doodads/special/trigger_button_wall.png</texture>
+		<origin>5 15</origin>	
+		<frame>11 0 11 11</frame>				
+	</sprite>			
+	
+	<sprite scale="16" name="raised">
+		<texture>doodads/special/trigger_button_wall.png</texture>
+		<origin>5 15</origin>	
+		<frame>0 0 11 11</frame>		
+	</sprite>				
+	
+	<states default="raised">
+	</states>			
+	
+</doodad>
+
+
+

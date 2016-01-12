@@ -1,0 +1,136 @@
+﻿<prefab>
+<dictionary>
+	<dictionary name="tilemap">
+		<array name="tiledata"></array>
+	</dictionary>
+	<dictionary name="doodads">
+		<array name="doodads">
+			<dictionary>
+				<int name="id">144470</int>
+				<string name="type">doodads/generic/trap_drain.xml</string>
+				<vec2 name="pos">0 0</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+		</array>
+	</dictionary>
+	<dictionary name="actors">
+	</dictionary>
+	<dictionary name="items">
+	</dictionary>
+	<dictionary name="scripting">
+		<array name="nodes">
+			<dictionary>
+				<int name="id">138060</int>
+				<string name="type">RectangleShape</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">0 0</vec2>
+				<dictionary name="parameters">
+					<float name="w">1.75</float>
+					<float name="h">1.75</float>
+					<int name="types">15</int>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">144459</int>
+				<string name="type">ToggleElement</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">-3 -4</vec2>
+				<dictionary name="parameters">
+					<int name="state">1</int>
+					<dictionary name="element">
+						<int-arr name="static">144457</int-arr>
+					</dictionary>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">144457</int>
+				<string name="type">DangerArea</string>
+				<bool name="enabled">False</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">0 -4</vec2>
+				<dictionary name="parameters">
+					<int name="damage">0</int>
+					<dictionary name="shape">
+						<int-arr name="static">138060</int-arr>
+					</dictionary>
+					<int name="freq">100</int>
+					<string name="buff">buffs/enemy_tower_drainbeam.xml</string>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">144460</int>
+				<string name="type">ChangeDoodadState</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">6 -4</vec2>
+				<dictionary name="parameters">
+					<string name="state">activate</string>
+					<dictionary name="object">
+						<int-arr name="static">144470</int-arr>
+					</dictionary>
+				</dictionary>
+				<int-arr name="connections">144461 144462</int-arr>
+				<int-arr name="connection-delays">2000 0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">144462</int>
+				<string name="type">ToggleElement</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">3 -4</vec2>
+				<dictionary name="parameters">
+					<int name="state">0</int>
+					<dictionary name="element">
+						<int-arr name="static">144457</int-arr>
+					</dictionary>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">144467</int>
+				<string name="type">ScriptLink</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">-3 -7</vec2>
+				<int-arr name="connections">144460</int-arr>
+				<int-arr name="connection-delays">2000</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">144461</int>
+				<string name="type">ChangeDoodadState</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">6 -7</vec2>
+				<dictionary name="parameters">
+					<string name="state">deactivate</string>
+					<dictionary name="object">
+						<int-arr name="static">144470</int-arr>
+					</dictionary>
+				</dictionary>
+				<int-arr name="connections">144459 144467</int-arr>
+				<int-arr name="connection-delays">0 0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">144469</int>
+				<string name="type">GlobalEventTrigger</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">1</int>
+				<vec2 name="pos">9 -7</vec2>
+				<string name="parameters">LevelLoaded</string>
+				<int-arr name="connections">144461</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+		</array>
+	</dictionary>
+	<dictionary name="lighting">
+		<array name="lights"></array>
+		<int-arr name="shadow-color">135 128 128 255</int-arr>
+		<int-arr name="ambient-color">50 50 50 255</int-arr>
+		<int-arr name="add-color">0 0 0 255</int-arr>
+		<float name="shadow-length">1</float>
+	</dictionary>
+	<dictionary name="prefabs">
+	</dictionary>
+</dictionary>
+</prefab>

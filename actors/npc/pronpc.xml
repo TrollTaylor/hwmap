@@ -1,0 +1,281 @@
+<actor collision="3.5" behavior="composite" minimap="menus/minimap.xml:npc">
+	<behavior>
+		<dictionary>
+			<entry name="hp"><int>500</int></entry>
+			
+			<entry name="aggro-range"><float>10</float></entry>
+			<entry name="max-range"><float>20</float></entry>
+			
+			<dictionary name="movement">
+				<string name="type">melee</string>
+				<float name="speed">0.9</float>
+			</dictionary>
+			
+			<array name="skills">
+			</array>	
+			
+			<entry name="death-snd"><string>sound/monsters.xml:death_skeleton</string></entry>
+			<entry name="hit-effect"><string>effects/particles.xml:bone</string></entry>		
+			<entry name="hit-particle"><string>effects/particles.xml:bone-particle</string></entry>
+			
+			<array name="loot">
+				<int>50</int><string>items/valuable_2.xml</string>
+				<int>25</int><string>items/valuable_3.xml</string>				
+				<int>10</int><string>items/health_1.xml</string>
+				<int>5</int><string>items/mana_1.xml</string>
+			</array>
+		</dictionary>
+	</behavior>
+
+
+	<!-- Idle -->
+	<sprite scale="16" name="east">
+		<texture>actors/npc/pronpc.png</texture>
+		<origin>12 14</origin>
+		<frame>0 0 24 24</frame>
+	</sprite>
+
+	<sprite scale="16" name="northeast">
+		<texture>actors/npc/pronpc.png</texture>
+		<origin>12 14</origin>
+		<frame>24 0 24 24</frame>
+	</sprite>
+
+	<sprite scale="16" name="north">
+		<texture>actors/npc/pronpc.png</texture>
+		<origin>12 14</origin>
+		<frame>48 0 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="northwest">
+		<texture>actors/npc/pronpc.png</texture>
+		<origin>12 14</origin>
+		<frame>72 0 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="west">
+		<texture>actors/npc/pronpc.png</texture>
+		<origin>12 14</origin>
+		<frame>96 0 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="southwest">
+		<texture>actors/npc/pronpc.png</texture>
+		<origin>12 14</origin>
+		<frame>120 0 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="south">
+		<texture>actors/npc/pronpc.png</texture>
+		<origin>12 14</origin>
+		<frame>144 0 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="southeast">
+		<texture>actors/npc/pronpc.png</texture>
+		<origin>12 14</origin>
+		<frame>168 0 24 24</frame>
+	</sprite>
+	
+	
+	<!-- Walk -->
+	<sprite scale="16" name="east-walk">
+		<texture>actors/npc/pronpc.png</texture>
+		<origin>12 14</origin>
+		<frame time="225">0 24 24 24</frame>
+		<frame time="225">0 48 24 24</frame>
+	</sprite>
+
+	<sprite scale="16" name="northeast-walk">
+		<texture>actors/npc/pronpc.png</texture>
+		<origin>12 14</origin>
+		<frame time="225">24 24 24 24</frame>
+		<frame time="225">24 48 24 24</frame>
+	</sprite>
+
+	<sprite scale="16" name="north-walk">
+		<texture>actors/npc/pronpc.png</texture>
+		<origin>12 14</origin>
+		<frame time="225">48 24 24 24</frame>
+		<frame time="225">48 48 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="northwest-walk">
+		<texture>actors/npc/pronpc.png</texture>
+		<origin>12 14</origin>
+		<frame time="225">72 24 24 24</frame>
+		<frame time="225">72 48 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="west-walk">
+		<texture>actors/npc/pronpc.png</texture>
+		<origin>12 14</origin>
+		<frame time="225">96 24 24 24</frame>
+		<frame time="225">96 48 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="southwest-walk">
+		<texture>actors/npc/pronpc.png</texture>
+		<origin>12 14</origin>
+		<frame time="225">120 24 24 24</frame>
+		<frame time="225">120 48 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="south-walk">
+		<texture>actors/npc/pronpc.png</texture>
+		<origin>12 14</origin>
+		<frame time="225">144 24 24 24</frame>
+		<frame time="225">144 48 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="southeast-walk">
+		<texture>actors/npc/pronpc.png</texture>
+		<origin>12 14</origin>
+		<frame time="225">168 24 24 24</frame>
+		<frame time="225">168 48 24 24</frame>
+	</sprite>
+	
+
+	<!-- Attack -->
+	<sprite scale="16" name="east-attack">
+		<texture>actors/npc/pronpc.png</texture>
+		<origin>12 14</origin>
+		<frame time="225">0 72 24 24</frame>
+		<frame time="100">0 96 24 24</frame>
+	</sprite>
+
+	<sprite scale="16" name="northeast-attack">
+		<texture>actors/npc/pronpc.png</texture>
+		<origin>12 14</origin>
+		<frame time="225">24 72 24 24</frame>
+		<frame time="100">24 96 24 24</frame>
+	</sprite>
+
+	<sprite scale="16" name="north-attack">
+		<texture>actors/npc/pronpc.png</texture>
+		<origin>12 14</origin>
+		<frame time="225">48 72 24 24</frame>
+		<frame time="100">48 96 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="northwest-attack">
+		<texture>actors/npc/pronpc.png</texture>
+		<origin>12 14</origin>
+		<frame time="225">72 72 24 24</frame>
+		<frame time="100">72 96 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="west-attack">
+		<texture>actors/npc/pronpc.png</texture>
+		<origin>12 14</origin>
+		<frame time="225">96 72 24 24</frame>
+		<frame time="100">96 96 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="southwest-attack">
+		<texture>actors/npc/pronpc.png</texture>
+		<origin>12 14</origin>
+		<frame time="225">120 72 24 24</frame>
+		<frame time="100">120 96 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="south-attack">
+		<texture>actors/npc/pronpc.png</texture>
+		<origin>12 14</origin>
+		<frame time="225">144 72 24 24</frame>
+		<frame time="100">144 96 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="southeast-attack">
+		<texture>actors/npc/pronpc.png</texture>
+		<origin>12 14</origin>
+		<frame time="225">168 72 24 24</frame>
+		<frame time="100">168 96 24 24</frame>
+	</sprite>
+	
+	
+	<!-- Hold -->
+	<sprite scale="16" name="east-hold">
+		<texture>actors/npc/pronpc.png</texture>
+		<origin>12 14</origin>
+		<frame>0 96 24 24</frame>
+	</sprite>
+
+	<sprite scale="16" name="northeast-hold">
+		<texture>actors/npc/pronpc.png</texture>
+		<origin>12 14</origin>
+		<frame>24 96 24 24</frame>
+	</sprite>
+
+	<sprite scale="16" name="north-hold">
+		<texture>actors/npc/pronpc.png</texture>
+		<origin>12 14</origin>
+		<frame>48 96 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="northwest-hold">
+		<texture>actors/npc/pronpc.png</texture>
+		<origin>12 14</origin>
+		<frame>72 96 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="west-hold">
+		<texture>actors/npc/pronpc.png</texture>
+		<origin>12 14</origin>
+		<frame>96 96 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="southwest-hold">
+		<texture>actors/npc/pronpc.png</texture>
+		<origin>12 14</origin>
+		<frame>120 96 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="south-hold">
+		<texture>actors/npc/pronpc.png</texture>
+		<origin>12 14</origin>
+		<frame>144 96 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="southeast-hold">
+		<texture>actors/npc/pronpc.png</texture>
+		<origin>12 14</origin>
+		<frame>168 96 24 24</frame>
+	</sprite>
+	
+	<!-- Spike -->	
+	<sprite scale="16" name="attack-effect">
+		<texture>actors/npc/pronpc.png</texture>
+		<origin>20 16</origin>
+		<frame time="75">0 120 40 40</frame>
+		<frame time="75">40 120 40 40</frame>
+		<frame time="75">80 120 40 40</frame>
+		<frame time="75">120 120 40 40</frame>
+		<frame time="75">160 120 40 40</frame>
+		<frame time="150">200 120 40 40</frame>
+		<frame time="75">160 120 40 40</frame>		
+		<frame time="75">120 120 40 40</frame>		
+		<frame time="75">80 120 40 40</frame>		
+		<frame time="75">40 120 40 40</frame>	
+		<frame time="75">0 120 40 40</frame>	
+		<frame time="75">0 160 40 40</frame>	
+		<frame time="75">40 160 40 40</frame>	
+	</sprite>
+		
+	<light>
+		<origin>0 0</origin>
+		<mul>
+			<range>300</range>
+			<color1>255 255 255</color1>
+			<color2>200 200 200</color2>
+			<color3>128 128 128</color3>
+		</mul>
+		<add>
+			<range>0</range>
+			<color1>0 10 75</color1>
+			<color2>0 0 0</color2>
+			<color3>0 0 0</color3>
+		</add>
+	</light>	
+	
+</actor>

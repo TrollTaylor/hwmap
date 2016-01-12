@@ -1,0 +1,30 @@
+<actor ao="false" behavior="spawner" minimap="menus/minimap.xml:enemy_spawn">
+	<behavior>
+		<dictionary>
+			<entry name="actor"><string>actors/bonus/skeleton_1.xml</string></entry>
+			<entry name="frequency"><int>1500</int></entry>
+			<entry name="hp"><int>50</int></entry>
+			<entry name="multiplayer-scale-hp"><bool>true</bool></entry>
+			<entry name="spawn-range"><float>12</float></entry>
+			<entry name="death-snd"><string>sound/monsters.xml:death_spawn_grave</string></entry>
+			<entry name="hit-effect"><string>effects/particles.xml:dirt-spsawner</string></entry>
+			<entry name="hit-particle"><string>effects/particles.xml:dirt-particle</string></entry>
+			<entry name="corpse"><string>actors/spawners/skeleton_1_razed.xml</string></entry>					
+		</dictionary>
+	</behavior>
+
+	<sprite scale="16" name="default">
+		<texture>actors/spawners/skeleton_1.png</texture>
+		<origin>16 16</origin>					
+		<frame>0 0 32 32</frame>
+	</sprite>
+	
+	<collision static="true">
+		<polygon>
+			<point>-13 10</point>
+			<point>-13 -8</point>
+			<point>12 -8</point>
+			<point>12 10</point>
+		</polygon>
+	</collision>	
+</actor>

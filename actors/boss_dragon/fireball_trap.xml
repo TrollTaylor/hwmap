@@ -1,0 +1,92 @@
+<projectile directions="8" collision="1.5" damage="75" speed="2" hit-sound="sound/misc.xml:boss_dragon_fireball_explode" behavior="explode">
+	<behavior>
+		<dictionary>
+			<entry name="particle"><string>effects/particles.xml:spray-particle</string></entry>
+			<entry name="splash"><float>2.5</float></entry>
+			<entry name="speed"><float>8.5</float></entry>
+			<entry name="thickness"><float>2</float></entry>
+			<entry name="range"><float>6</float></entry>
+			
+			
+			<dictionary name="light">
+				<float name="origin-x">0</float>
+				<float name="origin-y">0</float>
+			
+				<float name="mul-range">12</float>
+				<string name="mul-color1">0 0 255</string>
+				<string name="mul-color2">255 127 0</string>
+				<string name="mul-color3">255 0 0</string>
+				
+				<float name="add-range">4</float>
+				<string name="add-color1">255 255 255</string>
+				<string name="add-color2">255 127 0</string>
+				<string name="add-color3">255 0 0</string>
+			</dictionary>
+		</dictionary>
+	</behavior>
+
+	<sprite scale="16" name="0">
+		<texture>projectiles/player_fireball_4.png</texture> 
+		<origin>5 8</origin> <!-- west -->
+		<frame time="50">0 11 13 7</frame>
+		<frame time="50">29 11 13 7</frame>
+		<frame time="50">58 11 13 7</frame>
+		<frame time="50">87 11 13 7</frame>
+	</sprite>
+	<sprite scale="16" name="1"> 
+		<texture>projectiles/player_fireball_4.png</texture>
+		<origin>0 8</origin> <!-- north west -->
+		<frame time="50">0 0 11 11</frame>
+		<frame time="50">29 0 11 11</frame>
+		<frame time="50">58 0 11 11</frame>
+		<frame time="50">87 0 11 11</frame>
+	</sprite>
+	<sprite scale="16" name="2"> <!-- north -->
+		<texture>projectiles/player_fireball_4.png</texture>
+		<origin>3 8</origin>
+		<frame time="50">11 0 7 13</frame>	
+		<frame time="50">40 0 7 13</frame>	
+		<frame time="50">69 0 7 13</frame>	
+		<frame time="50">98 0 7 13</frame>	
+	</sprite>	
+	<sprite scale="16" name="3"> <!-- north east -->
+		<texture>projectiles/player_fireball_4.png</texture>
+		<origin>6 8</origin>
+		<frame time="50">18 0 11 11</frame>			
+		<frame time="50">47 0 11 11</frame>		
+		<frame time="50">76 0 11 11</frame>		
+		<frame time="50">105 0 11 11</frame>		
+	</sprite>
+	<sprite scale="16" name="4"> <!-- east -->
+		<texture>projectiles/player_fireball_4.png</texture>
+		<origin>7 8</origin>
+		<frame time="50">16 11 13 7</frame>			
+		<frame time="50">45 11 13 7</frame>			
+		<frame time="50">74 11 13 7</frame>			
+		<frame time="50">103 11 13 7</frame>			
+	</sprite>	
+	<sprite scale="16" name="5"> <!-- south east -->
+		<texture>projectiles/player_fireball_4.png</texture>
+		<origin>5 14</origin>
+		<frame time="50">18 18 11 11</frame>
+		<frame time="50">47 18 11 11</frame>
+		<frame time="50">76 18 11 11</frame>
+		<frame time="50">105 18 11 11</frame>
+	</sprite>		
+	<sprite scale="16" name="6"> <!-- south -->
+		<texture>projectiles/player_fireball_4.png</texture>
+		<origin>3 14</origin>
+		<frame time="50">11 16 7 13</frame>
+		<frame time="50">40 16 7 13</frame>
+		<frame time="50">69 16 7 13</frame>
+		<frame time="50">98 16 7 13</frame>
+	</sprite>	
+	<sprite scale="16" name="7"> <!-- south west -->
+		<texture>projectiles/player_fireball_4.png</texture>
+		<origin>1 14</origin>
+		<frame time="50">0 18 11 11</frame>
+		<frame time="50">29 18 11 11</frame>
+		<frame time="50">58 18 11 11</frame>
+		<frame time="50">87 18 11 11</frame>
+	</sprite>
+</projectile>

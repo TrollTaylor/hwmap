@@ -1,0 +1,12 @@
+<tileset level="2">
+	<sprite scale="32">
+		<texture>doodads/theme_forest/tilemaps/theme_forest_default.png</texture>
+		<frame>0 0 64 64</frame>
+	</sprite>
+	
+	<sprite scale="32">
+		<texture>doodads/theme_forest/tilemaps/theme_forest_default.png</texture>
+		<frame>64 0 64 64</frame>
+	</sprite>	
+	
+</tileset>

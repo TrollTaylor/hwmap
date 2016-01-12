@@ -1,0 +1,27 @@
+<actor behavior="spawner" minimap="menus/minimap.xml:enemy_spawn">
+	<behavior>
+		<dictionary>
+			<entry name="actor"><string>actors/bat_2.xml</string></entry>
+			<entry name="frequency"><int>1000</int></entry>
+			<entry name="hp"><int>20</int></entry>
+			<entry name="multiplayer-scale-hp"><bool>true</bool></entry>
+			<entry name="spawn-range"><float>15</float></entry>
+			<entry name="death-snd"><string>sound/monsters.xml:death_spawn_bat</string></entry>
+			<entry name="hit-effect"><string>effects/particles.xml:dirt-spawner</string></entry>
+			<entry name="hit-particle"><string>effects/particles.xml:dirt-particle</string></entry>
+			<entry name="corpse"><string>actors/spawners/bats_razed.xml</string></entry>						
+		</dictionary>
+	</behavior>
+
+
+	<sprite scale="16" name="default">
+		<texture>actors/spawners/bats.png</texture>
+		<origin>9 12</origin>					
+		<frame>0 0 21 18</frame>
+	</sprite>
+	
+	
+	<collision static="true">
+		<circle offset="0 0" radius="8" />
+	</collision>	
+</actor>

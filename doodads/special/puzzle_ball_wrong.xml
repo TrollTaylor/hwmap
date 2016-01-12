@@ -1,0 +1,8 @@
+<doodad defaultlayer="-4">
+	<sprite scale="16">
+		<texture>doodads/special/puzzle_ball.png</texture>
+		<origin>8 8</origin>
+		<frame>0 0 16 16</frame>
+	</sprite>		
+
+</doodad>

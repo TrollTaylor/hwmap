@@ -1,0 +1,304 @@
+<tweak>
+	<params>
+		<dictionary>
+			<int    name="max-health">60</int>
+			<int    name="max-mana">40</int>
+			<int    name="dmg-reduction">1</int>
+			<int    name="mana-regen">1100</int>
+			
+			
+			<int    name="knives-dmg">18</int>
+			<int    name="knives-arc">360</int>
+			<string name="knives-arc-gfx">effects/thief_slash.xml</string>
+			<float  name="knives-range">1</float>
+			<float  name="knives-speed-mod">-0.5</float>
+			
+			<int    name="kfan-dmg">14</int>
+			<int    name="kfan-projs">6</int>
+			<int    name="kfan-arc">60</int>
+			<string name="kfan-projectile">projectiles/player_knife.xml</string>
+			<int    name="kfan-mana-cost">5</int>
+			<int    name="kfan-money-cost">10</int>
+
+			<bool   name="smoke">false</bool>
+			<float  name="smoke-range">0</float>
+			<string name="smoke-buff">buffs/thief_smoke.xml</string>
+			<int    name="smoke-mana-cost">30</int>
+			<int    name="smoke-money-cost">1000</int>
+			
+			<bool   name="chain">false</bool>
+			<string name="chain-buff">buffs/thief_stun_1.xml</string>
+			<float  name="chain-range">8</float>
+			<float  name="chain-speed">4</float>
+			<int    name="chain-mana-cost">5</int>
+			<int    name="chain-money-cost">1000</int>
+			
+			<int    name="money-chance">40</int>
+			<int    name="max-fervor">0</int>
+			
+		</dictionary>
+	</params>
+
+	<upgrades>
+		<!-- Misc -->
+		<dictionary id="health-1" cost="600" cat="misc1"
+			name="hp-uname" desc="hp-udesc">
+			<int name="lvl">1</int>
+			<int name="max-health">80</int>
+		</dictionary>
+		<dictionary id="health-2" cost="1200" req="health-1" cat="misc2"
+			name="hp-uname" desc="hp-udesc">
+			<int name="lvl">2</int>
+			<int name="max-health">95</int>
+		</dictionary>
+		<dictionary id="health-3" cost="1800" req="health-2" cat="misc3"
+			name="hp-uname" desc="hp-udesc">
+			<int name="lvl">3</int>
+			<int name="max-health">105</int>
+		</dictionary>
+		<dictionary id="health-4" cost="2400" req="health-3" cat="misc4"
+			name="hp-uname" desc="hp-udesc">
+			<int name="lvl">4</int>
+			<int name="max-health">120</int>
+		</dictionary>
+		<dictionary id="health-5" cost="3000" req="health-4" cat="misc5"
+			name="hp-uname" desc="hp-udesc">
+			<int name="lvl">5</int>
+			<int name="max-health">130</int>
+		</dictionary>
+		
+		
+		<dictionary id="mana-1" cost="800" cat="misc1"
+			name="mana-uname" desc="mana-udesc">
+			<int name="lvl">1</int>
+			<int name="max-mana">65</int>		
+		</dictionary>
+		<dictionary id="mana-2" cost="1900" req="mana-1" cat="misc2"
+			name="mana-uname" desc="mana-udesc">
+			<int name="lvl">2</int>
+			<int name="max-mana">90</int>			
+		</dictionary>
+		<dictionary id="mana-3" cost="3000" req="mana-2" cat="misc3"
+			name="mana-uname" desc="mana-udesc">
+			<int name="lvl">3</int>
+			<int name="max-mana">115</int>
+		</dictionary>
+		<dictionary id="mana-4" cost="4100" req="mana-3" cat="misc4"
+			name="mana-uname" desc="mana-udesc">
+			<int name="lvl">4</int>
+			<int name="max-mana">140</int>	
+		</dictionary>
+		<dictionary id="mana-5" cost="5200" req="mana-4" cat="misc5"
+			name="mana-uname" desc="mana-udesc">
+			<int name="lvl">5</int>
+			<int name="max-mana">165</int>	
+		</dictionary>
+		
+		
+		
+		<!-- Offsensive -->
+		<dictionary id="dmg1" cost="800" cat="off1"
+			name="thidmg-uname" desc="thidmg-udesc">
+			<int name="lvl">1</int>
+			<int name="knives-dmg">24</int>
+		</dictionary>
+		<dictionary id="dmg2" cost="1600" req="dmg1" cat="off2"
+			name="thidmg-uname" desc="thidmg-udesc">
+			<int name="lvl">2</int>
+			<int name="knives-dmg">32</int>
+		</dictionary>
+		<dictionary id="dmg3" cost="2700" req="dmg2" cat="off3"
+			name="thidmg-uname" desc="thidmg-udesc">
+			<int name="lvl">3</int>
+			<int name="knives-dmg">38</int>
+		</dictionary>
+		<dictionary id="dmg4" cost="3900" req="dmg3" cat="off4"
+			name="thidmg-uname" desc="thidmg-udesc">
+			<int name="lvl">4</int>
+			<int name="knives-dmg">44</int>
+		</dictionary>
+		<dictionary id="dmg5" cost="5200" req="dmg4" cat="off5"
+			name="thidmg-uname" desc="thidmg-udesc">
+			<int name="lvl">5</int>
+			<int name="knives-dmg">50</int>
+		</dictionary>
+
+		<dictionary id="aspeed1" cost="250" cat="off1"
+			name="aspeed-uname" desc="aspeed-udesc">
+			<int name="lvl">1</int>
+			<float name="knives-speed-mod">-0.4</float>
+		</dictionary>
+		<dictionary id="aspeed2" cost="700" req="aspeed1" cat="off2"
+			name="aspeed-uname" desc="aspeed-udesc">
+			<int name="lvl">2</int>
+			<float name="knives-speed-mod">-0.3</float>
+		</dictionary>
+		<dictionary id="aspeed3" cost="1500" req="aspeed2" cat="off3"
+			name="aspeed-uname" desc="aspeed-udesc">
+			<int name="lvl">3</int>
+			<float name="knives-speed-mod">-0.2</float>
+		</dictionary>
+		<dictionary id="aspeed4" cost="2200" req="aspeed3" cat="off4"
+			name="aspeed-uname" desc="aspeed-udesc">
+			<int name="lvl">4</int>
+			<float name="knives-speed-mod">-0.1</float>
+		</dictionary>
+
+		
+		
+		
+		
+		
+		<dictionary id="kfandmg1" cost="1600" cat="off2"
+			name="kfandmg-uname" desc="kfandmg-udesc">
+			<int name="lvl">1</int>
+			<int name="kfan-dmg">16</int>
+		</dictionary>
+		<dictionary id="kfandmg2" cost="3000" req="kfandmg1" cat="off3"
+			name="kfandmg-uname" desc="kfandmg-udesc">
+			<int name="lvl">2</int>
+			<int name="kfan-dmg">24</int>
+		</dictionary>
+		<dictionary id="kfandmg3" cost="4200" req="kfandmg2" cat="off4"
+			name="kfandmg-uname" desc="kfandmg-udesc">
+			<int name="lvl">3</int>
+			<int name="kfan-dmg">32</int>
+		</dictionary>
+		
+		<dictionary id="kfanprojs1" cost="500" cat="off2"
+			name="kfanprojs-uname" desc="kfanprojs-udesc">
+			<int name="lvl">1</int>
+			<int name="kfan-projs">6</int>
+			<int name="kfan-arc">55</int>
+		</dictionary>
+		<dictionary id="kfanprojs2" cost="1200" req="kfanprojs1" cat="off3"
+			name="kfanprojs-uname" desc="kfanprojs-udesc">
+			<int name="lvl">2</int>
+			<int name="kfan-projs">7</int>
+			<int name="kfan-arc">60</int>
+		</dictionary>
+		<dictionary id="kfanprojs3" cost="1800" req="kfanprojs2" cat="off4"
+			name="kfanprojs-uname" desc="kfanprojs-udesc">
+			<int name="lvl">3</int>
+			<int name="kfan-projs">8</int>
+			<int name="kfan-arc">65</int>
+		</dictionary>
+			
+		
+		
+		<dictionary id="fervor1" cost="700" cat="off2"
+			name="fervor-uname" desc="fervor-udesc-1">
+			<int name="lvl">1</int>
+			<int name="max-fervor">7</int>
+		</dictionary>
+		<dictionary id="fervor2" cost="1600" req="fervor1" cat="off3"
+			name="fervor-uname" desc="fervor-udesc-2">
+			<int name="lvl">2</int>
+			<int name="max-fervor">10</int>
+		</dictionary>
+		<dictionary id="fervor3" cost="4000" req="fervor2" cat="off4"
+			name="fervor-uname" desc="fervor-udesc-2">
+			<int name="lvl">3</int>
+			<int name="max-fervor">20</int>
+		</dictionary>
+
+		
+		<dictionary id="mchance1" cost="1000" cat="def1"
+			name="mchance-uname" desc="mchance-udesc-1">
+			<int name="lvl">1</int>
+			<int name="money-chance">60</int>
+		</dictionary>
+		<dictionary id="mchance2" cost="1750" req="mchance1" cat="def2"
+			name="mchance-uname" desc="mchance-udesc-2">
+			<int name="lvl">2</int>
+			<int name="money-chance">80</int>
+		</dictionary>
+		<dictionary id="mchance3" cost="2500" req="mchance2" cat="def3"
+			name="mchance-uname" desc="mchance-udesc-2">
+			<int name="lvl">3</int>
+			<int name="money-chance">100</int>
+		</dictionary>
+		
+		
+		
+	
+	
+	
+		<!-- Defensive -->
+		<dictionary id="armor-1" cost="600" cat="def1"
+			name="armor-uname" desc="armor-udesc">
+			<int name="lvl">1</int>
+			<int name="dmg-reduction">2</int>
+		</dictionary>
+		<dictionary id="armor-2" cost="1200" req="armor-1" cat="def2"
+			name="armor-uname" desc="armor-udesc">
+			<int name="lvl">2</int>
+			<int name="dmg-reduction">3</int>
+		</dictionary>
+		<dictionary id="armor-3" cost="2000" req="armor-2" cat="def3"
+			name="armor-uname" desc="armor-udesc">
+			<int name="lvl">3</int>
+			<int name="dmg-reduction">4</int>
+		</dictionary>
+		<dictionary id="armor-4" cost="2500" req="armor-3" cat="def4"
+			name="armor-uname" desc="armor-udesc">
+			<int name="lvl">4</int>
+			<int name="dmg-reduction">5</int>
+		</dictionary>
+		<dictionary id="armor-5" cost="3200" req="armor-4" cat="def5"
+			name="armor-uname" desc="armor-udesc">
+			<int name="lvl">5</int>
+			<int name="dmg-reduction">6</int>
+		</dictionary>
+		
+		
+		<dictionary id="chain" cost="700" cat="def2"
+			name="chain-uname" desc="chain-udesc">
+			<bool name="chain">true</bool>
+			<int name="chain-money-cost">1</int>
+		</dictionary>
+		
+		<dictionary id="chainrng1" cost="1700" req="chain" cat="def2"
+			name="chainrng-uname" desc="chainrng-udesc">
+			<int name="lvl">1</int>
+			<float name="chain-range">10</float>
+		</dictionary>
+		<dictionary id="chainrng2" cost="2600" req="chainrng1" cat="def3"
+			name="chainrng-uname" desc="chainrng-udesc">
+			<int name="lvl">2</int>
+			<float name="chain-range">12</float>
+		</dictionary>
+		
+		<dictionary id="chainstn1" cost="1700" req="chain" cat="def3"
+			name="chainstn-uname" desc="chainstn1-udesc">
+			<int name="lvl">1</int>
+			<string name="chain-buff">buffs/thief_stun_2.xml</string>
+		</dictionary>
+		<dictionary id="chainstn2" cost="2600" req="chainstn1" cat="def4"
+			name="chainstn-uname" desc="chainstn2-udesc">
+			<int name="lvl">2</int>
+			<string name="chain-buff">buffs/thief_stun_3.xml</string>
+		</dictionary>
+	
+	
+	
+		<dictionary id="smoke" cost="700" cat="def3"
+			name="smoke-uname" desc="smoke-udesc">
+			<bool name="smoke">true</bool>
+			<float name="smoke-range">3</float>
+			<int name="smoke-money-cost">12</int>
+		</dictionary>
+		
+		<dictionary id="smokerng1" cost="1700" req="smoke" cat="def4"
+			name="smokerng-uname" desc="smokerng-udesc">
+			<int name="lvl">1</int>
+			<float name="smoke-range">4</float>
+		</dictionary>
+		<dictionary id="smokerng2" cost="2600" req="smokerng1" cat="def5"
+			name="smokerng-uname" desc="smokerng-udesc">
+			<int name="lvl">2</int>
+			<float name="smoke-range">5</float>
+		</dictionary>
+		
+	</upgrades>
+</tweak>

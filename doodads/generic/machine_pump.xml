@@ -1,0 +1,30 @@
+<doodad ao="false" minimap="menus/minimap.xml:machine_pump">
+	<sprite scale="16" name="deactivate">
+		<texture>doodads/generic/machine_pump.png</texture>
+			<origin>11 30</origin>
+			<frame time="50">0 0 22 41</frame>
+	</sprite>
+	
+	<sprite scale="16" name="activate">
+		<texture>doodads/generic/machine_pump.png</texture>
+			<origin>11 30</origin>
+			<frame time="50">22 0 22 41</frame>
+			<frame time="50">44 0 22 41</frame>
+			<frame time="50">66 0 22 41</frame>
+			<frame time="50">88 0 22 41</frame>
+			<frame time="50">110 0 22 41</frame>
+			<frame time="50">132 0 22 41</frame>
+			<frame time="50">110 0 22 41</frame>
+			<frame time="50">88 0 22 41</frame>
+			<frame time="50">66 0 22 41</frame>
+			<frame time="50">44 0 22 41</frame>
+	</sprite>
+
+		
+	<states default="deactivate">		
+	</states>		
+	
+	<collision static="true">
+		<circle offset="0 0" radius="12" />
+	</collision>	
+</doodad>

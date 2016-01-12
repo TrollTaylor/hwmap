@@ -1,0 +1,10 @@
+<doodad ao="false" minimap="menus/minimap.xml:npc">
+	<sprite scale="16">
+		<texture>doodads/special/npc.png</texture>
+		<origin>6 10</origin>					
+		<frame>56 24 12 15</frame>
+	</sprite>		
+	<collision static="true">
+		<circle offset="0 0" radius="4" />
+	</collision>
+</doodad>

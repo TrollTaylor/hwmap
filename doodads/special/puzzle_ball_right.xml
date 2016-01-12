@@ -1,0 +1,21 @@
+<doodad defaultlayer="-4">
+	
+	<sprite scale="16" name="closed">
+		<texture>doodads/special/puzzle_ball.png</texture>
+		<origin>8 8</origin>	
+		<frame>48 16 16 16</frame>			
+	</sprite>					
+	
+	<sprite scale="16" name="moving">
+		<texture>doodads/special/puzzle_ball.png</texture>
+		<origin>8 8</origin>	
+		<frame time="75">0 16 16 16</frame>				
+		<frame time="75">16 16 16 16</frame>		
+		<frame time="75">32 16 16 16</frame>						
+	</sprite>		
+	
+	<states default="moving">
+		<transition from="moving" to="closed" />	
+	</states>		
+
+</doodad>

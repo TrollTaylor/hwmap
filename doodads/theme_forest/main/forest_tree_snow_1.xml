@@ -1,0 +1,12 @@
+<doodad ao="false" minimap="menus/minimap.xml:pillar">
+	<sprite scale="16">
+		<texture>doodads/theme_forest/main/forest_trees.png</texture>
+		<origin>23 127</origin>
+		<frame>8 264 50 98</frame>
+	</sprite>
+				
+	<collision static="true" shoot-through="true">
+		<circle offset="3 -35" radius="5" />
+	</collision>		
+
+</doodad>

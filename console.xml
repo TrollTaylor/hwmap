@@ -1,0 +1,87 @@
+<console>
+	<bind key="F1" command="drawphysics" />
+	<bind key="F2" command="drawfps" />
+	<bind key="O">
+		<command command="speed 1" />
+		<command command="noclip 0" />
+	</bind>
+	<bind key="P">
+		<command command="speed 5" />
+		<command command="noclip 1" />
+	</bind>
+	
+	<bind key="B">
+		<command command="noclip" />	
+	</bind>
+	
+	<bind key="C">
+		<command command="god" />	
+		<command command="print god" />			
+	</bind>	
+	
+	
+		
+	
+	<bind key="F7">
+		<command command="reloadui" />
+	</bind>			
+		
+	
+			
+	<bind key="F5" command="clearenemies" />	
+	
+	<bind key="D1" command="speed 1" />
+	<bind key="D2" command="speed 0.5" />	
+	<bind key="D3" command="speed 0.25" />	
+	<bind key="D4" command="speed 0.1" />	
+	<bind key="D5" command="speed 5" />
+	
+	
+
+	<bind key="D0" command="givekey 2" />
+	<bind key="D9" command="givekey 1" />
+	<bind key="D8" command="givekey 0" />						
+	<bind key="D7" command="givekey 4" />	
+	<bind key="D6" command="givekey 3" />		
+		
+	<bind key="NumPad1" command="zoom 8" />	
+	<bind key="NumPad2" command="zoom 16" />		
+	<bind key="NumPad3" command="zoom 24" />		
+	<bind key="NumPad4" command="zoom 32" />	
+	<bind key="NumPad5" command="zoom 48" />		
+	<bind key="NumPad6" command="zoom 64" />		
+	<bind key="NumPad7" command="zoom 96" />	
+	<bind key="NumPad8" command="zoom 128" />		
+	<bind key="NumPad9" command="zoom 256" />				
+
+	<bind key="F8" command="pause" />	
+	
+	<bind key="F12">
+		<command command="print A4 end" />			
+		<command command="giveupgrades misc1 misc2 misc3 misc4 misc5 off1 off2 off3 off4 off5 def1 def2 def3 def4 def5"/>		
+		<command command="giveupgrade combo"/>				
+	</bind>		
+	
+	<bind key="F11">
+		<command command="print A4 start" />			
+		<command command="giveupgrades misc1 misc2 misc3 misc4 off1 off2 off3 def1 def2 def3"/>		
+		<command command="giveupgrade combo"/>				
+	</bind>	
+	
+	<bind key="F10">
+		<command command="print A3 start" />				
+		<command command="giveupgrades misc1 misc2 off1 off2 def1 def2"/>		
+		<command command="giveupgrade combo"/>				
+	</bind>		
+	
+	<bind key="F9">
+		<command command="print A2 start" />				
+		<command command="giveupgrades misc1 misc2 off1 def1"/>		
+		<command command="giveupgrade combo"/>				
+	</bind>		
+	
+	
+	
+	
+</console>
+

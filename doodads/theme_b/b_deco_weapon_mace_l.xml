@@ -1,0 +1,7 @@
+<doodad ao="false">
+	<sprite scale="16">
+		<texture>doodads/theme_b/b_weapons.png</texture>
+		<origin>7 22</origin>
+		<frame>25 26 16 16</frame>				
+	</sprite>
+</doodad>

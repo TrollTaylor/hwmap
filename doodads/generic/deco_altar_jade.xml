@@ -1,0 +1,7 @@
+<doodad ao="false" defaultlayer="-10">
+	<sprite scale="16">
+		<texture>doodads/generic/deco_altar.png</texture>
+		<origin>56 34</origin>
+		<frame>0 0 113 66</frame>
+	</sprite>
+</doodad>

@@ -1,0 +1,49 @@
+<doodad defaultlayer="200">
+	<sprite random-start="true" scale="16">
+		<texture>doodads/special/light_moth.png</texture>
+		<origin>4 4</origin>
+		<frame time="5000">8 16 8 8</frame>	
+		<frame time="50">8 8 8 8</frame>									
+		<frame time="50">0 8 8 8</frame>	
+		<frame time="50">8 0 8 8</frame>	
+		<frame time="50">0 0 8 8</frame>	
+		<frame time="50">8 0 8 8</frame>			
+		<frame time="50">0 8 8 8</frame>
+		<frame time="50">8 8 8 8</frame>
+		<frame time="5000">8 16 8 8</frame>	
+		<frame time="50">8 8 8 8</frame>									
+		<frame time="50">0 8 8 8</frame>	
+		<frame time="50">8 0 8 8</frame>	
+		<frame time="50">0 0 8 8</frame>	
+		<frame time="50">8 0 8 8</frame>			
+		<frame time="50">0 8 8 8</frame>
+		<frame time="50">8 8 8 8</frame>
+		<frame time="5000">8 16 8 8</frame>	
+		<frame time="50">8 8 8 8</frame>									
+		<frame time="50">0 8 8 8</frame>	
+		<frame time="50">8 0 8 8</frame>	
+		<frame time="50">0 0 8 8</frame>	
+		<frame time="50">8 0 8 8</frame>			
+		<frame time="50">0 8 8 8</frame>
+		<frame time="50">8 8 8 8</frame>
+		<frame time="5000">8 16 8 8</frame>	
+		<frame time="50">8 8 8 8</frame>									
+		<frame time="50">0 8 8 8</frame>	
+		<frame time="50">8 0 8 8</frame>	
+		<frame time="50">0 0 8 8</frame>	
+		<frame time="50">8 0 8 8</frame>			
+		<frame time="50">0 8 8 8</frame>
+		<frame time="50">8 8 8 8</frame>						
+		<glow scale="16">
+			<texture>doodads/special/light_moth.png</texture>
+		<frame time="5000">8 16 8 8</frame>	
+		<frame time="50">8 8 8 8</frame>									
+		<frame time="50">0 8 8 8</frame>	
+		<frame time="50">8 0 8 8</frame>	
+		<frame time="50">0 0 8 8</frame>	
+		<frame time="50">8 0 8 8</frame>			
+		<frame time="50">0 8 8 8</frame>
+		<frame time="50">8 8 8 8</frame>
+		</glow>				
+	</sprite>
+</doodad>

@@ -1,0 +1,321 @@
+<tweak>
+	<params>
+		<dictionary>
+			<int    name="max-health">80</int>
+			<int    name="max-mana">60</int>
+			<int    name="dmg-reduction">2</int>
+			<int    name="mana-regen">1100</int>
+			
+			
+			<int    name="sword-dmg">9</int>
+			<int    name="sword-arc">90</int>
+			<string name="sword-arc-gfx">effects/knight_slash_90.xml</string>
+			<float  name="sword-range">1</float>
+			
+			<float  name="charge-dist">3</float>
+			<float  name="charge-speed">3</float>
+			<float  name="charge-dmg-multiplier">1.75</float>
+			<int    name="charge-mana-cost">10</int>
+			
+			<bool   name="heal">false</bool>
+			<int    name="heal-amount">-1</int>
+			<int    name="heal-mana-cost">-1</int>
+			
+			<bool   name="whirl">false</bool>
+			<float  name="whirl-range">1.5</float>
+			<int    name="whirl-dur">-1</int>
+			<float  name="whirl-dmg-multiplier">-1</float>
+			<int    name="whirl-mana-cost">50</int>
+			
+			
+			<int    name="shield-arc">60</int>
+			<int    name="bash-chance">0</int>			
+			
+		</dictionary>
+	</params>
+
+	<upgrades>
+		<!-- Misc -->
+		<dictionary id="health-1" cost="600" cat="misc1"
+			name="hp-uname" desc="hp-udesc">
+			<int name="lvl">1</int>
+			<int name="max-health">120</int>
+		</dictionary>
+		<dictionary id="health-2" cost="1200" req="health-1" cat="misc2"
+			name="hp-uname" desc="hp-udesc">
+			<int name="lvl">2</int>
+			<int name="max-health">165</int>
+		</dictionary>
+		<dictionary id="health-3" cost="1800" req="health-2" cat="misc3"
+			name="hp-uname" desc="hp-udesc">
+			<int name="lvl">3</int>
+			<int name="max-health">210</int>
+		</dictionary>
+		<dictionary id="health-4" cost="2400" req="health-3" cat="misc4"
+			name="hp-uname" desc="hp-udesc">
+			<int name="lvl">4</int>
+			<int name="max-health">255</int>
+		</dictionary>
+		<dictionary id="health-5" cost="3000" req="health-4" cat="misc5"
+			name="hp-uname" desc="hp-udesc">
+			<int name="lvl">5</int>
+			<int name="max-health">300</int>
+		</dictionary>
+		
+		
+		<dictionary id="mana-1" cost="800" cat="misc1"
+			name="mana-uname" desc="mana-udesc">
+			<int name="lvl">1</int>
+			<int name="max-mana">75</int>		
+		</dictionary>
+		<dictionary id="mana-2" cost="1900" req="mana-1" cat="misc2"
+			name="mana-uname" desc="mana-udesc">
+			<int name="lvl">2</int>
+			<int name="max-mana">100</int>			
+		</dictionary>
+		<dictionary id="mana-3" cost="3000" req="mana-2" cat="misc3"
+			name="mana-uname" desc="mana-udesc">
+			<int name="lvl">3</int>
+			<int name="max-mana">125</int>
+		</dictionary>
+		<dictionary id="mana-4" cost="4100" req="mana-3" cat="misc4"
+			name="mana-uname" desc="mana-udesc">
+			<int name="lvl">4</int>
+			<int name="max-mana">150</int>
+		</dictionary>
+		<dictionary id="mana-5" cost="5200" req="mana-4" cat="misc5"
+			name="mana-uname" desc="mana-udesc">
+			<int name="lvl">5</int>
+			<int name="max-mana">175</int>
+		</dictionary>
+		
+		
+		
+		<!-- Offsensive -->
+		<dictionary id="dmg1" cost="800" cat="off1"
+			name="knidmg-uname" desc="knidmg-udesc">
+			<int name="lvl">1</int>
+			<int name="sword-dmg">14</int>
+		</dictionary>
+		<dictionary id="dmg2" cost="1600" req="dmg1" cat="off2"
+			name="knidmg-uname" desc="knidmg-udesc">
+			<int name="lvl">2</int>
+			<int name="sword-dmg">20</int>
+		</dictionary>
+		<dictionary id="dmg3" cost="2700" req="dmg2" cat="off3"
+			name="knidmg-uname" desc="knidmg-udesc">
+			<int name="lvl">3</int>
+			<int name="sword-dmg">26</int>
+		</dictionary>
+		<dictionary id="dmg4" cost="3900" req="dmg3" cat="off4"
+			name="knidmg-uname" desc="knidmg-udesc">
+			<int name="lvl">4</int>
+			<int name="sword-dmg">32</int>
+		</dictionary>
+		<dictionary id="dmg5" cost="5200" req="dmg4" cat="off5"
+			name="knidmg-uname" desc="knidmg-udesc">
+			<int name="lvl">5</int>
+			<int name="sword-dmg">38</int>
+		</dictionary>
+		
+		<dictionary id="arc1" cost="250" cat="off1"
+			name="kniarc-uname" desc="kniarc-udesc">
+			<int name="lvl">1</int>
+			<int name="sword-arc">120</int>
+			<string name="sword-arc-gfx">effects/knight_slash_120.xml</string>
+		</dictionary>
+		<dictionary id="arc2" cost="700" req="arc1" cat="off2"
+			name="kniarc-uname" desc="kniarc-udesc">
+			<int name="lvl">2</int>
+			<int name="sword-arc">150</int>
+			<string name="sword-arc-gfx">effects/knight_slash_150.xml</string>
+		</dictionary>
+		<dictionary id="arc3" cost="1500" req="arc2" cat="off3"
+			name="kniarc-uname" desc="kniarc-udesc">
+			<int name="lvl">3</int>
+			<int name="sword-arc">180</int>
+			<string name="sword-arc-gfx">effects/knight_slash_180.xml</string>
+		</dictionary>
+		<dictionary id="arc4" cost="2200" req="arc3" cat="off4"
+			name="kniarc-uname" desc="kniarc-udesc">
+			<int name="lvl">4</int>
+			<int name="sword-arc">210</int>
+			<string name="sword-arc-gfx">effects/knight_slash_210.xml</string>
+		</dictionary>
+		<dictionary id="arc5" cost="2700" req="arc4" cat="off5"
+			name="kniarc-uname" desc="kniarc-udesc">
+			<int name="lvl">5</int>
+			<int name="sword-arc">240</int>
+			<string name="sword-arc-gfx">effects/knight_slash_240.xml</string>
+		</dictionary>
+		
+		
+		
+		
+		
+		
+		<dictionary id="chrgdmg1" cost="1600" cat="off2"
+			name="chrgdmg-uname" desc="chrgdmg-udesc">
+			<int name="lvl">1</int>
+			<float name="charge-dmg-multiplier">2.0</float>
+		</dictionary>
+		<dictionary id="chrgdmg2" cost="3000" req="chrgdmg1" cat="off3"
+			name="chrgdmg-uname" desc="chrgdmg-udesc">
+			<int name="lvl">2</int>
+			<float name="charge-dmg-multiplier">2.25</float>
+		</dictionary>
+		<dictionary id="chrgdmg3" cost="4200" req="chrgdmg2" cat="off4"
+			name="chrgdmg-uname" desc="chrgdmg-udesc">
+			<int name="lvl">3</int>
+			<float name="charge-dmg-multiplier">2.5</float>
+		</dictionary>
+		
+		<dictionary id="chrgrng1" cost="500" cat="off2"
+			name="chrgrng-uname" desc="chrgrng-udesc">
+			<int name="lvl">1</int>
+			<float name="charge-dist">4</float>
+			<float name="charge-speed">4</float>
+		</dictionary>
+		<dictionary id="chrgrng2" cost="1200" req="chrgrng1" cat="off3"
+			name="chrgrng-uname" desc="chrgrng-udesc">
+			<int name="lvl">2</int>
+			<float name="charge-dist">5</float>
+			<float name="charge-speed">5</float>
+		</dictionary>
+		<dictionary id="chrgrng3" cost="1800" req="chrgrng2" cat="off4"
+			name="chrgrng-uname" desc="chrgrng-udesc">
+			<int name="lvl">3</int>
+			<float name="charge-dist">6</float>
+			<float name="charge-speed">6</float>
+		</dictionary>
+			
+		
+		
+		<dictionary id="whirl" cost="2200" cat="off3"
+			name="whirl-uname" desc="whirl-udesc">
+			<bool name="whirl">true</bool>
+			<int name="whirl-dur">4</int>
+			<float name="whirl-dmg-multiplier">1.5</float>
+		</dictionary>
+		
+		<dictionary id="whirldmg1" cost="2800" req="whirl" cat="off4"
+			name="whirldmg-uname" desc="whirldmg-udesc">
+			<int name="lvl">1</int>
+			<float name="whirl-dmg-multiplier">2</float>
+		</dictionary>
+		<dictionary id="whirldmg2" cost="3800" req="whirldmg1" cat="off5"
+			name="whirldmg-uname" desc="whirldmg-udesc">
+			<int name="lvl">2</int>
+			<float name="whirl-dmg-multiplier">2.5</float>
+		</dictionary>
+		
+		<dictionary id="whirldur1" cost="3000" req="whirl" cat="off4"
+			name="whirldur-uname" desc="whirldur-udesc">
+			<int name="lvl">1</int>
+			<int name="whirl-dur">6</int>
+		</dictionary>
+		<dictionary id="whirldur" cost="4000" req="whirldur1" cat="off5"
+			name="whirldur-uname" desc="whirldur-udesc">
+			<int name="lvl">2</int>
+			<int name="whirl-dur">8</int>
+		</dictionary>
+		
+		
+		
+		<dictionary id="bash1" cost="700" cat="def1"
+			name="bash-uname" desc="bash-udesc-1">
+			<int name="lvl">1</int>
+			<int name="bash-chance">10</int>
+		</dictionary>
+		<dictionary id="bash2" cost="1600" req="bash1" cat="def2"
+			name="bash-uname" desc="bash-udesc-2">
+			<int name="lvl">2</int>
+			<int name="bash-chance">20</int>
+		</dictionary>
+		<dictionary id="bash3" cost="2600" req="bash2" cat="def3"
+			name="bash-uname" desc="bash-udesc-2">
+			<int name="lvl">3</int>
+			<int name="bash-chance">30</int>
+		</dictionary>
+			
+		
+		
+		
+	
+	
+	
+		<!-- Defensive -->
+		<dictionary id="armor-1" cost="600" cat="def1"
+			name="armor-uname" desc="armor-udesc">
+			<int name="lvl">1</int>
+			<int name="dmg-reduction">4</int>
+		</dictionary>
+		<dictionary id="armor-2" cost="1200" req="armor-1" cat="def2"
+			name="armor-uname" desc="armor-udesc">
+			<int name="lvl">2</int>
+			<int name="dmg-reduction">6</int>
+		</dictionary>
+		<dictionary id="armor-3" cost="2000" req="armor-2" cat="def3"
+			name="armor-uname" desc="armor-udesc">
+			<int name="lvl">3</int>
+			<int name="dmg-reduction">8</int>
+		</dictionary>
+		<dictionary id="armor-4" cost="2500" req="armor-3" cat="def4"
+			name="armor-uname" desc="armor-udesc">
+			<int name="lvl">4</int>
+			<int name="dmg-reduction">10</int>
+		</dictionary>
+		<dictionary id="armor-5" cost="3200" req="armor-4" cat="def5"
+			name="armor-uname" desc="armor-udesc">
+			<int name="lvl">5</int>
+			<int name="dmg-reduction">12</int>
+		</dictionary>
+		
+	
+	
+	
+		<dictionary id="heal" cost="700" cat="def2"
+			name="heal-uname" desc="heal-udesc">
+			<bool name="heal">true</bool>
+			<int name="heal-amount">5</int>
+			<int name="heal-mana-cost">10</int>
+		</dictionary>
+		
+		<dictionary id="healeff1" cost="1700" req="heal" cat="def3"
+			name="healeff-uname" desc="healeff-udesc">
+			<int name="lvl">1</int>
+			<int name="heal-amount">6</int>
+			<int name="heal-mana-cost">8</int>
+		</dictionary>
+		<dictionary id="healeff2" cost="2600" req="healeff1" cat="def4"
+			name="healeff-uname" desc="healeff-udesc">
+			<int name="lvl">2</int>
+			<int name="heal-amount">7</int>
+			<int name="heal-mana-cost">7</int>
+		</dictionary>
+		<dictionary id="healeff3" cost="3500" req="healeff2" cat="def5"
+			name="healeff-uname" desc="healeff-udesc">
+			<int name="lvl">3</int>
+			<int name="heal-amount">8</int>
+			<int name="heal-mana-cost">6</int>
+		</dictionary>
+		
+		
+		
+		<dictionary id="shield1" cost="750" cat="def1"
+			name="shield-uname" desc="shield-udesc-1">
+			<int name="lvl">1</int>
+			<int name="shield-arc">120</int>
+		</dictionary>
+		<dictionary id="shield2" cost="1500" req="shield1" cat="def2"
+			name="shield-uname" desc="shield-udesc-2">
+			<int name="lvl">2</int>
+			<int name="shield-arc">180</int>
+		</dictionary>
+		<dictionary id="shield3" cost="3000" req="shield2" cat="def3"
+			name="shield-uname" desc="shield-udesc-2">
+			<int name="lvl">3</int>
+			<int name="shield-arc">240</int>
+		</dictionary>
+	</upgrades>
+</tweak>

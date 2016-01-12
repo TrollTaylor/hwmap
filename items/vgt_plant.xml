@@ -1,0 +1,26 @@
+<item behavior="breakable">
+	<behavior>
+		<dictionary>
+			<entry name="layer"><int>-1</int></entry>
+			<entry name="destroy-snd"><string>sound/monsters.xml:death_flower_1</string></entry>
+			<entry name="destroy-particle"><string>effects/particles.xml:vgt_plant</string></entry>
+			<entry name="gib"><string>effects/gibs/gib_vgt_plant.xml</string></entry>
+			<array name="loot">
+				<int>50</int><string>items/valuable_1.xml</string>
+				<int>350</int><string>items/valuable_2.xml</string>
+				<int>150</int><string>items/valuable_3.xml</string>												
+				<int>50</int><string>actors/tick_1_small.xml</string>	
+				<int>10</int><string>actors/tick_1.xml</string>					
+			</array>
+		</dictionary>
+	</behavior>
+	<sprite scale="16" random-start="true" name="default">
+		<texture>items/vgt.png</texture>
+		<origin>8 8</origin>
+		<frame time="999999999">0 0 17 16</frame>
+		<frame time="999999999">17 0 17 16</frame>		
+	</sprite>
+	<collision static="true">
+		<circle offset="0 0" radius="8" />
+	</collision>		
+</item>

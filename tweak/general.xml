@@ -1,0 +1,49 @@
+<dictionary>
+	<dictionary name="easy">
+		<float name="EnemyHealthAll">1.1</float>
+		<float name="EnemyHealthBase">1.1</float>
+		<float name="EnemyHealthIncr">0.65</float>
+		<float name="EnemySpeedMultiplier">1.1</float>
+		
+		<float name="EnemyDamageBase">1</float>
+		<float name="EnemyDamageIncr">0.2</float>
+	
+		<float name="SpawnFreqBase">1.5</float>
+		<float name="SpawnFreqDecr">0.2</float>
+		
+		<float name="MoneyBase">1</float>
+		<float name="MoneyIncr">0</float>
+	</dictionary>
+
+	<dictionary name="medium">
+		<float name="EnemyHealthAll">1.2</float>
+		<float name="EnemyHealthBase">1.2</float>
+		<float name="EnemyHealthIncr">0.7</float>
+		<float name="EnemySpeedMultiplier">1.1</float>
+	
+		<float name="EnemyDamageBase">1</float>
+		<float name="EnemyDamageIncr">0.3</float>
+	
+		<float name="SpawnFreqBase">1.3</float>
+		<float name="SpawnFreqDecr">0.3</float>
+		
+		<float name="MoneyBase">1</float>
+		<float name="MoneyIncr">0</float>
+	</dictionary>
+	
+	<dictionary name="hard">
+		<float name="EnemyHealthAll">1.3</float>
+		<float name="EnemyHealthBase">1.3</float>
+		<float name="EnemyHealthIncr">0.95</float>
+		<float name="EnemySpeedMultiplier">1.3</float>
+	
+		<float name="EnemyDamageBase">2</float>
+		<float name="EnemyDamageIncr">0.4</float>
+	
+		<float name="SpawnFreqBase">1</float>
+		<float name="SpawnFreqDecr">0.1</float>
+		
+		<float name="MoneyBase">1</float>
+		<float name="MoneyIncr">0</float>
+	</dictionary>
+</dictionary>

@@ -1,0 +1,771 @@
+﻿<prefab>
+<dictionary>
+	<dictionary name="tilemap">
+		<array name="tiledata"></array>
+	</dictionary>
+	<dictionary name="doodads">
+		<array name="doodads">
+			<dictionary>
+				<int name="id">113966</int>
+				<string name="type">doodads/special/color_theme_c_256.xml</string>
+				<vec2 name="pos">-9 -23</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">113969</int>
+				<string name="type">doodads/special/color_theme_c_256.xml</string>
+				<vec2 name="pos">-23 -7</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">113909</int>
+				<string name="type">doodads/theme_e/e_crn_r_up.xml</string>
+				<vec2 name="pos">4 -5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">113967</int>
+				<string name="type">doodads/special/color_theme_c_256.xml</string>
+				<vec2 name="pos">7 -7</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">113968</int>
+				<string name="type">doodads/special/color_theme_c_256.xml</string>
+				<vec2 name="pos">-9 7</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114002</int>
+				<string name="type">doodads/theme_e/e_crn_l_up.xml</string>
+				<vec2 name="pos">0 -5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114004</int>
+				<string name="type">doodads/theme_e/e_crn_r_up.xml</string>
+				<vec2 name="pos">3 -6</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114005</int>
+				<string name="type">doodads/theme_e/e_crn_l_up.xml</string>
+				<vec2 name="pos">1 -6</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114024</int>
+				<string name="type">doodads/theme_e/e_crn_l_up.xml</string>
+				<vec2 name="pos">-3 -5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114025</int>
+				<string name="type">doodads/theme_e/e_crn_r_up.xml</string>
+				<vec2 name="pos">-2 -5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114039</int>
+				<string name="type">doodads/special/color_theme_e_16.xml</string>
+				<vec2 name="pos">-2.5 -5.5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114044</int>
+				<string name="type">doodads/theme_e/e_h_8.xml</string>
+				<vec2 name="pos">-1 -3</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114050</int>
+				<string name="type">doodads/theme_e/e_crn_l_up.xml</string>
+				<vec2 name="pos">-4 -4</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114051</int>
+				<string name="type">doodads/theme_e/e_crn_l_dn.xml</string>
+				<vec2 name="pos">-4 -2</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114052</int>
+				<string name="type">doodads/theme_e/e_h_16.xml</string>
+				<vec2 name="pos">-3 -2</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114055</int>
+				<string name="type">doodads/theme_e/e_x_t_dn.xml</string>
+				<vec2 name="pos">-3 -3</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114056</int>
+				<string name="type">doodads/theme_e/e_x_t_dn.xml</string>
+				<vec2 name="pos">-2 -3</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114057</int>
+				<string name="type">doodads/theme_e/e_h_16.xml</string>
+				<vec2 name="pos">-1 -2</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114058</int>
+				<string name="type">doodads/theme_e/e_crn_r_dn.xml</string>
+				<vec2 name="pos">1 -2</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114059</int>
+				<string name="type">doodads/theme_e/e_crn_l_up.xml</string>
+				<vec2 name="pos">1 -4</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114063</int>
+				<string name="type">doodads/theme_e/e_x_t_r.xml</string>
+				<vec2 name="pos">1 -5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114064</int>
+				<string name="type">doodads/theme_e/e_h_8.xml</string>
+				<vec2 name="pos">2 -5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114065</int>
+				<string name="type">doodads/theme_e/e_crn_r_dn.xml</string>
+				<vec2 name="pos">4 -3</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114066</int>
+				<string name="type">doodads/theme_e/e_h_16.xml</string>
+				<vec2 name="pos">2 -3</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114068</int>
+				<string name="type">doodads/theme_e/e_x_t_l.xml</string>
+				<vec2 name="pos">3 -5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114069</int>
+				<string name="type">doodads/theme_e/e_crn_l_dn.xml</string>
+				<vec2 name="pos">-6 6</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114070</int>
+				<string name="type">doodads/theme_e/e_h_16.xml</string>
+				<vec2 name="pos">-5 6</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114071</int>
+				<string name="type">doodads/theme_e/e_h_16.xml</string>
+				<vec2 name="pos">-3 6</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114073</int>
+				<string name="type">doodads/theme_e/e_crn_l_up.xml</string>
+				<vec2 name="pos">-6 4</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114074</int>
+				<string name="type">doodads/theme_e/e_h_16.xml</string>
+				<vec2 name="pos">-4 4</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114075</int>
+				<string name="type">doodads/theme_e/e_crn_l_up.xml</string>
+				<vec2 name="pos">-5 3</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114076</int>
+				<string name="type">doodads/theme_e/e_x_t_r.xml</string>
+				<vec2 name="pos">-5 4</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114077</int>
+				<string name="type">doodads/theme_e/e_h_16.xml</string>
+				<vec2 name="pos">1 3</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114078</int>
+				<string name="type">doodads/theme_e/e_h_16.xml</string>
+				<vec2 name="pos">-2 4</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114079</int>
+				<string name="type">doodads/theme_e/e_crn_l_up.xml</string>
+				<vec2 name="pos">0 2</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114080</int>
+				<string name="type">doodads/theme_e/e_crn_r_dn.xml</string>
+				<vec2 name="pos">4 5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114081</int>
+				<string name="type">doodads/theme_e/e_crn_r_up.xml</string>
+				<vec2 name="pos">4 3</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114082</int>
+				<string name="type">doodads/theme_e/e_crn_r_up.xml</string>
+				<vec2 name="pos">3 2</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114084</int>
+				<string name="type">doodads/theme_e/e_h_16.xml</string>
+				<vec2 name="pos">2 5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114086</int>
+				<string name="type">doodads/theme_e/e_crn_l_up.xml</string>
+				<vec2 name="pos">0 4</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114087</int>
+				<string name="type">doodads/theme_e/e_h_8.xml</string>
+				<vec2 name="pos">1 5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114088</int>
+				<string name="type">doodads/theme_e/e_crn_r_dn.xml</string>
+				<vec2 name="pos">0 6</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114089</int>
+				<string name="type">doodads/theme_e/e_x_t_r.xml</string>
+				<vec2 name="pos">0 3</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114090</int>
+				<string name="type">doodads/theme_e/e_x_t_l.xml</string>
+				<vec2 name="pos">3 3</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114091</int>
+				<string name="type">doodads/theme_e/e_x_t_r.xml</string>
+				<vec2 name="pos">0 -4</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114092</int>
+				<string name="type">doodads/special/color_theme_e_32.xml</string>
+				<vec2 name="pos">1.5 -6.5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114093</int>
+				<string name="type">doodads/special/color_theme_e_32.xml</string>
+				<vec2 name="pos">0.5 1.5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114094</int>
+				<string name="type">doodads/special/color_theme_e_32.xml</string>
+				<vec2 name="pos">1.5 1.5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114095</int>
+				<string name="type">doodads/special/color_theme_e_32.xml</string>
+				<vec2 name="pos">-1.5 2.5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114096</int>
+				<string name="type">doodads/special/color_theme_e_32.xml</string>
+				<vec2 name="pos">-3.5 2.5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114097</int>
+				<string name="type">doodads/special/color_theme_e_32.xml</string>
+				<vec2 name="pos">-4.5 2.5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114098</int>
+				<string name="type">doodads/special/color_theme_e_16.xml</string>
+				<vec2 name="pos">3.5 -5.5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114099</int>
+				<string name="type">doodads/special/color_theme_e_16.xml</string>
+				<vec2 name="pos">0.5 -5.5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114100</int>
+				<string name="type">doodads/special/color_theme_e_16.xml</string>
+				<vec2 name="pos">0.5 -4.5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114101</int>
+				<string name="type">doodads/special/color_theme_e_16.xml</string>
+				<vec2 name="pos">-0.5 -4.5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114102</int>
+				<string name="type">doodads/special/color_theme_e_16.xml</string>
+				<vec2 name="pos">-1.5 -4.5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114103</int>
+				<string name="type">doodads/special/color_theme_e_16.xml</string>
+				<vec2 name="pos">-2.5 -4.5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114104</int>
+				<string name="type">doodads/special/color_theme_e_16.xml</string>
+				<vec2 name="pos">-3.5 -4.5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114105</int>
+				<string name="type">doodads/special/color_theme_e_16.xml</string>
+				<vec2 name="pos">-5.5 3.5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114106</int>
+				<string name="type">doodads/special/color_theme_e_16.xml</string>
+				<vec2 name="pos">3.5 2.5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114107</int>
+				<string name="type">doodads/theme_e/e_special_pillar.xml</string>
+				<vec2 name="pos">-6 0</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114146</int>
+				<string name="type">doodads/theme_e/e_deco_vgt.xml</string>
+				<vec2 name="pos">-1.75 -0.875</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114147</int>
+				<string name="type">doodads/theme_e/e_deco_vgt.xml</string>
+				<vec2 name="pos">6.375 0.625</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114148</int>
+				<string name="type">doodads/theme_e/e_deco_vgt.xml</string>
+				<vec2 name="pos">4.625 -6</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114149</int>
+				<string name="type">doodads/theme_e/e_deco_vgt.xml</string>
+				<vec2 name="pos">0.375 -6.5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114150</int>
+				<string name="type">doodads/theme_e/e_deco_vgt.xml</string>
+				<vec2 name="pos">-6.125 1</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114151</int>
+				<string name="type">doodads/theme_e/e_deco_vgt_v2.xml</string>
+				<vec2 name="pos">-5.75 1.125</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114152</int>
+				<string name="type">doodads/theme_e/e_deco_vgt_v2.xml</string>
+				<vec2 name="pos">-0.625 -0.875</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114153</int>
+				<string name="type">doodads/theme_e/e_deco_vgt_v3.xml</string>
+				<vec2 name="pos">-1.25 -0.875</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114154</int>
+				<string name="type">doodads/theme_e/e_deco_vgt.xml</string>
+				<vec2 name="pos">1.25 -1</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114155</int>
+				<string name="type">doodads/theme_e/e_deco_vgt.xml</string>
+				<vec2 name="pos">2.625 -2</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114156</int>
+				<string name="type">doodads/theme_e/e_deco_vgt.xml</string>
+				<vec2 name="pos">-3.875 -0.375</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114157</int>
+				<string name="type">doodads/theme_e/e_deco_vgt.xml</string>
+				<vec2 name="pos">-0.5 -5.375</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114158</int>
+				<string name="type">doodads/theme_e/e_deco_vgt.xml</string>
+				<vec2 name="pos">-5 -5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114159</int>
+				<string name="type">doodads/theme_e/e_deco_vgt.xml</string>
+				<vec2 name="pos">6.625 -2.875</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114160</int>
+				<string name="type">doodads/theme_e/e_deco_vgt.xml</string>
+				<vec2 name="pos">3.75 0.125</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114161</int>
+				<string name="type">doodads/theme_e/e_deco_vgt.xml</string>
+				<vec2 name="pos">2.75 6.125</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114162</int>
+				<string name="type">doodads/theme_e/e_deco_vgt_v2.xml</string>
+				<vec2 name="pos">3.5 6</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114163</int>
+				<string name="type">doodads/theme_e/e_deco_vgt_v3.xml</string>
+				<vec2 name="pos">3.875 6.375</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114164</int>
+				<string name="type">doodads/theme_e/e_deco_vgt.xml</string>
+				<vec2 name="pos">4.375 6</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114165</int>
+				<string name="type">doodads/theme_e/e_deco_vgt.xml</string>
+				<vec2 name="pos">1.25 6.5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114166</int>
+				<string name="type">doodads/theme_e/e_deco_vgt.xml</string>
+				<vec2 name="pos">6.5 7.125</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114176</int>
+				<string name="type">doodads/generic/marker_flower_range.xml</string>
+				<vec2 name="pos">-4.875 -0.375</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114177</int>
+				<string name="type">doodads/generic/marker_flower_range.xml</string>
+				<vec2 name="pos">-4.75 -1.375</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114178</int>
+				<string name="type">doodads/generic/marker_flower_range.xml</string>
+				<vec2 name="pos">-4.375 -2.75</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114179</int>
+				<string name="type">doodads/generic/marker_flower_range.xml</string>
+				<vec2 name="pos">-4.75 0.875</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114180</int>
+				<string name="type">doodads/generic/marker_flower_range.xml</string>
+				<vec2 name="pos">-4.25 1.75</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114181</int>
+				<string name="type">doodads/generic/marker_flower_range.xml</string>
+				<vec2 name="pos">5 -1.625</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114182</int>
+				<string name="type">doodads/generic/marker_flower_range.xml</string>
+				<vec2 name="pos">4.875 0.875</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114183</int>
+				<string name="type">doodads/generic/marker_flower_range.xml</string>
+				<vec2 name="pos">4.5 1.875</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114184</int>
+				<string name="type">doodads/generic/marker_flower_range.xml</string>
+				<vec2 name="pos">-3.125 1.625</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114185</int>
+				<string name="type">doodads/generic/marker_flower_range.xml</string>
+				<vec2 name="pos">-3.75 0.625</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114186</int>
+				<string name="type">doodads/generic/marker_flower_range.xml</string>
+				<vec2 name="pos">-2.75 0.625</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114187</int>
+				<string name="type">doodads/generic/marker_flower_range.xml</string>
+				<vec2 name="pos">-1.875 1.875</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114188</int>
+				<string name="type">doodads/generic/marker_flower_range.xml</string>
+				<vec2 name="pos">-1.75 1.125</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114189</int>
+				<string name="type">doodads/generic/marker_flower_range.xml</string>
+				<vec2 name="pos">-0.875 1.75</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114190</int>
+				<string name="type">doodads/generic/marker_flower_range.xml</string>
+				<vec2 name="pos">-0.625 0.875</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114191</int>
+				<string name="type">doodads/generic/marker_flower_range.xml</string>
+				<vec2 name="pos">0.375 0.5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114192</int>
+				<string name="type">doodads/generic/marker_flower_range.xml</string>
+				<vec2 name="pos">-0.5 0.125</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114193</int>
+				<string name="type">doodads/generic/marker_flower_range.xml</string>
+				<vec2 name="pos">-1 -0.5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114194</int>
+				<string name="type">doodads/generic/marker_flower_range.xml</string>
+				<vec2 name="pos">-1.875 0.125</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114195</int>
+				<string name="type">doodads/generic/marker_flower_range.xml</string>
+				<vec2 name="pos">-2.5 -0.625</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114196</int>
+				<string name="type">doodads/generic/marker_flower_range.xml</string>
+				<vec2 name="pos">-3.75 -0.625</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114197</int>
+				<string name="type">doodads/generic/marker_flower_range.xml</string>
+				<vec2 name="pos">1.375 -0.375</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114198</int>
+				<string name="type">doodads/generic/marker_flower_range.xml</string>
+				<vec2 name="pos">2.25 -0.75</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114199</int>
+				<string name="type">doodads/generic/marker_flower_range.xml</string>
+				<vec2 name="pos">2.625 -1.5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114200</int>
+				<string name="type">doodads/generic/marker_flower_range.xml</string>
+				<vec2 name="pos">3.5 -1.375</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114201</int>
+				<string name="type">doodads/generic/marker_flower_range.xml</string>
+				<vec2 name="pos">2.875 0.125</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114202</int>
+				<string name="type">doodads/generic/marker_flower_range.xml</string>
+				<vec2 name="pos">2.125 0.625</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114203</int>
+				<string name="type">doodads/generic/marker_flower_range.xml</string>
+				<vec2 name="pos">4.125 0.875</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114204</int>
+				<string name="type">doodads/generic/marker_flower_range.xml</string>
+				<vec2 name="pos">4.375 -1.625</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">114205</int>
+				<string name="type">doodads/theme_e/e_h_8.xml</string>
+				<vec2 name="pos">-1 6</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+		</array>
+	</dictionary>
+	<dictionary name="actors">
+		<array name="actors/spawners/tick_1.xml">
+			<array><int>114110</int><vec2>6 -0.125</vec2></array>
+		</array>
+		<array name="actors/tick_1.xml">
+			<array><int>114111</int><vec2>6.125 1.375</vec2></array>
+			<array><int>114112</int><vec2>5.797409 -1.681638</vec2></array>
+			<array><int>114113</int><vec2>4.409447 -1.501111</vec2></array>
+			<array><int>114114</int><vec2>4.227347 0.5640727</vec2></array>
+			<array><int>114115</int><vec2>3.975832 -0.7914693</vec2></array>
+			<array><int>114140</int><vec2>-5.5 2.375</vec2></array>
+		</array>
+		<array name="actors/tick_1_small.xml">
+			<array><int>114116</int><vec2>5.317499 -2.166914</vec2></array>
+			<array><int>114117</int><vec2>6.416692 -1.968506</vec2></array>
+			<array><int>114118</int><vec2>6 -2.5</vec2></array>
+			<array><int>114119</int><vec2>5.625 -3.5</vec2></array>
+			<array><int>114120</int><vec2>4.751719 1.674152</vec2></array>
+			<array><int>114121</int><vec2>5.369219 1.738439</vec2></array>
+			<array><int>114122</int><vec2>5.75 2.5</vec2></array>
+			<array><int>114123</int><vec2>3.355747 0.1807735</vec2></array>
+			<array><int>114124</int><vec2>2.738357 0.1239479</vec2></array>
+			<array><int>114125</int><vec2>2.73597 -0.625</vec2></array>
+			<array><int>114126</int><vec2>1.875 0.25</vec2></array>
+			<array><int>114127</int><vec2>1.057439 0.1157017</vec2></array>
+			<array><int>114131</int><vec2>-4.375 -2.25</vec2></array>
+			<array><int>114132</int><vec2>-4.689811 -1.567737</vec2></array>
+			<array><int>114133</int><vec2>-4.317499 -1</vec2></array>
+			<array><int>114134</int><vec2>-3.016061 -0.630354</vec2></array>
+			<array><int>114135</int><vec2>-5.913362 -2.995848</vec2></array>
+			<array><int>114136</int><vec2>-6.51886 -3.129152</vec2></array>
+			<array><int>114137</int><vec2>-4.25 -5.125</vec2></array>
+			<array><int>114138</int><vec2>-4.125 -6.25</vec2></array>
+			<array><int>114139</int><vec2>-5.625 -5.125</vec2></array>
+			<array><int>114141</int><vec2>-4.375 2.125</vec2></array>
+			<array><int>114142</int><vec2>-4.75 1.625</vec2></array>
+			<array><int>114143</int><vec2>-3.375 1.125</vec2></array>
+			<array><int>114144</int><vec2>-6.25 3</vec2></array>
+			<array><int>114145</int><vec2>-6.5 3.75</vec2></array>
+		</array>
+		<array name="actors/tower_flower_1_small.xml">
+			<array><int>114175</int><vec2>0.125 -0.5</vec2></array>
+		</array>
+	</dictionary>
+	<dictionary name="items">
+		<array name="items/vgt_plant.xml">
+			<array><int>114167</int><vec2>-2.25 -0.375</vec2></array>
+			<array><int>114168</int><vec2>-1 -0.125</vec2></array>
+			<array><int>114169</int><vec2>2 6.5</vec2></array>
+			<array><int>114170</int><vec2>3.125 6.75</vec2></array>
+			<array><int>114171</int><vec2>-0.25 -6.125</vec2></array>
+			<array><int>114172</int><vec2>-1.75 -6.125</vec2></array>
+			<array><int>114173</int><vec2>-1 -6.875</vec2></array>
+			<array><int>114174</int><vec2>-3.375 -5.25</vec2></array>
+		</array>
+	</dictionary>
+	<dictionary name="scripting">
+		<array name="nodes">
+			<dictionary>
+				<int name="id">112405</int>
+				<string name="type">DestroyObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">-1 -15</vec2>
+				<dictionary name="parameters">
+					<int-arr name="static">113969 113968 113967 113966</int-arr>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">113970</int>
+				<string name="type">TimerTrigger</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">1</int>
+				<vec2 name="pos">-1 -19</vec2>
+				<int name="parameters">1</int>
+				<int-arr name="connections">112405</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+		</array>
+	</dictionary>
+	<dictionary name="lighting">
+		<array name="lights"></array>
+		<int-arr name="shadow-color">135 128 128 255</int-arr>
+		<int-arr name="ambient-color">50 50 50 255</int-arr>
+		<int-arr name="add-color">0 0 0 255</int-arr>
+	</dictionary>
+	<dictionary name="prefabs">
+	</dictionary>
+</dictionary>
+</prefab>

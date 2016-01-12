@@ -1,0 +1,32 @@
+<doodad ao="false">
+	<sprite random-start="true" scale="16">
+		<texture>doodads/generic/lamp_torch.png</texture>
+		<origin>4 32</origin>
+		<frame time="100">0 0 8 24</frame>			
+		<frame time="100">8 0 8 24</frame>				
+		<frame time="100">16 0 8 24</frame>				
+		<frame time="100">24 0 8 24</frame>		
+		<glow scale="16">
+			<texture>doodads/generic/lamp_torch.png</texture>
+				<frame time="100">0 24 8 24</frame>			
+				<frame time="100">8 24 8 24</frame>				
+				<frame time="100">16 24 8 24</frame>				
+				<frame time="100">24 24 8 24</frame>
+		</glow>					
+	</sprite>
+	<light>
+		<origin>0 -24</origin>
+		<mul>
+			<range>150</range>
+			<color1>220 150 50</color1>
+			<color2>180 90 30</color2>
+			<color3>160 70 10</color3>
+		</mul>
+		<add>
+			<range>64</range>
+			<color1>80 40 0</color1>
+			<color2>64 24 0</color2>
+			<color3>64 0 0</color3>
+		</add>
+	</light>
+</doodad>

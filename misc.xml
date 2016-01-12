@@ -1,0 +1,47 @@
+<soundbank>
+	<sound name="scream">
+		<source res="sounds/scream.wav" />
+	</sound>
+	<sound name="scream2">
+		<source res="sounds/scream2.wav" />
+	</sound>
+	<sound name="lightning">
+		<source res="sounds/lightning.wav" />
+	</sound>
+	<sound name="rain">
+		<source res="sounds/rain.ogg" />
+	</sound>
+	<sound name="quest-complete">
+		<source res="sounds/quest.wav" />
+	</sound>
+	<sound name="quest-complete2">
+		<source res="sounds/quest2.wav" />
+	</sound>
+	<sound name="quest-complete3">
+		<source res="sounds/quest3.wav" />
+	</sound>
+	<sound name="swampy">
+		<source res="sounds/swampy.ogg" />
+	</sound>
+	<sound name="intense1">
+		<source res="sounds/intense1.wav" />
+	</sound>
+	<sound name="intense2">
+		<source res="sounds/intense2.wav" />
+	</sound>
+	<sound name="intense3">
+		<source res="sounds/intense3.wav" />
+	</sound>
+	<sound name="intense4">
+		<source res="sounds/intense4.wav" />
+	</sound>
+	<sound name="intense5(long)">
+		<source res="sounds/intense5(long).wav" />
+	</sound>
+	<sound name="intense6">
+		<source res="sounds/intense6.wav" />
+	</sound>
+	<sound name="intense7">
+		<source res="sounds/intense7.wav" />
+	</sound>
+</soundbank>

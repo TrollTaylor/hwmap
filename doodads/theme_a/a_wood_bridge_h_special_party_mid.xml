@@ -1,0 +1,7 @@
+<doodad>
+	<sprite scale="16">
+		<texture>doodads/theme_a/a_bridge_special_party.png</texture>
+		<origin>24 12</origin>
+		<frame time="150">0 24 52 25</frame>		
+	</sprite>
+</doodad>

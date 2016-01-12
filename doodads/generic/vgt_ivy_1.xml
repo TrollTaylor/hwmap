@@ -1,0 +1,7 @@
+<doodad ao="false">
+	<sprite scale="16">
+		<texture>doodads/generic/vgt_ivy.png</texture>
+		<origin>0 32</origin>
+		<frame>0 0 27 32</frame>				
+	</sprite>
+</doodad>

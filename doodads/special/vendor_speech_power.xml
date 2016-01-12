@@ -1,0 +1,12 @@
+<doodad ao="false" defaultlayer="100" minimap="menus/minimap.xml:power">
+	<sprite scale="16">
+		<texture>doodads/special/vendor.png</texture>
+		<origin>7 28</origin>
+		<frame time="100">114 0 11 15</frame>	
+		<frame time="100">114 15 11 15</frame>	
+		<frame time="100">114 30 11 15</frame>						
+		<frame time="2500">114 45 11 15</frame>	
+		<frame time="100">114 30 11 15</frame>		
+		<frame time="100">114 15 11 15</frame>												
+	</sprite>
+</doodad>

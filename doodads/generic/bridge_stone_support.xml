@@ -1,0 +1,7 @@
+<doodad>
+	<sprite scale="16">
+		<texture>doodads/generic/bridge_stone.png</texture>
+		<origin>4 8</origin>
+		<frame time="100">80 0 19 27</frame>	
+	</sprite>
+</doodad>

@@ -1,0 +1,14 @@
+<doodad>
+	<sprite scale="16" random-start="true">
+		<texture>doodads/generic/deco_drape.png</texture>
+		<origin>14 10</origin>
+		<frame time="999999999">0 30 34 15</frame>	
+		<frame time="999999999">0 75 34 15</frame>
+	</sprite>
+	<polygon collision="true" shadow="false">
+		<point>-15 3</point>
+		<point>-15 -2</point>		
+		<point>16 -2</point>		
+		<point>16 3</point>
+	</polygon>					
+</doodad>

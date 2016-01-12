@@ -1,0 +1,307 @@
+﻿<prefab>
+<dictionary>
+	<dictionary name="tilemap">
+		<array name="tiledata"></array>
+	</dictionary>
+	<dictionary name="doodads">
+		<array name="doodads">
+			<dictionary>
+				<int name="id">113935</int>
+				<string name="type">doodads/special/editor_prefab_random_room.xml</string>
+				<vec2 name="pos">-6 -8</vec2>
+				<int name="layer">45</int>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">113936</int>
+				<string name="type">doodads/special/editor_prefab_random_room.xml</string>
+				<vec2 name="pos">-4 -8</vec2>
+				<int name="layer">45</int>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">112430</int>
+				<string name="type">doodads/special/editor_prefab_random_room.xml</string>
+				<vec2 name="pos">-2 -8</vec2>
+				<int name="layer">45</int>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">113937</int>
+				<string name="type">doodads/special/editor_prefab_random_room.xml</string>
+				<vec2 name="pos">0 -8</vec2>
+				<int name="layer">45</int>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">113938</int>
+				<string name="type">doodads/special/editor_prefab_random_room.xml</string>
+				<vec2 name="pos">2 -8</vec2>
+				<int name="layer">45</int>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">113939</int>
+				<string name="type">doodads/special/editor_prefab_random_room.xml</string>
+				<vec2 name="pos">4 -8</vec2>
+				<int name="layer">45</int>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">113940</int>
+				<string name="type">doodads/special/editor_prefab_random_room.xml</string>
+				<vec2 name="pos">6 -8</vec2>
+				<int name="layer">45</int>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">113941</int>
+				<string name="type">doodads/special/editor_prefab_random_room.xml</string>
+				<vec2 name="pos">8 -6</vec2>
+				<int name="layer">45</int>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">113942</int>
+				<string name="type">doodads/special/editor_prefab_random_room.xml</string>
+				<vec2 name="pos">8 -4</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">113943</int>
+				<string name="type">doodads/special/editor_prefab_random_room.xml</string>
+				<vec2 name="pos">8 8</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">113944</int>
+				<string name="type">doodads/special/editor_prefab_random_room.xml</string>
+				<vec2 name="pos">8 -2</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">113945</int>
+				<string name="type">doodads/special/editor_prefab_random_room.xml</string>
+				<vec2 name="pos">8 0</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">113946</int>
+				<string name="type">doodads/special/editor_prefab_random_room.xml</string>
+				<vec2 name="pos">8 2</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">113947</int>
+				<string name="type">doodads/special/editor_prefab_random_room.xml</string>
+				<vec2 name="pos">8 4</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">113948</int>
+				<string name="type">doodads/special/editor_prefab_random_room.xml</string>
+				<vec2 name="pos">8 6</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">113949</int>
+				<string name="type">doodads/special/editor_prefab_random_room.xml</string>
+				<vec2 name="pos">6 8</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">113950</int>
+				<string name="type">doodads/special/editor_prefab_random_room.xml</string>
+				<vec2 name="pos">4 8</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">113951</int>
+				<string name="type">doodads/special/editor_prefab_random_room.xml</string>
+				<vec2 name="pos">2 8</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">113952</int>
+				<string name="type">doodads/special/editor_prefab_random_room.xml</string>
+				<vec2 name="pos">0 8</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">113953</int>
+				<string name="type">doodads/special/editor_prefab_random_room.xml</string>
+				<vec2 name="pos">-2 8</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">113954</int>
+				<string name="type">doodads/special/editor_prefab_random_room.xml</string>
+				<vec2 name="pos">-4 8</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">113955</int>
+				<string name="type">doodads/special/editor_prefab_random_room.xml</string>
+				<vec2 name="pos">-6 8</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">113956</int>
+				<string name="type">doodads/special/editor_prefab_random_room.xml</string>
+				<vec2 name="pos">8 -8</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">113957</int>
+				<string name="type">doodads/special/editor_prefab_random_room.xml</string>
+				<vec2 name="pos">-8 -8</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">113958</int>
+				<string name="type">doodads/special/editor_prefab_random_room.xml</string>
+				<vec2 name="pos">-8 -6</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">113959</int>
+				<string name="type">doodads/special/editor_prefab_random_room.xml</string>
+				<vec2 name="pos">-8 -4</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">113960</int>
+				<string name="type">doodads/special/editor_prefab_random_room.xml</string>
+				<vec2 name="pos">-8 -2</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">113961</int>
+				<string name="type">doodads/special/editor_prefab_random_room.xml</string>
+				<vec2 name="pos">-8 0</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">113962</int>
+				<string name="type">doodads/special/editor_prefab_random_room.xml</string>
+				<vec2 name="pos">-8 2</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">113963</int>
+				<string name="type">doodads/special/editor_prefab_random_room.xml</string>
+				<vec2 name="pos">-8 4</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">113964</int>
+				<string name="type">doodads/special/editor_prefab_random_room.xml</string>
+				<vec2 name="pos">-8 6</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">113965</int>
+				<string name="type">doodads/special/editor_prefab_random_room.xml</string>
+				<vec2 name="pos">-8 8</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">113966</int>
+				<string name="type">doodads/special/editor_prefab_random_room.xml</string>
+				<vec2 name="pos">0 0</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+		</array>
+	</dictionary>
+	<dictionary name="actors">
+	</dictionary>
+	<dictionary name="items">
+	</dictionary>
+	<dictionary name="scripting">
+		<array name="nodes">
+			<dictionary>
+				<int name="id">112404</int>
+				<string name="type">Random</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">1</int>
+				<vec2 name="pos">0 -7</vec2>
+				<dictionary name="parameters">
+					<dictionary name="nodes">
+						<int-arr name="static">112419 113967 113968 113969 113970</int-arr>
+					</dictionary>
+					<bool name="run-one">True</bool>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">112419</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">0 0</vec2>
+				<string name="parameters">prefabs/theme_e/parts/center_med_1.xml</string>
+			</dictionary>
+			<dictionary>
+				<int name="id">112405</int>
+				<string name="type">DestroyObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">-10 0</vec2>
+				<dictionary name="parameters">
+					<int-arr name="static">113966 113943 113949 113950 113951 113952 113953 113954 113955 113965 113964 113963 113962 113961 113960 113959 113958 113957 113935 113936 112430 113937 113938 113939 113940 113956 113941 113942 113944 113945 113946 113947 113948</int-arr>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">113967</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">0 0</vec2>
+				<string name="parameters">prefabs/theme_e/parts/center_med_2.xml</string>
+			</dictionary>
+			<dictionary>
+				<int name="id">113968</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">0 0</vec2>
+				<string name="parameters">prefabs/theme_e/parts/center_med_3.xml</string>
+			</dictionary>
+			<dictionary>
+				<int name="id">113969</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">0 0</vec2>
+				<string name="parameters">prefabs/theme_e/parts/center_med_4.xml</string>
+			</dictionary>
+			<dictionary>
+				<int name="id">113970</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">0 0</vec2>
+				<string name="parameters">prefabs/theme_e/parts/center_med_5.xml</string>
+			</dictionary>
+			<dictionary>
+				<int name="id">113971</int>
+				<string name="type">TimerTrigger</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">1</int>
+				<vec2 name="pos">-10 -7</vec2>
+				<int name="parameters">1</int>
+				<int-arr name="connections">112404 112405</int-arr>
+				<int-arr name="connection-delays">0 0</int-arr>
+			</dictionary>
+		</array>
+	</dictionary>
+	<dictionary name="lighting">
+		<array name="lights"></array>
+		<int-arr name="shadow-color">135 128 128 255</int-arr>
+		<int-arr name="ambient-color">50 50 50 255</int-arr>
+		<int-arr name="add-color">0 0 0 255</int-arr>
+		<float name="shadow-length">1</float>
+	</dictionary>
+	<dictionary name="prefabs">
+	</dictionary>
+</dictionary>
+</prefab>

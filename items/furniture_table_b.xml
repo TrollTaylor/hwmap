@@ -1,0 +1,24 @@
+<item behavior="breakable">
+	<behavior>
+		<dictionary>
+			<entry name="gib"><string>effects/gibs/gib_table_b.xml</string></entry>
+			<entry name="destroy-snd"><string>sound/misc.xml:wood_break</string></entry>
+			<entry name="destroy-particle"><string>effects/particles.xml:breakable_wood</string></entry>
+		</dictionary>
+	</behavior>
+	
+	<sprite scale="16">
+		<texture>items/furniture.png</texture>
+		<origin>9 9</origin>
+		<frame>0 36 18 18</frame>
+	</sprite>
+	
+	<collision static="true">
+		<polygon>
+			<point>-9 -6</point>
+			<point>-9 9</point>		
+			<point>9 -6</point>		
+			<point>9 9</point>
+		</polygon>
+	</collision>
+</item>

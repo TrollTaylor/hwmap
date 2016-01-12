@@ -1,0 +1,16 @@
+<buff>
+	<behavior>
+		<dictionary>
+			<int name="duration">3000</int>			
+			<float name="speed-mul">-0.5</float>
+			<array name="effects">
+				<dictionary>
+					<string name="type">sprite</string>
+					<vec2 name="offset">0 -0.85</vec2>					
+					<string name="sprite">effects/misc.xml:confuse</string>
+					<int name="layer">25</int>
+				</dictionary>
+			</array>	
+		</dictionary>
+	</behavior>
+</buff>

@@ -1,0 +1,7 @@
+<doodad>
+	<sprite scale="16">
+		<texture>doodads/theme_a/a_bridge.png</texture>
+		<origin>1 11</origin>
+		<frame>29 195 17 37</frame>
+	</sprite>		
+</doodad>

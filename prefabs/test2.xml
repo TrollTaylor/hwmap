@@ -1,0 +1,169 @@
+﻿<prefab>
+<dictionary>
+	<dictionary name="tilemap">
+		<array name="tiledata"></array>
+	</dictionary>
+	<dictionary name="doodads">
+		<array name="doodads">
+			<dictionary>
+				<int name="id">266</int>
+				<string name="type">doodads/theme_a/a_crn_l_up.xml</string>
+				<vec2 name="pos">-3 -6</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">272</int>
+				<string name="type">doodads/theme_a/a_crn_r_up.xml</string>
+				<vec2 name="pos">2 -6</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">1370</int>
+				<string name="type">doodads/theme_a/a_v_16.xml</string>
+				<vec2 name="pos">-3 -2</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">1371</int>
+				<string name="type">doodads/theme_a/a_v_16.xml</string>
+				<vec2 name="pos">-3 -4</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">1374</int>
+				<string name="type">doodads/theme_a/a_v_16.xml</string>
+				<vec2 name="pos">2 -4</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">1375</int>
+				<string name="type">doodads/theme_a/a_x_t_l.xml</string>
+				<vec2 name="pos">2 -2</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">1376</int>
+				<string name="type">doodads/theme_a/a_v_8.xml</string>
+				<vec2 name="pos">2 -3</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">1401</int>
+				<string name="type">doodads/theme_a/a_x_t_dn.xml</string>
+				<vec2 name="pos">-3 0</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">1402</int>
+				<string name="type">doodads/theme_a/a_h_cap_l.xml</string>
+				<vec2 name="pos">1 0</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">1413</int>
+				<string name="type">doodads/theme_a/a_h_cap_r.xml</string>
+				<vec2 name="pos">-2 0</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">1415</int>
+				<string name="type">doodads/theme_a/a_crn_r_dn.xml</string>
+				<vec2 name="pos">2 0</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">1438</int>
+				<string name="type">doodads/generic/deco_chains_1.xml</string>
+				<vec2 name="pos">1.25 -4</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">1439</int>
+				<string name="type">doodads/generic/vgt_ivy_2.xml</string>
+				<vec2 name="pos">-2 -4</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">1441</int>
+				<string name="type">doodads/generic/deco_chains_4.xml</string>
+				<vec2 name="pos">-2 1</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">1444</int>
+				<string name="type">doodads/theme_a/a_h_cap_l.xml</string>
+				<vec2 name="pos">1 -5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">1445</int>
+				<string name="type">doodads/theme_a/a_h_cap_r.xml</string>
+				<vec2 name="pos">-2 -5</vec2>
+				<bool name="need-sync">False</bool>
+			</dictionary>
+		</array>
+	</dictionary>
+	<dictionary name="actors">
+		<array name="actors/bat_1.xml">
+			<array><int>1459</int><vec2>-1.631784 -3</vec2></array>
+			<array><int>1460</int><vec2>-0.3917848 -3</vec2></array>
+			<array><int>1461</int><vec2>-1.011785 -3</vec2></array>
+			<array><int>1462</int><vec2>-0.6118313 -4</vec2></array>
+			<array><int>1463</int><vec2>0.008168688 -4</vec2></array>
+		</array>
+	</dictionary>
+	<dictionary name="items">
+	</dictionary>
+	<dictionary name="scripting">
+		<array name="nodes">
+			<dictionary>
+				<int name="id">1446</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">0 -5</vec2>
+				<string name="parameters">prefabs/test2.xml</string>
+			</dictionary>
+			<dictionary>
+				<int name="id">1453</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">0 -5</vec2>
+				<string name="parameters">prefabs/test1.xml</string>
+			</dictionary>
+			<dictionary>
+				<int name="id">1454</int>
+				<string name="type">TimerTrigger</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">1</int>
+				<vec2 name="pos">5 -7</vec2>
+				<int name="parameters">2000</int>
+				<int-arr name="connections">1455</int-arr>
+				<int-arr name="connection-delays">0</int-arr>
+			</dictionary>
+			<dictionary>
+				<int name="id">1455</int>
+				<string name="type">Random</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">4 -4</vec2>
+				<dictionary name="parameters">
+					<dictionary name="nodes">
+						<int-arr name="static">1446 1453</int-arr>
+					</dictionary>
+					<bool name="run-one">True</bool>
+				</dictionary>
+			</dictionary>
+		</array>
+	</dictionary>
+	<dictionary name="lighting">
+		<array name="lights"></array>
+		<int-arr name="shadow-color">135 128 128 255</int-arr>
+		<int-arr name="ambient-color">50 50 50 255</int-arr>
+		<int-arr name="add-color">0 0 0 255</int-arr>
+	</dictionary>
+	<dictionary name="prefabs">
+	</dictionary>
+</dictionary>
+</prefab>

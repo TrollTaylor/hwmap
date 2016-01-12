@@ -1,0 +1,8 @@
+<spritebank>
+	<sprite scale="32"  name="parallax_title__floor_1">
+		<texture>parallax/titles/parallax_title_floor_1.png</texture>
+		<origin>0 1024</origin>
+		<frame>0 0 1024 1024</frame>
+	</sprite>		
+
+</spritebank>

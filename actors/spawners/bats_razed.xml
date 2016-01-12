@@ -1,0 +1,10 @@
+<doodad defaultlayer="-1" ao="false">
+	<sprite scale="16">
+		<texture>actors/spawners/bats.png</texture>
+		<origin>9 12</origin>					
+		<frame>21 0 21 18</frame>
+	</sprite>
+	<collision static="true" shoot-through="true">
+		<circle offset="0 0" radius="8" />
+	</collision>	
+</doodad>

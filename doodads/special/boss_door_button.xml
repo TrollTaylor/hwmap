@@ -1,0 +1,35 @@
+<doodad defaultlayer="0">
+	
+	<sprite scale="16" name="disabled">
+		<texture>doodads/special/trigger_button.png</texture>
+		<origin>0 0</origin>	
+		<frame>64 80 16 16</frame>				
+	</sprite>	
+	
+	<sprite scale="16" name="raised">
+		<texture>doodads/special/trigger_button.png</texture>
+		<origin>0 0</origin>
+		<frame time="50">0 80 16 16</frame>												
+	</sprite>		
+	
+	<sprite scale="16" name="enabled">
+		<texture>doodads/special/trigger_button.png</texture>
+		<origin>0 0</origin>
+		<frame time="100">48 80 16 16</frame>			
+		<frame time="100">32 80 16 16</frame>		
+		<frame time="100">16 80 16 16</frame>																							
+	</sprite>					
+	
+	<sprite scale="16" name="activate">
+		<texture>doodads/special/trigger_button.png</texture>
+		<origin>0 0</origin>
+		<frame time="50">16 80 16 16</frame>										
+	</sprite>
+	
+	<states default="disabled">
+		<transition from="enabled" to="raised" />		
+	</states>			
+	
+</doodad>
+
+

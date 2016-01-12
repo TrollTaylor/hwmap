@@ -1,0 +1,201 @@
+<tweak>
+	<params>
+		<dictionary>
+			<float  name="move-speed">1.0</float>
+			
+			<float  name="dmg-mul">1.0</float>
+			
+			<bool   name="combo">false</bool>
+			<float  name="combo-timer">0.75</float>
+			<int    name="combo-heal">0</int>
+			<int    name="combo-nova-dmg">0</int>
+			<int    name="combo-nova-parts">0</int>
+			<string name="combo-nova-projectile"></string>
+		</dictionary>
+	</params>
+
+	<upgrades>
+		<dictionary id="life"      cost="500" cat="power" name="life-uname" desc="life-udesc" />
+		<dictionary id="rejuv"     cost="175" cat="power" name="rejuv-uname" desc="rejuv-udesc" />
+		<dictionary id="pot-dmg"   cost="300" cat="power" name="pot-dmg-uname" desc="pot-dmg-udesc" />
+		<dictionary id="pot-rejuv" cost="300" cat="power" name="pot-rejuv-uname" desc="pot-rejuv-udesc" />
+		<dictionary id="pot-invul" cost="300" cat="power" name="pot-invul-uname" desc="pot-invul-udesc" />
+	
+	
+		<dictionary id="speed-1" cost="600" cat="misc3"
+			name="speed-uname" desc="speed-udesc">
+			<int name="lvl">1</int>
+			<float name="move-speed">1</float>
+		</dictionary>
+		<dictionary id="speed-2" cost="1200" req="speed-1" cat="misc4"
+			name="speed-uname" desc="speed-udesc">
+			<int name="lvl">2</int>
+			<float name="move-speed">1.1</float>
+		</dictionary>
+		<dictionary id="speed-3" cost="1600" req="speed-2" cat="misc5"
+			name="speed-uname" desc="speed-udesc">
+			<int name="lvl">3</int>
+			<float name="move-speed">1.2</float>
+		</dictionary>
+		<dictionary id="speed-4" cost="2400" req="speed-3" cat="misc6"
+			name="speed-uname" desc="speed-udesc">
+			<int name="lvl">4</int>
+			<float name="move-speed">1.3</float>
+		</dictionary>
+		<dictionary id="speed-5" cost="3500" req="speed-4" cat="pro1"
+			name="speed-uname" desc="speed-udesc">
+			<int name="lvl">16</int>
+			<float name="move-speed">1.4</float>
+		</dictionary>
+	
+	
+		<!--
+		<dictionary id="speed-1" cost="200" cat="misc1"
+			name="speed-uname" desc="speed-udesc">
+			<int name="lvl">1</int>
+			<float name="move-speed">0.9</float>
+		</dictionary>
+		<dictionary id="speed-2" cost="600" req="speed-1" cat="misc3"
+			name="speed-uname" desc="speed-udesc">
+			<int name="lvl">2</int>
+			<float name="move-speed">1</float>
+		</dictionary>
+		<dictionary id="speed-3" cost="1000" req="speed-2" cat="misc5"
+			name="speed-uname" desc="speed-udesc">
+			<int name="lvl">3</int>
+			<float name="move-speed">1.1</float>
+		</dictionary>
+		-->
+		<!--<dictionary id="speed-4" cost="1000" req="speed-3" cat="misc4"
+			name="speed-uname" desc="speed-udesc">
+			<float name="move-speed">1.2</float>
+		</dictionary>
+		<dictionary id="speed-5" cost="1500" req="speed-4" cat="misc5"
+			name="speed-uname" desc="speed-udesc">
+			<float name="move-speed">1.3</float>
+		</dictionary>-->
+
+		
+	
+		<!-- Combo -->
+		<dictionary id="combo" cost="250" cat="combo1"
+			name="combo-uname" desc="combo-udesc">
+			<bool name="combo">true</bool>
+		</dictionary>
+		
+		
+		<dictionary id="combo-time-1" cost="800" req="combo" cat="combo1"
+			name="combo-time-uname" desc="combo-time-udesc">
+			<int name="lvl">1</int>
+			<float name="combo-timer">1</float>
+		</dictionary>
+		<dictionary id="combo-time-2" cost="1200" req="combo-time-1" cat="combo2"
+			name="combo-time-uname" desc="combo-time-udesc">
+			<int name="lvl">2</int>
+			<float name="combo-timer">1.25</float>
+		</dictionary>
+		<dictionary id="combo-time-3" cost="1600" req="combo-time-2" cat="combo3"
+			name="combo-time-uname" desc="combo-time-udesc">
+			<int name="lvl">3</int>
+			<float name="combo-timer">1.5</float>
+		</dictionary>
+		<dictionary id="combo-time-4" cost="2600" req="combo-time-3" cat="combo4"
+			name="combo-time-uname" desc="combo-time-udesc">
+			<int name="lvl">4</int>
+			<float name="combo-timer">1.75</float>
+		</dictionary>
+		<dictionary id="combo-time-5" cost="3800" req="combo-time-4" cat="combo5"
+			name="combo-time-uname" desc="combo-time-udesc">
+			<int name="lvl">5</int>
+			<float name="combo-timer">2</float>
+		</dictionary>
+
+		
+		<dictionary id="combo-nova-1" cost="800" req="combo" cat="combo1"
+			name="combo-nova-uname" desc="combo-nova-udesc-1">
+			<int name="lvl">1</int>
+			<int    name="combo-nova-dmg">12</int>
+			<int    name="combo-nova-parts">6</int>
+			<string name="combo-nova-projectile">projectiles/player_combo_nova_1.xml</string>
+		</dictionary>
+		<dictionary id="combo-nova-2" cost="1200" req="combo-nova-1" cat="combo2"
+			name="combo-nova-uname" desc="combo-nova-udesc-2">
+			<int name="lvl">2</int>
+			<int name="combo-nova-dmg">17</int>
+			<int name="combo-nova-parts">10</int>
+		</dictionary>
+		<dictionary id="combo-nova-3" cost="1600" req="combo-nova-2" cat="combo3"
+			name="combo-nova-uname" desc="combo-nova-udesc-2">
+			<int name="lvl">3</int>
+			<int    name="combo-nova-dmg">26</int>
+			<int    name="combo-nova-parts">14</int>
+			<string name="combo-nova-projectile">projectiles/player_combo_nova_2.xml</string>
+		</dictionary>
+		<dictionary id="combo-nova-4" cost="2600" req="combo-nova-3" cat="combo4"
+			name="combo-nova-uname" desc="combo-nova-udesc-2">
+			<int name="lvl">4</int>
+			<int name="combo-nova-dmg">34</int>
+			<int name="combo-nova-parts">18</int>
+		</dictionary>
+		<dictionary id="combo-nova-5" cost="3800" req="combo-nova-4" cat="combo5"
+			name="combo-nova-uname" desc="combo-nova-udesc-2">
+			<int name="lvl">5</int>
+			<int    name="combo-nova-dmg">42</int>
+			<int    name="combo-nova-parts">22</int>
+			<string name="combo-nova-projectile">projectiles/player_combo_nova_3.xml</string>
+		</dictionary>
+		
+		
+		<dictionary id="combo-heal-1" cost="800" req="combo" cat="combo1"
+			name="combo-heal-uname" desc="combo-heal-udesc-1">
+			<int name="lvl">1</int>
+			<int name="combo-heal">2</int>
+		</dictionary>
+		<dictionary id="combo-heal-2" cost="1200" req="combo-heal-1" cat="combo2"
+			name="combo-heal-uname" desc="combo-heal-udesc-2">
+			<int name="lvl">2</int>
+			<int name="combo-heal">4</int>
+		</dictionary>
+		<dictionary id="combo-heal-3" cost="1600" req="combo-heal-2" cat="combo3"
+			name="combo-heal-uname" desc="combo-heal-udesc-2">
+			<int name="lvl">3</int>
+			<int name="combo-heal">6</int>
+		</dictionary>
+		<dictionary id="combo-heal-4" cost="2600" req="combo-heal-3" cat="combo4"
+			name="combo-heal-uname" desc="combo-heal-udesc-2">
+			<int name="lvl">4</int>
+			<int name="combo-heal">8</int>
+		</dictionary>
+		<dictionary id="combo-heal-5" cost="3800" req="combo-heal-4" cat="combo5"
+			name="combo-heal-uname" desc="combo-heal-udesc-2">
+			<int name="lvl">5</int>
+			<int name="combo-heal">10</int>
+		</dictionary>
+		
+		<dictionary id="manar-1" cost="1500" cat="misc1"
+			name="Mana Regeneration" desc="Modify the speed at which your mana regenerates at. (Twice a second)">
+			<int name="lvl">1</int>
+			<int name="mana-regen">500</int>
+		</dictionary>
+		<dictionary id="manar-2" cost="2250" cat="misc2" req="manar-1"
+			name="Mana Regeneration 2" desc="Modify the speed at which your mana regenerates at. (2.5x a second)">
+			<int name="lvl">2</int>
+			<int name="mana-regen">400</int>
+		</dictionary>
+		<dictionary id="manar-3" cost="3000" cat="misc3" req="manar-2"
+			name="Mana Regeneration 3" desc="Modify the speed at which your mana regenerates at.(3.333x a second)">
+			<int name="lvl">3</int>
+			<int name="mana-regen">300</int>	
+		</dictionary>
+		<dictionary id="manar-4" cost="3750" cat="misc4" req="manar-3"
+			name="Mana Regeneration 4" desc="Modify the speed at which your mana regenerates at.(5x a second)">
+			<int name="lvl">4</int>
+			<int name="mana-regen">200</int>	
+		</dictionary>
+		<dictionary id="manar-5" cost="4500" cat="misc5" req="manar-4"
+			name="Mana Regeneration 5" desc="Modify the speed at which your mana regenerates at.(10x a second)">
+			<int name="lvl">5</int>
+			<int name="mana-regen">100</int>	
+		</dictionary>
+	</upgrades>
+</tweak>

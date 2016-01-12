@@ -1,0 +1,28 @@
+<item behavior="money">
+	<behavior>
+		<dictionary>
+			<entry name="amount"><int>3</int></entry>
+			<entry name="pickup-snd"><string>sound/misc.xml:take_coins</string></entry>
+			<entry name="pickup-particle"><string>effects/particles.xml:none</string></entry>
+		</dictionary>
+	</behavior>
+
+	<sprite scale="16">
+		<texture>items/items.png</texture>
+		<origin>3 2</origin>
+		<frame time="200">5 91 6 5</frame>
+		<glow scale="16">
+			<texture>items/items.png</texture>
+				<frame time="200">53 91 6 5</frame>
+		</glow>			
+	</sprite>
+	
+	<collision shoot-through="true">
+		<polygon>
+			<point>-4 3</point>
+			<point>-4 -3</point>
+			<point>4 -3</point>
+			<point>4 3</point>
+		</polygon>
+	</collision>
+</item>

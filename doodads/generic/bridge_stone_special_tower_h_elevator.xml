@@ -1,0 +1,46 @@
+<doodad defaultlayer="-5" minimap="menus/minimap.xml:bridge_h_elevator">
+	<sprite scale="16" name="inactive">
+		<texture>doodads/generic/bridge_stone.png</texture>
+		<origin>-2 31</origin>
+		<frame time="50">160 99 44 81</frame>
+	</sprite>
+	
+	<sprite scale="16" name="deactivate">
+		<texture>doodads/generic/bridge_stone.png</texture>
+		<origin>-2 31</origin>
+		<frame time="50">232 180 44 81</frame>	
+		<frame time="50">424 99 44 81</frame>	
+		<frame time="50">380 99 44 81</frame>	
+		<frame time="50">336 99 44 81</frame>	
+		<frame time="50">292 99 44 81</frame>	
+		<frame time="50">248 99 44 81</frame>	
+		<frame time="50">204 99 44 81</frame>	
+	</sprite>	
+	
+	<sprite scale="16" name="activate">
+		<texture>doodads/generic/bridge_stone.png</texture>
+		<origin>-2 31</origin>
+		<frame time="50">204 99 44 81</frame>		
+		<frame time="50">248 99 44 81</frame>
+		<frame time="50">292 99 44 81</frame>
+		<frame time="50">336 99 44 81</frame>
+		<frame time="50">380 99 44 81</frame>
+		<frame time="50">424 99 44 81</frame>
+		<frame time="50">232 180 44 81</frame>	
+	</sprite>
+	
+	<sprite scale="16" name="active">
+		<texture>doodads/generic/bridge_stone.png</texture>
+		<origin>-2 31</origin>
+		<frame time="50">276 180 44 81</frame>	
+	</sprite>
+	
+
+		
+	<states default="inactive">		
+		<transition from="activate" to="active" />
+		<transition from="deactivate" to="inactive" />		
+	</states>		
+		
+
+</doodad>

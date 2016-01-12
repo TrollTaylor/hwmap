@@ -1,0 +1,45 @@
+<doodad aobias="0" minimap="menus/minimap.xml:pillar">
+	<sprite scale="16" name="lower">
+		<texture>doodads/theme_a/a_pillar_boss.png</texture>
+		<origin>0 32</origin>
+		<frame time="100">18 0 18 49</frame>
+		<frame time="100">36 0 18 49</frame>
+		<frame time="100">54 0 18 49</frame>
+		<frame time="100">72 0 18 49</frame>
+	</sprite>
+	
+	<sprite scale="16" name="raise">
+		<texture>doodads/theme_a/a_pillar_boss.png</texture>
+		<origin>0 32</origin>
+		<frame time="100">72 0 18 49</frame>
+		<frame time="100">54 0 18 49</frame>
+		<frame time="100">36 0 18 49</frame>
+		<frame time="100">18 0 18 49</frame>
+	</sprite>
+	
+	<sprite scale="16" name="up">
+		<texture>doodads/theme_a/a_pillar_boss.png</texture>
+		<origin>0 32</origin>
+		<frame time="100">0 0 18 49</frame>
+	</sprite>
+	
+	<sprite scale="16" name="down">
+		<texture>doodads/theme_a/a_pillar_boss.png</texture>
+		<origin>0 32</origin>
+		<frame time="100">90 0 18 49</frame>
+	</sprite>
+		
+	<states default="up">
+		<transition from="lower" to="down" />
+		<transition from="raise" to="up" />
+	</states>
+	
+	<collision static="true">
+		<polygon>
+			<point>1 16</point>
+			<point>1 -8</point>
+			<point>17 -8</point>
+			<point>17 16</point>
+		</polygon>
+	</collision>
+</doodad>

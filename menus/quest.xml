@@ -1,0 +1,131 @@
+<spritebank>
+	<sprite scale="1" name="quest_image">
+		<texture>menus/quest.png</texture>
+		<frame>0 0 20 20</frame>
+	</sprite>
+	<sprite scale="1" name="tutorial_image">
+		<texture>menus/quest.png</texture>
+		<frame>0 20 163 46</frame>
+	</sprite>	
+	<sprite scale="1" name="intro_image">
+		<texture>menus/quest.png</texture>
+		<frame time="100">0 66 500 350</frame>
+		<frame time="100">500 66 500 350</frame>
+		<frame time="100">0 416 500 350</frame>
+		<frame time="100">500 416 500 350</frame>
+	</sprite>
+	<sprite scale="1" name="hud_pan1">
+		<texture>menus/quest.png</texture>
+		<frame>20 65 20 20</frame>
+	</sprite>
+		<sprite scale="1" name="hud_pan1_found">
+		<texture>menus/quest.png</texture>
+		<frame>20 0 20 20</frame>
+	</sprite>
+	<sprite scale="1" name="hud_pickaxe">
+		<texture>menus/quest.png</texture>
+		<frame>0 85 12 13</frame>
+	</sprite>
+	<sprite scale="1" name="hud_rock">
+		<texture>menus/quest.png</texture>
+		<frame>0 98 14 14</frame>
+	</sprite>
+	<sprite scale="1" name="hud_shoe_found">
+		<texture>menus/quest.png</texture>
+		<frame>40 0 20 20</frame>
+	</sprite>
+	<sprite scale="1" name="hud_shoe">
+		<texture>menus/quest.png</texture>
+		<frame>40 65 20 20</frame>
+	</sprite>
+	<sprite scale="1" name="hud_ball_found">
+		<texture>menus/quest.png</texture>
+		<frame>60 0 20 20</frame>
+	</sprite>
+	<sprite scale="1" name="hud_ball">
+		<texture>menus/quest.png</texture>
+		<frame>60 65 20 20</frame>
+	</sprite>
+	<sprite scale="1" name="hud_iron_found">
+		<texture>menus/quest.png</texture>
+		<frame>80 0 20 20</frame>
+	</sprite>
+	<sprite scale="1" name="hud_iron">
+		<texture>menus/quest.png</texture>
+		<frame>80 65 20 20</frame>
+	</sprite>
+	<sprite scale="1" name="hud_mring_found">
+		<texture>menus/quest.png</texture>
+		<frame>100 0 20 20</frame>
+	</sprite>
+	<sprite scale="1" name="hud_mring">
+		<texture>menus/quest.png</texture>
+		<frame>100 65 20 20</frame>
+	</sprite>
+		<sprite scale="1" name="hud_boots">
+		<texture>menus/quest.png</texture>
+		<frame>0 113 13 15</frame>
+	</sprite>
+		<sprite scale="1" name="hud_tp1">
+		<texture>menus/quest.png</texture>
+		<frame>163 43 20 20</frame>
+	</sprite>
+		<sprite scale="1" name="hud_tp1_found">
+		<texture>menus/quest.png</texture>
+		<frame>163 23 20 20</frame>
+	</sprite>
+		<sprite scale="1" name="hud_tp2_found">
+		<texture>menus/quest.png</texture>
+		<frame>183 23 20 20</frame>
+	</sprite>
+		<sprite scale="1" name="hud_tp2">
+		<texture>menus/quest.png</texture>
+		<frame>183 43 20 20</frame>
+	</sprite>
+		<sprite scale="1" name="hud_tp3">
+		<texture>menus/quest.png</texture>
+		<frame>203 43 20 20</frame>
+	</sprite>
+		<sprite scale="1" name="hud_tp3_found">
+		<texture>menus/quest.png</texture>
+		<frame>203 23 20 20</frame>
+	</sprite>
+		<sprite scale="1" name="hud_tp4_found">
+		<texture>menus/quest.png</texture>
+		<frame>223 23 20 20</frame>
+	</sprite>
+		<sprite scale="1" name="hud_tp4">
+		<texture>menus/quest.png</texture>
+		<frame>223 43 20 20</frame>
+	</sprite>
+		<sprite scale="1" name="hud_rare">
+		<texture>menus/quest.png</texture>
+		<frame>41 101 20 40</frame>
+	</sprite>
+		<sprite scale="1" name="hud_key">
+		<texture>menus/quest.png</texture>
+		<frame>109 146 24 423</frame>
+	</sprite>
+		<sprite scale="1" name="hud_ore">
+		<texture>menus/quest.png</texture>
+		<frame>61 101 20 40</frame>
+	</sprite>
+	<sprite scale="1" name="hud_key_found">
+		<texture>menus/quest.png</texture>
+		<frame time="500">134 146 24 23</frame>
+		<frame time="150">134 169 24 23</frame>
+		<frame time="150">134 192 24 23</frame>
+		<frame time="150">134 215 24 23</frame>
+	</sprite>
+		<sprite scale="1" name="hud_ankh">
+		<texture>menus/quest.png</texture>
+		<frame time="500">300 0 20 19</frame>
+		<frame time="150">320 0 20 19</frame>
+		<frame time="150">340 0 20 19</frame>
+		<frame time="150">360 0 20 19</frame>
+	</sprite>
+		<sprite scale="1" name="hud_beast">
+		<texture>menus/quest.png</texture>
+		<frame>280 22 20 20</frame>
+	</sprite>
+</spritebank>

@@ -1,0 +1,7 @@
+<doodad defaultlayer="1">
+	<sprite scale="16">
+		<texture>actors/boss_knight/knight.png</texture>
+		<origin>32 40</origin>					
+		<frame>0 576 64 64</frame>
+	</sprite>
+</doodad>

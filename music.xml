@@ -1,0 +1,104 @@
+<soundbank>
+	<music name="horror1">
+		<source res="music/horror1.ogg" />
+	</music> 
+		<music name="happy1">
+		<source res="music/happy1.ogg" />
+	</music>
+	<music name="forest1">
+		<source res="music/forest1.ogg" />
+	</music>
+	<music name="horror2">
+		<source res="music/horror2.ogg" />
+	</music>
+	<music name="horror3">
+		<source res="music/horror3.ogg" />
+	</music>
+	<music name="boss1">
+		<source res="music/boss1.ogg" />
+	</music>
+	<music name="boss2">
+		<source res="music/boss2.ogg" />
+	</music>
+	<music name="town2">
+		<source res="music/town2.ogg" />
+	</music>
+	<music name="town">
+		<source res="music/town.ogg" />
+	</music> 
+	<music name="forest">
+		<source res="music/forest.ogg" />
+	</music>
+	<music name="dark">
+		<source res="music/dark1.ogg" />
+	</music>
+	<music name="dark2">
+		<source res="music/dark2.ogg" />
+	</music>
+	<music name="mythical">
+		<source res="music/mythical.ogg" />
+	</music> 
+	<music name="crash">
+		<source res="music/CRASH.ogg" />
+	</music> 
+	<music name="easteregg1">
+		<source res="music/easteregg1.ogg" />
+	</music>
+	<music name="happyboss1">
+		<source res="music/happyboss1.ogg" />
+	</music>
+	<music name="temple">
+		<source res="music/temple.ogg" />
+	</music>
+	<music name="runaway">
+		<source res="music/runaway.ogg" />
+	</music>
+	<music name="desert1">
+		<source res="music/desert1.ogg" />
+	</music>
+	<music name="chase">
+		<source res="music/chase.ogg" />
+	</music>
+	<music name="mystery1">
+		<source res="music/mystery1.ogg" />
+	</music>
+	<music name="mystery2">
+		<source res="music/mystery2.ogg" />
+	</music>
+	<music name="poo1">
+		<source res="music/poo1.ogg" />
+	</music>
+	<music name="poo2">
+		<source res="music/poo2.ogg" />
+	</music>
+	<music name="metro1">
+		<source res="music/metro1.ogg" />
+	</music>
+	<music name="metro1v2">
+		<source res="music/metro1 v2.ogg" />
+	</music>
+	<music name="metro2">
+		<source res="music/metro2.ogg" />
+	</music>
+	<music name="snow1">
+		<source res="music/snow1.ogg" />
+	</music>
+		<music name="snow2">
+		<source res="music/snow2.ogg" />
+	</music>
+		<music name="snow3">
+		<source res="music/snow3.ogg" />
+	</music>
+	<music name="pro1">
+		<source res="music/pro1.ogg" />
+	</music>
+	<music name="dream1">
+		<source res="music/dream1.ogg" />
+	</music>
+	<music name="sandstorm">
+		<source res="music/sandstorm.ogg" />
+	</music>			
+	<music name="desert2">
+		<source res="music/desert2.ogg" />
+	</music>
+</soundbank>

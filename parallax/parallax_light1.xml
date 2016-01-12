@@ -1,0 +1,9 @@
+<spritebank>
+	<sprite scale="32"  name="parallax_light1">
+		<texture>parallax/parallax_light1.png</texture>
+		<origin>0 0</origin>
+		<frame>0 0 1024 1024</frame>
+
+	</sprite>		
+
+</spritebank>

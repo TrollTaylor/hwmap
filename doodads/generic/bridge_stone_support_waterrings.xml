@@ -1,0 +1,12 @@
+<doodad defaultlayer="-50">
+	<sprite random-start="true" scale="16">
+		<texture>doodads/generic/bridge_stone.png</texture>
+		<origin>9 9</origin>	
+		<frame time="150">99 0 18 18</frame>
+		<frame time="150">117 0 18 18</frame>
+		<frame time="150">135 0 18 18</frame>
+		<frame time="150">153 0 18 18</frame>
+		<frame time="150">171 0 18 18</frame>
+		<frame time="1000">90 36 18 18</frame>
+	</sprite>
+</doodad>

@@ -1,0 +1,16 @@
+<doodad ao="false">
+	<sprite scale="16">
+		<texture>doodads/generic/trap_shooters.png</texture>
+		<origin>0 9</origin>
+		<frame>14 17 2 9</frame>				
+	</sprite>
+
+	<polygon collision="true" shadow="false">
+		<point>0 2</point>
+		<point>0 -12</point>		
+		<point>2 -9</point>		
+		<point>2 -1</point>
+	</polygon>			
+	
+	
+</doodad>

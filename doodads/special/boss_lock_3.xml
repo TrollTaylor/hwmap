@@ -1,0 +1,21 @@
+<doodad defaultlayer="0" minimap="menus/minimap.xml:boss_lock_3">
+	<sprite scale="16" name="activate">
+		<texture>doodads/special/boss_lock.png</texture>
+		<origin>9 10</origin>	
+		<frame>80 64 18 19</frame>		
+		<glow scale="16">
+			<texture>doodads/special/boss_lock.png</texture>
+			<frame>80 102 18 19</frame>		
+		</glow>					
+	</sprite>			
+	<sprite scale="16" name="deactivate">
+		<texture>doodads/special/boss_lock.png</texture>
+		<origin>9 10</origin>	
+		<frame>80 83 18 19</frame>			
+	</sprite>				
+	<states default="deactivate">
+	</states>			
+</doodad>
+
+
+

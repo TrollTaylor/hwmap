@@ -1,0 +1,39 @@
+<doodad ao="false">
+	
+	<!-- Death -->
+	<sprite scale="16" name="death">
+		<texture>actors/boss_anubis/boss_anubis_razed.png</texture>
+		<origin>34 28</origin>
+		<frame time="500">0 0 64 64</frame>
+		<frame time="100">64 0 64 64</frame>
+		<frame time="100">128 0 64 64</frame>
+		<frame time="100">256 0 64 64</frame>
+		<frame time="100">320 0 64 64</frame>
+		<frame time="100">384 0 64 64</frame>
+		<frame time="100">448 0 64 64</frame>
+		<frame time="100">0 64 64 64</frame>
+		<frame time="100">64 64 64 64</frame>
+		<frame time="100">128 64 64 64</frame>
+		<frame time="100">256 64 64 64</frame>
+		<frame time="100">320 64 64 64</frame>
+		<frame time="100">384 64 64 64</frame>
+		<frame time="100">448 64 64 64</frame>
+		<frame time="100">0 128 64 64</frame>
+		<frame time="100">64 128 64 64</frame>
+		<frame time="100">128 128 64 64</frame>
+		<frame time="100">256 128 64 64</frame>
+		<frame time="100">320 128 64 64</frame>
+		<frame time="100">384 128 64 64</frame>
+	</sprite>		
+	
+	<sprite scale="16" name="dead">
+		<texture>actors/boss_anubis/boss_anubis_razed.png</texture>
+		<origin>34 28</origin>
+		<frame time="100">448 128 64 64</frame>
+	</sprite>
+	
+	<states default="death">
+		<transition from="death" to="dead" />	
+	</states>			
+	
+</doodad>

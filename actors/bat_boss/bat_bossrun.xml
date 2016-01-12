@@ -1,0 +1,320 @@
+<actor collision="8" behavior="composite" minimap="menus/minimap.xml:enemy_mb">
+	<behavior>
+		<dictionary>
+			<entry name="hp"><int>10000</int></entry>
+			<entry name="boss-hp"><bool>true</bool></entry>
+			<entry name="multiplayer-scale-hp"><bool>true</bool></entry>			
+			<float name="aggro-range">0</float>
+			<float name="max-range">0</float>
+			<entry name="ignore-hit-effects"><bool>true</bool></entry>
+			<entry name="gib"><string>effects/gibs/gib_eye_1_mb.xml</string></entry>
+			<vec2 name="hp-bar">0 -1.0</vec2>
+			
+			<dictionary name="movement">
+				<string name="type">melee</string>
+				<float name="speed">0.8</float>
+			</dictionary>
+			
+			<array name="skills">
+				<dictionary>
+					<string name="type">hit</string>
+					<string name="anim-set">attack</string>
+					<int name="cooldown">0</int>
+					<float name="range">2</float>					
+					<int name="dmg">60</int>
+				</dictionary>
+				
+			</array>
+			
+			<dictionary name="loot">
+				<string name="origin">0 0</string>
+				<float name="spread">0.33</float>
+					<array name="loot">
+						<array>	
+							<int>1000</int><string>items/collectable_1.xml</string>																									
+						</array>							
+						<array>
+							<int>300</int><string>items/upgrade_health.xml</string>	
+							<int>300</int><string>items/upgrade_mana.xml</string>	
+							<int>300</int><string>items/upgrade_damage.xml</string>
+							<int>100</int><string>items/upgrade_defense.xml</string>																								
+						</array>					
+					</array>
+			</dictionary>		
+			
+			<entry name="death-snd"><string>sound/monsters.xml:death_eye</string></entry>
+			<entry name="hit-effect"><string>effects/particles.xml:hit_eye_1_small</string></entry>		
+			<entry name="hit-particle"><string>effects/particles.xml:particle_eye_1_small</string></entry>	
+		</dictionary>
+	</behavior>	
+
+	<!-- Idle -->
+	<sprite scale="8" random-start="true" name="east">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="250">39 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>
+		<frame time="250">65 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>				
+	</sprite>
+
+	<sprite scale="6" random-start="true" name="northeast">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="250">39 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>
+		<frame time="250">65 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>		
+	</sprite>
+
+	<sprite scale="6" random-start="true" name="north">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="250">39 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>
+		<frame time="250">65 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>			
+	</sprite>
+	
+	<sprite scale="6" random-start="true" name="northwest">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="250">39 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>
+		<frame time="250">65 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>		
+	</sprite>
+	
+	<sprite scale="6" random-start="true" name="west">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="250">39 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>
+		<frame time="250">65 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>			
+	</sprite>
+	
+	<sprite scale="6" random-start="true" name="southwest">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="250">39 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>
+		<frame time="250">65 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>		
+	</sprite>
+	
+	<sprite scale="6" random-start="true" name="south">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="250">39 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>
+		<frame time="250">65 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>		
+	</sprite>
+	
+	<sprite scale="6" random-start="true" name="southeast">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="250">39 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>
+		<frame time="250">65 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>	
+	
+	</sprite>
+	
+	
+	<!-- Walk -->
+	<sprite scale="6" name="east-walk">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="150">0 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>
+		<frame time="150">26 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>	
+	</sprite>
+
+	<sprite scale="6" name="northeast-walk">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="150">0 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>
+		<frame time="150">26 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>	
+	</sprite>
+
+	<sprite scale="6" name="north-walk">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="150">0 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>
+		<frame time="150">26 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>	
+	</sprite>
+	
+	<sprite scale="6" name="northwest-walk">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="150">0 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>
+		<frame time="150">26 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>		
+	</sprite>
+	
+	<sprite scale="6" name="west-walk">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="150">0 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>
+		<frame time="150">26 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>			
+	</sprite>
+	
+	<sprite scale="6" name="southwest-walk">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="150">0 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>
+		<frame time="150">26 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>		
+	</sprite>
+	
+	<sprite scale="6" name="south-walk">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="150">0 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>
+		<frame time="150">26 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>			
+	</sprite>
+	
+	<sprite scale="6" name="southeast-walk">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="150">0 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>
+		<frame time="150">26 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>	
+	</sprite>
+	
+
+	<!-- Attack -->
+	<sprite scale="6" name="east-attack">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>				
+	</sprite>
+
+	<sprite scale="6" name="northeast-attack">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>		
+	</sprite>
+
+	<sprite scale="6" name="north-attack">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>	
+	</sprite>
+	
+	<sprite scale="6" name="northwest-attack">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>		
+	</sprite>
+	
+	<sprite scale="6" name="west-attack">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>		
+	</sprite>
+	
+	<sprite scale="6" name="southwest-attack">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>
+	</sprite>
+	
+	<sprite scale="6" name="south-attack">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>		
+	</sprite>
+	
+	<sprite scale="6" name="southeast-attack">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>
+	</sprite>
+</actor>

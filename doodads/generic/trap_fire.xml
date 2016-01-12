@@ -1,0 +1,65 @@
+<doodad defaultlayer="0" minimap="menus/minimap.xml:trap_fire_floor">
+	
+	<sprite scale="16" name="closed">
+		<texture>doodads/generic/trap_fire.png</texture>
+		<origin>16 16</origin>	
+		<frame>192 0 32 32</frame>			
+	</sprite>					
+	
+	<sprite scale="16" name="open">
+		<texture>doodads/generic/trap_fire.png</texture>
+		<origin>16 16</origin>	
+		<frame time="100">96 0 32 32</frame>				
+		<frame time="100">64 0 32 32</frame>		
+		<frame time="100">32 0 32 32</frame>
+		<frame time="100">0 0 32 32</frame>			
+		<glow scale="16">
+			<texture>doodads/generic/trap_fire.png</texture>
+				<frame time="100">96 32 32 32</frame>				
+				<frame time="100">64 32 32 32</frame>		
+				<frame time="100">32 32 32 32</frame>
+				<frame time="100">0 32 32 32</frame>	
+		</glow>								
+	</sprite>	
+	
+	<sprite scale="16" name="activate">
+		<texture>doodads/generic/trap_fire.png</texture>
+		<origin>16 16</origin>	
+		<frame time="75">160 0 32 32</frame>		
+		<frame time="75">128 0 32 32</frame>	
+		<frame time="100">96 0 32 32</frame>	
+		<frame time="100">64 0 32 32</frame>		
+		<frame time="100">32 0 32 32</frame>		
+		<frame time="100">0 0 32 32</frame>	
+		<glow scale="16">
+			<texture>doodads/generic/trap_fire.png</texture>
+				<frame time="75">160 32 32 32</frame>		
+				<frame time="75">128 32 32 32</frame>	
+				<frame time="100">96 32 32 32</frame>	
+				<frame time="100">64 32 32 32</frame>		
+				<frame time="100">32 32 32 32</frame>		
+				<frame time="100">0 32 32 32</frame>	
+		</glow>																		
+	</sprite>		
+	
+	<sprite scale="16" name="deactivate">
+		<texture>doodads/generic/trap_fire.png</texture>
+		<origin>16 16</origin>
+		<frame time="75">128 0 32 32</frame>			
+		<frame time="75">160 0 32 32</frame>	
+		<glow scale="16">
+			<texture>doodads/generic/trap_fire.png</texture>
+				<frame time="75">128 32 32 32</frame>			
+				<frame time="75">160 32 32 32</frame>	
+		</glow>																		
+	</sprite>
+	
+	<states default="closed">
+		<transition from="deactivate" to="closed" />
+		<transition from="activate" to="open" />		
+	</states>			
+		
+</doodad>
+
+
+

@@ -1,0 +1,14 @@
+<spritebank>
+	<sprite scale="16" name="marker">
+		<texture>effects/marker_miniboss.png</texture>
+		<origin>10 10</origin>
+		<frame time="75">0 0 20 20</frame>
+		<frame time="75">20 0 20 20</frame>
+		<frame time="75">40 0 20 20</frame>
+		<frame time="75">60 0 20 20</frame>
+		<frame time="75">80 0 20 20</frame>
+		<frame time="75">100 0 20 20</frame>
+		<frame time="75">120 0 20 20</frame>
+		<frame time="75">140 0 20 20</frame>
+	</sprite>
+</spritebank>

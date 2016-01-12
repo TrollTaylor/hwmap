@@ -1,0 +1,43 @@
+<doodad ao="false" minimap="menus/minimap.xml:trap_turrets">
+	
+	<sprite scale="16" name="closed">
+		<texture>doodads/generic/trap_turrets.png</texture>
+		<origin>8 14</origin>	
+		<frame>48 24 16 22</frame>			
+	</sprite>					
+	
+	<sprite scale="16" name="open">
+		<texture>doodads/generic/trap_turrets.png</texture>
+		<origin>8 14</origin>	
+		<frame>0 24 16 22</frame>						
+	</sprite>	
+	
+	<sprite scale="16" name="activate">
+		<texture>doodads/generic/trap_turrets.png</texture>
+		<origin>8 14</origin>	
+		<frame time="75">32 24 16 22</frame>				
+		<frame time="75">16 24 16 22</frame>												
+	</sprite>		
+	
+	<sprite scale="16" name="deactivate">
+		<texture>doodads/generic/trap_turrets.png</texture>
+		<origin>8 14</origin>	
+		<frame time="75">16 24 16 22</frame>
+		<frame time="75">32 24 16 22</frame>	
+	</sprite>
+	
+	<states default="open">
+		<transition from="deactivate" to="closed" />
+		<transition from="activate" to="open" />		
+	</states>		
+	
+	<collision shoot-through="true">
+		<circle offset="0 0" radius="8" />
+		<!--<circle offset="0 -7" radius="8" />		-->
+	</collision>		
+	
+	
+</doodad>
+
+
+

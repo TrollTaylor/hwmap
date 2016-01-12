@@ -1,0 +1,300 @@
+<actor collision="3.5" behavior="composite" minimap="menus/minimap.xml:enemy">
+	<behavior>
+		<dictionary>
+			<entry name="hp"><int>1000</int></entry>
+			<entry name="boss-hp"><bool>true</bool></entry>
+			<entry name="multiplayer-scale-hp"><bool>true</bool></entry>
+			<entry name="ignore-hit-effects"><bool>true</bool></entry>
+			<entry name="ignore-trap-damage"><bool>true</bool></entry>
+			<float name="aggro-range">100</float>
+			<float name="max-range">100</float>
+			<dictionary name="movement">
+				<string name="type">ranged</string>
+				<float name="speed">0.6</float>
+				<float name="range">10</float>
+			</dictionary>
+			<array name="skills">
+				
+<!-- stage 1 -->	
+
+				<dictionary>
+					<string name="type">shoot</string>
+					<string name="anim-set">attack</string>
+					<int name="cooldown">3500</int>
+					<float name="min-range">0</float>
+					<float name="range">10</float>
+					<string name="sound">sound/monsters.xml:lich_seeker</string>
+					<string name="proj">projectiles/enemy_boss_krilith_frostball.xml</string>
+				</dictionary>
+				
+				<dictionary>
+					<bool name="check-shootable">false</bool>
+					<string name="type">summon</string>
+					<string name="anim-set">attack</string>
+					<int name="cooldown">1500</int>
+					<float name="range">10</float>
+					<float name="dist">7</float>
+					<string name="sound">sound/monsters.xml:lich_summon</string>
+					<int name="num">15</int>
+					<int name="arc">360</int>
+					<string name="actor">items/bomb_boss_krilith.xml</string>
+					<bool name="safety-raycast">false</bool>
+				</dictionary>	
+				
+				<dictionary>
+					<string name="conditional">hp lt 0.8</string>
+					<int name="cooldown">7500</int>					
+					<string name="type">teleport</string>
+					<float name="range">10</float>
+					<string name="sound">sound/misc.xml:spawn_tele</string>
+					<float name="min-dist">1</float>
+					<float name="max-dist">60</float>
+					<bool name="trail">true</bool>
+				</dictionary>							
+
+<!-- stage 2 -->	
+
+				<dictionary>
+					<string name="conditional">hp lt 0.75</string>
+					<string name="type">shoot</string>
+					<string name="anim-set">attack</string>
+					<int name="cooldown">5000</int>
+					<float name="min-range">0</float>
+					<float name="range">10</float>
+					<string name="sound">sound/monsters.xml:lich_seeker</string>
+					<string name="proj">projectiles/enemy_boss_krilith_confusion.xml</string>
+				</dictionary>
+
+<!-- stage 3 -->	<!--	
+				
+				<dictionary>
+					<string name="conditional">hp lt 0.5</string>
+					<string name="type">event</string>
+					<int name="cooldown">5000</int>
+					<float name="range">100</float>
+					<string name="event">krilith_icicle_attack</string>
+				</dictionary>
+				-->
+<!-- stage 4 -->				
+				
+				<dictionary>
+					<string name="conditional">hp lt 0.5</string>
+					<string name="type">buff</string>
+					<int name="cooldown">1000</int>
+					<float name="range">9</float>
+					<float name="cast-range">8</float>
+					<string name="category">Player</string>
+					<string name="buff">buffs/enemy_boss_krilith_v2.xml</string>
+				</dictionary>
+			</array>
+			
+			<array name="pskills">		
+				<dictionary>
+					<string name="type">armor</string>
+					<string name="sound">sound/monsters.xml:skill_enemy_magicshield</string>
+					<string name="effect">effects/misc.xml:magicshield</string>						
+					<int name="chance">50</int>
+					<int name="dmg-sub">0</int>
+					<float name="dmg-mul">0</float>
+				</dictionary>
+				
+				<dictionary>
+					<string name="type">armor</string>				
+					<int name="chance">100</int>
+					<int name="dmg-sub">2</int>
+					<float name="dmg-mul">1</float>
+				</dictionary>				
+			</array>				
+			
+			<entry name="death-snd"><string>sound/monsters.xml:death_lich</string></entry>
+			<entry name="hit-effect"><string>effects/particles.xml:robe-green-hit</string></entry>
+			<entry name="hit-particle"><string>effects/particles.xml:robe-green-particle</string></entry>	
+			<entry name="corpse"><string>actors/boss_krilith/boss_krilith_razed.xml</string></entry>							
+			
+		</dictionary>
+	</behavior>
+
+
+	<!-- Idle -->
+	<sprite scale="16" name="east">
+		<texture>actors/boss_krilith/boss_krilith.png</texture>
+		<origin>12 14</origin>
+		<frame>0 0 24 24</frame>
+	</sprite>
+
+	<sprite scale="16" name="northeast">
+		<texture>actors/boss_krilith/boss_krilith.png</texture>
+		<origin>12 14</origin>
+		<frame>24 0 24 24</frame>
+	</sprite>
+
+	<sprite scale="16" name="north">
+		<texture>actors/boss_krilith/boss_krilith.png</texture>
+		<origin>12 14</origin>
+		<frame>48 0 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="northwest">
+		<texture>actors/boss_krilith/boss_krilith.png</texture>
+		<origin>12 14</origin>
+		<frame>72 0 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="west">
+		<texture>actors/boss_krilith/boss_krilith.png</texture>
+		<origin>12 14</origin>
+		<frame>96 0 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="southwest">
+		<texture>actors/boss_krilith/boss_krilith.png</texture>
+		<origin>12 14</origin>
+		<frame>120 0 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="south">
+		<texture>actors/boss_krilith/boss_krilith.png</texture>
+		<origin>12 14</origin>
+		<frame>144 0 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="southeast">
+		<texture>actors/boss_krilith/boss_krilith.png</texture>
+		<origin>12 14</origin>
+		<frame>168 0 24 24</frame>
+	</sprite>
+	
+	
+	<!-- Walk -->
+	<sprite scale="16" name="east-walk">
+		<texture>actors/boss_krilith/boss_krilith.png</texture>
+		<origin>12 14</origin>
+		<frame time="125">0 24 24 24</frame>
+		<frame time="125">0 48 24 24</frame>
+	</sprite>
+
+	<sprite scale="16" name="northeast-walk">
+		<texture>actors/boss_krilith/boss_krilith.png</texture>
+		<origin>12 14</origin>
+		<frame time="125">24 24 24 24</frame>
+		<frame time="125">24 48 24 24</frame>
+	</sprite>
+
+	<sprite scale="16" name="north-walk">
+		<texture>actors/boss_krilith/boss_krilith.png</texture>
+		<origin>12 14</origin>
+		<frame time="125">48 24 24 24</frame>
+		<frame time="125">48 48 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="northwest-walk">
+		<texture>actors/boss_krilith/boss_krilith.png</texture>
+		<origin>12 14</origin>
+		<frame time="125">72 24 24 24</frame>
+		<frame time="125">72 48 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="west-walk">
+		<texture>actors/boss_krilith/boss_krilith.png</texture>
+		<origin>12 14</origin>
+		<frame time="125">96 24 24 24</frame>
+		<frame time="125">96 48 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="southwest-walk">
+		<texture>actors/boss_krilith/boss_krilith.png</texture>
+		<origin>12 14</origin>
+		<frame time="125">120 24 24 24</frame>
+		<frame time="125">120 48 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="south-walk">
+		<texture>actors/boss_krilith/boss_krilith.png</texture>
+		<origin>12 14</origin>
+		<frame time="125">144 24 24 24</frame>
+		<frame time="125">144 48 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="southeast-walk">
+		<texture>actors/boss_krilith/boss_krilith.png</texture>
+		<origin>12 14</origin>
+		<frame time="125">168 24 24 24</frame>
+		<frame time="125">168 48 24 24</frame>
+	</sprite>
+	
+
+	<!-- Attack -->
+	<sprite scale="16" name="east-attack">
+		<texture>actors/boss_krilith/boss_krilith.png</texture>
+		<origin>12 14</origin>
+		<frame time="500">0 72 24 24</frame>
+		<frame time="500">0 96 24 24</frame>
+	</sprite>
+
+	<sprite scale="16" name="northeast-attack">
+		<texture>actors/boss_krilith/boss_krilith.png</texture>
+		<origin>12 14</origin>
+		<frame time="500">24 72 24 24</frame>
+		<frame time="500">24 96 24 24</frame>
+	</sprite>
+
+	<sprite scale="16" name="north-attack">
+		<texture>actors/boss_krilith/boss_krilith.png</texture>
+		<origin>12 14</origin>
+		<frame time="500">48 72 24 24</frame>
+		<frame time="500">48 96 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="northwest-attack">
+		<texture>actors/boss_krilith/boss_krilith.png</texture>
+		<origin>12 14</origin>
+		<frame time="500">72 72 24 24</frame>
+		<frame time="500">72 96 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="west-attack">
+		<texture>actors/boss_krilith/boss_krilith.png</texture>
+		<origin>12 14</origin>
+		<frame time="500">96 72 24 24</frame>
+		<frame time="500">96 96 24 24</frame>		
+	</sprite>
+	
+	<sprite scale="16" name="southwest-attack">
+		<texture>actors/boss_krilith/boss_krilith.png</texture>
+		<origin>12 14</origin>
+		<frame time="500">120 72 24 24</frame>
+		<frame time="500">120 96 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="south-attack">
+		<texture>actors/boss_krilith/boss_krilith.png</texture>
+		<origin>12 14</origin>
+		<frame time="500">144 72 24 24</frame>
+		<frame time="500">144 96 24 24</frame>
+	</sprite>
+	
+	<sprite scale="16" name="southeast-attack">
+		<texture>actors/boss_krilith/boss_krilith.png</texture>
+		<origin>12 14</origin>
+		<frame time="500">168 72 24 24</frame>
+		<frame time="500">168 96 24 24</frame>
+	</sprite>
+	
+
+	<light>
+		<origin>0 0</origin>
+		<mul>
+			<range>200</range>
+			<color1>60 60 60</color1>
+			<color2>40 40 40</color2>
+			<color3>15 15 15</color3>
+		</mul>
+		<add>
+			<range>0</range>
+			<color1>85 50 0</color1>
+			<color2>64 24 0</color2>
+			<color3>64 0 0</color3>
+		</add>
+	</light>		
+	
+</actor>

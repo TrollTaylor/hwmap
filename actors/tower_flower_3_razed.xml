@@ -1,0 +1,7 @@
+<doodad defaultlayer="-1">
+	<sprite scale="16">
+		<texture>actors/tower_flower_3.png</texture>
+		<origin>20 20</origin>					
+		<frame time="100">160 0 40 40</frame>
+	</sprite>
+</doodad>

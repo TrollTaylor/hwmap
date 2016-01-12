@@ -1,0 +1,7 @@
+<doodad defaultlayer="-5" ao="false">
+	<sprite scale="16">
+		<texture>doodads/generic/deco_vendor_props.png</texture>
+		<origin>10 7</origin>
+		<frame>0 45 20 13</frame>				
+	</sprite>
+</doodad>

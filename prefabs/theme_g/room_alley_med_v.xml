@@ -1,0 +1,202 @@
+﻿<prefab>
+<dictionary>
+	<dictionary name="tilemap">
+		<array name="tiledata"></array>
+	</dictionary>
+	<dictionary name="doodads">
+		<array name="doodads">
+			<dictionary>
+				<int name="id">112384</int>
+				<string name="type">doodads/special/color_theme_f_64.xml</string>
+				<vec2 name="pos">-2.5 -1.5</vec2>
+				<int name="layer">35</int>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">112385</int>
+				<string name="type">doodads/special/color_theme_f_64.xml</string>
+				<vec2 name="pos">-1.5 -3.5</vec2>
+				<int name="layer">35</int>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">112386</int>
+				<string name="type">doodads/special/color_theme_f_64.xml</string>
+				<vec2 name="pos">-2.5 2.5</vec2>
+				<int name="layer">35</int>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">112387</int>
+				<string name="type">doodads/special/color_theme_f_64.xml</string>
+				<vec2 name="pos">-1.5 -1</vec2>
+				<int name="layer">35</int>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">112397</int>
+				<string name="type">doodads/special/editor_prefab_random_room.xml</string>
+				<vec2 name="pos">0 0</vec2>
+				<int name="layer">45</int>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">112445</int>
+				<string name="type">doodads/theme_g/g_h_16.xml</string>
+				<vec2 name="pos">1 8</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">112446</int>
+				<string name="type">doodads/theme_g/g_h_16.xml</string>
+				<vec2 name="pos">-3 8</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">112447</int>
+				<string name="type">doodads/theme_g/g_h_16.xml</string>
+				<vec2 name="pos">-1 8</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">112456</int>
+				<string name="type">doodads/generic/lamp_torch.xml</string>
+				<vec2 name="pos">0 9</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">112459</int>
+				<string name="type">doodads/theme_g/g_deco_pillar_cut_small.xml</string>
+				<vec2 name="pos">2 9</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">112460</int>
+				<string name="type">doodads/theme_g/g_deco_pillar_cut_small.xml</string>
+				<vec2 name="pos">-2 9</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">112461</int>
+				<string name="type">doodads/theme_g/g_deco_pillar_cut_small.xml</string>
+				<vec2 name="pos">-1 9</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">112462</int>
+				<string name="type">doodads/theme_g/g_deco_pillar_cut_small.xml</string>
+				<vec2 name="pos">1 9</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">112466</int>
+				<string name="type">doodads/theme_g/g_h_16.xml</string>
+				<vec2 name="pos">1 -5</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">112467</int>
+				<string name="type">doodads/theme_g/g_h_16.xml</string>
+				<vec2 name="pos">-1 -5</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">112468</int>
+				<string name="type">doodads/theme_g/g_h_16.xml</string>
+				<vec2 name="pos">-3 -5</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">112469</int>
+				<string name="type">doodads/special/color_theme_f_64.xml</string>
+				<vec2 name="pos">-1.5 -6.5</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">112470</int>
+				<string name="type">doodads/special/color_theme_f_64.xml</string>
+				<vec2 name="pos">-1.5 2.5</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">112471</int>
+				<string name="type">doodads/special/color_theme_f_64.xml</string>
+				<vec2 name="pos">-2.5 -5.5</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+			<dictionary>
+				<int name="id">112472</int>
+				<string name="type">doodads/special/color_theme_f_64.xml</string>
+				<vec2 name="pos">-2.5 -6.5</vec2>
+				<bool name="need-sync">True</bool>
+			</dictionary>
+		</array>
+	</dictionary>
+	<dictionary name="actors">
+	</dictionary>
+	<dictionary name="items">
+	</dictionary>
+	<dictionary name="scripting">
+		<array name="nodes">
+			<dictionary>
+				<int name="id">112404</int>
+				<string name="type">Random</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">1</int>
+				<vec2 name="pos">0 -7</vec2>
+				<dictionary name="parameters">
+					<dictionary name="nodes">
+						<int-arr name="static">112419 112464</int-arr>
+					</dictionary>
+					<bool name="run-one">True</bool>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">112419</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">0 0</vec2>
+				<string name="parameters">prefabs/theme_g/parts/alley_med_v_1.xml</string>
+			</dictionary>
+			<dictionary>
+				<int name="id">112405</int>
+				<string name="type">DestroyObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">-10 0</vec2>
+				<dictionary name="parameters">
+					<int-arr name="static">112387 112386 112384 112385 112397 112445 112447 112446 112459 112462 112461 112460 112456 112471 112469 112472 112468 112467 112466 112470</int-arr>
+				</dictionary>
+			</dictionary>
+			<dictionary>
+				<int name="id">112464</int>
+				<string name="type">SpawnObject</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">-1</int>
+				<vec2 name="pos">0 0</vec2>
+				<string name="parameters">prefabs/theme_g/parts/alley_med_v_2.xml</string>
+			</dictionary>
+			<dictionary>
+				<int name="id">112473</int>
+				<string name="type">TimerTrigger</string>
+				<bool name="enabled">True</bool>
+				<int name="trigger-times">1</int>
+				<vec2 name="pos">-10 -7</vec2>
+				<int name="parameters">1</int>
+				<int-arr name="connections">112404 112405</int-arr>
+				<int-arr name="connection-delays">0 0</int-arr>
+			</dictionary>
+		</array>
+	</dictionary>
+	<dictionary name="lighting">
+		<array name="lights"></array>
+		<int-arr name="shadow-color">135 128 128 255</int-arr>
+		<int-arr name="ambient-color">50 50 50 255</int-arr>
+		<int-arr name="add-color">0 0 0 255</int-arr>
+		<float name="shadow-length">1</float>
+	</dictionary>
+	<dictionary name="prefabs">
+	</dictionary>
+</dictionary>
+</prefab>

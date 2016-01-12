@@ -1,0 +1,30 @@
+<spritebank>
+	<sprite scale="16" name="warlock_explode">
+		<texture>effects/explodes.png</texture>
+		<origin>16 16</origin>
+		<frame time="75">0 0 32 32</frame>
+		<frame time="75">32 0 32 32</frame>
+		<frame time="75">64 0 32 32</frame>
+		<frame time="75">96 0 32 32</frame>
+	</sprite>
+	<sprite scale="16" name="priest_smite">
+		<texture>effects/explodes.png</texture>
+		<origin>16 16</origin>
+		<frame time="75">0 32 32 32</frame>
+		<frame time="75">32 32 32 32</frame>
+		<frame time="75">64 32 32 32</frame>
+		<frame time="75">96 32 32 32</frame>
+		<frame time="75">128 32 32 32</frame>
+		<frame time="75">160 32 32 32</frame>
+		<glow scale="16">
+			<texture>effects/explodes.png</texture>
+				<frame time="75">0 64 32 32</frame>
+				<frame time="75">32 64 32 32</frame>
+				<frame time="75">64 64 32 32</frame>
+				<frame time="75">96 64 32 32</frame>
+				<frame time="75">128 64 32 32</frame>
+				<frame time="75">160 64 32 32</frame>
+		</glow>	
+	</sprite>
+	
+</spritebank>

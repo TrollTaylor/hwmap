@@ -1,0 +1,7 @@
+<doodad defaultlayer="-20">
+	<sprite scale="16">
+		<texture>doodads/theme_e/e.png</texture>
+		<origin>0 16</origin>					
+		<frame>192 96 16 32</frame>
+	</sprite>
+</doodad>

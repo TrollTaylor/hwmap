@@ -1,0 +1,46 @@
+<item behavior="money">
+	<behavior>
+		<dictionary>
+			<entry name="amount"><int>0</int></entry>
+			<entry name="pickup-snd"><string>sound/misc.xml:take_magicball</string></entry>
+			<entry name="pickup-particle"><string>effects/particles.xml:none</string></entry>
+		</dictionary>
+	</behavior>
+
+	<sprite scale="16">
+		<texture>items/items.png</texture>
+		<origin>8 13</origin>	
+		<frame time="200">0 448 16 16</frame>		
+		<frame time="200">16 448 16 16</frame>		
+		<frame time="200">32 448 16 16</frame>		
+		<frame time="200">16 448 16 16</frame>							
+		<glow scale="16">
+			<texture>items/items.png</texture>
+				<frame time="200">0 448 16 16</frame>		
+				<frame time="200">16 448 16 16</frame>		
+				<frame time="200">32 448 16 16</frame>		
+				<frame time="200">16 448 16 16</frame>		
+		</glow>					
+	</sprite>
+	
+	
+	<light>
+		<origin>0 -6</origin>
+		<mul>
+			<range>80</range>
+			<color1>150 0 100</color1>
+			<color2>0 0 0</color2>
+			<color3>0 0 0</color3>
+		</mul>
+		<add>
+			<range>80</range>
+			<color1>1 0 1</color1>
+			<color2>0 0 0</color2>
+			<color3>0 0 0</color3>
+		</add>
+	</light>			
+	
+	<collision static="true">
+		<circle offset="0 -5" radius="5" />
+	</collision>	
+</item>

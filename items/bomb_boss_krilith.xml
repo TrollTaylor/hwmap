@@ -1,0 +1,290 @@
+<actor behavior="composite">
+	<behavior>
+		<dictionary>
+			<entry name="hp"><int>25</int></entry>
+			<entry name="aggro-range"><float>1400</float></entry>
+			<entry name="ignore-hit-effects"><bool>true</bool></entry>
+			<entry name="max-range"><float>2000</float></entry>
+			<dictionary name="movement">
+				<string name="type">passive</string>
+				<float name="speed">0.0</float>
+			</dictionary>
+			<array name="skills">
+				<dictionary>
+					<string name="type">explode</string>
+					<string name="category">Player</string>
+					<string name="anim">explode</string>
+					<int name="cooldown">0</int>
+					<float name="range">5000</float>
+					<string name="sound">sound/players.xml:wizard_ice_shard_hit</string>
+					<string name="effect">effects/particles.xml:flash</string>
+					<string name="particle">effects/particles.xml:ice-particle</string>
+					<dictionary name="light">
+						<float name="add-range">8</float>
+						<string name="add-color1">10 100 150</string>
+						<string name="add-color2">0 50 100</string>
+						<string name="add-color3">0 50 75</string>
+					</dictionary>
+					<float name="splash">2</float>
+					<int name="dmg">25</int>
+					<string name="buff">buffs/bomb_boss_krilith.xml</string>
+					<bool name="suicide">true</bool>
+				</dictionary>
+			</array>			
+			<entry name="death-snd"><string>sound/players.xml:wizard_ice_shard_hit</string></entry>
+			<entry name="hit-effect"><string>effects/particles.xml:bone</string></entry>		
+			<entry name="hit-particle"><string>effects/particles.xml:bone-particle</string></entry>	
+		</dictionary>
+	</behavior>
+
+
+	<!-- Idle -->
+	<sprite scale="16" name="east">
+		<texture>items/bomb_lich_desert_1.png</texture>
+		<origin>16 16</origin>
+		<frame time="150">160 0 32 32</frame>
+		<frame time="150">192 0 32 32</frame>
+		<glow scale="16">
+			<texture>items/bomb_lich_desert_1.png</texture>
+			<origin>16 16</origin>
+			<frame time="150">160 32 32 32</frame>
+			<frame time="150">192 32 32 32</frame>					
+		</glow>	
+	</sprite>
+
+	<sprite scale="16" name="northeast">
+		<texture>items/bomb_lich_desert_1.png</texture>
+		<origin>16 16</origin>
+		<frame time="150">160 0 32 32</frame>
+		<frame time="150">192 0 32 32</frame>
+		<glow scale="16">
+			<texture>items/bomb_lich_desert_1.png</texture>
+			<origin>16 16</origin>
+			<frame time="150">160 32 32 32</frame>
+			<frame time="150">192 32 32 32</frame>					
+		</glow>	
+	</sprite>
+
+	<sprite scale="16" name="north">
+		<texture>items/bomb_lich_desert_1.png</texture>
+		<origin>16 16</origin>
+		<frame time="150">160 0 32 32</frame>
+		<frame time="150">192 0 32 32</frame>
+		<glow scale="16">
+			<texture>items/bomb_lich_desert_1.png</texture>
+			<origin>16 16</origin>
+			<frame time="150">160 32 32 32</frame>
+			<frame time="150">192 32 32 32</frame>					
+		</glow>	
+	</sprite>
+	
+	<sprite scale="16" name="northwest">
+		<texture>items/bomb_lich_desert_1.png</texture>
+		<origin>16 16</origin>
+		<frame time="150">160 0 32 32</frame>
+		<frame time="150">192 0 32 32</frame>
+		<glow scale="16">
+			<texture>items/bomb_lich_desert_1.png</texture>
+			<origin>16 16</origin>
+			<frame time="150">160 32 32 32</frame>
+			<frame time="150">192 32 32 32</frame>					
+		</glow>	
+	</sprite>
+	
+	<sprite scale="16" name="west">
+		<texture>items/bomb_lich_desert_1.png</texture>
+		<origin>16 16</origin>
+		<frame time="150">160 0 32 32</frame>
+		<frame time="150">192 0 32 32</frame>
+		<glow scale="16">
+			<texture>items/bomb_lich_desert_1.png</texture>
+			<origin>16 16</origin>
+			<frame time="150">160 32 32 32</frame>
+			<frame time="150">192 32 32 32</frame>					
+		</glow>	
+	</sprite>
+	
+	<sprite scale="16" name="southwest">
+		<texture>items/bomb_lich_desert_1.png</texture>
+		<origin>16 16</origin>
+		<frame time="150">160 0 32 32</frame>
+		<frame time="150">192 0 32 32</frame>
+		<glow scale="16">
+			<texture>items/bomb_lich_desert_1.png</texture>
+			<origin>16 16</origin>
+			<frame time="150">160 32 32 32</frame>
+			<frame time="150">192 32 32 32</frame>					
+		</glow>	
+	</sprite>
+	
+	<sprite scale="16" name="south">
+		<texture>items/bomb_lich_desert_1.png</texture>
+		<origin>16 16</origin>
+		<frame time="150">160 0 32 32</frame>
+		<frame time="150">192 0 32 32</frame>
+		<glow scale="16">
+			<texture>items/bomb_lich_desert_1.png</texture>
+			<origin>16 16</origin>
+			<frame time="150">160 32 32 32</frame>
+			<frame time="150">192 32 32 32</frame>					
+		</glow>				
+	</sprite>
+	
+	<sprite scale="16" name="southeast">
+		<texture>items/bomb_lich_desert_1.png</texture>
+		<origin>16 16</origin>
+		<frame time="150">160 0 32 32</frame>
+		<frame time="150">192 0 32 32</frame>
+		<glow scale="16">
+			<texture>items/bomb_lich_desert_1.png</texture>
+			<origin>16 16</origin>
+			<frame time="150">160 32 32 32</frame>
+			<frame time="150">192 32 32 32</frame>					
+		</glow>	
+	</sprite>
+	
+	
+	<!-- Walk -->
+	<sprite scale="16" name="east-walk">
+		<texture>items/bomb_lich_desert_1.png</texture>
+		<origin>16 16</origin>
+		<frame time="150">160 0 32 32</frame>
+		<frame time="150">192 0 32 32</frame>
+		<glow scale="16">
+			<texture>items/bomb_lich_desert_1.png</texture>
+			<origin>16 16</origin>
+			<frame time="150">160 32 32 32</frame>
+			<frame time="150">192 32 32 32</frame>					
+		</glow>	
+	</sprite>
+
+	<sprite scale="16" name="northeast-walk">
+		<texture>items/bomb_lich_desert_1.png</texture>
+		<origin>16 16</origin>
+		<frame time="150">160 0 32 32</frame>
+		<frame time="150">192 0 32 32</frame>
+		<glow scale="16">
+			<texture>items/bomb_lich_desert_1.png</texture>
+			<origin>16 16</origin>
+			<frame time="150">160 32 32 32</frame>
+			<frame time="150">192 32 32 32</frame>					
+		</glow>	
+	</sprite>
+
+	<sprite scale="16" name="north-walk">
+		<texture>items/bomb_lich_desert_1.png</texture>
+		<origin>16 16</origin>
+		<frame time="150">160 0 32 32</frame>
+		<frame time="150">192 0 32 32</frame>
+		<glow scale="16">
+			<texture>items/bomb_lich_desert_1.png</texture>
+			<origin>16 16</origin>
+			<frame time="150">160 32 32 32</frame>
+			<frame time="150">192 32 32 32</frame>					
+		</glow>	
+	</sprite>
+	
+	<sprite scale="16" name="northwest-walk">
+		<texture>items/bomb_lich_desert_1.png</texture>
+		<origin>16 16</origin>
+		<frame time="150">160 0 32 32</frame>
+		<frame time="150">192 0 32 32</frame>
+		<glow scale="16">
+			<texture>items/bomb_lich_desert_1.png</texture>
+			<origin>16 16</origin>
+			<frame time="150">160 32 32 32</frame>
+			<frame time="150">192 32 32 32</frame>					
+		</glow>	
+	</sprite>
+	
+	<sprite scale="16" name="west-walk">
+		<texture>items/bomb_lich_desert_1.png</texture>
+		<origin>16 16</origin>
+		<frame time="150">160 0 32 32</frame>
+		<frame time="150">192 0 32 32</frame>
+		<glow scale="16">
+			<texture>items/bomb_lich_desert_1.png</texture>
+			<origin>16 16</origin>
+			<frame time="150">160 32 32 32</frame>
+			<frame time="150">192 32 32 32</frame>					
+		</glow>	
+	</sprite>
+	
+	<sprite scale="16" name="southwest-walk">
+		<texture>items/bomb_lich_desert_1.png</texture>
+		<origin>16 16</origin>
+		<frame time="150">160 0 32 32</frame>
+		<frame time="150">192 0 32 32</frame>
+		<glow scale="16">
+			<texture>items/bomb_lich_desert_1.png</texture>
+			<origin>16 16</origin>
+			<frame time="150">160 32 32 32</frame>
+			<frame time="150">192 32 32 32</frame>					
+		</glow>	
+	</sprite>
+	
+	<sprite scale="16" name="south-walk">
+		<texture>items/bomb_lich_desert_1.png</texture>
+		<origin>16 16</origin>
+		<frame time="150">160 0 32 32</frame>
+		<frame time="150">192 0 32 32</frame>
+		<glow scale="16">
+			<texture>items/bomb_lich_desert_1.png</texture>
+			<origin>16 16</origin>
+			<frame time="150">160 32 32 32</frame>
+			<frame time="150">192 32 32 32</frame>					
+		</glow>	
+	</sprite>
+	
+	<sprite scale="16" name="southeast-walk">
+		<texture>items/bomb_lich_desert_1.png</texture>
+		<origin>16 16</origin>
+		<frame time="150">160 0 32 32</frame>
+		<frame time="150">192 0 32 32</frame>
+		<glow scale="16">
+			<texture>items/bomb_lich_desert_1.png</texture>
+			<origin>16 16</origin>
+			<frame time="150">160 32 32 32</frame>
+			<frame time="150">192 32 32 32</frame>					
+		</glow>	
+	</sprite>
+	
+
+	<!-- Attack -->
+	<sprite scale="16" name="explode">
+		<texture>items/bomb_lich_desert_1.png</texture>
+		<origin>16 16</origin>
+		<frame time="100">0 0 32 32</frame>
+		<frame time="100">32 0 32 32</frame>
+		<frame time="100">64 0 32 32</frame>
+		<frame time="100">96 0 32 32</frame>				
+		<glow scale="16">
+			<texture>items/bomb_lich_desert_1.png</texture>
+			<origin>16 19</origin>
+			<frame time="100">0 32 32 32</frame>
+			<frame time="100">32 32 32 32</frame>						
+		</glow>		
+	</sprite>
+
+	
+	<light>
+		<origin>0 -2</origin>
+		<mul>
+			<range>75</range>
+			<color1>0 100 255</color1>
+			<color2>0 30 75</color2>
+			<color3>0 10 50</color3>
+		</mul>
+		<add>
+			<range>0</range>
+			<color1>0 30 100</color1>
+			<color2>0 25 50</color2>
+			<color3>0 0 5</color3>
+		</add>
+	</light>		
+		
+	<collision static="true">
+		<circle offset="0 0" radius="3.5" />
+	</collision>			
+		
+</actor>

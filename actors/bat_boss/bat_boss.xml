@@ -1,0 +1,366 @@
+<actor collision="8" behavior="composite" minimap="menus/minimap.xml:enemy_mb">
+	<behavior>
+		<dictionary>
+			<entry name="hp"><int>10000</int></entry>
+			<entry name="boss-hp"><bool>true</bool></entry>
+			<entry name="multiplayer-scale-hp"><bool>true</bool></entry>			
+			<float name="aggro-range">10</float>
+			<float name="max-range">20</float>
+			<entry name="ignore-hit-effects"><bool>true</bool></entry>
+			<entry name="gib"><string>effects/gibs/gib_eye_1_mb.xml</string></entry>
+			<vec2 name="hp-bar">0 -1.0</vec2>
+			
+			<dictionary name="movement">
+				<string name="type">melee</string>
+				<float name="speed">0.5</float>
+			</dictionary>
+			
+			<array name="skills">
+				<dictionary>
+					<string name="type">hit</string>
+					<string name="anim-set">attack</string>
+					<int name="cooldown">0</int>
+					<float name="range">2</float>					
+					<int name="dmg">60</int>
+				</dictionary>
+				
+				<dictionary>
+					<string name="type">buff</string>
+					<int name="cooldown">1000</int>
+					<float name="range">13</float>
+					<float name="cast-range">13</float>
+					<string name="category">Enemy</string>
+					<string name="buff">buffs/bloodlust.xml</string>					
+				</dictionary>
+				
+				<dictionary>
+					<string name="type">blink</string>
+					<string name="anim-set">attack</string>
+					<int name="cooldown">1500</int>
+					<float name="range">2.5</float>
+					<string name="sound">sound/misc.xml:spawn_tele</string>
+					<float name="dist">5</float>
+					<string name="effect">effects/particles.xml:flash</string>
+				</dictionary>
+				
+				<dictionary>
+					<string name="type">ground-hit</string>
+					<string name="anim-set">attack</string>
+					<string name="chnl-anim-set">attack</string>
+					<int name="cooldown">1000</int>
+					<float name="range">10</float>
+					<string name="sound">sound/monsters.xml:hit_flower_1</string>
+					<string name="attack-effect">actors/guard_desert_1.xml:attack-effect</string>
+					<int name="dmg">40</int>
+					<int name="max-targets">4</int>
+					<int name="dmg-delay">200</int>
+					<float name="dmg-range">0.125</float>
+				</dictionary>
+				 
+				<dictionary>
+						<string name="sound">sound/monsters.xml:tower_shoot_beam</string>                                                       
+						<string name="type">spew</string>
+						<int name="cooldown">1000</int>
+						<float name="range">100</float>
+						<string name="chnl-anim-set">attack</string>                              
+						<string name="anim-set">attack</string>                                                 
+						<bool name="static-dir">true</bool>
+						<string name="proj">projectiles/enemy_boss_krilith_wave.xml</string>
+						<float name="spread">0.05</float>
+						<int name="rate">60</int>
+						<int name="duration">600</int>
+				</dictionary>
+			</array>
+			
+			<dictionary name="loot">
+				<string name="origin">0 0</string>
+				<float name="spread">0.33</float>
+					<array name="loot">
+						<array>	
+							<int>1000</int><string>items/collectable_1.xml</string>																									
+						</array>							
+						<array>
+							<int>300</int><string>items/upgrade_health.xml</string>	
+							<int>300</int><string>items/upgrade_mana.xml</string>	
+							<int>300</int><string>items/upgrade_damage.xml</string>
+							<int>100</int><string>items/upgrade_defense.xml</string>																								
+						</array>					
+					</array>
+			</dictionary>		
+			
+			<entry name="death-snd"><string>sound/monsters.xml:death_eye</string></entry>
+			<entry name="hit-effect"><string>effects/particles.xml:hit_eye_1_small</string></entry>		
+			<entry name="hit-particle"><string>effects/particles.xml:particle_eye_1_small</string></entry>	
+		</dictionary>
+	</behavior>	
+
+	<!-- Idle -->
+	<sprite scale="8" random-start="true" name="east">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="250">39 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>
+		<frame time="250">65 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>				
+	</sprite>
+
+	<sprite scale="6" random-start="true" name="northeast">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="250">39 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>
+		<frame time="250">65 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>		
+	</sprite>
+
+	<sprite scale="6" random-start="true" name="north">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="250">39 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>
+		<frame time="250">65 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>			
+	</sprite>
+	
+	<sprite scale="6" random-start="true" name="northwest">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="250">39 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>
+		<frame time="250">65 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>		
+	</sprite>
+	
+	<sprite scale="6" random-start="true" name="west">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="250">39 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>
+		<frame time="250">65 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>			
+	</sprite>
+	
+	<sprite scale="6" random-start="true" name="southwest">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="250">39 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>
+		<frame time="250">65 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>		
+	</sprite>
+	
+	<sprite scale="6" random-start="true" name="south">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="250">39 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>
+		<frame time="250">65 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>		
+	</sprite>
+	
+	<sprite scale="6" random-start="true" name="southeast">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="250">39 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>
+		<frame time="250">65 0 13 16</frame>
+		<frame time="250">52 0 13 16</frame>	
+	
+	</sprite>
+	
+	
+	<!-- Walk -->
+	<sprite scale="6" name="east-walk">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="150">0 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>
+		<frame time="150">26 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>	
+	</sprite>
+
+	<sprite scale="6" name="northeast-walk">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="150">0 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>
+		<frame time="150">26 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>	
+	</sprite>
+
+	<sprite scale="6" name="north-walk">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="150">0 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>
+		<frame time="150">26 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>	
+	</sprite>
+	
+	<sprite scale="6" name="northwest-walk">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="150">0 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>
+		<frame time="150">26 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>		
+	</sprite>
+	
+	<sprite scale="6" name="west-walk">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="150">0 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>
+		<frame time="150">26 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>			
+	</sprite>
+	
+	<sprite scale="6" name="southwest-walk">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="150">0 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>
+		<frame time="150">26 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>		
+	</sprite>
+	
+	<sprite scale="6" name="south-walk">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="150">0 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>
+		<frame time="150">26 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>			
+	</sprite>
+	
+	<sprite scale="6" name="southeast-walk">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="150">0 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>
+		<frame time="150">26 0 13 16</frame>
+		<frame time="150">13 0 13 16</frame>	
+	</sprite>
+	
+
+	<!-- Attack -->
+	<sprite scale="6" name="east-attack">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>				
+	</sprite>
+
+	<sprite scale="6" name="northeast-attack">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>		
+	</sprite>
+
+	<sprite scale="6" name="north-attack">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>	
+	</sprite>
+	
+	<sprite scale="6" name="northwest-attack">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>		
+	</sprite>
+	
+	<sprite scale="6" name="west-attack">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>		
+	</sprite>
+	
+	<sprite scale="6" name="southwest-attack">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>
+	</sprite>
+	
+	<sprite scale="6" name="south-attack">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>		
+	</sprite>
+	
+	<sprite scale="6" name="southeast-attack">
+		<texture>actors/bat_3.png</texture>
+		<origin>6 5</origin>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">0 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>
+		<frame time="50">26 0 13 16</frame>
+		<frame time="50">13 0 13 16</frame>	
+		<frame time="50">13 0 13 16</frame>
+	</sprite>
+</actor>

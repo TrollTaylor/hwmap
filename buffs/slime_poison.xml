@@ -1,0 +1,33 @@
+<buff>
+	<behavior>
+		<dictionary>
+			<string name="color">135 255 165</string>
+			
+			<int name="duration">4500</int>
+			<float name="speed-mul">0.66</float>
+			<float name="dmg-mul">0.75</float>
+			
+			<dictionary name="damage">
+				<int name="freq">1500</int>
+				<int name="dmg">6</int>
+				<bool name="can-kill">false</bool>
+			</dictionary>
+			
+			<array name="effects">
+				<dictionary>
+					<string name="type">particles</string>
+					
+					<string name="sprite">effects/particles.xml:poison-particle</string>
+				
+					<int name="freq">75</int>
+					<int name="rate">50</int>
+					
+					<vec2 name="dir">0 1</vec2>
+					<float name="dir-spread">0</float>
+				
+					<float name="speed">0.25</float>
+				</dictionary>
+			</array>
+		</dictionary>
+	</behavior>
+</buff>

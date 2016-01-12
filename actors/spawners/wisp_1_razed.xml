@@ -1,0 +1,10 @@
+<doodad defaultlayer="-1" ao="false">
+	<sprite scale="16">
+		<texture>actors/spawners/wisp_1.png</texture>
+		<origin>16 16</origin>					
+		<frame>128 32 32 32</frame>
+	</sprite>
+	<collision static="true" shoot-through="true">
+		<circle offset="0 0" radius="14" />
+	</collision>
+</doodad>

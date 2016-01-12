@@ -1,0 +1,18 @@
+<doodad defaultlayer="0" minimap="menus/minimap.xml:trap_drain_floor_small">
+	<sprite random-start="true" scale="16">
+		<texture>doodads/generic/trap_drain_16.png</texture>
+		<origin>0 0</origin>	
+		<frame time="150">0 0 16 16</frame>				
+		<frame time="150">16 0 16 16</frame>			
+		<frame time="150">32 0 16 16</frame>												
+		<glow scale="16">
+			<texture>doodads/generic/trap_drain_16.png</texture>
+				<frame time="150">0 16 16 16</frame>				
+				<frame time="150">16 16 16 16</frame>			
+				<frame time="150">32 16 16 16</frame>	
+		</glow>								
+	</sprite>	
+</doodad>
+
+
+

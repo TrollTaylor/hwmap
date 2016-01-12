@@ -1,0 +1,28 @@
+<doodad>
+	<sprite scale="16">
+		<texture>doodads/special/special_eeg.png</texture>
+		<origin>7 12</origin>
+		<frame time="500">40 2 14 18</frame>
+	</sprite>		
+	
+	<collision static="true" shoot-through="true">
+		<circle offset="0 0" radius="5" />
+	</collision>		
+	
+	<light>
+		<origin>0 -5</origin>
+		<mul>
+			<range>150</range>
+			<color1>200 200 200</color1>
+			<color2>50 50 50</color2>
+			<color3>10 10 10</color3>
+		</mul>
+		<add>
+			<range>60</range>
+			<color1>0 75 0</color1>
+			<color2>0 24 0</color2>
+			<color3>0 5 0</color3>
+		</add>
+	</light>	
+	
+</doodad>

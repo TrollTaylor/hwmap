@@ -1,0 +1,8 @@
+<spritebank>
+	<sprite scale="16" name="parallax_lightning">
+		<texture>parallax/parallax_lightning.png</texture>
+		<origin>0 0</origin>
+		<frame>0 0 256 256</frame>
+	</sprite>		
+
+</spritebank>

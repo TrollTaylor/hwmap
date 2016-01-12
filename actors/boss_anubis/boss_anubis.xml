@@ -1,0 +1,356 @@
+<actor collision="7" behavior="composite" minimap="menus/minimap.xml:enemy">
+	<behavior>
+		<dictionary>
+			<entry name="hp"><int>10000</int></entry>
+			<entry name="boss-hp"><bool>true</bool></entry>
+			<entry name="multiplayer-scale-hp"><bool>true</bool></entry>
+			<entry name="ignore-hit-effects"><bool>true</bool></entry>
+			<entry name="ignore-trap-damage"><bool>true</bool></entry>
+			<entry name="allow-inactive"><bool>false</bool></entry>
+			<entry name="death-snd"><string>sound/monsters.xml:boss_anubis_death</string></entry>
+			<entry name="hit-effect"><string>effects/particles.xml:hit_tick_2</string></entry>		
+			<entry name="hit-particle"><string>effects/particles.xml:particle_tick_2</string></entry>
+			<entry name="corpse"><string>actors/boss_anubis/boss_anubis_razed.xml</string></entry>	
+			
+			<float name="aggro-range">20</float>
+			<float name="max-range">20</float>
+			
+			<dictionary name="movement">
+				<string name="type">ranged</string>
+				<float name="speed">0.6</float>
+				<float name="range">10</float>
+			</dictionary>
+				
+			<!-- initial -->		
+				
+			<array name="skills">
+				<dictionary>
+					<bool name="check-shootable">true</bool>
+					<string name="type">shoot</string>
+					<string name="anim-set">attack</string>
+					<int name="cooldown">350</int>
+					<float name="min-range">0</float>
+					<float name="range">10</float>
+					<string name="sound">sound/monsters.xml:lich_seeker</string>
+					<string name="proj">projectiles/enemy_boss_anubis_fireball_small.xml</string>
+				</dictionary>
+
+			<!-- 75% -->					
+			
+				<dictionary>
+					<int name="usages">1</int>
+					<string name="conditional">tp_75 true</string>
+					<string name="anim">special</string>
+					<int name="cooldown">0</int>					
+					<string name="type">teleport</string>
+					<float name="range">1000</float>
+					<string name="sound">sound/misc.xml:spawn_tele</string>
+					<float name="min-dist">1</float>
+					<float name="max-dist">200</float>
+					<bool name="trail">true</bool>
+				</dictionary>
+				
+				<dictionary>
+			        <string name="conditional">is_75 true</string>                               
+			        <string name="type">event</string>
+			        <int name="cooldown">7500</int>
+			        <float name="range">25</float>
+			        <string name="event">spawn_75</string>
+				</dictionary> 
+																	
+			
+			<!-- 50% -->	
+			
+				<dictionary>
+					<int name="usages">1</int>
+					<string name="conditional">tp_50 true</string>
+					<string name="anim">special</string>
+					<int name="cooldown">1000</int>					
+					<string name="type">teleport</string>
+					<float name="range">1000</float>
+					<string name="sound">sound/misc.xml:spawn_tele</string>
+					<float name="min-dist">1</float>
+					<float name="max-dist">60</float>
+					<bool name="trail">true</bool>
+				</dictionary>
+				
+				<dictionary>
+					<string name="conditional">is_50 true</string>     
+					<string name="type">summon</string>
+					<string name="anim">special</string>
+					<int name="cooldown">4000</int>
+					<float name="range">100</float>
+					<float name="dist">1</float>
+					<string name="effect">effects/particles.xml:flash_summon</string>
+					<string name="sound">sound/monsters.xml:lich_summon</string>
+					<int name="num">6</int>
+					<int name="arc">360</int>
+					<string name="actor">actors/floater_fire.xml</string>
+					<bool name="safety-raycast">false</bool>                                       
+				</dictionary>					
+				
+				<dictionary>
+			        <string name="conditional">is_50 true</string>                               
+			        <string name="type">event</string>
+			        <int name="cooldown">7500</int>
+			        <float name="range">25</float>
+			        <string name="event">spawn_50</string>
+				</dictionary> 				
+
+			<!-- 25% -->	
+			
+				<dictionary>
+					<int name="usages">1</int>
+					<string name="conditional">tp_25 true</string>
+					<string name="anim">special</string>
+					<int name="cooldown">1000</int>					
+					<string name="type">teleport</string>
+					<float name="range">1000</float>
+					<string name="sound">sound/misc.xml:spawn_tele</string>
+					<float name="min-dist">1</float>
+					<float name="max-dist">60</float>
+					<bool name="trail">true</bool>
+				</dictionary>		
+				
+				<dictionary>
+			        <string name="conditional">is_25 true</string>                               
+			        <string name="type">event</string>
+			        <int name="cooldown">7500</int>
+			        <float name="range">25</float>
+			        <string name="event">spawn_25</string>
+				</dictionary> 				
+									
+				<dictionary>
+					<string name="conditional">is_25 true</string>
+					<bool name="check-shootable">false</bool>
+					<string name="type">nova</string>
+					<string name="anim">special</string>
+					<int name="cooldown">10000</int>
+					<float name="range">14</float>							
+					<string name="proj">projectiles/enemy_boss_anubis_fireball.xml</string>
+					<int name="num">10</int>
+				</dictionary>											
+			</array>		
+		</dictionary>
+	</behavior>
+
+	<!-- Special -->
+	<sprite scale="16" name="special">
+		<texture>actors/boss_anubis/boss_anubis_special.png</texture>
+		<origin>32 46</origin>
+		<frame time="125">0 0 64 64</frame>
+		<frame time="125">64 0 64 64</frame>
+		<frame time="200">128 0 64 64</frame>
+		<frame time="200">192 0 64 64</frame>
+		<frame time="150">0 64 64 64</frame>
+		<frame time="125">64 64 64 64</frame>
+		<frame time="125">128 64 64 64</frame>
+		<frame time="125">192 64 64 64</frame>		
+	</sprite>
+	
+	<!-- Idle -->
+	<sprite scale="16" name="east">
+		<texture>actors/boss_anubis/boss_anubis.png</texture>
+		<origin>32 43</origin>
+		<frame time="125">384 128 64 64</frame>
+	</sprite>
+
+	<sprite scale="16" name="northeast">
+		<texture>actors/boss_anubis/boss_anubis.png</texture>
+		<origin>32 43</origin>
+		<frame time="125">320 192 64 64</frame>
+	</sprite>
+
+	<sprite scale="16" name="north">
+		<texture>actors/boss_anubis/boss_anubis.png</texture>
+		<origin>32 43</origin>
+		<frame time="125">320 0 64 64</frame>
+	</sprite>
+	
+	<sprite scale="16" name="northwest">
+		<texture>actors/boss_anubis/boss_anubis.png</texture>
+		<origin>32 43</origin>
+		<frame time="125">320 64 64 64</frame>
+	</sprite>
+	
+	<sprite scale="16" name="west">
+		<texture>actors/boss_anubis/boss_anubis.png</texture>
+		<origin>32 43</origin>
+		<frame time="125">384 256 64 64</frame>
+	</sprite>
+	
+	<sprite scale="16" name="southwest">
+		<texture>actors/boss_anubis/boss_anubis.png</texture>
+		<origin>32 43</origin>
+		<frame time="125">320 320 64 64</frame>
+	</sprite>
+	
+	<sprite scale="16" name="south">
+		<texture>actors/boss_anubis/boss_anubis.png</texture>
+		<origin>32 43</origin>
+		<frame time="125">384 448 64 64</frame>
+	</sprite>
+	
+	<sprite scale="16" name="southeast">
+		<texture>actors/boss_anubis/boss_anubis.png</texture>
+		<origin>32 43</origin>
+		<frame time="125">384 384 64 64</frame>
+	</sprite>
+	
+	
+	<!-- Walk -->
+	<sprite scale="16" name="east-walk">
+		<texture>actors/boss_anubis/boss_anubis.png</texture>
+		<origin>32 43</origin>
+		<frame time="125">256 128 64 64</frame>
+		<frame time="125">320 128 64 64</frame>
+		<frame time="125">384 128 64 64</frame>
+		<frame time="125">448 128 64 64</frame>
+	</sprite>
+
+	<sprite scale="16" name="northeast-walk">
+		<texture>actors/boss_anubis/boss_anubis.png</texture>
+		<origin>32 43</origin>
+		<frame time="125">256 192 64 64</frame>
+		<frame time="125">320 192 64 64</frame>
+		<frame time="125">384 192 64 64</frame>
+		<frame time="125">448 192 64 64</frame>
+	</sprite>
+
+	<sprite scale="16" name="north-walk">
+		<texture>actors/boss_anubis/boss_anubis.png</texture>
+		<origin>32 43</origin>
+		<frame time="125">256 0 64 64</frame>
+		<frame time="125">320 0 64 64</frame>
+		<frame time="125">384 0 64 64</frame>
+		<frame time="125">448 0 64 64</frame>
+	</sprite>
+	
+	<sprite scale="16" name="northwest-walk">
+		<texture>actors/boss_anubis/boss_anubis.png</texture>
+		<origin>32 43</origin>
+		<frame time="125">256 64 64 64</frame>
+		<frame time="125">320 64 64 64</frame>
+		<frame time="125">384 64 64 64</frame>
+		<frame time="125">448 64 64 64</frame>
+	</sprite>
+	
+	<sprite scale="16" name="west-walk">
+		<texture>actors/boss_anubis/boss_anubis.png</texture>
+		<origin>32 43</origin>
+		<frame time="125">256 256 64 64</frame>
+		<frame time="125">320 256 64 64</frame>
+		<frame time="125">384 256 64 64</frame>
+		<frame time="125">448 256 64 64</frame>
+	</sprite>
+	
+	<sprite scale="16" name="southwest-walk">
+		<texture>actors/boss_anubis/boss_anubis.png</texture>
+		<origin>32 43</origin>
+		<frame time="125">256 320 64 64</frame>
+		<frame time="125">320 320 64 64</frame>
+		<frame time="125">384 320 64 64</frame>
+		<frame time="125">448 320 64 64</frame>
+	</sprite>
+	
+	<sprite scale="16" name="south-walk">
+		<texture>actors/boss_anubis/boss_anubis.png</texture>
+		<origin>32 43</origin>
+		<frame time="125">256 448 64 64</frame>
+		<frame time="125">320 448 64 64</frame>
+		<frame time="125">384 448 64 64</frame>
+		<frame time="125">448 448 64 64</frame>
+	</sprite>
+	
+	<sprite scale="16" name="southeast-walk">
+		<texture>actors/boss_anubis/boss_anubis.png</texture>
+		<origin>32 43</origin>
+		<frame time="125">256 384 64 64</frame>
+		<frame time="125">320 384 64 64</frame>
+		<frame time="125">384 384 64 64</frame>
+		<frame time="125">448 384 64 64</frame>
+	</sprite>
+	
+
+	<!-- Attack -->
+	<sprite scale="16" name="east-attack">
+		<texture>actors/boss_anubis/boss_anubis.png</texture>
+		<origin>32 43</origin>
+		<frame time="200">64 384 64 64</frame>
+		<frame time="200">128 384 64 64</frame>
+		<frame time="50">192 384 64 64</frame>
+	</sprite>
+
+	<sprite scale="16" name="northeast-attack">
+		<texture>actors/boss_anubis/boss_anubis.png</texture>
+		<origin>32 43</origin>
+		<frame time="200">64 64 64 64</frame>
+		<frame time="200">128 64 64 64</frame>
+		<frame time="50">192 64 64 64</frame>
+	</sprite>
+
+	<sprite scale="16" name="north-attack">
+		<texture>actors/boss_anubis/boss_anubis.png</texture>
+		<origin>32 43</origin>
+		<frame time="200">64 0 64 64</frame>
+		<frame time="200">128 0 64 64</frame>
+		<frame time="50">192 0 64 64</frame>
+	</sprite>
+	
+	<sprite scale="16" name="northwest-attack">
+		<texture>actors/boss_anubis/boss_anubis.png</texture>
+		<origin>32 43</origin>
+		<frame time="200">64 128 64 64</frame>
+		<frame time="200">128 128 64 64</frame>
+		<frame time="50">192 128 64 64</frame>
+	</sprite>
+	
+	<sprite scale="16" name="west-attack">
+		<texture>actors/boss_anubis/boss_anubis.png</texture>
+		<origin>32 43</origin>
+		<frame time="200">64 192 64 64</frame>
+		<frame time="200">128 192 64 64</frame>
+		<frame time="50">192 192 64 64</frame>
+	</sprite>
+	
+	<sprite scale="16" name="southwest-attack">
+		<texture>actors/boss_anubis/boss_anubis.png</texture>
+		<origin>32 43</origin>
+		<frame time="200">64 256 64 64</frame>
+		<frame time="200">128 256 64 64</frame>
+		<frame time="50">192 256 64 64</frame>
+	</sprite>
+	
+	<sprite scale="16" name="south-attack">
+		<texture>actors/boss_anubis/boss_anubis.png</texture>
+		<origin>32 43</origin>
+		<frame time="200">64 320 64 64</frame>
+		<frame time="200">128 320 64 64</frame>
+		<frame time="50">192 320 64 64</frame>
+	</sprite>
+	
+	<sprite scale="16" name="southeast-attack">
+		<texture>actors/boss_anubis/boss_anubis.png</texture>
+		<origin>32 43</origin>
+		<frame time="200">64 448 64 64</frame>
+		<frame time="200">128 448 64 64</frame>
+		<frame time="50">192 448 64 64</frame>
+	</sprite>
+	
+	<light>
+		<origin>0 0</origin>
+		<mul>
+			<range>200</range>
+			<color1>100 100 100</color1>
+			<color2>40 40 40</color2>
+			<color3>15 15 15</color3>
+		</mul>
+		<add>
+			<range>0</range>
+			<color1>85 50 0</color1>
+			<color2>64 24 0</color2>
+			<color3>64 0 0</color3>
+		</add>
+	</light>		
+	
+</actor>

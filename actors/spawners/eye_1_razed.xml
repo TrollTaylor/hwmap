@@ -1,0 +1,7 @@
+<doodad defaultlayer="-1" ao="false">
+	<sprite scale="16">
+		<texture>actors/spawners/eye_1.png</texture>
+		<origin>16 16</origin>					
+		<frame>0 32 32 32</frame>
+	</sprite>
+</doodad>

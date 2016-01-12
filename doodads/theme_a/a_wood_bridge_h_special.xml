@@ -1,0 +1,59 @@
+<doodad defaultlayer="-5" minimap="menus/minimap.xml:wood_bridge_h_special">
+	<sprite scale="16">
+		<texture>doodads/theme_a/a_bridge.png</texture>
+		<origin>0 0</origin>
+		<frame>64 0 96 92</frame>
+	</sprite>
+	
+	<collision shoot-through="true">
+		<polygon>
+			<point>16 18</point>
+			<point>16 0</point>
+			<point>80 0</point>
+			<point>80 18</point>
+		</polygon>
+		
+		<polygon>
+			<point>8 19</point>
+			<point>8 0</point>
+			<point>16 0</point>
+			<point>16 18</point>
+		</polygon>		
+		
+		<polygon>
+			<point>8 67</point>
+			<point>8 62</point>
+			<point>16 60</point>
+			<point>16 67</point>
+		</polygon>		
+		
+		<polygon>
+			<point>16 60</point>
+			<point>16 67</point>
+			<point>80 60</point>
+			<point>80 67</point>
+		</polygon>
+		
+		<polygon>
+			<point>24 0</point>
+			<point>24 67</point>
+			<point>70 0</point>
+			<point>70 67</point>
+		</polygon>		
+
+		<polygon>
+			<point>80 18</point>
+			<point>80 0</point>
+			<point>88 0</point>
+			<point>88 19</point>
+		</polygon>
+		
+		<polygon>
+			<point>80 75</point>
+			<point>80 60</point>
+			<point>88 62</point>
+			<point>88 75</point>
+		</polygon>		
+		
+	</collision>
+</doodad>

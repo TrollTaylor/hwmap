@@ -1,0 +1,37 @@
+<item behavior="checkpoint" minimap="menus/minimap.xml:waypoint">
+	<behavior>
+		<dictionary>
+			<entry name="snd"><string>sound/misc.xml:info_save</string></entry>
+			<entry name="active-sprite"><string>items/trigger_button_save.xml:active</string></entry>
+			<entry name="inactive-sprite"><string>items/trigger_button_save.xml:</string></entry>
+		</dictionary>
+	</behavior>
+
+	<sprite scale="16" name="active">
+		<texture>doodads/special/trigger_button.png</texture>
+		<origin>10 10</origin>	
+		<frame>20 96 20 20</frame>		
+		<glow scale="16">
+			<texture>doodads/special/trigger_button.png</texture>
+			<frame>40 96 20 20</frame>		
+		</glow>					
+	</sprite>
+	<sprite scale="16">
+		<texture>doodads/special/trigger_button.png</texture>
+		<origin>10 10</origin>	
+		<frame>0 96 20 20</frame>			
+	</sprite>
+
+	
+	<collision shoot-through="true">
+		<polygon>
+			<point>-8 8</point>
+			<point>-8 -8</point>
+			<point>8 -8</point>
+			<point>8 8</point>
+		</polygon>
+	</collision>
+</item>
+
+
+

@@ -1,0 +1,15 @@
+<doodad ao="false">
+	<sprite random-start="true" scale="16">
+		<texture>doodads/generic/deco_books.png</texture>
+		<origin>7 11</origin>
+		<frame time="2500">0 0 14 17</frame>
+	</sprite>
+	
+	<polygon collision="true" shadow="false">
+		<point>-7 6</point>
+		<point>-7 -6</point>		
+		<point>7 -6</point>		
+		<point>7 6</point>
+	</polygon>	
+	
+</doodad>

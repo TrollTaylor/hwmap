@@ -1,0 +1,28 @@
+<doodad ao="false" >
+	
+	<sprite scale="16" name="deactivate">
+		<texture>doodads/special/trigger_door_pillar.png</texture>
+		<origin>0 24</origin>
+		<frame>16 0 16 40</frame>									
+	</sprite>		
+	
+	<sprite scale="16" name="activate">
+		<texture>doodads/special/trigger_door_pillar.png</texture>
+		<origin>0 24</origin>
+		<frame>0 0 16 40</frame>									
+	</sprite>
+		
+	<states default="activate">
+	</states>		
+	
+	<polygon collision="true" shadow="false">
+		<point>0 16</point>
+		<point>0 -4</point>		
+		<point>16 -4</point>		
+		<point>16 16</point>
+	</polygon>		
+	
+</doodad>
+
+
+

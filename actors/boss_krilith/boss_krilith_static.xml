@@ -1,0 +1,26 @@
+<doodad ao="false" minimap="menus/minimap.xml:enemy">
+	<sprite scale="16">
+		<texture>actors/boss_krilith/boss_krilith.png</texture>
+		<origin>12 14</origin>
+		<frame>144 0 24 24</frame>
+	</sprite>	
+	<light>
+		<origin>0 0</origin>
+		<mul>
+			<range>200</range>
+			<color1>60 60 60</color1>
+			<color2>40 40 40</color2>
+			<color3>15 15 15</color3>
+		</mul>
+		<add>
+			<range>0</range>
+			<color1>85 50 0</color1>
+			<color2>64 24 0</color2>
+			<color3>64 0 0</color3>
+		</add>
+	</light>		
+	<collision static="true">
+		<circle offset="0 0" radius="4" />
+	</collision>
+	
+</doodad>

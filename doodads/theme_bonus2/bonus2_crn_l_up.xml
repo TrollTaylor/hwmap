@@ -1,0 +1,23 @@
+<doodad minimap="menus/minimap.xml:bonus_square">
+	<sprite scale="16">
+		<texture>doodads/theme_bonus2/bonus2.png</texture>
+		<origin>0 0</origin>
+		<frame>0 32 16 16</frame>
+	</sprite>
+
+	<polygon collision="false" shadow="true">
+		<point>0 16</point>
+		<point>0 0</point>		
+		<point>8 -8</point>
+		<point>16 -8</point>
+		<point>16 16</point>		
+	</polygon>				
+
+	<polygon collision="true" shadow="false">
+		<point>0 16</point>
+		<point>0 0</point>		
+		<point>16 0</point>		
+		<point>16 16</point>
+	</polygon>		
+
+</doodad>

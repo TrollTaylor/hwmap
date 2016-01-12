@@ -1,0 +1,25 @@
+<doodad defaultlayer="-5" minimap="menus/minimap.xml:bridge_v">
+	<sprite scale="16">
+		<texture>doodads/generic/bridge_stone.png</texture>
+		<origin>28 0</origin>
+		<frame>0 208 56 16</frame>
+	</sprite>
+	
+	<collision shoot-through="true">
+		<polygon>
+			<point>24 16</point>
+			<point>24 0</point>
+			<point>28 0</point>
+			<point>28 16</point>
+		</polygon>
+		
+		<polygon>
+			<point>-28 16</point>
+			<point>-28 0</point>
+			<point>-24 0</point>
+			<point>-24 16</point>
+		</polygon>		
+		
+		
+	</collision>
+</doodad>

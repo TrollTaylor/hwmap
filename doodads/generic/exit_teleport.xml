@@ -1,0 +1,66 @@
+<doodad  ao="false" minimap="menus/minimap.xml:teleport">
+	<sprite scale="16" name="open">
+		<texture>doodads/generic/exit_teleport.png</texture>
+		<origin>10 34</origin>
+		<frame time="150">20 0 20 42</frame>
+		<frame time="150">40 0 20 42</frame>
+		<frame time="150">60 0 20 42</frame>
+		<frame time="150">80 0 20 42</frame>			
+		<glow scale="16">
+			<texture>doodads/generic/exit_teleport.png</texture>
+				<frame time="150">20 59 20 42</frame>
+				<frame time="150">40 59 20 42</frame>
+				<frame time="150">60 59 20 42</frame>
+				<frame time="150">80 59 20 42</frame>
+		</glow>											
+	</sprite>
+	
+	<sprite scale="16" name="closed">
+		<texture>doodads/generic/exit_teleport.png</texture>
+		<origin>10 34</origin>
+		<frame time="100">0 0 20 42</frame>		
+	</sprite>	
+
+	<sprite scale="16" name="destroyed">
+		<texture>doodads/generic/exit_teleport.png</texture>
+		<origin>10 34</origin>
+		<frame time="100">100 0 20 42</frame>		
+	</sprite>	
+
+	<states default="open">		
+	</states>	
+
+<!--
+	<light>
+		<origin>0 -10</origin>
+		<mul>
+			<range>0</range>
+			<color1>255 255 255</color1>
+			<color2>0 0 0</color2>
+			<color3>0 0 0</color3>
+		</mul>
+		<add>
+			<range>200</range>
+			<color1>0 25 75</color1>
+			<color2>0 0 0</color2>
+			<color3>0 0 0</color3>
+		</add>
+	</light>
+-->
+
+	<polygon collision="true" shadow="false">
+		<point>-10 8</point>
+		<point>-10 0</point>		
+		<point>-8 0</point>		
+		<point>-8 8</point>
+	</polygon>		
+	
+	<polygon collision="true" shadow="false">
+		<point>8 8</point>
+		<point>8 0</point>		
+		<point>10 0</point>		
+		<point>10 8</point>
+	</polygon>		
+
+
+</doodad>

@@ -1,0 +1,23 @@
+<levels start="1">
+	<act name="Mental Dreams">
+		<level id="1" res="levels/1.xml" name="Dream" />
+		<level id="2" res="levels/2.xml" name="HAPPY LAND!" />
+		<level id="3" res="levels/3.xml" name="Fuck you" />
+		<level id="4" res="levels/forest.xml" name="Twilight Glutch" />
+		<level id="5" res="levels/ghost.xml" name="Ghost Town" />
+		<level id="6" res="levels/forestbeg.xml" name="Darkroot Forest" />
+		<level id="7" res="levels/ghost1.xml" name="Shaftlocke Mines" />
+		<level id="8" res="levels/temple.xml" name="The Temple of Notch" />
+		<level id="10" res="levels/extra.xml" name="BETTER DAN YOU!" />
+		<level id="11" res="levels/forest2.xml" name="Hushwood" />
+		<level id="12" res="levels/desert1.xml" name="The Arches" />
+		<level id="13" res="levels/forest3.xml" name="Twilight Glutch" />
+		<level id="14" res="levels/forest4.xml" name="Darkroot Basin" />
+		<level id="15" res="levels/Desert2.xml" name="Sha'Rand Courtyard" />
+		<level id="16" res="levels/temple2.xml" name="Sha'Rand Pyramid" />
+		<level id="17" res="levels/desert3.xml" name="Arches Trail" />
+		<level id="18" res="levels/plains1.xml" name="Vos' Goth Plains" />
+		<level id="19" res="levels/snow1.xml" name="Vas' Lodor" />
+		<level id="20" res="levels/snowbeg.xml" name="Lodor Trail" />
+	</act>
+</levels>

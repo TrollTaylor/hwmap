@@ -1,0 +1,19 @@
+<spritebank>
+	<sprite scale="16" random-start="true" name="crack">
+		<texture>effects/boss_knight_strike.png</texture>
+		<origin>8 8</origin>
+		<frame time="100">0 0 16 16</frame>
+		<frame time="100">16 0 16 16</frame>
+		<frame time="100">32 0 16 16</frame>
+		<frame time="100">48 0 16 16</frame>
+		
+		<glow scale="16">
+			<texture>effects/boss_knight_strike.png</texture>
+			<origin>8 8</origin>
+			<frame time="100">0 16 16 16</frame>
+			<frame time="100">16 16 16 16</frame>
+			<frame time="100">32 16 16 16</frame>
+			<frame time="100">48 16 16 16</frame>
+		</glow>
+	</sprite>
+</spritebank>

@@ -1,0 +1,11 @@
+<doodad>
+	<sprite scale="16">
+		<texture>actors/tower_static_frost.png</texture>
+		<origin>18 20</origin>					
+		<frame time="100">46 0 33 37</frame>
+	</sprite>
+	
+	<collision shoot-through="true">
+		<circle offset="0 0" radius="10" />
+	</collision>	
+</doodad>

@@ -1,0 +1,19 @@
+<spritebank>
+    <sprite scale="16" name="ping">
+        <texture>effects/deco_tower_frost_effect.png</texture>
+		<origin>26 26</origin>
+		<frame time="100">0 0 48 48</frame>
+		<frame time="100">52 0 48 48</frame>
+		<frame time="100">104 0 48 48</frame>
+		<frame time="100">0 52 48 48</frame>
+		<frame time="100">52 52 48 48</frame>
+		<glow scale="16">
+			<texture>effects/deco_tower_frost_effect.png</texture>
+				<frame time="100">0 0 48 48</frame>
+				<frame time="100">52 0 48 48</frame>
+				<frame time="100">104 0 48 48</frame>
+				<frame time="100">0 52 48 48</frame>
+				<frame time="100">0 104 48 48</frame>	
+		</glow>			
+    </sprite>
+</spritebank>

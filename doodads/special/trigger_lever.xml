@@ -1,0 +1,44 @@
+<doodad>
+	<sprite scale="16" name="left">
+		<texture>doodads/special/trigger_button.png</texture>
+		<origin>0 0</origin>	
+		<frame>0 64 16 16</frame>				
+	</sprite>
+	
+	<sprite scale="16" name="right">
+		<texture>doodads/special/trigger_button.png</texture>
+		<origin>0 0</origin>	
+		<frame>32 64 16 16</frame>				
+	</sprite>
+	
+	<sprite scale="16" name="to_right">
+		<texture>doodads/special/trigger_button.png</texture>
+		<origin>0 0</origin>	
+		<frame>16 64 16 16</frame>				
+	</sprite>
+	
+	<sprite scale="16" name="to_left">
+		<texture>doodads/special/trigger_button.png</texture>
+		<origin>0 0</origin>	
+		<frame>16 64 16 16</frame>				
+	</sprite>
+		
+	<states default="left">
+		<transition from="to_right" to="right" />
+		<transition from="to_left" to="left" />
+	</states>			
+	
+	
+	<collision shoot-through="true">
+		<polygon>
+			<point>0 12</point>
+			<point>0 4</point>
+			<point>16 4</point>
+			<point>16 12</point>
+		</polygon>
+	</collision>
+	
+</doodad>
+
+
+

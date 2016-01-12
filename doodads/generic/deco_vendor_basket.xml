@@ -1,0 +1,46 @@
+<doodad ao="false">
+	<sprite scale="16" name="empty">
+		<texture>doodads/generic/deco_vendor_props.png</texture>
+		<origin>9 11</origin>
+		<frame>0 27 20 18</frame>				
+	</sprite>
+	
+	<sprite scale="16" name="1">
+		<texture>doodads/generic/deco_vendor_props.png</texture>
+		<origin>9 11</origin>
+		<frame>20 27 20 18</frame>				
+	</sprite>
+	
+	<sprite scale="16" name="2">
+		<texture>doodads/generic/deco_vendor_props.png</texture>
+		<origin>9 11</origin>
+		<frame>40 27 20 18</frame>				
+	</sprite>
+	
+	<sprite scale="16" name="3">
+		<texture>doodads/generic/deco_vendor_props.png</texture>
+		<origin>9 11</origin>
+		<frame>60 27 20 18</frame>				
+	</sprite>
+	
+	<sprite scale="16" name="4">
+		<texture>doodads/generic/deco_vendor_props.png</texture>
+		<origin>9 11</origin>
+		<frame>80 27 20 18</frame>				
+	</sprite>
+	
+	<sprite scale="16" name="5">
+		<texture>doodads/generic/deco_vendor_props.png</texture>
+		<origin>9 11</origin>
+		<frame>100 27 20 18</frame>				
+	</sprite>					
+	
+	
+	<states default="empty">		
+	</states>			
+	
+	<collision static="true">
+		<circle offset="0 0" radius="8" />
+	</collision>	
+	
+</doodad>

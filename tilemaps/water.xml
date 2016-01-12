@@ -1,0 +1,10 @@
+<tileset level="1">
+	<sprite scale="16">
+		<texture>tilemaps/water.png</texture>
+		<frame time="500">0 0 16 16</frame>
+		<frame time="500">16 0 16 16</frame>		
+		<frame time="500">32 0 16 16</frame>		
+		<frame time="500">48 0 16 16</frame>	
+	</sprite>	
+	
+</tileset>

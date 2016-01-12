@@ -1,0 +1,136 @@
+<actor behavior="composite" minimap="menus/minimap.xml:enemy">
+	<behavior>
+		<dictionary>
+			<entry name="layer"><int>-1</int></entry>
+		
+			<entry name="hp"><int>450</int></entry>
+			<entry name="multiplayer-scale-hp"><bool>false</bool></entry>		
+			<float name="aggro-range">12</float>
+			<float name="max-range">12</float>
+			<entry name="ignore-hit-effects"><bool>true</bool></entry>
+			
+			<dictionary name="movement">
+				<string name="type">passive</string>
+				<bool name="set-dir">true</bool>
+			</dictionary>
+			
+			<array name="skills">
+			</array>			
+			
+			<entry name="corpse"><string>actors/tower_battlement_empty_razed.xml</string></entry>		
+			<entry name="death-snd"><string>sound/monsters.xml:death_tower</string></entry>
+			<entry name="hit-effect"><string>effects/particles.xml:robe-green-hit</string></entry>
+			<entry name="hit-particle"><string>effects/particles.xml:robe-green-particle</string></entry>
+		</dictionary>
+	</behavior>
+
+
+	<!-- Idle -->
+	<sprite scale="16" name="east">
+		<texture>actors/tower_battlement_empty.png</texture>
+		<origin>16 16</origin>
+		<frame>0 0 32 32</frame>
+	</sprite>
+
+	<sprite scale="16" name="northeast">
+		<texture>actors/tower_battlement_empty.png</texture>
+		<origin>16 16</origin>
+		<frame>0 0 32 32</frame>
+	</sprite>
+
+	<sprite scale="16" name="north">
+		<texture>actors/tower_battlement_empty.png</texture>
+		<origin>16 16</origin>
+		<frame>0 0 32 32</frame>
+	</sprite>
+	
+	<sprite scale="16" name="northwest">
+		<texture>actors/tower_battlement_empty.png</texture>
+		<origin>16 16</origin>
+		<frame>0 0 32 32</frame>
+	</sprite>
+	
+	<sprite scale="16" name="west">
+		<texture>actors/tower_battlement_empty.png</texture>
+		<origin>16 16</origin>
+		<frame>0 0 32 32</frame>
+	</sprite>
+	
+	<sprite scale="16" name="southwest">
+		<texture>actors/tower_battlement_empty.png</texture>
+		<origin>16 16</origin>
+		<frame>0 0 32 32</frame>
+	</sprite>
+	
+	<sprite scale="16" name="south">
+		<texture>actors/tower_battlement_empty.png</texture>
+		<origin>16 16</origin>
+		<frame>0 0 32 32</frame>
+	</sprite>
+	
+	<sprite scale="16" name="southeast">
+		<texture>actors/tower_battlement_empty.png</texture>
+		<origin>16 16</origin>
+		<frame>0 0 32 32</frame>
+	</sprite>
+	
+	
+	<!-- Walk -->
+	<sprite scale="16" name="east-walk">
+		<texture>actors/tower_battlement_empty.png</texture>
+		<origin>16 16</origin>
+		<frame>0 0 32 32</frame>
+	</sprite>
+
+	<sprite scale="16" name="northeast-walk">
+		<texture>actors/tower_battlement_empty.png</texture>
+		<origin>16 16</origin>
+		<frame>0 0 32 32</frame>
+	</sprite>
+
+	<sprite scale="16" name="north-walk">
+		<texture>actors/tower_battlement_empty.png</texture>
+		<origin>16 16</origin>
+		<frame>0 0 32 32</frame>
+	</sprite>
+	
+	<sprite scale="16" name="northwest-walk">
+		<texture>actors/tower_battlement_empty.png</texture>
+		<origin>16 16</origin>
+		<frame>0 0 32 32</frame>
+	</sprite>
+	
+	<sprite scale="16" name="west-walk">
+		<texture>actors/tower_battlement_empty.png</texture>
+		<origin>16 16</origin>
+		<frame>0 0 32 32</frame>
+	</sprite>
+	
+	<sprite scale="16" name="southwest-walk">
+		<texture>actors/tower_battlement_empty.png</texture>
+		<origin>16 16</origin>
+		<frame>0 0 32 32</frame>
+	</sprite>
+	
+	<sprite scale="16" name="south-walk">
+		<texture>actors/tower_battlement_empty.png</texture>
+		<origin>16 16</origin>
+		<frame>0 0 32 32</frame>
+	</sprite>
+	
+	<sprite scale="16" name="southeast-walk">
+		<texture>actors/tower_battlement_empty.png</texture>
+		<origin>16 16</origin>
+		<frame>0 0 32 32</frame>
+	</sprite>
+	
+	<collision static="true">			
+	<polygon collision="true" shadow="false">
+		<point>-16 16</point>
+		<point>-16 -16</point>		
+		<point>16 -16</point>		
+		<point>16 16</point>
+	</polygon>		
+	</collision>	
+
+</actor>

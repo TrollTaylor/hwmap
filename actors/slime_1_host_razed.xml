@@ -1,0 +1,7 @@
+<doodad defaultlayer="-1" ao="false">
+	<sprite scale="16">
+		<texture>actors/slime_1_host.png</texture>
+		<origin>17 20</origin>					
+		<frame time="100">0 96 32 32</frame>
+	</sprite>
+</doodad>

@@ -1,0 +1,894 @@
+<spritebank>
+	<sprite name="obscurer" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>0 104 8 8</frame>
+	</sprite>	
+
+
+	
+	<!-- SPECIAL -->
+	
+	<sprite name="missing" scale="1">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>510 83 2 2</frame>
+	</sprite>			
+	
+	<sprite name="waypoint" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>2 2</origin>
+		<frame>427 0 14 14</frame>
+	</sprite>		
+	
+	<sprite name="upgrade" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>0 238 9 9</frame>
+	</sprite>		
+	
+	<sprite name="health" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>0 247 9 9</frame>
+	</sprite>		
+	
+	<sprite name="mana" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>9 247 9 9</frame>
+	</sprite>	
+	
+	<sprite name="enemy" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>-4 -4</origin>
+		<frame>412 252 4 4</frame>
+	</sprite>		
+	
+	<sprite name="enemy_mb" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>-6 -6</origin>
+		<frame>412 248 4 4</frame>
+	</sprite>			
+	
+	<sprite name="enemy_spawn" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>-4 -4</origin>
+		<frame>396 248 8 8</frame>
+	</sprite>		
+	
+	<sprite name="enemy_static" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>-6 -6</origin>
+		<frame>404 248 8 8</frame>
+	</sprite>	
+	
+	<!-- TRAPS -->	
+	
+	<sprite name="trap_spike_floor" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>152 0 16 16</frame>
+	</sprite>			
+	
+	<sprite name="trap_fire_floor" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>168 0 16 16</frame>
+	</sprite>				
+	
+	<sprite name="trap_turrets" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>4 1</origin>
+		<frame>152 16 16 16</frame>
+	</sprite>				
+		
+	
+	<!-- BOSS LOCKS -->
+	
+	<sprite name="boss_exit" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 -2</origin>
+		<frame>440 48 16 16</frame>
+	</sprite>	
+	
+	<sprite name="boss_lock_1" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>3 3</origin>
+		<frame>440 0 16 16</frame>
+	</sprite>		
+	
+	<sprite name="boss_lock_2" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>3 3</origin>
+		<frame>440 16 16 16</frame>
+	</sprite>	
+	
+	<sprite name="boss_lock_3" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>3 3</origin>
+		<frame>440 32 16 16</frame>
+	</sprite>	
+			
+	
+	<!-- VEDNORS -->
+
+	<sprite name="offense" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>14 0</origin>
+		<frame>476 99 36 18</frame>
+	</sprite>	
+	
+	<sprite name="defense" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>15 0</origin>
+		<frame>475 117 37 18</frame>
+	</sprite>	
+	
+	<sprite name="misc" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>13 0</origin>
+		<frame>480 135 32 18</frame>
+	</sprite>		
+	
+	<sprite name="combo" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>11 0</origin>
+		<frame>484 153 28 18</frame>
+	</sprite>		
+	
+	<sprite name="power" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>10 0</origin>
+		<frame>485 171 27 18</frame>
+	</sprite>		
+	
+	<sprite name="l1" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>-1 -4</origin>
+		<frame>489 64 6 5</frame>
+	</sprite>					
+	
+	<sprite name="l2" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>-1 -4</origin>
+		<frame>495 64 8 5</frame>
+	</sprite>		
+	
+	<sprite name="l3" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>-1 -4</origin>
+		<frame>503 64 8 5</frame>
+	</sprite>		
+	
+	<sprite name="l4" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>-1 -4</origin>
+		<frame>488 69 8 5</frame>
+	</sprite>		
+	
+	<sprite name="l5" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>-1 -4</origin>
+		<frame>496 69 8 5</frame>
+	</sprite>		
+	
+	<sprite name="l6" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>-1 -4</origin>
+		<frame>504 69 8 5</frame>
+	</sprite>		
+	
+	
+	<!-- ITEMS -->		
+	
+	
+	<sprite name="bronzekey" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 2</origin>
+		<frame>482 87 8 12</frame>
+	</sprite>		
+	
+	<sprite name="silverkey" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>2 2</origin>
+		<frame>490 87 12 12</frame>
+	</sprite>
+	
+	<sprite name="goldkey" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>1 3</origin>
+		<frame>502 85 10 14</frame>
+	</sprite>	
+		
+	
+	<!-- DOORS -->
+	
+	<sprite name="door_silver_v_cap_up" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>-1 0</origin>
+		<frame>484 16 4 12</frame>
+	</sprite>		
+	
+	<sprite name="door_silver_v" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>-1 0</origin>
+		<frame>484 16 4 16</frame>
+	</sprite>		
+	
+	<sprite name="door_silver_v_v2" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>-1 0</origin>
+		<frame>484 16 4 8</frame>
+	</sprite>			
+	
+	<sprite name="door_silver_h_cap_r" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>488 16 4 16</frame>
+	</sprite>
+	
+	<sprite name="door_silver_h_cap_l" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>488 16 4 16</frame>
+	</sprite>
+	
+	<sprite name="door_silver_h_v2" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>488 16 8 16</frame>
+	</sprite>	
+	
+	<sprite name="door_silver_h" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>488 16 16 16</frame>
+	</sprite>	
+
+	<sprite name="door_gold_v_cap_up" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>-1 0</origin>
+		<frame>484 32 4 12</frame>
+	</sprite>		
+	
+	<sprite name="door_gold_v" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>-1 0</origin>
+		<frame>484 32 4 16</frame>
+	</sprite>		
+	
+	<sprite name="door_gold_v_v2" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>-1 0</origin>
+		<frame>484 32 4 8</frame>
+	</sprite>			
+	
+	<sprite name="door_gold_h_cap_r" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>488 32 4 16</frame>
+	</sprite>
+	
+	<sprite name="door_gold_h_cap_l" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>488 32 4 16</frame>
+	</sprite>
+	
+	<sprite name="door_gold_h_v2" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>488 32 8 16</frame>
+	</sprite>	
+	
+	<sprite name="door_gold_h" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>488 32 16 16</frame>
+	</sprite>	
+
+	<sprite name="door_bronze_v_cap_up" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>-1 0</origin>
+		<frame>484 0 4 12</frame>
+	</sprite>		
+	
+	<sprite name="door_bronze_v" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>-1 0</origin>
+		<frame>484 0 4 16</frame>
+	</sprite>		
+	
+	<sprite name="door_bronze_v_v2" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>-1 0</origin>
+		<frame>484 0 4 8</frame>
+	</sprite>			
+	
+	<sprite name="door_bronze_h_cap_r" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>488 0 4 16</frame>
+	</sprite>
+	
+	<sprite name="door_bronze_h_cap_l" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>488 0 4 16</frame>
+	</sprite>
+	
+	<sprite name="door_bronze_h_v2" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>488 0 8 16</frame>
+	</sprite>	
+	
+	<sprite name="door_bronze_h" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>488 0 16 16</frame>
+	</sprite>	
+	
+	<sprite name="door_jade_h" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 -2</origin>
+		<frame>480 48 32 16</frame>
+	</sprite>		
+	
+	<sprite name="teleport" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>-1 -4</origin>
+		<frame>32 72 10 20</frame>
+	</sprite>	
+		
+		
+	
+	
+	
+	
+	
+	
+	<sprite name="bonus_square" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>0 144 8 8</frame>
+	</sprite>		
+	
+	<sprite name="bonus_horizontal" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>0 144 16 8</frame>
+	</sprite>	
+	
+	<sprite name="bonus_vertical" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>0 144 8 16</frame>
+	</sprite>		
+	
+	<sprite name="bonus_key" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>1 1</origin>
+		<frame>12 160 8 12</frame>
+	</sprite>			
+	
+	<sprite name="bonus_exit" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>0 160 12 12</frame>
+	</sprite>			
+	
+	<sprite name="bonus_door_h" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>0 172 16 4</frame>
+	</sprite>	
+	
+	<sprite name="bonus_door_v" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>16 144 4 16</frame>
+	</sprite>		
+	
+
+
+
+	<sprite name="impassable_16" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>16 88 8 8</frame>
+	</sprite>	
+	
+	<sprite name="impassable_32" scale="4">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>16 88 8 8</frame>
+	</sprite>	
+
+	<sprite name="impassable_48" scale="2">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>16 88 6 6</frame>
+	</sprite>	
+	
+	<sprite name="impassable_64" scale="2">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>16 88 8 8</frame>
+	</sprite>	
+	
+	<sprite name="impassable_128" scale="1">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>16 88 8 8</frame>
+	</sprite>
+	
+	<sprite name="impassable_256" scale="1">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>16 88 16 16</frame>
+	</sprite>	
+		
+		
+		
+		
+	<sprite name="color_16" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>0 88 8 8</frame>
+	</sprite>	
+
+	<sprite name="color_24" scale="6">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>0 88 9 9</frame>
+	</sprite>	
+	
+	<sprite name="color_32" scale="4">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>0 88 8 8</frame>
+	</sprite>	
+
+	<sprite name="color_48" scale="2">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>0 88 6 6</frame>
+	</sprite>	
+	
+	<sprite name="color_64" scale="2">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>0 88 8 8</frame>
+	</sprite>	
+	
+	<sprite name="color_128" scale="1">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>0 88 8 8</frame>
+	</sprite>	
+	
+	<sprite name="color_256" scale="1">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>0 88 16 16</frame>
+	</sprite>	
+	
+	<sprite name="pyramid_root" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>32 160 96 96</frame>
+	</sprite>	
+	
+	<sprite name="pyramid_top" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>128 216 40 40</frame>
+	</sprite>			
+	
+	<sprite name="crn_l_dn" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>0 32 8 24</frame>
+	</sprite>
+	
+	<sprite name="crn_l_up" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>0 24 8 8</frame>
+	</sprite>
+	
+	<sprite name="crn_r_dn" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>8 32 8 24</frame>
+	</sprite>
+	
+	<sprite name="crn_r_up" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>8 24 8 8</frame>
+	</sprite>
+	
+	<sprite name="h_8" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>0 0 8 24</frame>
+	</sprite>
+	
+	<sprite name="h_8_dst" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>16 64 8 24</frame>
+	</sprite>	
+	
+	<sprite name="h_16" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>0 0 16 24</frame>
+	</sprite>
+	
+	<sprite name="h_16_fence" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 -3</origin>
+		<frame>32 4 16 20</frame>
+	</sprite>	
+	
+	<sprite name="h_cap_l" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>16 0 8 24</frame>
+	</sprite>
+	
+	<sprite name="h_cap_r" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>24 0 8 24</frame>
+	</sprite>
+	
+	<sprite name="pillar" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>8 64 8 24</frame>
+	</sprite>
+	
+	<sprite name="v_8" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>16 24 8 8</frame>
+	</sprite>
+	
+	<sprite name="v_16" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>16 24 8 16</frame>
+	</sprite>
+	
+	<sprite name="v_cap_dn" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>24 32 8 24</frame>
+	</sprite>
+	
+	<sprite name="v_cap_up" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>24 24 8 8</frame>
+	</sprite>
+	
+	<sprite name="x_t_dn" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>0 64 8 24</frame>
+	</sprite>
+	
+	<sprite name="x_t_l" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>8 56 8 8</frame>
+	</sprite>
+	
+	<sprite name="x_t_r" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>16 56 8 8</frame>
+	</sprite>
+	
+	<sprite name="x_t_up" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>16 40 8 8</frame>
+	</sprite>
+	
+	<sprite name="x_x" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>0 56 8 8</frame>
+	</sprite>
+	
+	<sprite name="exit_h_dn" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>32 48 16 24</frame>
+	</sprite>
+	
+	<sprite name="exit_h_up" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>32 24 16 24</frame>
+	</sprite>
+	
+	<sprite name="ledge_crn" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>					
+		<frame>48 0 4 4</frame>
+	</sprite>
+	
+	<sprite name="ledge_dn" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 -4</origin>					
+		<frame>48 0 16 4</frame>
+	</sprite>
+	
+	<sprite name="ledge_dn_v2" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 -4</origin>					
+		<frame>48 0 8 4</frame>
+	</sprite>
+	
+	<sprite name="ledge_l" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>					
+		<frame>64 0 4 16</frame>
+	</sprite>
+	
+	<sprite name="ledge_l_v2" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>					
+		<frame>64 0 4 8</frame>
+	</sprite>	
+	
+	<sprite name="ledge_r" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>-4 0</origin>					
+		<frame>64 0 4 16</frame>
+	</sprite>
+	
+	<sprite name="ledge_r_v2" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>-4 0</origin>					
+		<frame>64 0 4 8</frame>
+	</sprite>	
+	
+	<sprite name="ledge_up" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>					
+		<frame>48 0 16 24</frame>
+	</sprite>
+	
+	<sprite name="ledge_up_v3" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>					
+		<frame>48 0 8 24</frame>
+	</sprite>
+	
+	<sprite name="wood_bridge_v_up" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>72 0 32 8</frame>
+	</sprite>
+	
+	<sprite name="wood_bridge_v_dn" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>72 56 32 8</frame>
+	</sprite>	
+	
+	<sprite name="wood_bridge_v" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>72 8 32 48</frame>
+	</sprite>
+	
+	<sprite name="wood_bridge_v_v2" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>72 8 32 16</frame>
+	</sprite>	
+
+	<sprite name="wood_bridge_h" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 -6</origin>
+		<frame>56 64 48 32</frame>
+	</sprite>
+	
+	<sprite name="wood_bridge_h_special" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 -6</origin>
+		<frame>48 96 48 32</frame>
+	</sprite>	
+	
+	<sprite name="wood_bridge_h_v2" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 -6</origin>
+		<frame>56 64 16 32</frame>
+	</sprite>	
+
+	<sprite name="wood_bridge_h_r" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 -6</origin>
+		<frame>104 64 8 32</frame>
+	</sprite>
+	
+	<sprite name="wood_bridge_h_l" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 -6</origin>
+		<frame>48 64 8 32</frame>
+	</sprite>	
+	
+	<sprite name="wood_bridge2_h_crn_r_up" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 -6</origin>
+		<frame>104 64 8 10</frame>
+	</sprite>	
+	
+	<sprite name="wood_bridge2_h_crn_r_dn" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>104 84 8 10</frame>
+	</sprite>		
+	
+	<sprite name="wood_bridge2_h_r" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>80 8 8 48</frame>
+	</sprite>
+	
+	<sprite name="wood_bridge2_h_up" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 -6</origin>
+		<frame>72 64 16 10</frame>
+	</sprite>		
+		
+	<sprite name="wood_bridge2_h_dn" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>90 84 16 10</frame>
+	</sprite>					
+	
+	<sprite name="wood_bridge2_h" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>80 8 16 48</frame>
+	</sprite>
+
+	<sprite name="wood_bridge2_h_crn_l_up" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 -6</origin>
+		<frame>48 64 8 10</frame>
+	</sprite>	
+
+	<sprite name="wood_bridge2_h_crn_l_dn" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>48 84 8 10</frame>
+	</sprite>	
+	
+	<sprite name="wood_bridge2_h_l" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>80 8 8 48</frame>
+	</sprite>	
+
+	<sprite name="round_crn_l_dn" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>124 36 20 20</frame>
+	</sprite>	
+	
+	<sprite name="round_crn_r_dn" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>104 36 20 20</frame>
+	</sprite>	
+	
+	<sprite name="round_crn_r_up" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>128 0 24 36</frame>
+	</sprite>		
+	
+	<sprite name="round_crn_l_up" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>0 0</origin>
+		<frame>104 0 24 36</frame>
+	</sprite>		
+
+	
+	
+	
+	<sprite name="plr_knight_a" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>2 1</origin>
+		<frame>448 192 16 16</frame>
+	</sprite>
+	<sprite name="plr_ranger_a" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>2 1</origin>
+		<frame>464 192 16 16</frame>
+	</sprite>
+	<sprite name="plr_wizard_a" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>2 1</origin>
+		<frame>480 192 16 16</frame>
+	</sprite>
+	<sprite name="plr_warlock_a" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>2 1</origin>
+		<frame>496 192 16 16</frame>
+	</sprite>
+	
+	<sprite name="plr_knight_b" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>2 1</origin>
+		<frame>448 208 16 16</frame>
+	</sprite>
+	<sprite name="plr_ranger_b" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>2 1</origin>
+		<frame>464 208 16 16</frame>
+	</sprite>
+	<sprite name="plr_wizard_b" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>2 1</origin>
+		<frame>480 208 16 16</frame>
+	</sprite>
+	<sprite name="plr_warlock_b" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>2 1</origin>
+		<frame>496 208 16 16</frame>
+	</sprite>
+	
+	<sprite name="plr_knight_c" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>2 1</origin>
+		<frame>448 224 16 16</frame>
+	</sprite>
+	<sprite name="plr_ranger_c" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>2 1</origin>
+		<frame>464 224 16 16</frame>
+	</sprite>
+	<sprite name="plr_wizard_c" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>2 1</origin>
+		<frame>480 224 16 16</frame>
+	</sprite>
+	<sprite name="plr_warlock_c" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>2 1</origin>
+		<frame>496 224 16 16</frame>
+	</sprite>
+	
+	<sprite name="plr_knight_d" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>2 1</origin>
+		<frame>448 240 16 16</frame>
+	</sprite>
+	<sprite name="plr_ranger_d" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>2 1</origin>
+		<frame>464 240 16 16</frame>
+	</sprite>
+	<sprite name="plr_wizard_d" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>2 1</origin>
+		<frame>480 240 16 16</frame>
+	</sprite>
+	<sprite name="plr_warlock_d" scale="8">
+		<texture>menus/minimap.png</texture>
+		<origin>2 1</origin>
+		<frame>496 240 16 16</frame>
+	</sprite>
+</spritebank>

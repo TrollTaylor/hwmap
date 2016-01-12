@@ -1,0 +1,44 @@
+<doodad ao="false" defaultlayer="-20">
+	<sprite scale="16" name="activate">
+		<texture>doodads/generic/deco_elevated_pyramid.png</texture>
+		<origin>8 8</origin>
+		<frame time="50">16 0 16 16</frame>
+		<frame time="50">32 0 16 16</frame>
+		<frame time="50">48 0 16 16</frame>
+	</sprite>
+	
+	<sprite scale="16" name="deactivate">
+		<texture>doodads/generic/deco_elevated_pyramid.png</texture>
+		<origin>8 8</origin>
+		<frame time="50">48 0 16 16</frame>
+		<frame time="50">32 0 16 16</frame>
+		<frame time="50">16 0 16 16</frame>
+	</sprite>	
+	
+	<sprite scale="16" name="inactive">
+		<texture>doodads/generic/deco_elevated_pyramid.png</texture>
+		<origin>8 8</origin>
+		<frame time="50">0 0 16 16</frame>
+	</sprite>
+	
+	<sprite scale="16" name="active">
+		<texture>doodads/generic/deco_elevated_pyramid.png</texture>
+		<origin>8 8</origin>
+		<frame time="50">64 0 16 16</frame>
+	</sprite>	
+		
+	<states default="inactive">
+		<transition from="deactivate" to="inactive" />
+		<transition from="activate" to="active" />				
+	</states>				
+	
+	<collision shoot-through="true">
+		<polygon>
+			<point>-6 6</point>
+			<point>-6 -6</point>
+			<point>6 -6</point>
+			<point>6 6</point>
+		</polygon>
+	</collision>	
+	
+</doodad>
